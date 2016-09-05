@@ -1,0 +1,924 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "XXXPurchaseManager"
+- "XXXPurchaseManagerDelegate"
+provides-nominal:
+- "C10SimpleTodo18XXXPurchaseManager"
+- "P10SimpleTodo26XXXPurchaseManagerDelegate"
+provides-member:
+- ["C10SimpleTodo18XXXPurchaseManager", ""]
+- ["P10SimpleTodo26XXXPurchaseManagerDelegate", ""]
+provides-dynamic-lookup:
+- "startWithProduct"
+- "sharedManager"
+- "paymentQueue"
+- "paymentQueue"
+- "purchaseManager"
+- "purchaseManager"
+- "purchaseManager"
+- "purchaseManagerDidDeferred"
+- "purchaseManagerDidFinishRestore"
+- "paymentQueueRestoreCompletedTransactionsFinished"
+- "delegate"
+- "startRestore"
+depends-top-level:
+- !private "purchaseManagerSharedManager"
+- "String"
+- "SKPaymentQueue"
+- "NSError"
+- !private "Dictionary"
+- !private "UIAlertAction"
+- !private "!="
+- !private "UIAlertActionStyle"
+- "NSObject"
+- "SKProduct"
+- "BooleanLiteralType"
+- !private "NSLocalizedDescriptionKey"
+- "XXXPurchaseManager"
+- !private "UIAlertController"
+- !private "UIApplication"
+- !private "=="
+- !private ">"
+- "SKPaymentTransaction"
+- !private "StringLiteralType"
+- "Void"
+- !private "UnicodeScalarType"
+- !private "+="
+- "Bool"
+- "SKPaymentTransactionObserver"
+- "XXXPurchaseManagerDelegate"
+- !private "SKMutablePayment"
+- !private "+"
+depends-member:
+- !private ["Ps9AnyObject", "NSError"]
+- !private ["Ps9AnyObject", "NSLocalizedDescriptionKey"]
+- !private ["Ps9AnyObject", "SKMutablePayment"]
+- !private ["Ps9AnyObject", "SKPaymentQueue"]
+- !private ["Ps9AnyObject", "UIAlertAction"]
+- !private ["Ps9AnyObject", "UIAlertActionStyle"]
+- !private ["Ps9AnyObject", "UIAlertController"]
+- !private ["Ps9AnyObject", "UIApplication"]
+- !private ["Ps9AnyObject", "addAction"]
+- !private ["Ps9AnyObject", "addPayment"]
+- !private ["Ps9AnyObject", "canMakePayments"]
+- ["Ps9AnyObject", "completeTransaction"]
+- !private ["Ps9AnyObject", "defaultQueue"]
+- ["Ps9AnyObject", "deferredTransaction"]
+- !private ["Ps9AnyObject", "deinit"]
+- ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "error"]
+- ["Ps9AnyObject", "failedTransaction"]
+- !private ["Ps9AnyObject", "finishTransaction"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "isRestore"]
+- !private ["Ps9AnyObject", "localizedTitle"]
+- !private ["Ps9AnyObject", "originalTransaction"]
+- !private ["Ps9AnyObject", "payment"]
+- ["Ps9AnyObject", "paymentQueue"]
+- ["Ps9AnyObject", "paymentQueueRestoreCompletedTransactionsFinished"]
+- !private ["Ps9AnyObject", "presentViewController"]
+- ["Ps9AnyObject", "productIdentifier"]
+- !private ["Ps9AnyObject", "purchaseManagerSharedManager"]
+- !private ["Ps9AnyObject", "restoreCompletedTransactions"]
+- ["Ps9AnyObject", "restoreTransaction"]
+- !private ["Ps9AnyObject", "rootViewController"]
+- !private ["Ps9AnyObject", "sharedApplication"]
+- ["Ps9AnyObject", "sharedManager"]
+- ["Ps9AnyObject", "startRestore"]
+- ["Ps9AnyObject", "startWithProduct"]
+- !private ["Ps9AnyObject", "transactionState"]
+- !private ["Ps9AnyObject", "transactions"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "count"]
+- !private ["Ps23ArrayLiteralConvertible", "Generator"]
+- !private ["Ps23ArrayLiteralConvertible", "Index"]
+- !private ["Ps23ArrayLiteralConvertible", "SubSequence"]
+- !private ["Ps23ArrayLiteralConvertible", "_Element"]
+- !private ["Ps23ArrayLiteralConvertible", "count"]
+- !private ["Vs10ArraySlice", "Generator"]
+- !private ["Vs10ArraySlice", "Index"]
+- !private ["Ps22BidirectionalIndexType", "Distance"]
+- !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["Ps21BitwiseOperationsType", "Distance"]
+- !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "Distance"]
+- !private ["Ps11CVarArgType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "NSError"]
+- !private ["Ps11CVarArgType", "NSLocalizedDescriptionKey"]
+- !private ["Ps11CVarArgType", "SKMutablePayment"]
+- !private ["Ps11CVarArgType", "SKPaymentQueue"]
+- !private ["Ps11CVarArgType", "UIAlertAction"]
+- !private ["Ps11CVarArgType", "UIAlertActionStyle"]
+- !private ["Ps11CVarArgType", "UIAlertController"]
+- !private ["Ps11CVarArgType", "UIApplication"]
+- !private ["Ps11CVarArgType", "addAction"]
+- !private ["Ps11CVarArgType", "addPayment"]
+- !private ["Ps11CVarArgType", "canMakePayments"]
+- ["Ps11CVarArgType", "completeTransaction"]
+- !private ["Ps11CVarArgType", "defaultQueue"]
+- ["Ps11CVarArgType", "deferredTransaction"]
+- ["Ps11CVarArgType", "delegate"]
+- !private ["Ps11CVarArgType", "error"]
+- ["Ps11CVarArgType", "failedTransaction"]
+- !private ["Ps11CVarArgType", "finishTransaction"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "isRestore"]
+- !private ["Ps11CVarArgType", "localizedTitle"]
+- !private ["Ps11CVarArgType", "originalTransaction"]
+- !private ["Ps11CVarArgType", "payment"]
+- ["Ps11CVarArgType", "paymentQueue"]
+- ["Ps11CVarArgType", "paymentQueueRestoreCompletedTransactionsFinished"]
+- !private ["Ps11CVarArgType", "presentViewController"]
+- ["Ps11CVarArgType", "productIdentifier"]
+- !private ["Ps11CVarArgType", "purchaseManagerSharedManager"]
+- !private ["Ps11CVarArgType", "restoreCompletedTransactions"]
+- ["Ps11CVarArgType", "restoreTransaction"]
+- !private ["Ps11CVarArgType", "rootViewController"]
+- !private ["Ps11CVarArgType", "sharedApplication"]
+- ["Ps11CVarArgType", "sharedManager"]
+- ["Ps11CVarArgType", "startRestore"]
+- ["Ps11CVarArgType", "startWithProduct"]
+- !private ["Ps11CVarArgType", "transactionState"]
+- !private ["Ps11CVarArgType", "transactions"]
+- ["Ps11CVarArgType", ""]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps14CollectionType", "Generator"]
+- !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "Key"]
+- !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "Value"]
+- !private ["Ps14CollectionType", "_Element"]
+- !private ["Ps14CollectionType", "count"]
+- !private ["Ps10Comparable", "Distance"]
+- !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Generator"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
+- !private ["Ps28CustomDebugStringConvertible", "NSError"]
+- !private ["Ps28CustomDebugStringConvertible", "NSLocalizedDescriptionKey"]
+- !private ["Ps28CustomDebugStringConvertible", "SKMutablePayment"]
+- !private ["Ps28CustomDebugStringConvertible", "SKPaymentQueue"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
+- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "UIAlertAction"]
+- !private ["Ps28CustomDebugStringConvertible", "UIAlertActionStyle"]
+- !private ["Ps28CustomDebugStringConvertible", "UIAlertController"]
+- !private ["Ps28CustomDebugStringConvertible", "UIApplication"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "addAction"]
+- !private ["Ps28CustomDebugStringConvertible", "addPayment"]
+- !private ["Ps28CustomDebugStringConvertible", "canMakePayments"]
+- ["Ps28CustomDebugStringConvertible", "completeTransaction"]
+- !private ["Ps28CustomDebugStringConvertible", "count"]
+- !private ["Ps28CustomDebugStringConvertible", "defaultQueue"]
+- ["Ps28CustomDebugStringConvertible", "deferredTransaction"]
+- ["Ps28CustomDebugStringConvertible", "delegate"]
+- !private ["Ps28CustomDebugStringConvertible", "error"]
+- ["Ps28CustomDebugStringConvertible", "failedTransaction"]
+- !private ["Ps28CustomDebugStringConvertible", "finishTransaction"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "isRestore"]
+- !private ["Ps28CustomDebugStringConvertible", "localizedTitle"]
+- !private ["Ps28CustomDebugStringConvertible", "originalTransaction"]
+- !private ["Ps28CustomDebugStringConvertible", "payment"]
+- ["Ps28CustomDebugStringConvertible", "paymentQueue"]
+- ["Ps28CustomDebugStringConvertible", "paymentQueueRestoreCompletedTransactionsFinished"]
+- !private ["Ps28CustomDebugStringConvertible", "presentViewController"]
+- ["Ps28CustomDebugStringConvertible", "productIdentifier"]
+- !private ["Ps28CustomDebugStringConvertible", "purchaseManagerSharedManager"]
+- !private ["Ps28CustomDebugStringConvertible", "restoreCompletedTransactions"]
+- ["Ps28CustomDebugStringConvertible", "restoreTransaction"]
+- !private ["Ps28CustomDebugStringConvertible", "rootViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "sharedApplication"]
+- ["Ps28CustomDebugStringConvertible", "sharedManager"]
+- ["Ps28CustomDebugStringConvertible", "startRestore"]
+- ["Ps28CustomDebugStringConvertible", "startWithProduct"]
+- !private ["Ps28CustomDebugStringConvertible", "transactionState"]
+- !private ["Ps28CustomDebugStringConvertible", "transactions"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "Distance"]
+- !private ["Ps23CustomStringConvertible", "Generator"]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "Key"]
+- !private ["Ps23CustomStringConvertible", "NSError"]
+- !private ["Ps23CustomStringConvertible", "NSLocalizedDescriptionKey"]
+- !private ["Ps23CustomStringConvertible", "SKMutablePayment"]
+- !private ["Ps23CustomStringConvertible", "SKPaymentQueue"]
+- !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "UIAlertAction"]
+- !private ["Ps23CustomStringConvertible", "UIAlertActionStyle"]
+- !private ["Ps23CustomStringConvertible", "UIAlertController"]
+- !private ["Ps23CustomStringConvertible", "UIApplication"]
+- !private ["Ps23CustomStringConvertible", "Value"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "addAction"]
+- !private ["Ps23CustomStringConvertible", "addPayment"]
+- !private ["Ps23CustomStringConvertible", "canMakePayments"]
+- ["Ps23CustomStringConvertible", "completeTransaction"]
+- !private ["Ps23CustomStringConvertible", "count"]
+- !private ["Ps23CustomStringConvertible", "defaultQueue"]
+- ["Ps23CustomStringConvertible", "deferredTransaction"]
+- ["Ps23CustomStringConvertible", "delegate"]
+- !private ["Ps23CustomStringConvertible", "error"]
+- ["Ps23CustomStringConvertible", "failedTransaction"]
+- !private ["Ps23CustomStringConvertible", "finishTransaction"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "isRestore"]
+- !private ["Ps23CustomStringConvertible", "localizedTitle"]
+- !private ["Ps23CustomStringConvertible", "originalTransaction"]
+- !private ["Ps23CustomStringConvertible", "payment"]
+- ["Ps23CustomStringConvertible", "paymentQueue"]
+- ["Ps23CustomStringConvertible", "paymentQueueRestoreCompletedTransactionsFinished"]
+- !private ["Ps23CustomStringConvertible", "presentViewController"]
+- ["Ps23CustomStringConvertible", "productIdentifier"]
+- !private ["Ps23CustomStringConvertible", "purchaseManagerSharedManager"]
+- !private ["Ps23CustomStringConvertible", "restoreCompletedTransactions"]
+- ["Ps23CustomStringConvertible", "restoreTransaction"]
+- !private ["Ps23CustomStringConvertible", "rootViewController"]
+- !private ["Ps23CustomStringConvertible", "sharedApplication"]
+- ["Ps23CustomStringConvertible", "sharedManager"]
+- ["Ps23CustomStringConvertible", "startRestore"]
+- ["Ps23CustomStringConvertible", "startWithProduct"]
+- !private ["Ps23CustomStringConvertible", "transactionState"]
+- !private ["Ps23CustomStringConvertible", "transactions"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "Value"]
+- !private ["Ps28DictionaryLiteralConvertible", "Key"]
+- !private ["Ps28DictionaryLiteralConvertible", "Value"]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "Alert"]
+- !private ["Ps9Equatable", "Default"]
+- ["Ps9Equatable", "Deferred"]
+- !private ["Ps9Equatable", "Distance"]
+- ["Ps9Equatable", "Failed"]
+- !private ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "NSError"]
+- !private ["Ps9Equatable", "NSLocalizedDescriptionKey"]
+- ["Ps9Equatable", "Purchased"]
+- ["Ps9Equatable", "Purchasing"]
+- !private ["Ps9Equatable", "RawValue"]
+- ["Ps9Equatable", "Restored"]
+- !private ["Ps9Equatable", "SKMutablePayment"]
+- !private ["Ps9Equatable", "SKPaymentQueue"]
+- !private ["Ps9Equatable", "UIAlertAction"]
+- !private ["Ps9Equatable", "UIAlertActionStyle"]
+- !private ["Ps9Equatable", "UIAlertController"]
+- !private ["Ps9Equatable", "UIApplication"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "addAction"]
+- !private ["Ps9Equatable", "addPayment"]
+- !private ["Ps9Equatable", "canMakePayments"]
+- ["Ps9Equatable", "completeTransaction"]
+- !private ["Ps9Equatable", "defaultQueue"]
+- ["Ps9Equatable", "deferredTransaction"]
+- ["Ps9Equatable", "delegate"]
+- !private ["Ps9Equatable", "error"]
+- ["Ps9Equatable", "failedTransaction"]
+- !private ["Ps9Equatable", "finishTransaction"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "isRestore"]
+- !private ["Ps9Equatable", "localizedTitle"]
+- !private ["Ps9Equatable", "originalTransaction"]
+- !private ["Ps9Equatable", "payment"]
+- ["Ps9Equatable", "paymentQueue"]
+- ["Ps9Equatable", "paymentQueueRestoreCompletedTransactionsFinished"]
+- !private ["Ps9Equatable", "presentViewController"]
+- ["Ps9Equatable", "productIdentifier"]
+- !private ["Ps9Equatable", "purchaseManagerSharedManager"]
+- !private ["Ps9Equatable", "restoreCompletedTransactions"]
+- ["Ps9Equatable", "restoreTransaction"]
+- !private ["Ps9Equatable", "rootViewController"]
+- !private ["Ps9Equatable", "sharedApplication"]
+- ["Ps9Equatable", "sharedManager"]
+- ["Ps9Equatable", "startRestore"]
+- ["Ps9Equatable", "startWithProduct"]
+- !private ["Ps9Equatable", "transactionState"]
+- !private ["Ps9Equatable", "transactions"]
+- ["Ps9Equatable", ""]
+- !private ["Ps9ErrorType", "init"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
+- !private ["Ps16ForwardIndexType", "Distance"]
+- !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
+- !private ["Ps13GeneratorType", "Element"]
+- !private ["Ps8Hashable", "Alert"]
+- !private ["Ps8Hashable", "Default"]
+- ["Ps8Hashable", "Deferred"]
+- !private ["Ps8Hashable", "Distance"]
+- ["Ps8Hashable", "Failed"]
+- !private ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "NSError"]
+- !private ["Ps8Hashable", "NSLocalizedDescriptionKey"]
+- ["Ps8Hashable", "Purchased"]
+- ["Ps8Hashable", "Purchasing"]
+- !private ["Ps8Hashable", "RawValue"]
+- ["Ps8Hashable", "Restored"]
+- !private ["Ps8Hashable", "SKMutablePayment"]
+- !private ["Ps8Hashable", "SKPaymentQueue"]
+- !private ["Ps8Hashable", "UIAlertAction"]
+- !private ["Ps8Hashable", "UIAlertActionStyle"]
+- !private ["Ps8Hashable", "UIAlertController"]
+- !private ["Ps8Hashable", "UIApplication"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "addAction"]
+- !private ["Ps8Hashable", "addPayment"]
+- !private ["Ps8Hashable", "canMakePayments"]
+- ["Ps8Hashable", "completeTransaction"]
+- !private ["Ps8Hashable", "defaultQueue"]
+- ["Ps8Hashable", "deferredTransaction"]
+- ["Ps8Hashable", "delegate"]
+- !private ["Ps8Hashable", "error"]
+- ["Ps8Hashable", "failedTransaction"]
+- !private ["Ps8Hashable", "finishTransaction"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "isRestore"]
+- !private ["Ps8Hashable", "localizedTitle"]
+- !private ["Ps8Hashable", "originalTransaction"]
+- !private ["Ps8Hashable", "payment"]
+- ["Ps8Hashable", "paymentQueue"]
+- ["Ps8Hashable", "paymentQueueRestoreCompletedTransactionsFinished"]
+- !private ["Ps8Hashable", "presentViewController"]
+- ["Ps8Hashable", "productIdentifier"]
+- !private ["Ps8Hashable", "purchaseManagerSharedManager"]
+- !private ["Ps8Hashable", "restoreCompletedTransactions"]
+- ["Ps8Hashable", "restoreTransaction"]
+- !private ["Ps8Hashable", "rootViewController"]
+- !private ["Ps8Hashable", "sharedApplication"]
+- ["Ps8Hashable", "sharedManager"]
+- ["Ps8Hashable", "startRestore"]
+- ["Ps8Hashable", "startWithProduct"]
+- !private ["Ps8Hashable", "transactionState"]
+- !private ["Ps8Hashable", "transactions"]
+- ["Ps8Hashable", ""]
+- !private ["Ps9Indexable", "Generator"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "Key"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "Value"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "count"]
+- !private ["Vs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps21IntegerArithmeticType", "Distance"]
+- !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps25IntegerLiteralConvertible", "Distance"]
+- !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps11IntegerType", "Distance"]
+- !private ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "Distance"]
+- !private ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "init"]
+- !private ["Ps21MutableCollectionType", "Generator"]
+- !private ["Ps21MutableCollectionType", "Index"]
+- !private ["Ps21MutableCollectionType", "SubSequence"]
+- !private ["Ps21MutableCollectionType", "_Element"]
+- !private ["Ps21MutableCollectionType", "count"]
+- !private ["Ps16MutableIndexable", "Generator"]
+- !private ["Ps16MutableIndexable", "Index"]
+- !private ["Ps16MutableIndexable", "SubSequence"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "count"]
+- !private ["Ps16MutableSliceable", "Generator"]
+- !private ["Ps16MutableSliceable", "Index"]
+- !private ["Ps16MutableSliceable", "SubSequence"]
+- !private ["Ps16MutableSliceable", "_Element"]
+- !private ["Ps16MutableSliceable", "count"]
+- !private ["PSo8NSCoding", "addAction"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "presentViewController"]
+- !private ["PSo8NSCoding", "rootViewController"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "productIdentifier"]
+- !private ["CSo7NSError", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "addAction"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "productIdentifier"]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "NSError"]
+- !private ["CSo8NSObject", "NSLocalizedDescriptionKey"]
+- !private ["CSo8NSObject", "SKMutablePayment"]
+- ["CSo8NSObject", "SKPaymentQueue"]
+- ["CSo8NSObject", "SKPaymentTransaction"]
+- ["CSo8NSObject", "SKProduct"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UIAlertAction"]
+- !private ["CSo8NSObject", "UIAlertActionStyle"]
+- !private ["CSo8NSObject", "UIAlertController"]
+- !private ["CSo8NSObject", "UIApplication"]
+- !private ["CSo8NSObject", "Void"]
+- ["CSo8NSObject", "XXXPurchaseManager"]
+- ["CSo8NSObject", "XXXPurchaseManagerDelegate"]
+- !private ["CSo8NSObject", "addAction"]
+- !private ["CSo8NSObject", "addPayment"]
+- !private ["CSo8NSObject", "canMakePayments"]
+- ["CSo8NSObject", "completeTransaction"]
+- !private ["CSo8NSObject", "defaultQueue"]
+- ["CSo8NSObject", "deferredTransaction"]
+- ["CSo8NSObject", "delegate"]
+- !private ["CSo8NSObject", "error"]
+- ["CSo8NSObject", "failedTransaction"]
+- !private ["CSo8NSObject", "finishTransaction"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "isRestore"]
+- !private ["CSo8NSObject", "localizedTitle"]
+- !private ["CSo8NSObject", "originalTransaction"]
+- !private ["CSo8NSObject", "payment"]
+- ["CSo8NSObject", "paymentQueue"]
+- ["CSo8NSObject", "paymentQueueRestoreCompletedTransactionsFinished"]
+- !private ["CSo8NSObject", "presentViewController"]
+- ["CSo8NSObject", "productIdentifier"]
+- !private ["CSo8NSObject", "purchaseManagerSharedManager"]
+- !private ["CSo8NSObject", "restoreCompletedTransactions"]
+- ["CSo8NSObject", "restoreTransaction"]
+- !private ["CSo8NSObject", "rootViewController"]
+- !private ["CSo8NSObject", "sharedApplication"]
+- ["CSo8NSObject", "sharedManager"]
+- ["CSo8NSObject", "startRestore"]
+- ["CSo8NSObject", "startWithProduct"]
+- !private ["CSo8NSObject", "transactionState"]
+- !private ["CSo8NSObject", "transactions"]
+- ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "NSError"]
+- !private ["PSo16NSObjectProtocol", "NSLocalizedDescriptionKey"]
+- !private ["PSo16NSObjectProtocol", "SKMutablePayment"]
+- !private ["PSo16NSObjectProtocol", "SKPaymentQueue"]
+- !private ["PSo16NSObjectProtocol", "UIAlertAction"]
+- !private ["PSo16NSObjectProtocol", "UIAlertActionStyle"]
+- !private ["PSo16NSObjectProtocol", "UIAlertController"]
+- !private ["PSo16NSObjectProtocol", "UIApplication"]
+- !private ["PSo16NSObjectProtocol", "addAction"]
+- !private ["PSo16NSObjectProtocol", "addPayment"]
+- !private ["PSo16NSObjectProtocol", "canMakePayments"]
+- ["PSo16NSObjectProtocol", "completeTransaction"]
+- !private ["PSo16NSObjectProtocol", "defaultQueue"]
+- ["PSo16NSObjectProtocol", "deferredTransaction"]
+- ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "error"]
+- ["PSo16NSObjectProtocol", "failedTransaction"]
+- !private ["PSo16NSObjectProtocol", "finishTransaction"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "isRestore"]
+- !private ["PSo16NSObjectProtocol", "localizedTitle"]
+- !private ["PSo16NSObjectProtocol", "originalTransaction"]
+- !private ["PSo16NSObjectProtocol", "payment"]
+- ["PSo16NSObjectProtocol", "paymentQueue"]
+- ["PSo16NSObjectProtocol", "paymentQueueRestoreCompletedTransactionsFinished"]
+- !private ["PSo16NSObjectProtocol", "presentViewController"]
+- ["PSo16NSObjectProtocol", "productIdentifier"]
+- !private ["PSo16NSObjectProtocol", "purchaseManagerSharedManager"]
+- !private ["PSo16NSObjectProtocol", "restoreCompletedTransactions"]
+- ["PSo16NSObjectProtocol", "restoreTransaction"]
+- !private ["PSo16NSObjectProtocol", "rootViewController"]
+- !private ["PSo16NSObjectProtocol", "sharedApplication"]
+- ["PSo16NSObjectProtocol", "sharedManager"]
+- ["PSo16NSObjectProtocol", "startRestore"]
+- ["PSo16NSObjectProtocol", "startWithProduct"]
+- !private ["PSo16NSObjectProtocol", "transactionState"]
+- !private ["PSo16NSObjectProtocol", "transactions"]
+- !private ["PSo16NSObjectProtocol", "window"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- ["Ps21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["Ps16OutputStreamType", "init"]
+- !private ["Ps21RandomAccessIndexType", "Distance"]
+- !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Ps30RangeReplaceableCollectionType", "Generator"]
+- !private ["Ps30RangeReplaceableCollectionType", "Index"]
+- !private ["Ps30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["Ps30RangeReplaceableCollectionType", "_Element"]
+- !private ["Ps30RangeReplaceableCollectionType", "count"]
+- !private ["Ps16RawRepresentable", "Alert"]
+- !private ["Ps16RawRepresentable", "Default"]
+- ["Ps16RawRepresentable", "Deferred"]
+- ["Ps16RawRepresentable", "Failed"]
+- ["Ps16RawRepresentable", "Purchased"]
+- ["Ps16RawRepresentable", "Purchasing"]
+- !private ["Ps16RawRepresentable", "RawValue"]
+- ["Ps16RawRepresentable", "Restored"]
+- !private ["CSo16SKMutablePayment", "init"]
+- !private ["CSo9SKPayment", "init"]
+- !private ["CSo9SKPayment", "productIdentifier"]
+- !private ["CSo14SKPaymentQueue", "addPayment"]
+- !private ["CSo14SKPaymentQueue", "canMakePayments"]
+- !private ["CSo14SKPaymentQueue", "defaultQueue"]
+- !private ["CSo14SKPaymentQueue", "finishTransaction"]
+- !private ["CSo14SKPaymentQueue", "restoreCompletedTransactions"]
+- !private ["CSo14SKPaymentQueue", "transactions"]
+- !private ["CSo20SKPaymentTransaction", "error"]
+- !private ["CSo20SKPaymentTransaction", "originalTransaction"]
+- !private ["CSo20SKPaymentTransaction", "payment"]
+- !private ["CSo20SKPaymentTransaction", "transactionState"]
+- !private ["PSo28SKPaymentTransactionObserver", "NSError"]
+- !private ["PSo28SKPaymentTransactionObserver", "NSLocalizedDescriptionKey"]
+- !private ["PSo28SKPaymentTransactionObserver", "SKMutablePayment"]
+- !private ["PSo28SKPaymentTransactionObserver", "SKPaymentQueue"]
+- !private ["PSo28SKPaymentTransactionObserver", "UIAlertAction"]
+- !private ["PSo28SKPaymentTransactionObserver", "UIAlertActionStyle"]
+- !private ["PSo28SKPaymentTransactionObserver", "UIAlertController"]
+- !private ["PSo28SKPaymentTransactionObserver", "UIApplication"]
+- !private ["PSo28SKPaymentTransactionObserver", "completeTransaction"]
+- !private ["PSo28SKPaymentTransactionObserver", "deferredTransaction"]
+- !private ["PSo28SKPaymentTransactionObserver", "delegate"]
+- !private ["PSo28SKPaymentTransactionObserver", "failedTransaction"]
+- ["PSo28SKPaymentTransactionObserver", "init"]
+- !private ["PSo28SKPaymentTransactionObserver", "isRestore"]
+- ["PSo28SKPaymentTransactionObserver", "paymentQueue"]
+- ["PSo28SKPaymentTransactionObserver", "paymentQueueRestoreCompletedTransactionsFinished"]
+- !private ["PSo28SKPaymentTransactionObserver", "productIdentifier"]
+- !private ["PSo28SKPaymentTransactionObserver", "purchaseManagerSharedManager"]
+- !private ["PSo28SKPaymentTransactionObserver", "restoreTransaction"]
+- ["PSo28SKPaymentTransactionObserver", ""]
+- ["OSC25SKPaymentTransactionState", "Deferred"]
+- ["OSC25SKPaymentTransactionState", "Failed"]
+- ["OSC25SKPaymentTransactionState", "Purchased"]
+- ["OSC25SKPaymentTransactionState", "Purchasing"]
+- !private ["OSC25SKPaymentTransactionState", "RawValue"]
+- ["OSC25SKPaymentTransactionState", "Restored"]
+- !private ["CSo9SKProduct", "localizedTitle"]
+- !private ["CSo9SKProduct", "productIdentifier"]
+- !private ["Ps12SequenceType", "Element"]
+- !private ["Ps12SequenceType", "Generator"]
+- !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "Key"]
+- !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "Value"]
+- !private ["Ps12SequenceType", "_Element"]
+- !private ["Ps12SequenceType", "count"]
+- !private ["Ps17SignedIntegerType", "Distance"]
+- !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "Distance"]
+- !private ["Ps16SignedNumberType", "IntegerLiteralType"]
+- !private ["Ps10Streamable", "init"]
+- !private ["Ps10Strideable", "Distance"]
+- !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "rootViewController"]
+- !private ["CSo13UIAlertAction", "init"]
+- !private ["OSC18UIAlertActionStyle", "Default"]
+- !private ["CSo17UIAlertController", "addAction"]
+- !private ["CSo17UIAlertController", "init"]
+- !private ["OSC22UIAlertControllerStyle", "Alert"]
+- !private ["PSo12UIAppearance", "rootViewController"]
+- !private ["PSo21UIAppearanceContainer", "addAction"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "presentViewController"]
+- !private ["PSo21UIAppearanceContainer", "rootViewController"]
+- !private ["CSo13UIApplication", "delegate"]
+- !private ["CSo13UIApplication", "sharedApplication"]
+- !private ["PSo21UIApplicationDelegate", "window"]
+- !private ["PSo18UIContentContainer", "addAction"]
+- !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "presentViewController"]
+- !private ["PSo17UICoordinateSpace", "rootViewController"]
+- !private ["PSo13UIDynamicItem", "rootViewController"]
+- !private ["PSo18UIFocusEnvironment", "addAction"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "presentViewController"]
+- !private ["PSo18UIFocusEnvironment", "rootViewController"]
+- !private ["CSo11UIResponder", "addAction"]
+- !private ["CSo11UIResponder", "delegate"]
+- !private ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "presentViewController"]
+- !private ["CSo11UIResponder", "rootViewController"]
+- !private ["CSo11UIResponder", "sharedApplication"]
+- !private ["PSo16UIStateRestoring", "addAction"]
+- !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "presentViewController"]
+- !private ["PSo18UITraitEnvironment", "addAction"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "presentViewController"]
+- !private ["PSo18UITraitEnvironment", "rootViewController"]
+- !private ["CSo6UIView", "rootViewController"]
+- !private ["CSo16UIViewController", "addAction"]
+- !private ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "presentViewController"]
+- !private ["CSo8UIWindow", "rootViewController"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- ["C10SimpleTodo18XXXPurchaseManager", "Bool"]
+- ["C10SimpleTodo18XXXPurchaseManager", "NSError"]
+- !private ["C10SimpleTodo18XXXPurchaseManager", "NSLocalizedDescriptionKey"]
+- !private ["C10SimpleTodo18XXXPurchaseManager", "SKMutablePayment"]
+- ["C10SimpleTodo18XXXPurchaseManager", "SKPaymentQueue"]
+- ["C10SimpleTodo18XXXPurchaseManager", "SKPaymentTransaction"]
+- ["C10SimpleTodo18XXXPurchaseManager", "SKProduct"]
+- ["C10SimpleTodo18XXXPurchaseManager", "String"]
+- !private ["C10SimpleTodo18XXXPurchaseManager", "UIAlertAction"]
+- !private ["C10SimpleTodo18XXXPurchaseManager", "UIAlertActionStyle"]
+- !private ["C10SimpleTodo18XXXPurchaseManager", "UIAlertController"]
+- !private ["C10SimpleTodo18XXXPurchaseManager", "UIApplication"]
+- !private ["C10SimpleTodo18XXXPurchaseManager", "Void"]
+- ["C10SimpleTodo18XXXPurchaseManager", "XXXPurchaseManager"]
+- ["C10SimpleTodo18XXXPurchaseManager", "XXXPurchaseManagerDelegate"]
+- !private ["C10SimpleTodo18XXXPurchaseManager", "completeTransaction"]
+- !private ["C10SimpleTodo18XXXPurchaseManager", "deferredTransaction"]
+- ["C10SimpleTodo18XXXPurchaseManager", "deinit"]
+- ["C10SimpleTodo18XXXPurchaseManager", "delegate"]
+- !private ["C10SimpleTodo18XXXPurchaseManager", "failedTransaction"]
+- ["C10SimpleTodo18XXXPurchaseManager", "init"]
+- !private ["C10SimpleTodo18XXXPurchaseManager", "isRestore"]
+- ["C10SimpleTodo18XXXPurchaseManager", "paymentQueue"]
+- ["C10SimpleTodo18XXXPurchaseManager", "paymentQueueRestoreCompletedTransactionsFinished"]
+- !private ["C10SimpleTodo18XXXPurchaseManager", "productIdentifier"]
+- !private ["C10SimpleTodo18XXXPurchaseManager", "purchaseManagerSharedManager"]
+- !private ["C10SimpleTodo18XXXPurchaseManager", "restoreTransaction"]
+- ["C10SimpleTodo18XXXPurchaseManager", "sharedManager"]
+- ["C10SimpleTodo18XXXPurchaseManager", "startRestore"]
+- ["C10SimpleTodo18XXXPurchaseManager", "startWithProduct"]
+- ["P10SimpleTodo26XXXPurchaseManagerDelegate", "Bool"]
+- ["P10SimpleTodo26XXXPurchaseManagerDelegate", "NSError"]
+- ["P10SimpleTodo26XXXPurchaseManagerDelegate", "SKPaymentTransaction"]
+- ["P10SimpleTodo26XXXPurchaseManagerDelegate", "Void"]
+- ["P10SimpleTodo26XXXPurchaseManagerDelegate", "XXXPurchaseManager"]
+- ["P10SimpleTodo26XXXPurchaseManagerDelegate", "purchaseManager"]
+- ["P10SimpleTodo26XXXPurchaseManagerDelegate", "purchaseManagerDidDeferred"]
+- ["P10SimpleTodo26XXXPurchaseManagerDelegate", "purchaseManagerDidFinishRestore"]
+- !private ["Ps10_ArrayType", "Generator"]
+- !private ["Ps10_ArrayType", "Index"]
+- !private ["Ps10_ArrayType", "SubSequence"]
+- !private ["Ps10_ArrayType", "_Element"]
+- !private ["Ps10_ArrayType", "count"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps24_DestructorSafeContainer", "Generator"]
+- !private ["Ps24_DestructorSafeContainer", "Index"]
+- !private ["Ps24_DestructorSafeContainer", "SubSequence"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "count"]
+- !private ["Ps14_Incrementable", "Distance"]
+- !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps22_IntegerArithmeticType", "Distance"]
+- !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "Distance"]
+- !private ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Distance"]
+- !private ["Ps21_ObjectiveCBridgeable", "Generator"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
+- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "count"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps22_RandomAccessAmbiguity", "Distance"]
+- !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "Distance"]
+- !private ["Ps12_Reflectable", "Generator"]
+- !private ["Ps12_Reflectable", "Index"]
+- !private ["Ps12_Reflectable", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "Key"]
+- ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "Value"]
+- !private ["Ps12_Reflectable", "_Element"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "count"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "rootViewController"]
+- !private ["Ps18_SignedIntegerType", "Distance"]
+- !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "Vs10ArraySlice"
+- !private "Ps22BidirectionalIndexType"
+- !private "Ps21BitwiseOperationsType"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- "Ps11CVarArgType"
+- !private "Vs9Character"
+- !private "Ps14CollectionType"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- !private "Ps28DictionaryLiteralConvertible"
+- !private "Sd"
+- "Ps9Equatable"
+- !private "Ps9ErrorType"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
+- !private "Ps16ForwardIndexType"
+- !private "Ps13GeneratorType"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Vs17IndexingGenerator"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps21IntegerArithmeticType"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps11IntegerType"
+- !private "Ps14MirrorPathType"
+- !private "Ps21MutableCollectionType"
+- !private "Ps16MutableIndexable"
+- !private "Ps16MutableSliceable"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo7NSError"
+- !private "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "Ps21NilLiteralConvertible"
+- "Sq"
+- !private "Ps16OutputStreamType"
+- !private "Ps21RandomAccessIndexType"
+- !private "Ps30RangeReplaceableCollectionType"
+- "Ps16RawRepresentable"
+- !private "CSo16SKMutablePayment"
+- !private "CSo9SKPayment"
+- !private "CSo14SKPaymentQueue"
+- !private "CSo20SKPaymentTransaction"
+- "PSo28SKPaymentTransactionObserver"
+- "OSC25SKPaymentTransactionState"
+- !private "CSo9SKProduct"
+- !private "Ps12SequenceType"
+- !private "Ps17SignedIntegerType"
+- !private "Ps16SignedNumberType"
+- !private "Ps10Streamable"
+- !private "Ps10Strideable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "CSo13UIAlertAction"
+- !private "OSC18UIAlertActionStyle"
+- !private "CSo17UIAlertController"
+- !private "OSC22UIAlertControllerStyle"
+- !private "PSo12UIAppearance"
+- !private "PSo21UIAppearanceContainer"
+- !private "CSo13UIApplication"
+- !private "PSo21UIApplicationDelegate"
+- !private "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo18UIFocusEnvironment"
+- !private "CSo11UIResponder"
+- !private "PSo16UIStateRestoring"
+- !private "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- !private "CSo16UIViewController"
+- !private "CSo8UIWindow"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- "C10SimpleTodo18XXXPurchaseManager"
+- "P10SimpleTodo26XXXPurchaseManagerDelegate"
+- !private "Ps10_ArrayType"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps14_Incrementable"
+- !private "Ps22_IntegerArithmeticType"
+- !private "Ps12_IntegerType"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps22_RandomAccessAmbiguity"
+- "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Firebase/Analytics/Sources/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
+- "./GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
+- "./GoogleMobileAds.framework/Headers/GADAdReward.h"
+- "./GoogleMobileAds.framework/Headers/GADSearchRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
+- "./GoogleMobileAds.framework/Headers/GADDynamicHeightSearchRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeContentAd.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAppInstallAd.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAdNotificationSource.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventParameters.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAd.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAd.h"
+- "./GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
+- "./GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "./GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "./GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "./GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "./GoogleMobileAds.framework/Headers/GADVideoOptions.h"
+- "./GoogleMobileAds.framework/Headers/GADVideoControllerDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADVideoController.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeExpressAdViewDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeExpressAdView.h"
+- "./GoogleMobileAds.framework/Headers/GADMobileAds.h"
+- "./GoogleMobileAds.framework/Headers/GADMediaView.h"
+- "./GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "./GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "./GoogleMobileAds.framework/Headers/GADExtras.h"
+- "./GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADAdLoader.h"
+- "./GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
+- "./GoogleMobileAds.framework/Headers/GADCorrelator.h"
+- "./GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "./GoogleMobileAds.framework/Headers/GADRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADBannerView.h"
+- "./GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "./GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "./GoogleMobileAds.framework/Headers/GADAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
+- "./GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "./GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIROptions.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRConfiguration.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRApp.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsConfiguration.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Firebase/Analytics/Sources/Firebase.h"
+interface-hash: "c4ee081aafe6dfb3da1e66838ea18349"

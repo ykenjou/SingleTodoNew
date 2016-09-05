@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  SimpleTodo
+
+  Created by kenjou yutaka on 2016/09/05.
+  Copyright © 2016年 yutaka kenjo. All rights reserved.
+*/
+
+"firstData" = "下にある＋ボタンを押して項目を追加してください";
+"secondData" = "左下のゴミ箱ボタンでチェック済みの項目を削除できます";
+"thirdData" = "項目の長押しでテキストを編集できます";
+"editTitle" = "編集";
+"copyTitle" = "コピー";
+
+"textDestruction" = "テキスト破棄";
+"textDestConfirm" = "入力済みのテキストを破棄してもいいですか?";
+"allowtextDestruction" = "破棄する";
+"notDestruction" = "破棄しない";
+
+"changeDestruction" = "変更破棄";
+"changeDestConfirm" = "変更したテキストを破棄してもいいですか?";
+
+"purchasedStatus" = "購入済みです";
+"purchaseFinish" = "購入が完了しました";
+"ok" = "OK";
+"purchaseFail" = "購入できませんでした";
+"purcaseDefferd" = "購入の承認待ちです";
+
+"productFail" = "プロダクトを取得できませんでした。";
+
+"purchaseInvalid" = "設定で購入が無効になっています。";
+"purchaseProcessing" = "課金処理中です。";
+"restoreProcessing" = "リストア処理中です。";
+"purchaseInterruption" = "は購入処理が中断されていました。\nこのまま無料でダウンロードできます。";
+"continue" = "続行";

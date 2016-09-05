@@ -1,0 +1,35 @@
+/*
+  Localizable.strings
+  SimpleTodo
+
+  Created by kenjou yutaka on 2016/09/05.
+  Copyright © 2016年 yutaka kenjo. All rights reserved.
+*/
+
+"firstData" = "You push + button in the bottom, and please add an item";
+"secondData" = "You can delete the item which has been checked with a left lower trash box button";
+"thirdData" = "You can edit a text by the push and hold of the item";
+"editTitle" = "edit";
+"copyTitle" = "copy";
+
+"textDestruction" = "Text removal";
+"textDestConfirm" = "May I remove an input text?";
+"allowtextDestruction" = "Remove";
+"notDestruction" = "do not remove";
+
+"changeDestruction" = "Remove a change";
+"changeDestConfirm" = "May I remove the text which You changed?";
+
+"purchasedStatus" = "You have been already purchased";
+"purchaseFinish" = "The purchase is completed";
+"ok" = "OK";
+"purchaseFail" = "Purchase fail...";
+"purcaseDefferd" = "Purcase defferd.";
+
+"productFail" = "I was not able to acquire a product.";
+
+"purchaseInvalid" = "The purchase becomes invalid by setting.";
+"purchaseProcessing" = "It is during accounting.";
+"restoreProcessing" = "It is during re-store processing.";
+"purchaseInterruption" = "purchase processing was stopped.\nYou can download it free as it is.";
+"continue" = "continue";

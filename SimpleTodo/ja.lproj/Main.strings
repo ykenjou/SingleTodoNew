@@ -1,0 +1,96 @@
+
+/* Class = "UILabel"; text = "Font size"; ObjectID = "28D-yf-gKd"; */
+"28D-yf-gKd.text" = "文字サイズ";
+
+/* Class = "UILabel"; text = "・The view area on the list is expanded"; ObjectID = "5EE-fX-Kv3"; */
+"5EE-fX-Kv3.text" = "・リストの表示領域が拡大されます";
+
+/* Class = "UITableViewSection"; footerTitle = " "; ObjectID = "9D3-xZ-DK6"; */
+"9D3-xZ-DK6.footerTitle" = " ";
+
+/* Class = "UITableViewSection"; footerTitle = " "; ObjectID = "EE1-HL-tOJ"; */
+"EE1-HL-tOJ.footerTitle" = " ";
+
+/* Class = "UIButton"; normalTitle = "light gray"; ObjectID = "GEw-Lh-sxz"; */
+"GEw-Lh-sxz.normalTitle" = "light gray";
+
+/* Class = "UILabel"; text = "status"; ObjectID = "Gw9-9m-xRV"; */
+"Gw9-9m-xRV.text" = "status";
+
+/* Class = "UIButton"; normalTitle = "restore the purchase"; ObjectID = "NEt-cu-Ul9"; */
+"NEt-cu-Ul9.normalTitle" = "購入済みの状態を復元する";
+
+/* Class = "UIButton"; normalTitle = "green"; ObjectID = "NRm-dN-iTa"; */
+"NRm-dN-iTa.normalTitle" = "green";
+
+/* Class = "UIButton"; normalTitle = "red"; ObjectID = "NZF-9K-ToH"; */
+"NZF-9K-ToH.normalTitle" = "red";
+
+/* Class = "UIButton"; normalTitle = "dark gray"; ObjectID = "O0k-AO-GZ6"; */
+"O0k-AO-GZ6.normalTitle" = "dark gray";
+
+/* Class = "UILabel"; text = "Upgrade of Application"; ObjectID = "QNq-qO-dcz"; */
+"QNq-qO-dcz.text" = "アプリのアップグレード";
+
+/* Class = "UINavigationItem"; title = "Upgrade App"; ObjectID = "R6Z-Jp-fDT"; */
+"R6Z-Jp-fDT.title" = "アップグレード";
+
+/* Class = "UILabel"; text = "Color"; ObjectID = "RbJ-tr-xNx"; */
+"RbJ-tr-xNx.text" = "カラー";
+
+/* Class = "UIButton"; normalTitle = "blue"; ObjectID = "Rl2-Ua-VW3"; */
+"Rl2-Ua-VW3.normalTitle" = "blue";
+
+/* Class = "UILabel"; text = "Sound"; ObjectID = "Uky-3I-7qg"; */
+"Uky-3I-7qg.text" = "サウンド";
+
+/* Class = "UIButton"; normalTitle = "purple"; ObjectID = "VzX-YC-jsi"; */
+"VzX-YC-jsi.normalTitle" = "purple";
+
+/* Class = "UITableViewSection"; footerTitle = " "; ObjectID = "YVw-ZP-Uv8"; */
+"YVw-ZP-Uv8.footerTitle" = " ";
+
+/* Class = "UITableViewSection"; footerTitle = "　"; ObjectID = "Z7N-lT-Klb"; */
+"Z7N-lT-Klb.footerTitle" = "　";
+
+/* Class = "UILabel"; text = "register plural items at a newline"; ObjectID = "eNv-8q-nKe"; */
+"eNv-8q-nKe.text" = "改行で複数の項目を登録";
+
+/* Class = "UILabel"; text = "Icon badge"; ObjectID = "fhf-9H-aHy"; */
+"fhf-9H-aHy.text" = "アイコンバッヂ";
+
+/* Class = "UILabel"; text = "・Hide advertisement"; ObjectID = "fmf-Uy-o2q"; */
+"fmf-Uy-o2q.text" = "・広告が非表示になります";
+
+/* Class = "UILabel"; text = "16pt"; ObjectID = "h8a-7p-wx3"; */
+"h8a-7p-wx3.text" = "16pt";
+
+/* Class = "UILabel"; text = "When you bought it, you can be restored to the original state from this"; ObjectID = "jjh-Tm-nZh"; */
+"jjh-Tm-nZh.text" = "購入済みの場合、こちらから状態を復元できます";
+
+/* Class = "UILabel"; text = "Feedback (send mail)"; ObjectID = "kqQ-h6-CsQ"; */
+"kqQ-h6-CsQ.text" = "フィードバック (メールを送信)";
+
+/* Class = "UILabel"; text = "copy done"; ObjectID = "mwT-hB-chn"; */
+"mwT-hB-chn.text" = "コピー完了";
+
+/* Class = "UILabel"; text = "Test Upgrade"; ObjectID = "n8b-g6-1Et"; */
+"n8b-g6-1Et.text" = "Test Upgrade";
+
+/* Class = "UILabel"; text = "Upgrade App"; ObjectID = "oWz-kA-RRD"; */
+"oWz-kA-RRD.text" = "アプリのアップグレード";
+
+/* Class = "UINavigationItem"; title = "Setting"; ObjectID = "ogH-dh-Bd4"; */
+"ogH-dh-Bd4.title" = "設定";
+
+/* Class = "UIButton"; normalTitle = "orange"; ObjectID = "ubj-LG-PgT"; */
+"ubj-LG-PgT.normalTitle" = "orange";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "xsb-P1-Kns"; */
+"xsb-P1-Kns.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Font size"; ObjectID = "y9e-Lu-08m"; */
+"y9e-Lu-08m.title" = "文字サイズ";
+
+/* Class = "UINavigationItem"; title = "Color"; ObjectID = "zVh-yw-8Pz"; */
+"zVh-yw-8Pz.title" = "カラー";
