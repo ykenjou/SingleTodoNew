@@ -9,49 +9,51 @@ provides-member:
 - ["C10SimpleTodo18XXXPurchaseManager", ""]
 - ["P10SimpleTodo26XXXPurchaseManagerDelegate", ""]
 provides-dynamic-lookup:
-- "startWithProduct"
+- "paymentQueue"
+- "paymentQueue"
 - "sharedManager"
-- "paymentQueue"
-- "paymentQueue"
-- "purchaseManager"
-- "purchaseManager"
-- "purchaseManager"
-- "purchaseManagerDidDeferred"
-- "purchaseManagerDidFinishRestore"
-- "paymentQueueRestoreCompletedTransactionsFinished"
-- "delegate"
 - "startRestore"
+- "paymentQueueRestoreCompletedTransactionsFinished"
+- "startWithProduct"
+- "delegate"
+- "purchaseManagerDidDeferred"
+- "purchaseManager"
+- "purchaseManager"
+- "purchaseManager"
+- "purchaseManagerDidFinishRestore"
 depends-top-level:
+- !private "UnicodeScalarType"
+- "Bool"
+- "BooleanLiteralType"
+- "SKProduct"
+- !private "NSLocalizedDescriptionKey"
+- !private "+="
+- !private "NSLocalizedString"
+- !private "UIAlertAction"
+- "XXXPurchaseManager"
+- !private "SKMutablePayment"
+- !private "Dictionary"
+- "NSError"
+- !private "+"
+- !private "UIApplication"
 - !private "purchaseManagerSharedManager"
+- !private "UIAlertActionStyle"
+- "Void"
+- !private "StringLiteralType"
+- !private ">"
 - "String"
 - "SKPaymentQueue"
-- "NSError"
-- !private "Dictionary"
-- !private "UIAlertAction"
-- !private "!="
-- !private "UIAlertActionStyle"
-- "NSObject"
-- "SKProduct"
-- "BooleanLiteralType"
-- !private "NSLocalizedDescriptionKey"
-- "XXXPurchaseManager"
-- !private "UIAlertController"
-- !private "UIApplication"
-- !private "=="
-- !private ">"
-- "SKPaymentTransaction"
-- !private "StringLiteralType"
-- "Void"
-- !private "UnicodeScalarType"
-- !private "+="
-- "Bool"
-- "SKPaymentTransactionObserver"
 - "XXXPurchaseManagerDelegate"
-- !private "SKMutablePayment"
-- !private "+"
+- "NSObject"
+- !private "!="
+- "SKPaymentTransactionObserver"
+- "SKPaymentTransaction"
+- !private "UIAlertController"
+- !private "=="
 depends-member:
 - !private ["Ps9AnyObject", "NSError"]
 - !private ["Ps9AnyObject", "NSLocalizedDescriptionKey"]
+- !private ["Ps9AnyObject", "NSLocalizedString"]
 - !private ["Ps9AnyObject", "SKMutablePayment"]
 - !private ["Ps9AnyObject", "SKPaymentQueue"]
 - !private ["Ps9AnyObject", "UIAlertAction"]
@@ -64,7 +66,6 @@ depends-member:
 - ["Ps9AnyObject", "completeTransaction"]
 - !private ["Ps9AnyObject", "defaultQueue"]
 - ["Ps9AnyObject", "deferredTransaction"]
-- !private ["Ps9AnyObject", "deinit"]
 - ["Ps9AnyObject", "delegate"]
 - !private ["Ps9AnyObject", "error"]
 - ["Ps9AnyObject", "failedTransaction"]
@@ -113,6 +114,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "NSError"]
 - !private ["Ps11CVarArgType", "NSLocalizedDescriptionKey"]
+- !private ["Ps11CVarArgType", "NSLocalizedString"]
 - !private ["Ps11CVarArgType", "SKMutablePayment"]
 - !private ["Ps11CVarArgType", "SKPaymentQueue"]
 - !private ["Ps11CVarArgType", "UIAlertAction"]
@@ -165,6 +167,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "NSError"]
 - !private ["Ps28CustomDebugStringConvertible", "NSLocalizedDescriptionKey"]
+- !private ["Ps28CustomDebugStringConvertible", "NSLocalizedString"]
 - !private ["Ps28CustomDebugStringConvertible", "SKMutablePayment"]
 - !private ["Ps28CustomDebugStringConvertible", "SKPaymentQueue"]
 - ["Ps28CustomDebugStringConvertible", "Some"]
@@ -213,6 +216,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Key"]
 - !private ["Ps23CustomStringConvertible", "NSError"]
 - !private ["Ps23CustomStringConvertible", "NSLocalizedDescriptionKey"]
+- !private ["Ps23CustomStringConvertible", "NSLocalizedString"]
 - !private ["Ps23CustomStringConvertible", "SKMutablePayment"]
 - !private ["Ps23CustomStringConvertible", "SKPaymentQueue"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
@@ -267,6 +271,7 @@ depends-member:
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "NSError"]
 - !private ["Ps9Equatable", "NSLocalizedDescriptionKey"]
+- !private ["Ps9Equatable", "NSLocalizedString"]
 - ["Ps9Equatable", "Purchased"]
 - ["Ps9Equatable", "Purchasing"]
 - !private ["Ps9Equatable", "RawValue"]
@@ -322,6 +327,7 @@ depends-member:
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "NSError"]
 - !private ["Ps8Hashable", "NSLocalizedDescriptionKey"]
+- !private ["Ps8Hashable", "NSLocalizedString"]
 - ["Ps8Hashable", "Purchased"]
 - ["Ps8Hashable", "Purchasing"]
 - !private ["Ps8Hashable", "RawValue"]
@@ -417,6 +423,7 @@ depends-member:
 - ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "NSError"]
 - !private ["CSo8NSObject", "NSLocalizedDescriptionKey"]
+- !private ["CSo8NSObject", "NSLocalizedString"]
 - !private ["CSo8NSObject", "SKMutablePayment"]
 - ["CSo8NSObject", "SKPaymentQueue"]
 - ["CSo8NSObject", "SKPaymentTransaction"]
@@ -461,6 +468,7 @@ depends-member:
 - ["CSo8NSObject", ""]
 - !private ["PSo16NSObjectProtocol", "NSError"]
 - !private ["PSo16NSObjectProtocol", "NSLocalizedDescriptionKey"]
+- !private ["PSo16NSObjectProtocol", "NSLocalizedString"]
 - !private ["PSo16NSObjectProtocol", "SKMutablePayment"]
 - !private ["PSo16NSObjectProtocol", "SKPaymentQueue"]
 - !private ["PSo16NSObjectProtocol", "UIAlertAction"]
@@ -534,6 +542,7 @@ depends-member:
 - !private ["CSo20SKPaymentTransaction", "transactionState"]
 - !private ["PSo28SKPaymentTransactionObserver", "NSError"]
 - !private ["PSo28SKPaymentTransactionObserver", "NSLocalizedDescriptionKey"]
+- !private ["PSo28SKPaymentTransactionObserver", "NSLocalizedString"]
 - !private ["PSo28SKPaymentTransactionObserver", "SKMutablePayment"]
 - !private ["PSo28SKPaymentTransactionObserver", "SKPaymentQueue"]
 - !private ["PSo28SKPaymentTransactionObserver", "UIAlertAction"]
@@ -630,6 +639,7 @@ depends-member:
 - ["C10SimpleTodo18XXXPurchaseManager", "Bool"]
 - ["C10SimpleTodo18XXXPurchaseManager", "NSError"]
 - !private ["C10SimpleTodo18XXXPurchaseManager", "NSLocalizedDescriptionKey"]
+- !private ["C10SimpleTodo18XXXPurchaseManager", "NSLocalizedString"]
 - !private ["C10SimpleTodo18XXXPurchaseManager", "SKMutablePayment"]
 - ["C10SimpleTodo18XXXPurchaseManager", "SKPaymentQueue"]
 - ["C10SimpleTodo18XXXPurchaseManager", "SKPaymentTransaction"]

@@ -22,12 +22,6 @@ class AddViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        
         let kbToolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 44))
         kbToolBar.barStyle = UIBarStyle.Default
         //kbToolBar.sizeToFit()
@@ -45,6 +39,13 @@ class AddViewController: UIViewController {
         textView.layer.borderColor = UIColor.lightGrayColor().CGColor
         
         textView.becomeFirstResponder()
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        
         
     }
     

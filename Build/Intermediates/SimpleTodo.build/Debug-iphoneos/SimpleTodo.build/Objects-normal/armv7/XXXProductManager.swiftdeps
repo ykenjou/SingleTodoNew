@@ -6,38 +6,39 @@ provides-nominal:
 provides-member:
 - ["C10SimpleTodo17XXXProductManager", ""]
 provides-dynamic-lookup:
-- "priceStringFromProduct"
-- "productsRequest"
 - "productsWithProductIdentifiers"
-- "requestDidFinish"
 - "request"
+- "productsRequest"
+- "requestDidFinish"
+- "priceStringFromProduct"
 depends-top-level:
-- "String"
+- !private "NSNumberFormatter"
+- "XXXProductManager"
+- !private "NSLocalizedString"
+- "Set"
 - "SKProductsRequestDelegate"
-- "NSError"
-- "SKProductsRequest"
+- "Void"
+- !private "NSLocalizedDescriptionKey"
 - !private "productManagers"
+- "SKRequest"
+- "NSError"
+- !private "StringLiteralType"
+- "SKProductsRequest"
 - "SKProduct"
 - !private "Dictionary"
-- !private "NSNumberFormatter"
-- "Set"
-- "XXXProductManager"
-- "SKRequest"
-- !private "=="
-- !private "StringLiteralType"
 - "NSObject"
-- "Void"
 - "SKProductsResponse"
-- !private "NSLocalizedDescriptionKey"
+- "String"
+- !private "=="
 depends-member:
 - !private ["Ps9AnyObject", "NSError"]
 - !private ["Ps9AnyObject", "NSLocalizedDescriptionKey"]
+- !private ["Ps9AnyObject", "NSLocalizedString"]
 - !private ["Ps9AnyObject", "NSNumberFormatter"]
 - !private ["Ps9AnyObject", "SKProductsRequest"]
 - !private ["Ps9AnyObject", "Set"]
 - !private ["Ps9AnyObject", "XXXProductManager"]
 - ["Ps9AnyObject", "completionForProductidentifiers"]
-- !private ["Ps9AnyObject", "deinit"]
 - !private ["Ps9AnyObject", "delegate"]
 - !private ["Ps9AnyObject", "formatterBehavior"]
 - ["Ps9AnyObject", "init"]
@@ -81,6 +82,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "NSError"]
 - !private ["Ps11CVarArgType", "NSLocalizedDescriptionKey"]
+- !private ["Ps11CVarArgType", "NSLocalizedString"]
 - !private ["Ps11CVarArgType", "NSNumberFormatter"]
 - !private ["Ps11CVarArgType", "SKProductsRequest"]
 - !private ["Ps11CVarArgType", "Set"]
@@ -120,6 +122,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "NSError"]
 - !private ["Ps28CustomDebugStringConvertible", "NSLocalizedDescriptionKey"]
+- !private ["Ps28CustomDebugStringConvertible", "NSLocalizedString"]
 - !private ["Ps28CustomDebugStringConvertible", "NSNumberFormatter"]
 - !private ["Ps28CustomDebugStringConvertible", "SKProductsRequest"]
 - !private ["Ps28CustomDebugStringConvertible", "Set"]
@@ -155,6 +158,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Key"]
 - !private ["Ps23CustomStringConvertible", "NSError"]
 - !private ["Ps23CustomStringConvertible", "NSLocalizedDescriptionKey"]
+- !private ["Ps23CustomStringConvertible", "NSLocalizedString"]
 - !private ["Ps23CustomStringConvertible", "NSNumberFormatter"]
 - !private ["Ps23CustomStringConvertible", "SKProductsRequest"]
 - !private ["Ps23CustomStringConvertible", "Set"]
@@ -194,6 +198,7 @@ depends-member:
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "NSError"]
 - !private ["Ps9Equatable", "NSLocalizedDescriptionKey"]
+- !private ["Ps9Equatable", "NSLocalizedString"]
 - !private ["Ps9Equatable", "NSNumberFormatter"]
 - !private ["Ps9Equatable", "SKProductsRequest"]
 - !private ["Ps9Equatable", "Set"]
@@ -229,6 +234,7 @@ depends-member:
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "NSError"]
 - !private ["Ps8Hashable", "NSLocalizedDescriptionKey"]
+- !private ["Ps8Hashable", "NSLocalizedString"]
 - !private ["Ps8Hashable", "NSNumberFormatter"]
 - !private ["Ps8Hashable", "SKProductsRequest"]
 - !private ["Ps8Hashable", "Set"]
@@ -316,6 +322,7 @@ depends-member:
 - !private ["OSC22NSNumberFormatterStyle", "CurrencyStyle"]
 - ["CSo8NSObject", "NSError"]
 - !private ["CSo8NSObject", "NSLocalizedDescriptionKey"]
+- !private ["CSo8NSObject", "NSLocalizedString"]
 - !private ["CSo8NSObject", "NSNumberFormatter"]
 - ["CSo8NSObject", "SKProduct"]
 - ["CSo8NSObject", "SKProductsRequest"]
@@ -345,6 +352,7 @@ depends-member:
 - ["CSo8NSObject", ""]
 - !private ["PSo16NSObjectProtocol", "NSError"]
 - !private ["PSo16NSObjectProtocol", "NSLocalizedDescriptionKey"]
+- !private ["PSo16NSObjectProtocol", "NSLocalizedString"]
 - !private ["PSo16NSObjectProtocol", "NSNumberFormatter"]
 - !private ["PSo16NSObjectProtocol", "SKProductsRequest"]
 - !private ["PSo16NSObjectProtocol", "Set"]
@@ -385,6 +393,7 @@ depends-member:
 - !private ["CSo17SKProductsRequest", "start"]
 - !private ["PSo25SKProductsRequestDelegate", "NSError"]
 - !private ["PSo25SKProductsRequestDelegate", "NSLocalizedDescriptionKey"]
+- !private ["PSo25SKProductsRequestDelegate", "NSLocalizedString"]
 - !private ["PSo25SKProductsRequestDelegate", "NSNumberFormatter"]
 - !private ["PSo25SKProductsRequestDelegate", "SKProductsRequest"]
 - !private ["PSo25SKProductsRequestDelegate", "Set"]
@@ -402,6 +411,7 @@ depends-member:
 - !private ["CSo9SKRequest", "start"]
 - !private ["PSo17SKRequestDelegate", "NSError"]
 - !private ["PSo17SKRequestDelegate", "NSLocalizedDescriptionKey"]
+- !private ["PSo17SKRequestDelegate", "NSLocalizedString"]
 - !private ["PSo17SKRequestDelegate", "NSNumberFormatter"]
 - !private ["PSo17SKRequestDelegate", "SKProductsRequest"]
 - !private ["PSo17SKRequestDelegate", "Set"]
@@ -436,6 +446,7 @@ depends-member:
 - !private ["SS", "deinit"]
 - ["C10SimpleTodo17XXXProductManager", "NSError"]
 - !private ["C10SimpleTodo17XXXProductManager", "NSLocalizedDescriptionKey"]
+- !private ["C10SimpleTodo17XXXProductManager", "NSLocalizedString"]
 - !private ["C10SimpleTodo17XXXProductManager", "NSNumberFormatter"]
 - ["C10SimpleTodo17XXXProductManager", "SKProduct"]
 - ["C10SimpleTodo17XXXProductManager", "SKProductsRequest"]

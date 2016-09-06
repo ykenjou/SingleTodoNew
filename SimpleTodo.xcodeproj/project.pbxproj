@@ -607,7 +607,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "48047694-e6ca-4bc3-8af4-18f6c48b1886";
+				PROVISIONING_PROFILE = "d5325a10-5e62-46f6-8d2a-cd33854e9759";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -633,9 +633,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: YUTAKA KENJO (QTS9VPEC4Z)";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -648,7 +648,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "48047694-e6ca-4bc3-8af4-18f6c48b1886";
+				PROVISIONING_PROFILE = "d5325a10-5e62-46f6-8d2a-cd33854e9759";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -675,7 +675,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kdevelop.SingleTodoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "d5325a10-5e62-46f6-8d2a-cd33854e9759";
 			};
 			name = Debug;
 		};
@@ -685,7 +685,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: YUTAKA KENJO (QTS9VPEC4Z)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -699,7 +699,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kdevelop.SingleTodoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "d5325a10-5e62-46f6-8d2a-cd33854e9759";
 			};
 			name = Release;
 		};
@@ -759,7 +759,7 @@
 				F2FFBDD71D6498F900D73796 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		F2FFBDD81D6498F900D73796 /* Build configuration list for PBXNativeTarget "SimpleTodo" */ = {
 			isa = XCConfigurationList;
@@ -768,7 +768,7 @@
 				F2FFBDDA1D6498F900D73796 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		F2FFBDDB1D6498F900D73796 /* Build configuration list for PBXNativeTarget "SimpleTodoTests" */ = {
 			isa = XCConfigurationList;
@@ -777,7 +777,7 @@
 				F2FFBDDD1D6498F900D73796 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		F2FFBDDE1D6498F900D73796 /* Build configuration list for PBXNativeTarget "SimpleTodoUITests" */ = {
 			isa = XCConfigurationList;
@@ -786,7 +786,7 @@
 				F2FFBDE01D6498F900D73796 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

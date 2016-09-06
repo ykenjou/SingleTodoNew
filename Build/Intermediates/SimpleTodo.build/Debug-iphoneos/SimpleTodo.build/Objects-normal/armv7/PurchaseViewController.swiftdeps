@@ -6,53 +6,55 @@ provides-nominal:
 provides-member:
 - ["C10SimpleTodo22PurchaseViewController", ""]
 provides-dynamic-lookup:
-- "startRestore"
-- "purchaseButton"
-- "userDefaults"
-- "statusLabel"
-- "startPurchase"
-- "purchaseManagerDidDeferred"
-- "buttonActivityView"
+- "purchaseManager"
+- "purchaseManager"
+- "purchaseManager"
 - "didReceiveMemoryWarning"
-- "purchaseActivityView"
-- "pushPurchaseButton"
 - "restoreButton"
-- "purchaseManager"
-- "purchaseManager"
-- "purchaseManager"
+- "purchaseActivityView"
 - "viewDidLoad"
-- "purchaseManagerDidFinishRestore"
+- "startRestore"
+- "startPurchase"
+- "buttonActivityView"
+- "purchaseManagerDidDeferred"
+- "statusLabel"
+- "purchaseButton"
 - "pushRestoreButton"
 - "buttonStatusChange"
+- "purchaseManagerDidFinishRestore"
+- "userDefaults"
+- "pushPurchaseButton"
 depends-top-level:
-- "UILabel"
-- "NSUserDefaults"
+- "UIViewController"
 - !private "/"
-- !private "UIAlertAction"
-- !private "Array"
-- !private "XXXProductManager"
-- "XXXPurchaseManagerDelegate"
-- !private ">"
 - !private "SKProduct"
-- "XXXPurchaseManager"
-- "NSError"
-- !private "UIActivityIndicatorViewStyle"
-- !private "BooleanLiteralType"
-- "UIButton"
+- !private "NSLocalizedString"
 - !private "UIColor"
+- !private "UIActivityIndicatorViewStyle"
 - "PurchaseViewController"
-- !private "CGPointMake"
-- "Void"
+- "NSError"
 - !private "UIAlertController"
 - "UIActivityIndicatorView"
-- "UIViewController"
-- "Bool"
-- !private "StringLiteralType"
+- "XXXPurchaseManager"
+- !private "BooleanLiteralType"
 - "SKPaymentTransaction"
+- "Bool"
+- !private "CGPointMake"
+- !private ">"
+- "Void"
+- "UIButton"
 - "String"
+- "NSUserDefaults"
+- !private "StringLiteralType"
+- !private "Array"
+- "XXXPurchaseManagerDelegate"
+- "UILabel"
+- !private "UIAlertAction"
+- !private "XXXProductManager"
 depends-member:
 - !private ["Ps9AnyObject", "CGColor"]
 - !private ["Ps9AnyObject", "CGPointMake"]
+- !private ["Ps9AnyObject", "NSLocalizedString"]
 - ["Ps9AnyObject", "NSUserDefaults"]
 - !private ["Ps9AnyObject", "UIActivityIndicatorView"]
 - !private ["Ps9AnyObject", "UIActivityIndicatorViewStyle"]
@@ -148,6 +150,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "CGPointMake"]
 - !private ["Ps11CVarArgType", "Distance"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "NSLocalizedString"]
 - ["Ps11CVarArgType", "NSUserDefaults"]
 - !private ["Ps11CVarArgType", "UIActivityIndicatorView"]
 - !private ["Ps11CVarArgType", "UIActivityIndicatorViewStyle"]
@@ -217,6 +220,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "Generator"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "NSLocalizedString"]
 - ["Ps28CustomDebugStringConvertible", "NSUserDefaults"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UIActivityIndicatorView"]
@@ -283,6 +287,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Generator"]
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "NSLocalizedString"]
 - ["Ps23CustomStringConvertible", "NSUserDefaults"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "UIActivityIndicatorView"]
@@ -351,6 +356,7 @@ depends-member:
 - !private ["Ps9Equatable", "Gray"]
 - !private ["Ps9Equatable", "Highlighted"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "NSLocalizedString"]
 - ["Ps9Equatable", "NSUserDefaults"]
 - !private ["Ps9Equatable", "Normal"]
 - !private ["Ps9Equatable", "UIActivityIndicatorView"]
@@ -422,6 +428,7 @@ depends-member:
 - !private ["Ps8Hashable", "Distance"]
 - !private ["Ps8Hashable", "Gray"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "NSLocalizedString"]
 - ["Ps8Hashable", "NSUserDefaults"]
 - !private ["Ps8Hashable", "UIActivityIndicatorView"]
 - !private ["Ps8Hashable", "UIActivityIndicatorViewStyle"]
@@ -521,6 +528,7 @@ depends-member:
 - !private ["Ps16MutableSliceable", "subscript"]
 - !private ["PSo8NSCoding", "CGColor"]
 - !private ["PSo8NSCoding", "CGPointMake"]
+- !private ["PSo8NSCoding", "NSLocalizedString"]
 - ["PSo8NSCoding", "NSUserDefaults"]
 - !private ["PSo8NSCoding", "UIActivityIndicatorView"]
 - !private ["PSo8NSCoding", "UIActivityIndicatorViewStyle"]
@@ -574,6 +582,7 @@ depends-member:
 - !private ["PSo9NSCopying", "redColor"]
 - !private ["CSo7NSError", "localizedDescription"]
 - !private ["PSo26NSExtensionRequestHandling", "CGPointMake"]
+- !private ["PSo26NSExtensionRequestHandling", "NSLocalizedString"]
 - ["PSo26NSExtensionRequestHandling", "NSUserDefaults"]
 - !private ["PSo26NSExtensionRequestHandling", "UIActivityIndicatorView"]
 - !private ["PSo26NSExtensionRequestHandling", "UIActivityIndicatorViewStyle"]
@@ -607,6 +616,7 @@ depends-member:
 - !private ["CSo8NSObject", "CGColor"]
 - !private ["CSo8NSObject", "CGPointMake"]
 - ["CSo8NSObject", "NSError"]
+- !private ["CSo8NSObject", "NSLocalizedString"]
 - ["CSo8NSObject", "NSUserDefaults"]
 - ["CSo8NSObject", "SKPaymentTransaction"]
 - !private ["CSo8NSObject", "SKProduct"]
@@ -669,6 +679,7 @@ depends-member:
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "CGColor"]
 - !private ["PSo16NSObjectProtocol", "CGPointMake"]
+- !private ["PSo16NSObjectProtocol", "NSLocalizedString"]
 - ["PSo16NSObjectProtocol", "NSUserDefaults"]
 - !private ["PSo16NSObjectProtocol", "UIActivityIndicatorView"]
 - !private ["PSo16NSObjectProtocol", "UIActivityIndicatorViewStyle"]
@@ -737,6 +748,7 @@ depends-member:
 - ["C10SimpleTodo22PurchaseViewController", "Bool"]
 - !private ["C10SimpleTodo22PurchaseViewController", "CGPointMake"]
 - ["C10SimpleTodo22PurchaseViewController", "NSError"]
+- !private ["C10SimpleTodo22PurchaseViewController", "NSLocalizedString"]
 - ["C10SimpleTodo22PurchaseViewController", "NSUserDefaults"]
 - ["C10SimpleTodo22PurchaseViewController", "SKPaymentTransaction"]
 - !private ["C10SimpleTodo22PurchaseViewController", "SKProduct"]
@@ -853,6 +865,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "stopAnimating"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo21UIAppearanceContainer", "CGPointMake"]
+- !private ["PSo21UIAppearanceContainer", "NSLocalizedString"]
 - ["PSo21UIAppearanceContainer", "NSUserDefaults"]
 - !private ["PSo21UIAppearanceContainer", "UIActivityIndicatorView"]
 - !private ["PSo21UIAppearanceContainer", "UIActivityIndicatorViewStyle"]
@@ -905,6 +918,7 @@ depends-member:
 - !private ["CSo7UIColor", "CGColor"]
 - !private ["CSo7UIColor", "redColor"]
 - !private ["PSo18UIContentContainer", "CGPointMake"]
+- !private ["PSo18UIContentContainer", "NSLocalizedString"]
 - ["PSo18UIContentContainer", "NSUserDefaults"]
 - !private ["PSo18UIContentContainer", "UIActivityIndicatorView"]
 - !private ["PSo18UIContentContainer", "UIActivityIndicatorViewStyle"]
@@ -972,6 +986,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "stopAnimating"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo18UIFocusEnvironment", "CGPointMake"]
+- !private ["PSo18UIFocusEnvironment", "NSLocalizedString"]
 - ["PSo18UIFocusEnvironment", "NSUserDefaults"]
 - !private ["PSo18UIFocusEnvironment", "UIActivityIndicatorView"]
 - !private ["PSo18UIFocusEnvironment", "UIActivityIndicatorViewStyle"]
@@ -1018,6 +1033,7 @@ depends-member:
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "CGPointMake"]
 - ["CSo11UIResponder", "NSError"]
+- !private ["CSo11UIResponder", "NSLocalizedString"]
 - ["CSo11UIResponder", "NSUserDefaults"]
 - ["CSo11UIResponder", "SKPaymentTransaction"]
 - !private ["CSo11UIResponder", "SKProduct"]
@@ -1066,6 +1082,7 @@ depends-member:
 - !private ["CSo11UIResponder", "view"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo16UIStateRestoring", "CGPointMake"]
+- !private ["PSo16UIStateRestoring", "NSLocalizedString"]
 - ["PSo16UIStateRestoring", "NSUserDefaults"]
 - !private ["PSo16UIStateRestoring", "UIActivityIndicatorView"]
 - !private ["PSo16UIStateRestoring", "UIActivityIndicatorViewStyle"]
@@ -1096,6 +1113,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["PSo18UITraitEnvironment", "CGPointMake"]
+- !private ["PSo18UITraitEnvironment", "NSLocalizedString"]
 - ["PSo18UITraitEnvironment", "NSUserDefaults"]
 - !private ["PSo18UITraitEnvironment", "UIActivityIndicatorView"]
 - !private ["PSo18UITraitEnvironment", "UIActivityIndicatorViewStyle"]
@@ -1155,6 +1173,7 @@ depends-member:
 - ["CSo16UIViewController", "Bool"]
 - !private ["CSo16UIViewController", "CGPointMake"]
 - ["CSo16UIViewController", "NSError"]
+- !private ["CSo16UIViewController", "NSLocalizedString"]
 - ["CSo16UIViewController", "NSUserDefaults"]
 - ["CSo16UIViewController", "SKPaymentTransaction"]
 - !private ["CSo16UIViewController", "SKProduct"]
@@ -1197,6 +1216,7 @@ depends-member:
 - !private ["C10SimpleTodo18XXXPurchaseManager", "startRestore"]
 - !private ["C10SimpleTodo18XXXPurchaseManager", "startWithProduct"]
 - !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "CGPointMake"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "NSLocalizedString"]
 - ["P10SimpleTodo26XXXPurchaseManagerDelegate", "NSUserDefaults"]
 - !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "UIActivityIndicatorView"]
 - !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "UIActivityIndicatorViewStyle"]

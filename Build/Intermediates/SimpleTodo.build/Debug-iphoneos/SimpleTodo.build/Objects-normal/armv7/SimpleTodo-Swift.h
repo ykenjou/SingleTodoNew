@@ -280,6 +280,7 @@ SWIFT_CLASS("_TtC10SimpleTodo18MainViewController")
 @property (nonatomic, readonly, strong) GadController * _Nonnull gadController;
 @property (nonatomic, strong) GADBannerView * _Nullable bannerView;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified btmToolBarConstraint;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified tableBtmConstraint;
 @property (nonatomic, strong) NSFetchedResultsController * _Nonnull fetchedResultsController;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;

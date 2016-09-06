@@ -26,6 +26,7 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
     
     @IBOutlet weak var btmToolBarConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var tableBtmConstraint: NSLayoutConstraint!
     
     lazy var fetchedResultsController: NSFetchedResultsController = {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
@@ -106,21 +107,22 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
         setNaviToolbarColor()
         tableView.reloadData()
         
-        bannerView!.frame.origin = CGPointMake(0, self.view.frame.height - 50)
+        bannerView!.frame.origin = CGPointMake(0, self.view.frame.height - 94)
         
         
         if userDefaults.boolForKey("upgrade") {
             
             bannerView!.removeFromSuperview()
             
-            btmToolBarConstraint.constant = 0
+            //btmToolBarConstraint.constant = 0
+            tableBtmConstraint.constant = 1
             
         } else {
             
             self.view.addSubview(bannerView!)
             
-            btmToolBarConstraint.constant = 50
-            
+            //btmToolBarConstraint.constant = 50
+            tableBtmConstraint.constant = 50
         }
     }
     
