@@ -79,7 +79,6 @@
 		F222563F1D68BC0D001E463B /* setting_78@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting_78@3x.png"; sourceTree = "<group>"; };
 		F23177A81D6A878D001AEFD6 /* GadController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GadController.swift; sourceTree = "<group>"; };
 		F23177AC1D6AF8CD001AEFD6 /* FontSizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontSizeViewController.swift; sourceTree = "<group>"; };
-		F248D71E1D7D287400355D8B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		F248D71F1D7D287400355D8B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		F248D7241D7D28F200355D8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F248D7261D7D28F300355D8B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -100,6 +99,7 @@
 		F297D4EB1D653E1B00093327 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		F2AF8A341D72DA6D00699C41 /* PurchaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
 		F2C80F271D76C48000CE404B /* XXXProductManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XXXProductManager.swift; sourceTree = "<group>"; };
+		F2CD6FE31D81C17F00F99C80 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		F2E6BE9C1D71DE7D008EA404 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
 		F2FFBDAD1D6498F900D73796 /* SimpleTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2FFBDB01D6498F900D73796 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -549,7 +549,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				F2FFBDB51D6498F900D73796 /* Base */,
-				F248D71E1D7D287400355D8B /* ja */,
+				F2CD6FE31D81C17F00F99C80 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
