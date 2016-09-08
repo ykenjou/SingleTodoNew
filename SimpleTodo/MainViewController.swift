@@ -369,6 +369,9 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
             let activityVC = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
             
             self.presentViewController(activityVC, animated: true, completion: nil)
+            //for iPad
+            activityVC.popoverPresentationController?.sourceRect = CGRectMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds),0,0)
+            activityVC.popoverPresentationController?.sourceView = self.view
             
         }
         shareAction.backgroundColor = UIColor.orangeColor()
