@@ -140,8 +140,15 @@ class SettingViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let feedbackCell = NSIndexPath(forRow: 0, inSection: 3)
+        let reviewCell = NSIndexPath(forRow: 1, inSection: 3)
+        let itunesURL:String = "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=1148391383"
+
         if indexPath == feedbackCell {
             UIApplication.sharedApplication().openURL(NSURL(string: "mailto:kenjou@k-develop.com")!)
+        }
+        
+        if indexPath == reviewCell {
+            UIApplication.sharedApplication().openURL(NSURL(string: itunesURL)!)
         }
     }
 

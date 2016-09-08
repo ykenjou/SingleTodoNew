@@ -9,8 +9,10 @@
 "firstData" = "下にある＋ボタンを押して項目を追加してください";
 "secondData" = "左下のゴミ箱ボタンでチェック済みの項目を削除できます";
 "thirdData" = "項目の長押しでテキストを編集できます";
+"fourthData" = "右からのスワイプで「コピー」や「共有」のボタンが表示されます";
 "editTitle" = "編集";
 "copyTitle" = "コピー";
+"shareTitle" = "共有";
 
 "textDestruction" = "テキスト破棄";
 "textDestConfirm" = "入力済みのテキストを破棄してもいいですか?";

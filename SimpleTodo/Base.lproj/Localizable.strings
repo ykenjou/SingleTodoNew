@@ -9,8 +9,10 @@
 "firstData" = "You push + button in the bottom, and please add an item";
 "secondData" = "You can delete the item which has been checked with a left lower trash box button";
 "thirdData" = "You can edit a text by the push and hold of the item";
+"fourthData" = "Button of the 'copy' and 'share' will be displayed in a swipe from the right";
 "editTitle" = "edit";
 "copyTitle" = "copy";
+"shareTitle" = "share";
 
 "textDestruction" = "Text removal";
 "textDestConfirm" = "May I remove an input text?";

@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 import AudioToolbox
 import GoogleMobileAds
+import Accounts
 
 class MainViewController:  UIViewController , UITableViewDataSource , UITableViewDelegate , NSFetchedResultsControllerDelegate , UIGestureRecognizerDelegate ,UINavigationControllerDelegate , GADBannerViewDelegate{
     
@@ -89,9 +90,11 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
             let firstData:String = NSLocalizedString("firstData", comment: "1番目のデータ")
             let secondData:String = NSLocalizedString("secondData", comment: "2番目のデータ")
             let thirdData:String = NSLocalizedString("thirdData", comment: "3番目のデータ")
+            let fourthData:String = NSLocalizedString("fourthData", comment: "4番目のデータ")
             setFirstItemData(firstData, checked: 0)
             setFirstItemData(secondData, checked: 1)
             setFirstItemData(thirdData, checked: 0)
+            setFirstItemData(fourthData, checked: 0)
             userDefaults.setBool(false, forKey: "firstLaunch")
         }
         
@@ -356,7 +359,22 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
         }
         copyAction.backgroundColor = UIColor.grayColor()
         
-        return [editAction,copyAction]
+        let shareTitle:String = NSLocalizedString("shareTitle", comment: "shareタイトル")
+        let shareAction = UITableViewRowAction(style: .Normal,title: shareTitle){(action, indexPath) in
+            let cell = tableView.cellForRowAtIndexPath(indexPath)
+            let label : UILabel? = cell!.contentView.viewWithTag(1) as? UILabel
+            
+            let shareText = label?.text as! AnyObject
+            let activityItems = [shareText]
+            let activityVC = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
+            
+            self.presentViewController(activityVC, animated: true, completion: nil)
+            
+        }
+        shareAction.backgroundColor = UIColor.orangeColor()
+        
+        
+        return [editAction,copyAction,shareAction]
     }
     
     //追加・削除スタイル制御
