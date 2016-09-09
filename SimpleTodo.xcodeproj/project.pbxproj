@@ -85,6 +85,10 @@
 		F248D72A1D7D732900355D8B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F248D72C1D7D732D00355D8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F279FE421D6C81E800306CFA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F27C7CD01D82AA8900DCE13D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		F27C7CD11D82AA8900DCE13D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		F27C7CD21D82AA8900DCE13D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F27C7CD31D82AA8900DCE13D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F28BE5161D696021009DB92E /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		F28BE5301D6A07E5009DB92E /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		F28BE5321D6A07ED009DB92E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -376,6 +380,7 @@
 				en,
 				Base,
 				ja,
+				es,
 			);
 			mainGroup = F2FFBDA41D6498F800D73796;
 			productRefGroup = F2FFBDAE1D6498F900D73796 /* Products */;
@@ -532,6 +537,7 @@
 			children = (
 				F248D7241D7D28F200355D8B /* Base */,
 				F248D7261D7D28F300355D8B /* ja */,
+				F27C7CD21D82AA8900DCE13D /* es */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -541,6 +547,7 @@
 			children = (
 				F248D72A1D7D732900355D8B /* ja */,
 				F248D72C1D7D732D00355D8B /* Base */,
+				F27C7CD31D82AA8900DCE13D /* es */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -550,6 +557,7 @@
 			children = (
 				F2FFBDB51D6498F900D73796 /* Base */,
 				F2CD6FE31D81C17F00F99C80 /* ja */,
+				F27C7CD01D82AA8900DCE13D /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -559,6 +567,7 @@
 			children = (
 				F2FFBDBD1D6498F900D73796 /* Base */,
 				F248D71F1D7D287400355D8B /* ja */,
+				F27C7CD11D82AA8900DCE13D /* es */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
