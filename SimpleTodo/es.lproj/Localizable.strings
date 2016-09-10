@@ -35,3 +35,6 @@
 "restoreProcessing" = "Está durante el proceso de la re-tienda.";
 "purchaseInterruption" = "El proceso de la compra fue detenido.\nPuedo transmitirlo libre como él es.";
 "continue" = "La continuación";
+
+"appName" = "Sola lista de tareas";
+"appUrl" = "https://itunes.apple.com/us/app/id1148391383";

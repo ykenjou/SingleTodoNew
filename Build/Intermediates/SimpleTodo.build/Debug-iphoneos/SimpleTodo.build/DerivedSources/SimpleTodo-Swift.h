@@ -347,6 +347,7 @@ SWIFT_CLASS("_TtC10SimpleTodo21SettingViewController")
 @property (nonatomic, strong) UIViewController * _Nullable mainViewController;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (IBAction)adChange:(UISwitch * _Nonnull)sender;
 - (IBAction)soundChange:(UISwitch * _Nonnull)sender;

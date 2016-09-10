@@ -11,9 +11,9 @@ provides-dynamic-lookup:
 - "displayOrder"
 - "text"
 depends-top-level:
-- "Item"
 - "NSNumber"
 - "String"
+- "Item"
 depends-member:
 - ["Ps9AnyObject", "checked"]
 - ["Ps9AnyObject", "displayOrder"]

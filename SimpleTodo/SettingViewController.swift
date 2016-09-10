@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Accounts
 
 class SettingViewController: UITableViewController {
     
@@ -67,6 +68,16 @@ class SettingViewController: UITableViewController {
         
         let fontSizeSubText = String(userDefaults.integerForKey("fontSize")) + "pt"
         fontSizeSubLabel.text = fontSizeSubText
+        
+        if (self.tableView.indexPathForSelectedRow != nil) {
+            self.tableView.deselectRowAtIndexPath(tableView.indexPathForSelectedRow!, animated: true)
+        }
+
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        tableView.flashScrollIndicators()
     }
 
     override func didReceiveMemoryWarning() {
@@ -124,7 +135,7 @@ class SettingViewController: UITableViewController {
         let cell = super.tableView(tableView, cellForRowAtIndexPath: indexPath)
 
         // Configure the cell...
-        cell.selectionStyle = UITableViewCellSelectionStyle.None
+        cell.selectionStyle = UITableViewCellSelectionStyle.Gray
 
         return cell
     }
@@ -140,15 +151,33 @@ class SettingViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let feedbackCell = NSIndexPath(forRow: 0, inSection: 3)
-        let reviewCell = NSIndexPath(forRow: 1, inSection: 3)
-        let itunesURL:String = "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=1148391383"
-
+        
         if indexPath == feedbackCell {
             UIApplication.sharedApplication().openURL(NSURL(string: "mailto:kenjou@k-develop.com")!)
         }
         
+        let reviewCell = NSIndexPath(forRow: 1, inSection: 3)
+        let itunesURL:String = "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=1148391383"
+        
         if indexPath == reviewCell {
             UIApplication.sharedApplication().openURL(NSURL(string: itunesURL)!)
+        }
+        
+        let introduceCell = NSIndexPath(forRow: 2, inSection: 3)
+        
+        if indexPath == introduceCell {
+            let appName:String = NSLocalizedString("appName", comment: "アプリタイトル")
+            let appUrl:String = NSLocalizedString("appUrl", comment: "アプリURL")
+
+            let shareText = appName + " " + appUrl
+            let activityItems = [shareText]
+            let activityVC = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
+            
+            self.presentViewController(activityVC, animated: true, completion: nil)
+            //for iPad
+            activityVC.popoverPresentationController?.sourceRect = CGRectMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds),0,0)
+            activityVC.popoverPresentationController?.sourceView = self.view
+
         }
     }
 

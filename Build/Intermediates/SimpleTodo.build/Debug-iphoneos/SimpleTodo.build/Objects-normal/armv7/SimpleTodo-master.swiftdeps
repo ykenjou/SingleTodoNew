@@ -1,9 +1,9 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
 options: "377e4c3fdd7218e32a17ca3218db2f90"
-build_time: [526698032, 263964000]
+build_time: [526788810, 684951000]
 inputs:
   "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/PurchaseViewController.swift": [526368071, 0]
-  "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/ColorViewController.swift": [526259890, 0]
+  "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/ColorViewController.swift": [526707919, 0]
   "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/FontSizeViewController.swift": [526259890, 0]
   "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/XXXPurchaseManager.swift": [526368682, 0]
   "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/XXXProductManager.swift": [526368193, 0]

@@ -35,3 +35,6 @@
 "restoreProcessing" = "It is during re-store processing.";
 "purchaseInterruption" = "purchase processing was stopped.\nYou can download it free as it is.";
 "continue" = "continue";
+
+"appName" = "Single Todo List";
+"appUrl" = "https://itunes.apple.com/us/app/id1148391383";

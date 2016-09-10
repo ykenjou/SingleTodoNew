@@ -8,7 +8,7 @@
 /* Class = "UITableViewSection"; footerTitle = " "; ObjectID = "9D3-xZ-DK6"; */
 "9D3-xZ-DK6.footerTitle" = " ";
 
-/* Class = "UILabel"; text = "Review App (App Store)"; ObjectID = "A80-FS-cN2"; */
+/* Class = "UILabel"; text = "アプリをレビューする (App Store)"; ObjectID = "A80-FS-cN2"; */
 "A80-FS-cN2.text" = "アプリをレビューする (App Store)";
 
 /* Class = "UITableViewSection"; footerTitle = " "; ObjectID = "EE1-HL-tOJ"; */
@@ -94,6 +94,9 @@
 
 /* Class = "UINavigationItem"; title = "文字サイズ"; ObjectID = "y9e-Lu-08m"; */
 "y9e-Lu-08m.title" = "文字サイズ";
+
+/* Class = "UILabel"; text = "Introduce this App"; ObjectID = "yp3-72-Km9"; */
+"yp3-72-Km9.text" = "このアプリを紹介する";
 
 /* Class = "UINavigationItem"; title = "カラー"; ObjectID = "zVh-yw-8Pz"; */
 "zVh-yw-8Pz.title" = "カラー";

@@ -1,53 +1,53 @@
 
-/* Class = "UILabel"; text = "Font size"; ObjectID = "28D-yf-gKd"; */
+/* Class = "UILabel"; text = "Tamaño de la carta"; ObjectID = "28D-yf-gKd"; */
 "28D-yf-gKd.text" = "Tamaño de la carta";
 
-/* Class = "UILabel"; text = "・The view area on the list is expanded"; ObjectID = "5EE-fX-Kv3"; */
+/* Class = "UILabel"; text = "・El área de vista en la lista se agranda"; ObjectID = "5EE-fX-Kv3"; */
 "5EE-fX-Kv3.text" = "・El área de vista en la lista se agranda";
 
 /* Class = "UITableViewSection"; footerTitle = " "; ObjectID = "9D3-xZ-DK6"; */
 "9D3-xZ-DK6.footerTitle" = " ";
 
-/* Class = "UILabel"; text = "Review App (App Store)"; ObjectID = "A80-FS-cN2"; */
+/* Class = "UILabel"; text = "Repaso la aplicación"; ObjectID = "A80-FS-cN2"; */
 "A80-FS-cN2.text" = "Repaso la aplicación";
 
 /* Class = "UITableViewSection"; footerTitle = " "; ObjectID = "EE1-HL-tOJ"; */
 "EE1-HL-tOJ.footerTitle" = " ";
 
-/* Class = "UIButton"; normalTitle = "light gray"; ObjectID = "GEw-Lh-sxz"; */
+/* Class = "UIButton"; normalTitle = "gris ligero"; ObjectID = "GEw-Lh-sxz"; */
 "GEw-Lh-sxz.normalTitle" = "gris ligero";
 
 /* Class = "UILabel"; text = "status"; ObjectID = "Gw9-9m-xRV"; */
 "Gw9-9m-xRV.text" = "status";
 
-/* Class = "UIButton"; normalTitle = "restore the purchase"; ObjectID = "NEt-cu-Ul9"; */
+/* Class = "UIButton"; normalTitle = "Restauro el estado que lo compró"; ObjectID = "NEt-cu-Ul9"; */
 "NEt-cu-Ul9.normalTitle" = "Restauro el estado que lo compró";
 
-/* Class = "UIButton"; normalTitle = "green"; ObjectID = "NRm-dN-iTa"; */
+/* Class = "UIButton"; normalTitle = "verde"; ObjectID = "NRm-dN-iTa"; */
 "NRm-dN-iTa.normalTitle" = "verde";
 
-/* Class = "UIButton"; normalTitle = "red"; ObjectID = "NZF-9K-ToH"; */
+/* Class = "UIButton"; normalTitle = "rojo"; ObjectID = "NZF-9K-ToH"; */
 "NZF-9K-ToH.normalTitle" = "rojo";
 
-/* Class = "UIButton"; normalTitle = "dark gray"; ObjectID = "O0k-AO-GZ6"; */
+/* Class = "UIButton"; normalTitle = "gris oscuro"; ObjectID = "O0k-AO-GZ6"; */
 "O0k-AO-GZ6.normalTitle" = "gris oscuro";
 
-/* Class = "UILabel"; text = "Upgrade of Application"; ObjectID = "QNq-qO-dcz"; */
+/* Class = "UILabel"; text = "Actualizar de la aplicación"; ObjectID = "QNq-qO-dcz"; */
 "QNq-qO-dcz.text" = "Actualizar de la aplicación";
 
-/* Class = "UINavigationItem"; title = "Upgrade App"; ObjectID = "R6Z-Jp-fDT"; */
+/* Class = "UINavigationItem"; title = "Actualizando"; ObjectID = "R6Z-Jp-fDT"; */
 "R6Z-Jp-fDT.title" = "Actualizando";
 
 /* Class = "UILabel"; text = "Color"; ObjectID = "RbJ-tr-xNx"; */
 "RbJ-tr-xNx.text" = "Color";
 
-/* Class = "UIButton"; normalTitle = "blue"; ObjectID = "Rl2-Ua-VW3"; */
+/* Class = "UIButton"; normalTitle = "azul"; ObjectID = "Rl2-Ua-VW3"; */
 "Rl2-Ua-VW3.normalTitle" = "azul";
 
-/* Class = "UILabel"; text = "Sound"; ObjectID = "Uky-3I-7qg"; */
+/* Class = "UILabel"; text = "Sonido"; ObjectID = "Uky-3I-7qg"; */
 "Uky-3I-7qg.text" = "Sonido";
 
-/* Class = "UIButton"; normalTitle = "purple"; ObjectID = "VzX-YC-jsi"; */
+/* Class = "UIButton"; normalTitle = "púrpura"; ObjectID = "VzX-YC-jsi"; */
 "VzX-YC-jsi.normalTitle" = "púrpura";
 
 /* Class = "UITableViewSection"; footerTitle = " "; ObjectID = "YVw-ZP-Uv8"; */
@@ -56,44 +56,47 @@
 /* Class = "UITableViewSection"; footerTitle = "　"; ObjectID = "Z7N-lT-Klb"; */
 "Z7N-lT-Klb.footerTitle" = "　";
 
-/* Class = "UILabel"; text = "register plural items at a newline"; ObjectID = "eNv-8q-nKe"; */
+/* Class = "UILabel"; text = "Registro los artículos plurales a un newline"; ObjectID = "eNv-8q-nKe"; */
 "eNv-8q-nKe.text" = "Registro los artículos plurales a un newline";
 
-/* Class = "UILabel"; text = "Icon badge"; ObjectID = "fhf-9H-aHy"; */
+/* Class = "UILabel"; text = "Insignia del icono"; ObjectID = "fhf-9H-aHy"; */
 "fhf-9H-aHy.text" = "Insignia del icono";
 
-/* Class = "UILabel"; text = "・Hide advertisement"; ObjectID = "fmf-Uy-o2q"; */
+/* Class = "UILabel"; text = "・Un anuncio se no-despliega"; ObjectID = "fmf-Uy-o2q"; */
 "fmf-Uy-o2q.text" = "・Un anuncio se no-despliega";
 
 /* Class = "UILabel"; text = "16pt"; ObjectID = "h8a-7p-wx3"; */
 "h8a-7p-wx3.text" = "16pt";
 
-/* Class = "UILabel"; text = "When you bought it, you can be restored to the original state from this"; ObjectID = "jjh-Tm-nZh"; */
+/* Class = "UILabel"; text = "Cuando lo compré, puedo restaurar un estado de esto"; ObjectID = "jjh-Tm-nZh"; */
 "jjh-Tm-nZh.text" = "Cuando lo compré, puedo restaurar un estado de esto";
 
-/* Class = "UILabel"; text = "Feedback (send mail)"; ObjectID = "kqQ-h6-CsQ"; */
+/* Class = "UILabel"; text = "Regeneración"; ObjectID = "kqQ-h6-CsQ"; */
 "kqQ-h6-CsQ.text" = "Regeneración";
 
-/* Class = "UILabel"; text = "copy done"; ObjectID = "mwT-hB-chn"; */
+/* Class = "UILabel"; text = "Copia la realización"; ObjectID = "mwT-hB-chn"; */
 "mwT-hB-chn.text" = "Copia la realización";
 
 /* Class = "UILabel"; text = "Test Upgrade"; ObjectID = "n8b-g6-1Et"; */
 "n8b-g6-1Et.text" = "Test Upgrade";
 
-/* Class = "UILabel"; text = "Upgrade App"; ObjectID = "oWz-kA-RRD"; */
+/* Class = "UILabel"; text = "Actualizar de la aplicación"; ObjectID = "oWz-kA-RRD"; */
 "oWz-kA-RRD.text" = "Actualizar de la aplicación";
 
-/* Class = "UINavigationItem"; title = "Setting"; ObjectID = "ogH-dh-Bd4"; */
+/* Class = "UINavigationItem"; title = "Poniendo"; ObjectID = "ogH-dh-Bd4"; */
 "ogH-dh-Bd4.title" = "Poniendo";
 
-/* Class = "UIButton"; normalTitle = "orange"; ObjectID = "ubj-LG-PgT"; */
+/* Class = "UIButton"; normalTitle = "naranja"; ObjectID = "ubj-LG-PgT"; */
 "ubj-LG-PgT.normalTitle" = "naranja";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "xsb-P1-Kns"; */
 "xsb-P1-Kns.text" = "Label";
 
-/* Class = "UINavigationItem"; title = "Font size"; ObjectID = "y9e-Lu-08m"; */
+/* Class = "UINavigationItem"; title = "Tamaño de la carta"; ObjectID = "y9e-Lu-08m"; */
 "y9e-Lu-08m.title" = "Tamaño de la carta";
+
+/* Class = "UILabel"; text = "Introduce this App"; ObjectID = "yp3-72-Km9"; */
+"yp3-72-Km9.text" = "Introducir esta App";
 
 /* Class = "UINavigationItem"; title = "Color"; ObjectID = "zVh-yw-8Pz"; */
 "zVh-yw-8Pz.title" = "Color";
