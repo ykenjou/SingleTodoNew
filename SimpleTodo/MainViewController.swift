@@ -526,6 +526,13 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
         tableView.editing = editing
     }
     
+    @IBAction func pushMemoButton(sender: UIBarButtonItem) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let logViewController = storyboard.instantiateViewControllerWithIdentifier("LogViewController") as! LogViewController
+        dispatch_async(dispatch_get_main_queue()) {
+            self.presentViewController(logViewController as UIViewController, animated: true, completion: nil)
+        }
+    }
     /*
      // MARK: - Navigation
      

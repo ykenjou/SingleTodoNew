@@ -35,9 +35,12 @@
 		F28BE5451D6A0949009DB92E /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28BE5441D6A0949009DB92E /* GoogleMobileAds.framework */; };
 		F297D4EC1D653E1B00093327 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297D4EA1D653E1B00093327 /* Item+CoreDataProperties.swift */; };
 		F297D4ED1D653E1B00093327 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297D4EB1D653E1B00093327 /* Item.swift */; };
+		F29E9F421D870BAD00D93E20 /* Log+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29E9F401D870BAD00D93E20 /* Log+CoreDataProperties.swift */; };
+		F29E9F431D870BAD00D93E20 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29E9F411D870BAD00D93E20 /* Log.swift */; };
 		F2AF8A351D72DA6D00699C41 /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AF8A341D72DA6D00699C41 /* PurchaseViewController.swift */; };
 		F2C80F281D76C48000CE404B /* XXXProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C80F271D76C48000CE404B /* XXXProductManager.swift */; };
 		F2E6BE9D1D71DE7D008EA404 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E6BE9C1D71DE7D008EA404 /* arrow.png */; };
+		F2F6FF031D8831D700BBC0D5 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F6FF021D8831D700BBC0D5 /* LogViewController.swift */; };
 		F2FFBDB11D6498F900D73796 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FFBDB01D6498F900D73796 /* AppDelegate.swift */; };
 		F2FFBDB61D6498F900D73796 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FFBDB41D6498F900D73796 /* Main.storyboard */; };
 		F2FFBDB91D6498F900D73796 /* SimpleTodo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F2FFBDB71D6498F900D73796 /* SimpleTodo.xcdatamodeld */; };
@@ -100,11 +103,15 @@
 		F28BE5441D6A0949009DB92E /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = ../GoogleMobileAds.framework; sourceTree = "<group>"; };
 		F297D4EA1D653E1B00093327 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F297D4EB1D653E1B00093327 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		F29E9F3F1D870B7A00D93E20 /* SimpleTodo2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleTodo2.xcdatamodel; sourceTree = "<group>"; };
+		F29E9F401D870BAD00D93E20 /* Log+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Log+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F29E9F411D870BAD00D93E20 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		F2AF8A341D72DA6D00699C41 /* PurchaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
 		F2C80F271D76C48000CE404B /* XXXProductManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XXXProductManager.swift; sourceTree = "<group>"; };
 		F2E6BE9C1D71DE7D008EA404 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
 		F2F0F13C1D83B368008F1EAA /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		F2F0F13E1D83B5A4008F1EAA /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		F2F6FF021D8831D700BBC0D5 /* LogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		F2FFBDAD1D6498F900D73796 /* SimpleTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2FFBDB01D6498F900D73796 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2FFBDB51D6498F900D73796 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -231,6 +238,8 @@
 		F2FFBDAF1D6498F900D73796 /* SimpleTodo */ = {
 			isa = PBXGroup;
 			children = (
+				F29E9F401D870BAD00D93E20 /* Log+CoreDataProperties.swift */,
+				F29E9F411D870BAD00D93E20 /* Log.swift */,
 				F248D7201D7D28CF00355D8B /* Supporting Files */,
 				F23177AB1D6A8F8E001AEFD6 /* frameworks */,
 				F22256301D68B04F001E463B /* Image */,
@@ -253,6 +262,7 @@
 				F2C80F271D76C48000CE404B /* XXXProductManager.swift */,
 				F20D26521D77BE0000C9840F /* ColorViewController.swift */,
 				F20D26541D7872A900C9840F /* XXXPurchaseManager.swift */,
+				F2F6FF021D8831D700BBC0D5 /* LogViewController.swift */,
 			);
 			path = SimpleTodo;
 			sourceTree = "<group>";
@@ -489,7 +499,10 @@
 				F20D26551D7872A900C9840F /* XXXPurchaseManager.swift in Sources */,
 				F2C80F281D76C48000CE404B /* XXXProductManager.swift in Sources */,
 				F2FFBDE21D64997200D73796 /* MainViewController.swift in Sources */,
+				F29E9F431D870BAD00D93E20 /* Log.swift in Sources */,
+				F29E9F421D870BAD00D93E20 /* Log+CoreDataProperties.swift in Sources */,
 				F2FFBDB11D6498F900D73796 /* AppDelegate.swift in Sources */,
+				F2F6FF031D8831D700BBC0D5 /* LogViewController.swift in Sources */,
 				F2FFBDE41D64A3D800D73796 /* AddViewController.swift in Sources */,
 				F28BE5171D696021009DB92E /* SettingViewController.swift in Sources */,
 				F2FFBDB91D6498F900D73796 /* SimpleTodo.xcdatamodeld in Sources */,
@@ -803,6 +816,7 @@
 		F2FFBDB71D6498F900D73796 /* SimpleTodo.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				F29E9F3F1D870B7A00D93E20 /* SimpleTodo2.xcdatamodel */,
 				F2FFBDB81D6498F900D73796 /* SimpleTodo.xcdatamodel */,
 			);
 			currentVersion = F2FFBDB81D6498F900D73796 /* SimpleTodo.xcdatamodel */;

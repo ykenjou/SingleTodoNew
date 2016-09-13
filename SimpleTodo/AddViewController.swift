@@ -69,12 +69,44 @@ class AddViewController: UIViewController {
                 item.text = textArray[i]
                 item.displayOrder = count + i
                 item.checked = 0
+                
+                /*
+                let fetchRequestLog = NSFetchRequest(entityName: "Log")
+                let precidateLog = NSPredicate(format: "text LIKE %@", textArray[i])
+                fetchRequestLog.predicate = precidateLog
+                let logCount = appDelegate.managedObjectContext.countForFetchRequest(fetchRequestLog, error: &error)
+                */
+                
             }
         } else {
             let item = NSEntityDescription.insertNewObjectForEntityForName("Item", inManagedObjectContext: appDelegate.managedObjectContext) as! Item
             item.text = text
             item.displayOrder = count
             item.checked = 0
+            
+            //log check
+            let fetchRequestLog = NSFetchRequest(entityName: "Log")
+            let precidateLog = NSPredicate(format: "text LIKE %@", text)
+            fetchRequestLog.predicate = precidateLog
+            let logCount = appDelegate.managedObjectContext.countForFetchRequest(fetchRequestLog, error: &error)
+            
+            //カウントが0ならLogに現在日時と共に追加する
+            
+            if logCount == 0 {
+                let log = NSEntityDescription.insertNewObjectForEntityForName("Log", inManagedObjectContext: appDelegate.managedObjectContext) as! Log
+                log.text = text
+                let now = NSDate()
+                log.time = now
+            } else {
+                do {
+                    let logs = try appDelegate.managedObjectContext.executeFetchRequest(fetchRequestLog) as! [Log]
+                    let now = NSDate()
+                    logs[0].time = now
+                } catch {
+                    print("error")
+                }
+            }
+            
         }
         
         appDelegate.saveContext()

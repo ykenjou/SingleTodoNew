@@ -14,126 +14,128 @@ provides-member:
 - ["CSo6UIView", "fadeOut"]
 - ["CSo6UIView", "fadeOut"]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "cellLongPressed"
 - "didReceiveMemoryWarning"
 - "btmToolBar"
 - "bannerView"
-- "settingButton"
-- "setEditing"
-- "setBadgeValue"
-- "userDefaults"
-- "setCheckedValue"
-- "fetchedResultsController"
-- "showPopMessageView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "gadController"
-- "viewWillAppear"
-- "tableBtmConstraint"
-- "pushTrashButton"
-- "fadeIn"
-- "controllerDidChangeContent"
-- "fadeOut"
-- "popMessageView"
+- "viewDidLoad"
 - "pushAddButton"
-- "setNaviToolbarColor"
-- "numberOfSectionsInTableView"
 - "btmToolBarConstraint"
+- "setBadgeValue"
+- "popMessageView"
+- "settingButton"
+- "cellLongPressed"
 - "appDelegate"
+- "controllerDidChangeContent"
+- "pushMemoButton"
+- "numberOfSectionsInTableView"
+- "setEditing"
+- "pushTrashButton"
+- "setNaviToolbarColor"
+- "fadeIn"
+- "tableBtmConstraint"
+- "fadeOut"
+- "setCheckedValue"
+- "userDefaults"
+- "fetchedResultsController"
+- "gadController"
+- "showPopMessageView"
+- "viewWillAppear"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
 depends-top-level:
-- "FadeType"
-- !private "AddViewController"
-- "GadController"
-- "NSNumber"
-- "UITableView"
-- "Array"
-- !private "UIUserNotificationSettings"
-- !private "Int64"
-- !private "UILabel"
-- !private "AudioServicesPlaySystemSound"
-- !private "+"
-- !private "dispatch_async"
-- !private "DISPATCH_TIME_NOW"
-- !private "UITableViewAutomaticDimension"
-- !private "UIFont"
-- !private "UIPasteboard"
-- "NSUserDefaults"
-- "NSTimeInterval"
-- !private "NSLocalizedString"
-- !private "NSEntityDescription"
-- "GADBannerView"
-- "Bool"
-- "NSLayoutConstraint"
-- "UINavigationControllerDelegate"
-- "NSFetchedResultsController"
-- !private "CGPointMake"
-- !private "UIGestureRecognizerState"
-- "GADBannerViewDelegate"
-- !private "dispatch_get_main_queue"
-- !private "NSStrikethroughStyleAttributeName"
-- !private "ColorViewController"
-- "UIViewController"
-- !private "dispatch_after"
-- !private "UIColor"
-- "StringLiteralType"
-- !private "<"
-- !private "NSMakeRange"
-- !private "AnyObject"
-- !private "UIActivityViewController"
-- !private "UIUserNotificationType"
-- !private "NSSortDescriptor"
-- !private "CGRectGetMidY"
-- "UIToolbar"
-- "UIView"
-- !private "*"
-- "AppDelegate"
-- "UITableViewDataSource"
-- "UILongPressGestureRecognizer"
 - "UIBarButtonItem"
+- !private "UITableViewAutomaticDimension"
+- "FadeType"
+- !private "UIActivityViewController"
+- !private "LogViewController"
 - !private "NSPredicate"
-- "UITableViewDelegate"
-- !private "NSError"
-- !private "EditViewController"
-- !private "..<"
-- "NSFetchedResultsControllerDelegate"
-- "UITableViewCell"
-- "BooleanLiteralType"
-- "UIGestureRecognizerDelegate"
-- "NSInteger"
-- !private "UIBarButtonSystemItem"
-- !private "CGRectGetMidX"
-- !private "UIStoryboard"
-- !private "UITableViewCellSelectionStyle"
-- !private "NSManagedObject"
-- !private "-"
+- !private "NSArray"
+- "GADBannerView"
+- !private "dispatch_async"
 - !private "Item"
-- !private "NSEC_PER_SEC"
-- "MainViewController"
-- !private "NSFetchRequest"
-- !private "Dictionary"
-- "=="
+- !private "UIStoryboard"
 - "UIApplication"
 - !private "String"
-- !private "Double"
-- !private "UITableViewScrollPosition"
+- "UIViewController"
+- "GadController"
+- "MainViewController"
 - !private "print"
-- !private "dispatch_time"
-- !private "!="
-- !private "CGFloat"
-- !private "~="
+- !private "NSSortDescriptor"
+- !private "DISPATCH_TIME_NOW"
+- !private "AddViewController"
+- !private "Int64"
+- !private "+"
+- !private "UILabel"
+- !private "UITableViewCellSelectionStyle"
+- !private "<"
 - "UITableViewRowAction"
-- !private "CGRectMake"
-- !private "NSArray"
-- "NSIndexPath"
-- !private "NSForegroundColorAttributeName"
-- !private "NSMutableAttributedString"
+- "UIToolbar"
+- "Bool"
+- !private "dispatch_time"
+- "UILongPressGestureRecognizer"
+- !private "UITableViewScrollPosition"
+- !private "AnyObject"
+- !private "..<"
+- !private "NSFetchRequest"
+- "UIView"
 - "Int"
+- !private "NSError"
+- "StringLiteralType"
+- !private "Double"
+- !private "NSEC_PER_SEC"
+- !private "NSForegroundColorAttributeName"
+- !private "CGFloat"
+- !private "-"
+- !private "UIPasteboard"
+- !private "UIFont"
+- !private "AudioServicesPlaySystemSound"
+- !private "EditViewController"
+- !private "UIColor"
+- !private "!="
+- "NSInteger"
+- !private "NSMutableAttributedString"
+- !private "CGPointMake"
+- !private "*"
+- !private "NSEntityDescription"
+- !private "ColorViewController"
+- "NSFetchedResultsControllerDelegate"
+- "UIGestureRecognizerDelegate"
+- !private "UIBarButtonSystemItem"
+- !private "NSManagedObject"
+- "UITableViewDataSource"
+- "AppDelegate"
+- !private "CGRectGetMidX"
+- "UITableViewDelegate"
+- "BooleanLiteralType"
+- "UITableView"
+- !private "NSStrikethroughStyleAttributeName"
+- !private "Dictionary"
+- "NSUserDefaults"
+- "Array"
+- !private "CGRectMake"
+- !private "NSLocalizedString"
+- "UINavigationControllerDelegate"
+- "NSTimeInterval"
+- !private "~="
+- "GADBannerViewDelegate"
+- "=="
+- !private "UIGestureRecognizerState"
+- !private "CGRectGetMidY"
+- !private "dispatch_get_main_queue"
+- !private "NSMakeRange"
+- "NSFetchedResultsController"
+- !private "dispatch_after"
+- "NSNumber"
+- "NSLayoutConstraint"
+- "NSIndexPath"
+- "UITableViewCell"
+- !private "UIUserNotificationSettings"
+- !private "UIUserNotificationType"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Normal"]
 - !private ["Ps16AbsoluteValuable", "init"]
@@ -275,6 +277,7 @@ depends-member:
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "purpleColor"]
 - ["Ps9AnyObject", "pushAddButton"]
+- ["Ps9AnyObject", "pushMemoButton"]
 - ["Ps9AnyObject", "pushTrashButton"]
 - !private ["Ps9AnyObject", "redColor"]
 - !private ["Ps9AnyObject", "registerUserNotificationSettings"]
@@ -521,6 +524,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "print"]
 - !private ["Ps11CVarArgType", "purpleColor"]
 - ["Ps11CVarArgType", "pushAddButton"]
+- ["Ps11CVarArgType", "pushMemoButton"]
 - ["Ps11CVarArgType", "pushTrashButton"]
 - !private ["Ps11CVarArgType", "redColor"]
 - !private ["Ps11CVarArgType", "registerUserNotificationSettings"]
@@ -747,6 +751,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "purpleColor"]
 - ["Ps28CustomDebugStringConvertible", "pushAddButton"]
+- ["Ps28CustomDebugStringConvertible", "pushMemoButton"]
 - ["Ps28CustomDebugStringConvertible", "pushTrashButton"]
 - !private ["Ps28CustomDebugStringConvertible", "redColor"]
 - !private ["Ps28CustomDebugStringConvertible", "registerUserNotificationSettings"]
@@ -955,6 +960,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "purpleColor"]
 - ["Ps23CustomStringConvertible", "pushAddButton"]
+- ["Ps23CustomStringConvertible", "pushMemoButton"]
 - ["Ps23CustomStringConvertible", "pushTrashButton"]
 - !private ["Ps23CustomStringConvertible", "redColor"]
 - !private ["Ps23CustomStringConvertible", "registerUserNotificationSettings"]
@@ -1178,6 +1184,7 @@ depends-member:
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "purpleColor"]
 - ["Ps9Equatable", "pushAddButton"]
+- ["Ps9Equatable", "pushMemoButton"]
 - ["Ps9Equatable", "pushTrashButton"]
 - ["Ps9Equatable", "rawValue"]
 - !private ["Ps9Equatable", "redColor"]
@@ -1615,6 +1622,7 @@ depends-member:
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "purpleColor"]
 - ["Ps8Hashable", "pushAddButton"]
+- ["Ps8Hashable", "pushMemoButton"]
 - ["Ps8Hashable", "pushTrashButton"]
 - ["Ps8Hashable", "rawValue"]
 - !private ["Ps8Hashable", "redColor"]
@@ -1714,6 +1722,7 @@ depends-member:
 - !private ["C10SimpleTodo4Item", "checked"]
 - !private ["C10SimpleTodo4Item", "displayOrder"]
 - !private ["C10SimpleTodo4Item", "text"]
+- !private ["C10SimpleTodo17LogViewController", "deinit"]
 - !private ["C10SimpleTodo18MainViewController", "AddViewController"]
 - !private ["C10SimpleTodo18MainViewController", "AnyObject"]
 - ["C10SimpleTodo18MainViewController", "AppDelegate"]
@@ -1733,6 +1742,7 @@ depends-member:
 - ["C10SimpleTodo18MainViewController", "Int"]
 - !private ["C10SimpleTodo18MainViewController", "Int64"]
 - !private ["C10SimpleTodo18MainViewController", "Item"]
+- !private ["C10SimpleTodo18MainViewController", "LogViewController"]
 - !private ["C10SimpleTodo18MainViewController", "MainViewController"]
 - !private ["C10SimpleTodo18MainViewController", "NSArray"]
 - !private ["C10SimpleTodo18MainViewController", "NSEC_PER_SEC"]
@@ -1813,6 +1823,7 @@ depends-member:
 - !private ["C10SimpleTodo18MainViewController", "presentViewController"]
 - !private ["C10SimpleTodo18MainViewController", "print"]
 - ["C10SimpleTodo18MainViewController", "pushAddButton"]
+- ["C10SimpleTodo18MainViewController", "pushMemoButton"]
 - ["C10SimpleTodo18MainViewController", "pushTrashButton"]
 - ["C10SimpleTodo18MainViewController", "scrollViewDidEndDecelerating"]
 - ["C10SimpleTodo18MainViewController", "scrollViewDidEndDragging"]
@@ -1993,6 +2004,7 @@ depends-member:
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "purpleColor"]
 - ["PSo8NSCoding", "pushAddButton"]
+- ["PSo8NSCoding", "pushMemoButton"]
 - ["PSo8NSCoding", "pushTrashButton"]
 - !private ["PSo8NSCoding", "redColor"]
 - !private ["PSo8NSCoding", "reloadData"]
@@ -2139,6 +2151,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - !private ["PSo26NSExtensionRequestHandling", "purpleColor"]
 - ["PSo26NSExtensionRequestHandling", "pushAddButton"]
+- ["PSo26NSExtensionRequestHandling", "pushMemoButton"]
 - ["PSo26NSExtensionRequestHandling", "pushTrashButton"]
 - !private ["PSo26NSExtensionRequestHandling", "redColor"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDecelerating"]
@@ -2323,6 +2336,7 @@ depends-member:
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "Int64"]
 - !private ["CSo8NSObject", "Item"]
+- !private ["CSo8NSObject", "LogViewController"]
 - !private ["CSo8NSObject", "MainViewController"]
 - !private ["CSo8NSObject", "NSArray"]
 - !private ["CSo8NSObject", "NSEC_PER_SEC"]
@@ -2461,6 +2475,7 @@ depends-member:
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "purpleColor"]
 - ["CSo8NSObject", "pushAddButton"]
+- ["CSo8NSObject", "pushMemoButton"]
 - ["CSo8NSObject", "pushTrashButton"]
 - !private ["CSo8NSObject", "redColor"]
 - !private ["CSo8NSObject", "registerUserNotificationSettings"]
@@ -2653,6 +2668,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "purpleColor"]
 - ["PSo16NSObjectProtocol", "pushAddButton"]
+- ["PSo16NSObjectProtocol", "pushMemoButton"]
 - ["PSo16NSObjectProtocol", "pushTrashButton"]
 - !private ["PSo16NSObjectProtocol", "redColor"]
 - !private ["PSo16NSObjectProtocol", "registerUserNotificationSettings"]
@@ -2996,6 +3012,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "purpleColor"]
 - ["PSo21UIAppearanceContainer", "pushAddButton"]
+- ["PSo21UIAppearanceContainer", "pushMemoButton"]
 - ["PSo21UIAppearanceContainer", "pushTrashButton"]
 - !private ["PSo21UIAppearanceContainer", "redColor"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
@@ -3147,6 +3164,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "print"]
 - !private ["PSo18UIContentContainer", "purpleColor"]
 - ["PSo18UIContentContainer", "pushAddButton"]
+- ["PSo18UIContentContainer", "pushMemoButton"]
 - ["PSo18UIContentContainer", "pushTrashButton"]
 - !private ["PSo18UIContentContainer", "redColor"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDecelerating"]
@@ -3365,6 +3383,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "purpleColor"]
 - ["PSo18UIFocusEnvironment", "pushAddButton"]
+- ["PSo18UIFocusEnvironment", "pushMemoButton"]
 - ["PSo18UIFocusEnvironment", "pushTrashButton"]
 - !private ["PSo18UIFocusEnvironment", "redColor"]
 - !private ["PSo18UIFocusEnvironment", "reloadData"]
@@ -3656,6 +3675,7 @@ depends-member:
 - ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "Int64"]
 - !private ["CSo11UIResponder", "Item"]
+- !private ["CSo11UIResponder", "LogViewController"]
 - !private ["CSo11UIResponder", "MainViewController"]
 - !private ["CSo11UIResponder", "NSArray"]
 - !private ["CSo11UIResponder", "NSEC_PER_SEC"]
@@ -3772,6 +3792,7 @@ depends-member:
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "purpleColor"]
 - ["CSo11UIResponder", "pushAddButton"]
+- ["CSo11UIResponder", "pushMemoButton"]
 - ["CSo11UIResponder", "pushTrashButton"]
 - !private ["CSo11UIResponder", "redColor"]
 - !private ["CSo11UIResponder", "registerUserNotificationSettings"]
@@ -4012,6 +4033,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "print"]
 - !private ["PSo16UIStateRestoring", "purpleColor"]
 - ["PSo16UIStateRestoring", "pushAddButton"]
+- ["PSo16UIStateRestoring", "pushMemoButton"]
 - ["PSo16UIStateRestoring", "pushTrashButton"]
 - !private ["PSo16UIStateRestoring", "redColor"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDecelerating"]
@@ -4377,6 +4399,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "purpleColor"]
 - ["PSo18UITraitEnvironment", "pushAddButton"]
+- ["PSo18UITraitEnvironment", "pushMemoButton"]
 - ["PSo18UITraitEnvironment", "pushTrashButton"]
 - !private ["PSo18UITraitEnvironment", "redColor"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
@@ -4483,6 +4506,7 @@ depends-member:
 - ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "Int64"]
 - !private ["CSo16UIViewController", "Item"]
+- !private ["CSo16UIViewController", "LogViewController"]
 - !private ["CSo16UIViewController", "MainViewController"]
 - !private ["CSo16UIViewController", "NSArray"]
 - !private ["CSo16UIViewController", "NSEC_PER_SEC"]
@@ -4571,6 +4595,7 @@ depends-member:
 - !private ["CSo16UIViewController", "print"]
 - !private ["CSo16UIViewController", "purpleColor"]
 - ["CSo16UIViewController", "pushAddButton"]
+- ["CSo16UIViewController", "pushMemoButton"]
 - ["CSo16UIViewController", "pushTrashButton"]
 - !private ["CSo16UIViewController", "redColor"]
 - ["CSo16UIViewController", "scrollViewDidEndDecelerating"]
@@ -4794,6 +4819,7 @@ depends-nominal:
 - !private "Ps11IntegerType"
 - !private "Ps12IntervalType"
 - !private "C10SimpleTodo4Item"
+- !private "C10SimpleTodo17LogViewController"
 - "C10SimpleTodo18MainViewController"
 - !private "Ps14MirrorPathType"
 - !private "Ps21MutableCollectionType"
@@ -4998,4 +5024,4 @@ depends-external:
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Firebase/Analytics/Sources/Firebase.h"
-interface-hash: "5b3bb39fac083d732a2cb123a5949c1c"
+interface-hash: "2e1d46fd70e49fc12bcb61b079e323c3"

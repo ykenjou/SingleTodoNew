@@ -259,12 +259,39 @@ SWIFT_CLASS("_TtC10SimpleTodo4Item")
 @property (nonatomic, copy) NSString * _Nullable text;
 @end
 
-@class NSFetchedResultsController;
-@class UIBarButtonItem;
-@class UILongPressGestureRecognizer;
+
+SWIFT_CLASS("_TtC10SimpleTodo3Log")
+@interface Log : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSDate;
+
+@interface Log (SWIFT_EXTENSION(SimpleTodo))
+@property (nonatomic, copy) NSString * _Nullable text;
+@property (nonatomic, strong) NSDate * _Nullable time;
+@end
+
 @class UITableView;
 @class NSIndexPath;
 @class UITableViewCell;
+
+SWIFT_CLASS("_TtC10SimpleTodo17LogViewController")
+@interface LogViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, NSFetchedResultsControllerDelegate, UITableViewDataSource>
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+@property (nonatomic, strong) AppDelegate * _Nonnull appDelegate;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSFetchedResultsController;
+@class UIBarButtonItem;
+@class UILongPressGestureRecognizer;
 @class UITableViewRowAction;
 @class UIToolbar;
 @class UIView;

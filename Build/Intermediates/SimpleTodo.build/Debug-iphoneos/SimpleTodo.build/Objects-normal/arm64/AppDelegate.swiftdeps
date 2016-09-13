@@ -6,56 +6,58 @@ provides-nominal:
 provides-member:
 - ["C10SimpleTodo11AppDelegate", ""]
 provides-dynamic-lookup:
-- "itemText"
-- "applicationWillTerminate"
 - "applicationDidBecomeActive"
-- "window"
+- "persistentStoreCoordinator"
 - "saveContext"
 - "managedObjectModel"
+- "displayOrder"
+- "applicationWillResignActive"
 - "applicationDocumentsDirectory"
+- "managedObjectContext"
+- "applicationDidEnterBackground"
+- "window"
 - "application"
+- "applicationWillTerminate"
 - "userDefaults"
 - "applicationWillEnterForeground"
-- "managedObjectContext"
-- "persistentStoreCoordinator"
-- "applicationWillResignActive"
-- "displayOrder"
-- "applicationDidEnterBackground"
+- "itemText"
 depends-top-level:
-- "NSNumber"
-- !private "BooleanLiteralType"
-- "UIApplicationDelegate"
-- !private "abort"
-- !private "NSSQLiteStoreType"
 - !private "NSDictionary"
-- !private "FIRApp"
-- "Bool"
-- "NSURL"
+- !private "NSInferMappingModelAutomaticallyOption"
 - "AnyObject"
-- "UIApplication"
-- !private "NSLocalizedFailureReasonErrorKey"
-- !private "NSFileManager"
-- "NSPersistentStoreCoordinator"
-- !private "NSLocalizedDescriptionKey"
-- "UIResponder"
-- !private "-"
-- "NSObject"
-- !private "XXXPurchaseManager"
-- "NSString"
-- "NSUserDefaults"
-- !private "SKPaymentQueue"
-- "XXXPurchaseManagerDelegate"
-- !private "NSError"
-- !private "Dictionary"
 - "AppDelegate"
+- "Dictionary"
+- !private "NSLocalizedFailureReasonErrorKey"
+- !private "SKPaymentQueue"
+- "NSNumber"
 - "UIWindow"
-- "StringLiteralType"
-- "NSManagedObjectModel"
+- !private "NSMigratePersistentStoresAutomaticallyOption"
+- "Bool"
+- "UIResponder"
+- "NSPersistentStoreCoordinator"
+- !private "NSError"
+- "UIApplication"
+- "BooleanLiteralType"
 - !private "NSUnderlyingErrorKey"
-- "NSManagedObjectContext"
-- !private "NSBundle"
-- !private "String"
 - !private "NSLog"
+- !private "FIRApp"
+- "NSObject"
+- "UIApplicationDelegate"
+- "NSString"
+- !private "-"
+- !private "NSFileManager"
+- !private "XXXPurchaseManager"
+- !private "String"
+- "XXXPurchaseManagerDelegate"
+- !private "NSBundle"
+- "NSURL"
+- "NSManagedObjectModel"
+- "NSUserDefaults"
+- "NSManagedObjectContext"
+- !private "NSLocalizedDescriptionKey"
+- "StringLiteralType"
+- !private "NSSQLiteStoreType"
+- !private "abort"
 depends-member:
 - !private ["Ps9AnyObject", "AnyObject"]
 - !private ["Ps9AnyObject", "FIRApp"]
@@ -63,11 +65,13 @@ depends-member:
 - !private ["Ps9AnyObject", "NSBundle"]
 - !private ["Ps9AnyObject", "NSError"]
 - !private ["Ps9AnyObject", "NSFileManager"]
+- !private ["Ps9AnyObject", "NSInferMappingModelAutomaticallyOption"]
 - !private ["Ps9AnyObject", "NSLocalizedDescriptionKey"]
 - !private ["Ps9AnyObject", "NSLocalizedFailureReasonErrorKey"]
 - !private ["Ps9AnyObject", "NSLog"]
 - !private ["Ps9AnyObject", "NSManagedObjectContext"]
 - !private ["Ps9AnyObject", "NSManagedObjectModel"]
+- !private ["Ps9AnyObject", "NSMigratePersistentStoresAutomaticallyOption"]
 - !private ["Ps9AnyObject", "NSPersistentStoreCoordinator"]
 - !private ["Ps9AnyObject", "NSSQLiteStoreType"]
 - !private ["Ps9AnyObject", "NSUnderlyingErrorKey"]
@@ -132,11 +136,13 @@ depends-member:
 - !private ["C10SimpleTodo11AppDelegate", "NSDictionary"]
 - !private ["C10SimpleTodo11AppDelegate", "NSError"]
 - !private ["C10SimpleTodo11AppDelegate", "NSFileManager"]
+- !private ["C10SimpleTodo11AppDelegate", "NSInferMappingModelAutomaticallyOption"]
 - !private ["C10SimpleTodo11AppDelegate", "NSLocalizedDescriptionKey"]
 - !private ["C10SimpleTodo11AppDelegate", "NSLocalizedFailureReasonErrorKey"]
 - !private ["C10SimpleTodo11AppDelegate", "NSLog"]
 - ["C10SimpleTodo11AppDelegate", "NSManagedObjectContext"]
 - ["C10SimpleTodo11AppDelegate", "NSManagedObjectModel"]
+- !private ["C10SimpleTodo11AppDelegate", "NSMigratePersistentStoresAutomaticallyOption"]
 - ["C10SimpleTodo11AppDelegate", "NSNumber"]
 - ["C10SimpleTodo11AppDelegate", "NSObject"]
 - ["C10SimpleTodo11AppDelegate", "NSPersistentStoreCoordinator"]
@@ -211,11 +217,13 @@ depends-member:
 - !private ["Ps11CVarArgType", "NSBundle"]
 - !private ["Ps11CVarArgType", "NSError"]
 - !private ["Ps11CVarArgType", "NSFileManager"]
+- !private ["Ps11CVarArgType", "NSInferMappingModelAutomaticallyOption"]
 - !private ["Ps11CVarArgType", "NSLocalizedDescriptionKey"]
 - !private ["Ps11CVarArgType", "NSLocalizedFailureReasonErrorKey"]
 - !private ["Ps11CVarArgType", "NSLog"]
 - !private ["Ps11CVarArgType", "NSManagedObjectContext"]
 - !private ["Ps11CVarArgType", "NSManagedObjectModel"]
+- !private ["Ps11CVarArgType", "NSMigratePersistentStoresAutomaticallyOption"]
 - !private ["Ps11CVarArgType", "NSPersistentStoreCoordinator"]
 - !private ["Ps11CVarArgType", "NSSQLiteStoreType"]
 - !private ["Ps11CVarArgType", "NSUnderlyingErrorKey"]
@@ -275,7 +283,9 @@ depends-member:
 - !private ["Vs9Character", "deinit"]
 - !private ["Ps14CollectionType", "Generator"]
 - !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "Key"]
 - !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "Value"]
 - !private ["Ps14CollectionType", "_Element"]
 - !private ["Ps14CollectionType", "count"]
 - !private ["Ps14CollectionType", "init"]
@@ -291,11 +301,13 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "NSBundle"]
 - !private ["Ps28CustomDebugStringConvertible", "NSError"]
 - !private ["Ps28CustomDebugStringConvertible", "NSFileManager"]
+- !private ["Ps28CustomDebugStringConvertible", "NSInferMappingModelAutomaticallyOption"]
 - !private ["Ps28CustomDebugStringConvertible", "NSLocalizedDescriptionKey"]
 - !private ["Ps28CustomDebugStringConvertible", "NSLocalizedFailureReasonErrorKey"]
 - !private ["Ps28CustomDebugStringConvertible", "NSLog"]
 - !private ["Ps28CustomDebugStringConvertible", "NSManagedObjectContext"]
 - !private ["Ps28CustomDebugStringConvertible", "NSManagedObjectModel"]
+- !private ["Ps28CustomDebugStringConvertible", "NSMigratePersistentStoresAutomaticallyOption"]
 - !private ["Ps28CustomDebugStringConvertible", "NSPersistentStoreCoordinator"]
 - !private ["Ps28CustomDebugStringConvertible", "NSSQLiteStoreType"]
 - !private ["Ps28CustomDebugStringConvertible", "NSUnderlyingErrorKey"]
@@ -365,11 +377,13 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "NSBundle"]
 - !private ["Ps23CustomStringConvertible", "NSError"]
 - !private ["Ps23CustomStringConvertible", "NSFileManager"]
+- !private ["Ps23CustomStringConvertible", "NSInferMappingModelAutomaticallyOption"]
 - !private ["Ps23CustomStringConvertible", "NSLocalizedDescriptionKey"]
 - !private ["Ps23CustomStringConvertible", "NSLocalizedFailureReasonErrorKey"]
 - !private ["Ps23CustomStringConvertible", "NSLog"]
 - !private ["Ps23CustomStringConvertible", "NSManagedObjectContext"]
 - !private ["Ps23CustomStringConvertible", "NSManagedObjectModel"]
+- !private ["Ps23CustomStringConvertible", "NSMigratePersistentStoresAutomaticallyOption"]
 - !private ["Ps23CustomStringConvertible", "NSPersistentStoreCoordinator"]
 - !private ["Ps23CustomStringConvertible", "NSSQLiteStoreType"]
 - !private ["Ps23CustomStringConvertible", "NSUnderlyingErrorKey"]
@@ -430,6 +444,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "userInfo"]
 - ["Ps23CustomStringConvertible", "window"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "Value"]
 - !private ["Vs10Dictionary", "init"]
 - !private ["Vs10Dictionary", "subscript"]
 - !private ["Ps28DictionaryLiteralConvertible", "Key"]
@@ -447,11 +463,13 @@ depends-member:
 - !private ["Ps9Equatable", "NSBundle"]
 - !private ["Ps9Equatable", "NSError"]
 - !private ["Ps9Equatable", "NSFileManager"]
+- !private ["Ps9Equatable", "NSInferMappingModelAutomaticallyOption"]
 - !private ["Ps9Equatable", "NSLocalizedDescriptionKey"]
 - !private ["Ps9Equatable", "NSLocalizedFailureReasonErrorKey"]
 - !private ["Ps9Equatable", "NSLog"]
 - !private ["Ps9Equatable", "NSManagedObjectContext"]
 - !private ["Ps9Equatable", "NSManagedObjectModel"]
+- !private ["Ps9Equatable", "NSMigratePersistentStoresAutomaticallyOption"]
 - !private ["Ps9Equatable", "NSPersistentStoreCoordinator"]
 - !private ["Ps9Equatable", "NSSQLiteStoreType"]
 - !private ["Ps9Equatable", "NSUnderlyingErrorKey"]
@@ -528,11 +546,13 @@ depends-member:
 - !private ["Ps8Hashable", "NSBundle"]
 - !private ["Ps8Hashable", "NSError"]
 - !private ["Ps8Hashable", "NSFileManager"]
+- !private ["Ps8Hashable", "NSInferMappingModelAutomaticallyOption"]
 - !private ["Ps8Hashable", "NSLocalizedDescriptionKey"]
 - !private ["Ps8Hashable", "NSLocalizedFailureReasonErrorKey"]
 - !private ["Ps8Hashable", "NSLog"]
 - !private ["Ps8Hashable", "NSManagedObjectContext"]
 - !private ["Ps8Hashable", "NSManagedObjectModel"]
+- !private ["Ps8Hashable", "NSMigratePersistentStoresAutomaticallyOption"]
 - !private ["Ps8Hashable", "NSPersistentStoreCoordinator"]
 - !private ["Ps8Hashable", "NSSQLiteStoreType"]
 - !private ["Ps8Hashable", "NSUnderlyingErrorKey"]
@@ -592,7 +612,9 @@ depends-member:
 - ["Ps8Hashable", ""]
 - !private ["Ps9Indexable", "Generator"]
 - !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "Key"]
 - !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "Value"]
 - !private ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "count"]
 - !private ["Ps9Indexable", "init"]
@@ -677,11 +699,13 @@ depends-member:
 - !private ["CSo8NSObject", "NSDictionary"]
 - !private ["CSo8NSObject", "NSError"]
 - !private ["CSo8NSObject", "NSFileManager"]
+- !private ["CSo8NSObject", "NSInferMappingModelAutomaticallyOption"]
 - !private ["CSo8NSObject", "NSLocalizedDescriptionKey"]
 - !private ["CSo8NSObject", "NSLocalizedFailureReasonErrorKey"]
 - !private ["CSo8NSObject", "NSLog"]
 - ["CSo8NSObject", "NSManagedObjectContext"]
 - ["CSo8NSObject", "NSManagedObjectModel"]
+- !private ["CSo8NSObject", "NSMigratePersistentStoresAutomaticallyOption"]
 - ["CSo8NSObject", "NSNumber"]
 - ["CSo8NSObject", "NSObject"]
 - ["CSo8NSObject", "NSPersistentStoreCoordinator"]
@@ -749,11 +773,13 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSBundle"]
 - !private ["PSo16NSObjectProtocol", "NSError"]
 - !private ["PSo16NSObjectProtocol", "NSFileManager"]
+- !private ["PSo16NSObjectProtocol", "NSInferMappingModelAutomaticallyOption"]
 - !private ["PSo16NSObjectProtocol", "NSLocalizedDescriptionKey"]
 - !private ["PSo16NSObjectProtocol", "NSLocalizedFailureReasonErrorKey"]
 - !private ["PSo16NSObjectProtocol", "NSLog"]
 - !private ["PSo16NSObjectProtocol", "NSManagedObjectContext"]
 - !private ["PSo16NSObjectProtocol", "NSManagedObjectModel"]
+- !private ["PSo16NSObjectProtocol", "NSMigratePersistentStoresAutomaticallyOption"]
 - !private ["PSo16NSObjectProtocol", "NSPersistentStoreCoordinator"]
 - !private ["PSo16NSObjectProtocol", "NSSQLiteStoreType"]
 - !private ["PSo16NSObjectProtocol", "NSUnderlyingErrorKey"]
@@ -872,11 +898,13 @@ depends-member:
 - !private ["PSo21UIApplicationDelegate", "NSBundle"]
 - !private ["PSo21UIApplicationDelegate", "NSError"]
 - !private ["PSo21UIApplicationDelegate", "NSFileManager"]
+- !private ["PSo21UIApplicationDelegate", "NSInferMappingModelAutomaticallyOption"]
 - !private ["PSo21UIApplicationDelegate", "NSLocalizedDescriptionKey"]
 - !private ["PSo21UIApplicationDelegate", "NSLocalizedFailureReasonErrorKey"]
 - !private ["PSo21UIApplicationDelegate", "NSLog"]
 - !private ["PSo21UIApplicationDelegate", "NSManagedObjectContext"]
 - !private ["PSo21UIApplicationDelegate", "NSManagedObjectModel"]
+- !private ["PSo21UIApplicationDelegate", "NSMigratePersistentStoresAutomaticallyOption"]
 - !private ["PSo21UIApplicationDelegate", "NSPersistentStoreCoordinator"]
 - !private ["PSo21UIApplicationDelegate", "NSSQLiteStoreType"]
 - !private ["PSo21UIApplicationDelegate", "NSUnderlyingErrorKey"]
@@ -915,11 +943,13 @@ depends-member:
 - !private ["CSo11UIResponder", "NSDictionary"]
 - !private ["CSo11UIResponder", "NSError"]
 - !private ["CSo11UIResponder", "NSFileManager"]
+- !private ["CSo11UIResponder", "NSInferMappingModelAutomaticallyOption"]
 - !private ["CSo11UIResponder", "NSLocalizedDescriptionKey"]
 - !private ["CSo11UIResponder", "NSLocalizedFailureReasonErrorKey"]
 - !private ["CSo11UIResponder", "NSLog"]
 - ["CSo11UIResponder", "NSManagedObjectContext"]
 - ["CSo11UIResponder", "NSManagedObjectModel"]
+- !private ["CSo11UIResponder", "NSMigratePersistentStoresAutomaticallyOption"]
 - ["CSo11UIResponder", "NSNumber"]
 - ["CSo11UIResponder", "NSObject"]
 - ["CSo11UIResponder", "NSPersistentStoreCoordinator"]
@@ -979,11 +1009,13 @@ depends-member:
 - !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "NSBundle"]
 - !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "NSError"]
 - !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "NSFileManager"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "NSInferMappingModelAutomaticallyOption"]
 - !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "NSLocalizedDescriptionKey"]
 - !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "NSLocalizedFailureReasonErrorKey"]
 - !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "NSLog"]
 - !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "NSManagedObjectContext"]
 - !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "NSManagedObjectModel"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "NSMigratePersistentStoresAutomaticallyOption"]
 - !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "NSPersistentStoreCoordinator"]
 - !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "NSSQLiteStoreType"]
 - !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "NSUnderlyingErrorKey"]
@@ -1043,7 +1075,9 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "Generator"]
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
 - !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
 - !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
@@ -1262,4 +1296,4 @@ depends-external:
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Firebase/Analytics/Sources/Firebase.h"
-interface-hash: "6372e931e9fe2c7eb10d77719c14b15e"
+interface-hash: "9f85dcb010836c209906a6ad567d75c2"
