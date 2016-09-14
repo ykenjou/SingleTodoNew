@@ -45,8 +45,6 @@ class AddViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        
-        
     }
     
 
@@ -58,8 +56,12 @@ class AddViewController: UIViewController {
     private func setItemData(text:String){
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let fetchRequest = NSFetchRequest(entityName: "Item")
-        var error: NSError? = nil
-        let count = appDelegate.managedObjectContext.countForFetchRequest(fetchRequest, error: &error)
+        var count: NSInteger? = nil
+        do {
+            count = try appDelegate.managedObjectContext.countForFetchRequest(fetchRequest)
+        } catch let error as NSError? {
+            print(error)
+        }
         
         if text.containsString("\n") && swtichBool == true {
             let textArray = text.componentsSeparatedByString("\n")
@@ -67,16 +69,36 @@ class AddViewController: UIViewController {
             for i in 0..<textArray.count {
                 let item = NSEntityDescription.insertNewObjectForEntityForName("Item", inManagedObjectContext: appDelegate.managedObjectContext) as! Item
                 item.text = textArray[i]
-                item.displayOrder = count + i
+                item.displayOrder = count! + i
                 item.checked = 0
                 
-                /*
+                
                 let fetchRequestLog = NSFetchRequest(entityName: "Log")
                 let precidateLog = NSPredicate(format: "text LIKE %@", textArray[i])
                 fetchRequestLog.predicate = precidateLog
-                let logCount = appDelegate.managedObjectContext.countForFetchRequest(fetchRequestLog, error: &error)
-                */
+                var logCount: NSInteger? = nil
+                do {
+                    logCount = try appDelegate.managedObjectContext.countForFetchRequest(fetchRequestLog)
+                } catch let error as NSError? {
+                    print(error)
+                }
                 
+                //カウントが0ならLogに現在日時と共に追加する
+                if logCount == 0 {
+                    let log = NSEntityDescription.insertNewObjectForEntityForName("Log", inManagedObjectContext: appDelegate.managedObjectContext) as! Log
+                    log.text = textArray[i]
+                    let now = NSDate()
+                    log.time = now
+                } else {
+                    //既に存在している場合は日時だけ更新
+                    do {
+                        let logs = try appDelegate.managedObjectContext.executeFetchRequest(fetchRequestLog) as! [Log]
+                        let now = NSDate()
+                        logs[0].time = now
+                    } catch {
+                        print("error")
+                    }
+                }
             }
         } else {
             let item = NSEntityDescription.insertNewObjectForEntityForName("Item", inManagedObjectContext: appDelegate.managedObjectContext) as! Item
@@ -88,7 +110,13 @@ class AddViewController: UIViewController {
             let fetchRequestLog = NSFetchRequest(entityName: "Log")
             let precidateLog = NSPredicate(format: "text LIKE %@", text)
             fetchRequestLog.predicate = precidateLog
-            let logCount = appDelegate.managedObjectContext.countForFetchRequest(fetchRequestLog, error: &error)
+            var logCount: NSInteger? = nil
+            do {
+                logCount = try appDelegate.managedObjectContext.countForFetchRequest(fetchRequestLog)
+            } catch let error as NSError? {
+                print(error)
+            }
+            
             
             //カウントが0ならLogに現在日時と共に追加する
             
@@ -98,6 +126,7 @@ class AddViewController: UIViewController {
                 let now = NSDate()
                 log.time = now
             } else {
+                //既に存在している場合は日時だけ更新
                 do {
                     let logs = try appDelegate.managedObjectContext.executeFetchRequest(fetchRequestLog) as! [Log]
                     let now = NSDate()

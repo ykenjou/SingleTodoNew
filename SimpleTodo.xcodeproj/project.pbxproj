@@ -366,6 +366,7 @@
 					F2FFBDAC1D6498F800D73796 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = QTS9VPEC4Z;
+						LastSwiftMigration = 0800;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
 								enabled = 1;
@@ -374,10 +375,12 @@
 					};
 					F2FFBDC31D6498F900D73796 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 						TestTargetID = F2FFBDAC1D6498F800D73796;
 					};
 					F2FFBDCE1D6498F900D73796 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 						TestTargetID = F2FFBDAC1D6498F800D73796;
 					};
 				};
@@ -698,6 +701,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kdevelop.SingleTodoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "48047694-e6ca-4bc3-8af4-18f6c48b1886";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -722,6 +726,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kdevelop.SingleTodoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "48047694-e6ca-4bc3-8af4-18f6c48b1886";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -733,6 +738,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kdevelop.SimpleTodoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleTodo.app/SimpleTodo";
 			};
 			name = Debug;
@@ -745,6 +751,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kdevelop.SimpleTodoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleTodo.app/SimpleTodo";
 			};
 			name = Release;
@@ -756,6 +763,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kdevelop.SimpleTodoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = SimpleTodo;
 			};
 			name = Debug;
@@ -767,6 +775,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kdevelop.SimpleTodoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = SimpleTodo;
 			};
 			name = Release;

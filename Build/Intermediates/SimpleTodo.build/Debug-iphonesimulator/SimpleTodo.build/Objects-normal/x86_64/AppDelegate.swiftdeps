@@ -6,53 +6,58 @@ provides-nominal:
 provides-member:
 - ["C10SimpleTodo11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationDidBecomeActive"
-- "managedObjectContext"
-- "userDefaults"
-- "displayOrder"
-- "applicationWillResignActive"
-- "saveContext"
-- "applicationWillEnterForeground"
-- "application"
-- "applicationDidEnterBackground"
-- "itemText"
-- "persistentStoreCoordinator"
-- "window"
-- "applicationWillTerminate"
 - "applicationDocumentsDirectory"
+- "application"
+- "window"
 - "managedObjectModel"
+- "applicationWillResignActive"
+- "applicationWillTerminate"
+- "userDefaults"
+- "managedObjectContext"
+- "saveContext"
+- "applicationDidBecomeActive"
+- "displayOrder"
+- "persistentStoreCoordinator"
+- "applicationWillEnterForeground"
+- "itemText"
+- "applicationDidEnterBackground"
 depends-top-level:
-- "UIResponder"
-- !private "NSLocalizedDescriptionKey"
-- "NSURL"
-- "NSManagedObjectModel"
-- !private "NSLog"
-- "NSManagedObjectContext"
-- !private "NSDictionary"
+- "UIApplication"
+- "UIWindow"
+- "NSString"
 - !private "NSSQLiteStoreType"
-- !private "Dictionary"
-- !private "-"
-- "AnyObject"
-- "NSPersistentStoreCoordinator"
-- "StringLiteralType"
-- !private "NSUnderlyingErrorKey"
-- !private "NSBundle"
-- !private "NSFileManager"
-- !private "String"
-- "UIApplicationDelegate"
+- "NSManagedObjectModel"
 - !private "FIRApp"
+- !private "-"
+- "XXXPurchaseManagerDelegate"
+- "NSURL"
+- "NSManagedObjectContext"
+- "StringLiteralType"
+- !private "NSLog"
 - !private "abort"
 - !private "NSError"
-- "UIWindow"
-- "Bool"
-- !private "BooleanLiteralType"
-- "AppDelegate"
-- "NSNumber"
-- "NSString"
-- "UIApplication"
-- "NSObject"
-- !private "NSLocalizedFailureReasonErrorKey"
+- !private "NSLocalizedDescriptionKey"
 - "NSUserDefaults"
+- "Bool"
+- !private "NSUnderlyingErrorKey"
+- "AppDelegate"
+- !private "SKPaymentQueue"
+- "NSNumber"
+- "UIApplicationDelegate"
+- "AnyObject"
+- "NSPersistentStoreCoordinator"
+- "NSObject"
+- !private "NSMigratePersistentStoresAutomaticallyOption"
+- !private "NSInferMappingModelAutomaticallyOption"
+- !private "NSDictionary"
+- !private "String"
+- !private "NSBundle"
+- "Dictionary"
+- "UIResponder"
+- !private "NSLocalizedFailureReasonErrorKey"
+- !private "XXXPurchaseManager"
+- !private "NSFileManager"
+- "BooleanLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "AnyObject"]
 - !private ["Ps9AnyObject", "FIRApp"]
@@ -60,22 +65,27 @@ depends-member:
 - !private ["Ps9AnyObject", "NSBundle"]
 - !private ["Ps9AnyObject", "NSError"]
 - !private ["Ps9AnyObject", "NSFileManager"]
+- !private ["Ps9AnyObject", "NSInferMappingModelAutomaticallyOption"]
 - !private ["Ps9AnyObject", "NSLocalizedDescriptionKey"]
 - !private ["Ps9AnyObject", "NSLocalizedFailureReasonErrorKey"]
 - !private ["Ps9AnyObject", "NSLog"]
 - !private ["Ps9AnyObject", "NSManagedObjectContext"]
 - !private ["Ps9AnyObject", "NSManagedObjectModel"]
+- !private ["Ps9AnyObject", "NSMigratePersistentStoresAutomaticallyOption"]
 - !private ["Ps9AnyObject", "NSPersistentStoreCoordinator"]
 - !private ["Ps9AnyObject", "NSSQLiteStoreType"]
 - !private ["Ps9AnyObject", "NSUnderlyingErrorKey"]
 - ["Ps9AnyObject", "NSUserDefaults"]
+- !private ["Ps9AnyObject", "SKPaymentQueue"]
 - !private ["Ps9AnyObject", "String"]
 - !private ["Ps9AnyObject", "URLByAppendingPathComponent"]
 - !private ["Ps9AnyObject", "URLForResource"]
 - !private ["Ps9AnyObject", "URLsForDirectory"]
 - !private ["Ps9AnyObject", "Value"]
+- !private ["Ps9AnyObject", "XXXPurchaseManager"]
 - !private ["Ps9AnyObject", "abort"]
 - !private ["Ps9AnyObject", "addPersistentStoreWithType"]
+- !private ["Ps9AnyObject", "addTransactionObserver"]
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
 - ["Ps9AnyObject", "applicationDidEnterBackground"]
@@ -92,7 +102,9 @@ depends-member:
 - ["Ps9AnyObject", "applicationWillTerminate"]
 - !private ["Ps9AnyObject", "configure"]
 - !private ["Ps9AnyObject", "defaultManager"]
+- !private ["Ps9AnyObject", "defaultQueue"]
 - !private ["Ps9AnyObject", "deinit"]
+- !private ["Ps9AnyObject", "delegate"]
 - ["Ps9AnyObject", "displayOrder"]
 - !private ["Ps9AnyObject", "hasChanges"]
 - ["Ps9AnyObject", "init"]
@@ -104,9 +116,14 @@ depends-member:
 - ["Ps9AnyObject", "managedObjectModel.storage"]
 - ["Ps9AnyObject", "persistentStoreCoordinator"]
 - ["Ps9AnyObject", "persistentStoreCoordinator.storage"]
+- ["Ps9AnyObject", "purchaseManager"]
+- ["Ps9AnyObject", "purchaseManagerDidDeferred"]
+- ["Ps9AnyObject", "purchaseManagerDidFinishRestore"]
 - !private ["Ps9AnyObject", "registerDefaults"]
+- !private ["Ps9AnyObject", "removeTransactionObserver"]
 - !private ["Ps9AnyObject", "save"]
 - ["Ps9AnyObject", "saveContext"]
+- !private ["Ps9AnyObject", "sharedManager"]
 - ["Ps9AnyObject", "standardUserDefaults"]
 - ["Ps9AnyObject", "userDefaults"]
 - !private ["Ps9AnyObject", "userInfo"]
@@ -119,11 +136,13 @@ depends-member:
 - !private ["C10SimpleTodo11AppDelegate", "NSDictionary"]
 - !private ["C10SimpleTodo11AppDelegate", "NSError"]
 - !private ["C10SimpleTodo11AppDelegate", "NSFileManager"]
+- !private ["C10SimpleTodo11AppDelegate", "NSInferMappingModelAutomaticallyOption"]
 - !private ["C10SimpleTodo11AppDelegate", "NSLocalizedDescriptionKey"]
 - !private ["C10SimpleTodo11AppDelegate", "NSLocalizedFailureReasonErrorKey"]
 - !private ["C10SimpleTodo11AppDelegate", "NSLog"]
 - ["C10SimpleTodo11AppDelegate", "NSManagedObjectContext"]
 - ["C10SimpleTodo11AppDelegate", "NSManagedObjectModel"]
+- !private ["C10SimpleTodo11AppDelegate", "NSMigratePersistentStoresAutomaticallyOption"]
 - ["C10SimpleTodo11AppDelegate", "NSNumber"]
 - ["C10SimpleTodo11AppDelegate", "NSObject"]
 - ["C10SimpleTodo11AppDelegate", "NSPersistentStoreCoordinator"]
@@ -132,9 +151,11 @@ depends-member:
 - ["C10SimpleTodo11AppDelegate", "NSURL"]
 - !private ["C10SimpleTodo11AppDelegate", "NSUnderlyingErrorKey"]
 - ["C10SimpleTodo11AppDelegate", "NSUserDefaults"]
+- !private ["C10SimpleTodo11AppDelegate", "SKPaymentQueue"]
 - !private ["C10SimpleTodo11AppDelegate", "String"]
 - ["C10SimpleTodo11AppDelegate", "UIApplication"]
 - ["C10SimpleTodo11AppDelegate", "UIWindow"]
+- !private ["C10SimpleTodo11AppDelegate", "XXXPurchaseManager"]
 - !private ["C10SimpleTodo11AppDelegate", "abort"]
 - ["C10SimpleTodo11AppDelegate", "application"]
 - ["C10SimpleTodo11AppDelegate", "applicationDidBecomeActive"]
@@ -160,6 +181,9 @@ depends-member:
 - !private ["C10SimpleTodo11AppDelegate", "managedObjectModel.storage"]
 - ["C10SimpleTodo11AppDelegate", "persistentStoreCoordinator"]
 - !private ["C10SimpleTodo11AppDelegate", "persistentStoreCoordinator.storage"]
+- ["C10SimpleTodo11AppDelegate", "purchaseManager"]
+- ["C10SimpleTodo11AppDelegate", "purchaseManagerDidDeferred"]
+- ["C10SimpleTodo11AppDelegate", "purchaseManagerDidFinishRestore"]
 - ["C10SimpleTodo11AppDelegate", "saveContext"]
 - ["C10SimpleTodo11AppDelegate", "userDefaults"]
 - ["C10SimpleTodo11AppDelegate", "window"]
@@ -193,22 +217,27 @@ depends-member:
 - !private ["Ps11CVarArgType", "NSBundle"]
 - !private ["Ps11CVarArgType", "NSError"]
 - !private ["Ps11CVarArgType", "NSFileManager"]
+- !private ["Ps11CVarArgType", "NSInferMappingModelAutomaticallyOption"]
 - !private ["Ps11CVarArgType", "NSLocalizedDescriptionKey"]
 - !private ["Ps11CVarArgType", "NSLocalizedFailureReasonErrorKey"]
 - !private ["Ps11CVarArgType", "NSLog"]
 - !private ["Ps11CVarArgType", "NSManagedObjectContext"]
 - !private ["Ps11CVarArgType", "NSManagedObjectModel"]
+- !private ["Ps11CVarArgType", "NSMigratePersistentStoresAutomaticallyOption"]
 - !private ["Ps11CVarArgType", "NSPersistentStoreCoordinator"]
 - !private ["Ps11CVarArgType", "NSSQLiteStoreType"]
 - !private ["Ps11CVarArgType", "NSUnderlyingErrorKey"]
 - ["Ps11CVarArgType", "NSUserDefaults"]
+- !private ["Ps11CVarArgType", "SKPaymentQueue"]
 - !private ["Ps11CVarArgType", "String"]
 - !private ["Ps11CVarArgType", "URLByAppendingPathComponent"]
 - !private ["Ps11CVarArgType", "URLForResource"]
 - !private ["Ps11CVarArgType", "URLsForDirectory"]
 - !private ["Ps11CVarArgType", "Value"]
+- !private ["Ps11CVarArgType", "XXXPurchaseManager"]
 - !private ["Ps11CVarArgType", "abort"]
 - !private ["Ps11CVarArgType", "addPersistentStoreWithType"]
+- !private ["Ps11CVarArgType", "addTransactionObserver"]
 - ["Ps11CVarArgType", "application"]
 - ["Ps11CVarArgType", "applicationDidBecomeActive"]
 - ["Ps11CVarArgType", "applicationDidEnterBackground"]
@@ -225,6 +254,8 @@ depends-member:
 - ["Ps11CVarArgType", "applicationWillTerminate"]
 - !private ["Ps11CVarArgType", "configure"]
 - !private ["Ps11CVarArgType", "defaultManager"]
+- !private ["Ps11CVarArgType", "defaultQueue"]
+- !private ["Ps11CVarArgType", "delegate"]
 - ["Ps11CVarArgType", "displayOrder"]
 - !private ["Ps11CVarArgType", "hasChanges"]
 - ["Ps11CVarArgType", "init"]
@@ -236,9 +267,14 @@ depends-member:
 - ["Ps11CVarArgType", "managedObjectModel.storage"]
 - ["Ps11CVarArgType", "persistentStoreCoordinator"]
 - ["Ps11CVarArgType", "persistentStoreCoordinator.storage"]
+- ["Ps11CVarArgType", "purchaseManager"]
+- ["Ps11CVarArgType", "purchaseManagerDidDeferred"]
+- ["Ps11CVarArgType", "purchaseManagerDidFinishRestore"]
 - !private ["Ps11CVarArgType", "registerDefaults"]
+- !private ["Ps11CVarArgType", "removeTransactionObserver"]
 - !private ["Ps11CVarArgType", "save"]
 - ["Ps11CVarArgType", "saveContext"]
+- !private ["Ps11CVarArgType", "sharedManager"]
 - ["Ps11CVarArgType", "standardUserDefaults"]
 - ["Ps11CVarArgType", "userDefaults"]
 - !private ["Ps11CVarArgType", "userInfo"]
@@ -247,7 +283,9 @@ depends-member:
 - !private ["Vs9Character", "deinit"]
 - !private ["Ps14CollectionType", "Generator"]
 - !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "Key"]
 - !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "Value"]
 - !private ["Ps14CollectionType", "_Element"]
 - !private ["Ps14CollectionType", "count"]
 - !private ["Ps14CollectionType", "init"]
@@ -263,23 +301,28 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "NSBundle"]
 - !private ["Ps28CustomDebugStringConvertible", "NSError"]
 - !private ["Ps28CustomDebugStringConvertible", "NSFileManager"]
+- !private ["Ps28CustomDebugStringConvertible", "NSInferMappingModelAutomaticallyOption"]
 - !private ["Ps28CustomDebugStringConvertible", "NSLocalizedDescriptionKey"]
 - !private ["Ps28CustomDebugStringConvertible", "NSLocalizedFailureReasonErrorKey"]
 - !private ["Ps28CustomDebugStringConvertible", "NSLog"]
 - !private ["Ps28CustomDebugStringConvertible", "NSManagedObjectContext"]
 - !private ["Ps28CustomDebugStringConvertible", "NSManagedObjectModel"]
+- !private ["Ps28CustomDebugStringConvertible", "NSMigratePersistentStoresAutomaticallyOption"]
 - !private ["Ps28CustomDebugStringConvertible", "NSPersistentStoreCoordinator"]
 - !private ["Ps28CustomDebugStringConvertible", "NSSQLiteStoreType"]
 - !private ["Ps28CustomDebugStringConvertible", "NSUnderlyingErrorKey"]
 - ["Ps28CustomDebugStringConvertible", "NSUserDefaults"]
+- !private ["Ps28CustomDebugStringConvertible", "SKPaymentQueue"]
 - !private ["Ps28CustomDebugStringConvertible", "String"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "URLByAppendingPathComponent"]
 - !private ["Ps28CustomDebugStringConvertible", "URLForResource"]
 - !private ["Ps28CustomDebugStringConvertible", "URLsForDirectory"]
 - !private ["Ps28CustomDebugStringConvertible", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "XXXPurchaseManager"]
 - !private ["Ps28CustomDebugStringConvertible", "abort"]
 - !private ["Ps28CustomDebugStringConvertible", "addPersistentStoreWithType"]
+- !private ["Ps28CustomDebugStringConvertible", "addTransactionObserver"]
 - ["Ps28CustomDebugStringConvertible", "application"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidBecomeActive"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidEnterBackground"]
@@ -297,6 +340,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "configure"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "defaultManager"]
+- !private ["Ps28CustomDebugStringConvertible", "defaultQueue"]
+- !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - ["Ps28CustomDebugStringConvertible", "displayOrder"]
 - !private ["Ps28CustomDebugStringConvertible", "hasChanges"]
 - ["Ps28CustomDebugStringConvertible", "init"]
@@ -308,9 +353,14 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "managedObjectModel.storage"]
 - ["Ps28CustomDebugStringConvertible", "persistentStoreCoordinator"]
 - ["Ps28CustomDebugStringConvertible", "persistentStoreCoordinator.storage"]
+- ["Ps28CustomDebugStringConvertible", "purchaseManager"]
+- ["Ps28CustomDebugStringConvertible", "purchaseManagerDidDeferred"]
+- ["Ps28CustomDebugStringConvertible", "purchaseManagerDidFinishRestore"]
 - !private ["Ps28CustomDebugStringConvertible", "registerDefaults"]
+- !private ["Ps28CustomDebugStringConvertible", "removeTransactionObserver"]
 - !private ["Ps28CustomDebugStringConvertible", "save"]
 - ["Ps28CustomDebugStringConvertible", "saveContext"]
+- !private ["Ps28CustomDebugStringConvertible", "sharedManager"]
 - ["Ps28CustomDebugStringConvertible", "standardUserDefaults"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - ["Ps28CustomDebugStringConvertible", "userDefaults"]
@@ -327,24 +377,29 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "NSBundle"]
 - !private ["Ps23CustomStringConvertible", "NSError"]
 - !private ["Ps23CustomStringConvertible", "NSFileManager"]
+- !private ["Ps23CustomStringConvertible", "NSInferMappingModelAutomaticallyOption"]
 - !private ["Ps23CustomStringConvertible", "NSLocalizedDescriptionKey"]
 - !private ["Ps23CustomStringConvertible", "NSLocalizedFailureReasonErrorKey"]
 - !private ["Ps23CustomStringConvertible", "NSLog"]
 - !private ["Ps23CustomStringConvertible", "NSManagedObjectContext"]
 - !private ["Ps23CustomStringConvertible", "NSManagedObjectModel"]
+- !private ["Ps23CustomStringConvertible", "NSMigratePersistentStoresAutomaticallyOption"]
 - !private ["Ps23CustomStringConvertible", "NSPersistentStoreCoordinator"]
 - !private ["Ps23CustomStringConvertible", "NSSQLiteStoreType"]
 - !private ["Ps23CustomStringConvertible", "NSUnderlyingErrorKey"]
 - ["Ps23CustomStringConvertible", "NSUserDefaults"]
+- !private ["Ps23CustomStringConvertible", "SKPaymentQueue"]
 - !private ["Ps23CustomStringConvertible", "String"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "URLByAppendingPathComponent"]
 - !private ["Ps23CustomStringConvertible", "URLForResource"]
 - !private ["Ps23CustomStringConvertible", "URLsForDirectory"]
 - !private ["Ps23CustomStringConvertible", "Value"]
+- !private ["Ps23CustomStringConvertible", "XXXPurchaseManager"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "abort"]
 - !private ["Ps23CustomStringConvertible", "addPersistentStoreWithType"]
+- !private ["Ps23CustomStringConvertible", "addTransactionObserver"]
 - ["Ps23CustomStringConvertible", "application"]
 - ["Ps23CustomStringConvertible", "applicationDidBecomeActive"]
 - ["Ps23CustomStringConvertible", "applicationDidEnterBackground"]
@@ -362,6 +417,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "configure"]
 - !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "defaultManager"]
+- !private ["Ps23CustomStringConvertible", "defaultQueue"]
+- !private ["Ps23CustomStringConvertible", "delegate"]
 - ["Ps23CustomStringConvertible", "displayOrder"]
 - !private ["Ps23CustomStringConvertible", "hasChanges"]
 - ["Ps23CustomStringConvertible", "init"]
@@ -373,15 +430,22 @@ depends-member:
 - ["Ps23CustomStringConvertible", "managedObjectModel.storage"]
 - ["Ps23CustomStringConvertible", "persistentStoreCoordinator"]
 - ["Ps23CustomStringConvertible", "persistentStoreCoordinator.storage"]
+- ["Ps23CustomStringConvertible", "purchaseManager"]
+- ["Ps23CustomStringConvertible", "purchaseManagerDidDeferred"]
+- ["Ps23CustomStringConvertible", "purchaseManagerDidFinishRestore"]
 - !private ["Ps23CustomStringConvertible", "registerDefaults"]
+- !private ["Ps23CustomStringConvertible", "removeTransactionObserver"]
 - !private ["Ps23CustomStringConvertible", "save"]
 - ["Ps23CustomStringConvertible", "saveContext"]
+- !private ["Ps23CustomStringConvertible", "sharedManager"]
 - ["Ps23CustomStringConvertible", "standardUserDefaults"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - ["Ps23CustomStringConvertible", "userDefaults"]
 - !private ["Ps23CustomStringConvertible", "userInfo"]
 - ["Ps23CustomStringConvertible", "window"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "Value"]
 - !private ["Vs10Dictionary", "init"]
 - !private ["Vs10Dictionary", "subscript"]
 - !private ["Ps28DictionaryLiteralConvertible", "Key"]
@@ -399,24 +463,29 @@ depends-member:
 - !private ["Ps9Equatable", "NSBundle"]
 - !private ["Ps9Equatable", "NSError"]
 - !private ["Ps9Equatable", "NSFileManager"]
+- !private ["Ps9Equatable", "NSInferMappingModelAutomaticallyOption"]
 - !private ["Ps9Equatable", "NSLocalizedDescriptionKey"]
 - !private ["Ps9Equatable", "NSLocalizedFailureReasonErrorKey"]
 - !private ["Ps9Equatable", "NSLog"]
 - !private ["Ps9Equatable", "NSManagedObjectContext"]
 - !private ["Ps9Equatable", "NSManagedObjectModel"]
+- !private ["Ps9Equatable", "NSMigratePersistentStoresAutomaticallyOption"]
 - !private ["Ps9Equatable", "NSPersistentStoreCoordinator"]
 - !private ["Ps9Equatable", "NSSQLiteStoreType"]
 - !private ["Ps9Equatable", "NSUnderlyingErrorKey"]
 - ["Ps9Equatable", "NSUserDefaults"]
+- !private ["Ps9Equatable", "SKPaymentQueue"]
 - !private ["Ps9Equatable", "String"]
 - !private ["Ps9Equatable", "URLByAppendingPathComponent"]
 - !private ["Ps9Equatable", "URLForResource"]
 - !private ["Ps9Equatable", "URLsForDirectory"]
 - !private ["Ps9Equatable", "UserDomainMask"]
 - !private ["Ps9Equatable", "Value"]
+- !private ["Ps9Equatable", "XXXPurchaseManager"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "abort"]
 - !private ["Ps9Equatable", "addPersistentStoreWithType"]
+- !private ["Ps9Equatable", "addTransactionObserver"]
 - ["Ps9Equatable", "application"]
 - ["Ps9Equatable", "applicationDidBecomeActive"]
 - ["Ps9Equatable", "applicationDidEnterBackground"]
@@ -433,6 +502,8 @@ depends-member:
 - ["Ps9Equatable", "applicationWillTerminate"]
 - !private ["Ps9Equatable", "configure"]
 - !private ["Ps9Equatable", "defaultManager"]
+- !private ["Ps9Equatable", "defaultQueue"]
+- !private ["Ps9Equatable", "delegate"]
 - ["Ps9Equatable", "displayOrder"]
 - !private ["Ps9Equatable", "hasChanges"]
 - ["Ps9Equatable", "init"]
@@ -444,9 +515,14 @@ depends-member:
 - ["Ps9Equatable", "managedObjectModel.storage"]
 - ["Ps9Equatable", "persistentStoreCoordinator"]
 - ["Ps9Equatable", "persistentStoreCoordinator.storage"]
+- ["Ps9Equatable", "purchaseManager"]
+- ["Ps9Equatable", "purchaseManagerDidDeferred"]
+- ["Ps9Equatable", "purchaseManagerDidFinishRestore"]
 - !private ["Ps9Equatable", "registerDefaults"]
+- !private ["Ps9Equatable", "removeTransactionObserver"]
 - !private ["Ps9Equatable", "save"]
 - ["Ps9Equatable", "saveContext"]
+- !private ["Ps9Equatable", "sharedManager"]
 - ["Ps9Equatable", "standardUserDefaults"]
 - ["Ps9Equatable", "userDefaults"]
 - !private ["Ps9Equatable", "userInfo"]
@@ -470,23 +546,28 @@ depends-member:
 - !private ["Ps8Hashable", "NSBundle"]
 - !private ["Ps8Hashable", "NSError"]
 - !private ["Ps8Hashable", "NSFileManager"]
+- !private ["Ps8Hashable", "NSInferMappingModelAutomaticallyOption"]
 - !private ["Ps8Hashable", "NSLocalizedDescriptionKey"]
 - !private ["Ps8Hashable", "NSLocalizedFailureReasonErrorKey"]
 - !private ["Ps8Hashable", "NSLog"]
 - !private ["Ps8Hashable", "NSManagedObjectContext"]
 - !private ["Ps8Hashable", "NSManagedObjectModel"]
+- !private ["Ps8Hashable", "NSMigratePersistentStoresAutomaticallyOption"]
 - !private ["Ps8Hashable", "NSPersistentStoreCoordinator"]
 - !private ["Ps8Hashable", "NSSQLiteStoreType"]
 - !private ["Ps8Hashable", "NSUnderlyingErrorKey"]
 - ["Ps8Hashable", "NSUserDefaults"]
+- !private ["Ps8Hashable", "SKPaymentQueue"]
 - !private ["Ps8Hashable", "String"]
 - !private ["Ps8Hashable", "URLByAppendingPathComponent"]
 - !private ["Ps8Hashable", "URLForResource"]
 - !private ["Ps8Hashable", "URLsForDirectory"]
 - !private ["Ps8Hashable", "Value"]
+- !private ["Ps8Hashable", "XXXPurchaseManager"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "abort"]
 - !private ["Ps8Hashable", "addPersistentStoreWithType"]
+- !private ["Ps8Hashable", "addTransactionObserver"]
 - ["Ps8Hashable", "application"]
 - ["Ps8Hashable", "applicationDidBecomeActive"]
 - ["Ps8Hashable", "applicationDidEnterBackground"]
@@ -503,6 +584,8 @@ depends-member:
 - ["Ps8Hashable", "applicationWillTerminate"]
 - !private ["Ps8Hashable", "configure"]
 - !private ["Ps8Hashable", "defaultManager"]
+- !private ["Ps8Hashable", "defaultQueue"]
+- !private ["Ps8Hashable", "delegate"]
 - ["Ps8Hashable", "displayOrder"]
 - !private ["Ps8Hashable", "hasChanges"]
 - ["Ps8Hashable", "init"]
@@ -514,9 +597,14 @@ depends-member:
 - ["Ps8Hashable", "managedObjectModel.storage"]
 - ["Ps8Hashable", "persistentStoreCoordinator"]
 - ["Ps8Hashable", "persistentStoreCoordinator.storage"]
+- ["Ps8Hashable", "purchaseManager"]
+- ["Ps8Hashable", "purchaseManagerDidDeferred"]
+- ["Ps8Hashable", "purchaseManagerDidFinishRestore"]
 - !private ["Ps8Hashable", "registerDefaults"]
+- !private ["Ps8Hashable", "removeTransactionObserver"]
 - !private ["Ps8Hashable", "save"]
 - ["Ps8Hashable", "saveContext"]
+- !private ["Ps8Hashable", "sharedManager"]
 - ["Ps8Hashable", "standardUserDefaults"]
 - ["Ps8Hashable", "userDefaults"]
 - !private ["Ps8Hashable", "userInfo"]
@@ -524,7 +612,9 @@ depends-member:
 - ["Ps8Hashable", ""]
 - !private ["Ps9Indexable", "Generator"]
 - !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "Key"]
 - !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "Value"]
 - !private ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "count"]
 - !private ["Ps9Indexable", "init"]
@@ -585,6 +675,8 @@ depends-member:
 - !private ["PSo17NSFastEnumeration", "Key"]
 - !private ["PSo17NSFastEnumeration", "Value"]
 - !private ["PSo17NSFastEnumeration", "init"]
+- !private ["PSo20NSFetchRequestResult", "Key"]
+- !private ["PSo20NSFetchRequestResult", "Value"]
 - !private ["CSo13NSFileManager", "URLsForDirectory"]
 - !private ["CSo13NSFileManager", "defaultManager"]
 - !private ["PSo9NSLocking", "addPersistentStoreWithType"]
@@ -609,11 +701,13 @@ depends-member:
 - !private ["CSo8NSObject", "NSDictionary"]
 - !private ["CSo8NSObject", "NSError"]
 - !private ["CSo8NSObject", "NSFileManager"]
+- !private ["CSo8NSObject", "NSInferMappingModelAutomaticallyOption"]
 - !private ["CSo8NSObject", "NSLocalizedDescriptionKey"]
 - !private ["CSo8NSObject", "NSLocalizedFailureReasonErrorKey"]
 - !private ["CSo8NSObject", "NSLog"]
 - ["CSo8NSObject", "NSManagedObjectContext"]
 - ["CSo8NSObject", "NSManagedObjectModel"]
+- !private ["CSo8NSObject", "NSMigratePersistentStoresAutomaticallyOption"]
 - ["CSo8NSObject", "NSNumber"]
 - ["CSo8NSObject", "NSObject"]
 - ["CSo8NSObject", "NSPersistentStoreCoordinator"]
@@ -622,6 +716,7 @@ depends-member:
 - ["CSo8NSObject", "NSURL"]
 - !private ["CSo8NSObject", "NSUnderlyingErrorKey"]
 - ["CSo8NSObject", "NSUserDefaults"]
+- !private ["CSo8NSObject", "SKPaymentQueue"]
 - !private ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIWindow"]
@@ -629,8 +724,10 @@ depends-member:
 - !private ["CSo8NSObject", "URLForResource"]
 - !private ["CSo8NSObject", "URLsForDirectory"]
 - !private ["CSo8NSObject", "Value"]
+- !private ["CSo8NSObject", "XXXPurchaseManager"]
 - !private ["CSo8NSObject", "abort"]
 - !private ["CSo8NSObject", "addPersistentStoreWithType"]
+- !private ["CSo8NSObject", "addTransactionObserver"]
 - ["CSo8NSObject", "application"]
 - ["CSo8NSObject", "applicationDidBecomeActive"]
 - ["CSo8NSObject", "applicationDidEnterBackground"]
@@ -647,6 +744,8 @@ depends-member:
 - ["CSo8NSObject", "applicationWillTerminate"]
 - !private ["CSo8NSObject", "configure"]
 - !private ["CSo8NSObject", "defaultManager"]
+- !private ["CSo8NSObject", "defaultQueue"]
+- !private ["CSo8NSObject", "delegate"]
 - ["CSo8NSObject", "displayOrder"]
 - !private ["CSo8NSObject", "hasChanges"]
 - ["CSo8NSObject", "init"]
@@ -658,9 +757,14 @@ depends-member:
 - ["CSo8NSObject", "managedObjectModel.storage"]
 - ["CSo8NSObject", "persistentStoreCoordinator"]
 - ["CSo8NSObject", "persistentStoreCoordinator.storage"]
+- ["CSo8NSObject", "purchaseManager"]
+- ["CSo8NSObject", "purchaseManagerDidDeferred"]
+- ["CSo8NSObject", "purchaseManagerDidFinishRestore"]
 - !private ["CSo8NSObject", "registerDefaults"]
+- !private ["CSo8NSObject", "removeTransactionObserver"]
 - !private ["CSo8NSObject", "save"]
 - ["CSo8NSObject", "saveContext"]
+- !private ["CSo8NSObject", "sharedManager"]
 - ["CSo8NSObject", "standardUserDefaults"]
 - ["CSo8NSObject", "userDefaults"]
 - !private ["CSo8NSObject", "userInfo"]
@@ -671,22 +775,27 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSBundle"]
 - !private ["PSo16NSObjectProtocol", "NSError"]
 - !private ["PSo16NSObjectProtocol", "NSFileManager"]
+- !private ["PSo16NSObjectProtocol", "NSInferMappingModelAutomaticallyOption"]
 - !private ["PSo16NSObjectProtocol", "NSLocalizedDescriptionKey"]
 - !private ["PSo16NSObjectProtocol", "NSLocalizedFailureReasonErrorKey"]
 - !private ["PSo16NSObjectProtocol", "NSLog"]
 - !private ["PSo16NSObjectProtocol", "NSManagedObjectContext"]
 - !private ["PSo16NSObjectProtocol", "NSManagedObjectModel"]
+- !private ["PSo16NSObjectProtocol", "NSMigratePersistentStoresAutomaticallyOption"]
 - !private ["PSo16NSObjectProtocol", "NSPersistentStoreCoordinator"]
 - !private ["PSo16NSObjectProtocol", "NSSQLiteStoreType"]
 - !private ["PSo16NSObjectProtocol", "NSUnderlyingErrorKey"]
 - ["PSo16NSObjectProtocol", "NSUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "SKPaymentQueue"]
 - !private ["PSo16NSObjectProtocol", "String"]
 - !private ["PSo16NSObjectProtocol", "URLByAppendingPathComponent"]
 - !private ["PSo16NSObjectProtocol", "URLForResource"]
 - !private ["PSo16NSObjectProtocol", "URLsForDirectory"]
 - !private ["PSo16NSObjectProtocol", "Value"]
+- !private ["PSo16NSObjectProtocol", "XXXPurchaseManager"]
 - !private ["PSo16NSObjectProtocol", "abort"]
 - !private ["PSo16NSObjectProtocol", "addPersistentStoreWithType"]
+- !private ["PSo16NSObjectProtocol", "addTransactionObserver"]
 - ["PSo16NSObjectProtocol", "application"]
 - ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
 - ["PSo16NSObjectProtocol", "applicationDidEnterBackground"]
@@ -703,6 +812,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "applicationWillTerminate"]
 - !private ["PSo16NSObjectProtocol", "configure"]
 - !private ["PSo16NSObjectProtocol", "defaultManager"]
+- !private ["PSo16NSObjectProtocol", "defaultQueue"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
 - ["PSo16NSObjectProtocol", "displayOrder"]
 - !private ["PSo16NSObjectProtocol", "hasChanges"]
 - ["PSo16NSObjectProtocol", "init"]
@@ -714,9 +825,14 @@ depends-member:
 - ["PSo16NSObjectProtocol", "managedObjectModel.storage"]
 - ["PSo16NSObjectProtocol", "persistentStoreCoordinator"]
 - ["PSo16NSObjectProtocol", "persistentStoreCoordinator.storage"]
+- ["PSo16NSObjectProtocol", "purchaseManager"]
+- ["PSo16NSObjectProtocol", "purchaseManagerDidDeferred"]
+- ["PSo16NSObjectProtocol", "purchaseManagerDidFinishRestore"]
 - !private ["PSo16NSObjectProtocol", "registerDefaults"]
+- !private ["PSo16NSObjectProtocol", "removeTransactionObserver"]
 - !private ["PSo16NSObjectProtocol", "save"]
 - ["PSo16NSObjectProtocol", "saveContext"]
+- !private ["PSo16NSObjectProtocol", "sharedManager"]
 - ["PSo16NSObjectProtocol", "standardUserDefaults"]
 - ["PSo16NSObjectProtocol", "userDefaults"]
 - !private ["PSo16NSObjectProtocol", "userInfo"]
@@ -748,6 +864,11 @@ depends-member:
 - !private ["Ps16RawRepresentable", "DocumentDirectory"]
 - !private ["Ps16RawRepresentable", "MainQueueConcurrencyType"]
 - !private ["Ps16RawRepresentable", "UserDomainMask"]
+- !private ["CSo14SKPaymentQueue", "addTransactionObserver"]
+- !private ["CSo14SKPaymentQueue", "defaultQueue"]
+- !private ["CSo14SKPaymentQueue", "removeTransactionObserver"]
+- !private ["PSo28SKPaymentTransactionObserver", "delegate"]
+- !private ["PSo28SKPaymentTransactionObserver", "sharedManager"]
 - !private ["Ps12SequenceType", "Element"]
 - !private ["Ps12SequenceType", "Generator"]
 - !private ["Ps12SequenceType", "Index"]
@@ -779,16 +900,20 @@ depends-member:
 - !private ["PSo21UIApplicationDelegate", "NSBundle"]
 - !private ["PSo21UIApplicationDelegate", "NSError"]
 - !private ["PSo21UIApplicationDelegate", "NSFileManager"]
+- !private ["PSo21UIApplicationDelegate", "NSInferMappingModelAutomaticallyOption"]
 - !private ["PSo21UIApplicationDelegate", "NSLocalizedDescriptionKey"]
 - !private ["PSo21UIApplicationDelegate", "NSLocalizedFailureReasonErrorKey"]
 - !private ["PSo21UIApplicationDelegate", "NSLog"]
 - !private ["PSo21UIApplicationDelegate", "NSManagedObjectContext"]
 - !private ["PSo21UIApplicationDelegate", "NSManagedObjectModel"]
+- !private ["PSo21UIApplicationDelegate", "NSMigratePersistentStoresAutomaticallyOption"]
 - !private ["PSo21UIApplicationDelegate", "NSPersistentStoreCoordinator"]
 - !private ["PSo21UIApplicationDelegate", "NSSQLiteStoreType"]
 - !private ["PSo21UIApplicationDelegate", "NSUnderlyingErrorKey"]
 - ["PSo21UIApplicationDelegate", "NSUserDefaults"]
+- !private ["PSo21UIApplicationDelegate", "SKPaymentQueue"]
 - !private ["PSo21UIApplicationDelegate", "String"]
+- !private ["PSo21UIApplicationDelegate", "XXXPurchaseManager"]
 - !private ["PSo21UIApplicationDelegate", "abort"]
 - ["PSo21UIApplicationDelegate", "application"]
 - ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
@@ -806,6 +931,9 @@ depends-member:
 - !private ["PSo21UIApplicationDelegate", "managedObjectContext"]
 - !private ["PSo21UIApplicationDelegate", "managedObjectModel"]
 - !private ["PSo21UIApplicationDelegate", "persistentStoreCoordinator"]
+- ["PSo21UIApplicationDelegate", "purchaseManager"]
+- ["PSo21UIApplicationDelegate", "purchaseManagerDidDeferred"]
+- ["PSo21UIApplicationDelegate", "purchaseManagerDidFinishRestore"]
 - !private ["PSo21UIApplicationDelegate", "saveContext"]
 - !private ["PSo21UIApplicationDelegate", "userDefaults"]
 - ["PSo21UIApplicationDelegate", "window"]
@@ -817,11 +945,13 @@ depends-member:
 - !private ["CSo11UIResponder", "NSDictionary"]
 - !private ["CSo11UIResponder", "NSError"]
 - !private ["CSo11UIResponder", "NSFileManager"]
+- !private ["CSo11UIResponder", "NSInferMappingModelAutomaticallyOption"]
 - !private ["CSo11UIResponder", "NSLocalizedDescriptionKey"]
 - !private ["CSo11UIResponder", "NSLocalizedFailureReasonErrorKey"]
 - !private ["CSo11UIResponder", "NSLog"]
 - ["CSo11UIResponder", "NSManagedObjectContext"]
 - ["CSo11UIResponder", "NSManagedObjectModel"]
+- !private ["CSo11UIResponder", "NSMigratePersistentStoresAutomaticallyOption"]
 - ["CSo11UIResponder", "NSNumber"]
 - ["CSo11UIResponder", "NSObject"]
 - ["CSo11UIResponder", "NSPersistentStoreCoordinator"]
@@ -830,9 +960,11 @@ depends-member:
 - ["CSo11UIResponder", "NSURL"]
 - !private ["CSo11UIResponder", "NSUnderlyingErrorKey"]
 - ["CSo11UIResponder", "NSUserDefaults"]
+- !private ["CSo11UIResponder", "SKPaymentQueue"]
 - !private ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIWindow"]
+- !private ["CSo11UIResponder", "XXXPurchaseManager"]
 - !private ["CSo11UIResponder", "abort"]
 - ["CSo11UIResponder", "application"]
 - ["CSo11UIResponder", "applicationDidBecomeActive"]
@@ -857,10 +989,63 @@ depends-member:
 - ["CSo11UIResponder", "managedObjectModel.storage"]
 - ["CSo11UIResponder", "persistentStoreCoordinator"]
 - ["CSo11UIResponder", "persistentStoreCoordinator.storage"]
+- ["CSo11UIResponder", "purchaseManager"]
+- ["CSo11UIResponder", "purchaseManagerDidDeferred"]
+- ["CSo11UIResponder", "purchaseManagerDidFinishRestore"]
 - ["CSo11UIResponder", "saveContext"]
 - ["CSo11UIResponder", "userDefaults"]
 - ["CSo11UIResponder", "window"]
 - ["CSo11UIResponder", ""]
+- !private ["PSo30UIResponderStandardEditActions", "AnyObject"]
+- !private ["PSo30UIResponderStandardEditActions", "FIRApp"]
+- !private ["PSo30UIResponderStandardEditActions", "NSBundle"]
+- !private ["PSo30UIResponderStandardEditActions", "NSError"]
+- !private ["PSo30UIResponderStandardEditActions", "NSFileManager"]
+- !private ["PSo30UIResponderStandardEditActions", "NSInferMappingModelAutomaticallyOption"]
+- !private ["PSo30UIResponderStandardEditActions", "NSLocalizedDescriptionKey"]
+- !private ["PSo30UIResponderStandardEditActions", "NSLocalizedFailureReasonErrorKey"]
+- !private ["PSo30UIResponderStandardEditActions", "NSLog"]
+- !private ["PSo30UIResponderStandardEditActions", "NSManagedObjectContext"]
+- !private ["PSo30UIResponderStandardEditActions", "NSManagedObjectModel"]
+- !private ["PSo30UIResponderStandardEditActions", "NSMigratePersistentStoresAutomaticallyOption"]
+- !private ["PSo30UIResponderStandardEditActions", "NSPersistentStoreCoordinator"]
+- !private ["PSo30UIResponderStandardEditActions", "NSSQLiteStoreType"]
+- !private ["PSo30UIResponderStandardEditActions", "NSUnderlyingErrorKey"]
+- ["PSo30UIResponderStandardEditActions", "NSUserDefaults"]
+- !private ["PSo30UIResponderStandardEditActions", "SKPaymentQueue"]
+- !private ["PSo30UIResponderStandardEditActions", "String"]
+- !private ["PSo30UIResponderStandardEditActions", "XXXPurchaseManager"]
+- !private ["PSo30UIResponderStandardEditActions", "abort"]
+- ["PSo30UIResponderStandardEditActions", "application"]
+- ["PSo30UIResponderStandardEditActions", "applicationDidBecomeActive"]
+- ["PSo30UIResponderStandardEditActions", "applicationDidEnterBackground"]
+- ["PSo30UIResponderStandardEditActions", "applicationDidFinishLaunching"]
+- ["PSo30UIResponderStandardEditActions", "applicationDidReceiveMemoryWarning"]
+- ["PSo30UIResponderStandardEditActions", "applicationDocumentsDirectory"]
+- ["PSo30UIResponderStandardEditActions", "applicationDocumentsDirectory.storage"]
+- ["PSo30UIResponderStandardEditActions", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSo30UIResponderStandardEditActions", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSo30UIResponderStandardEditActions", "applicationShouldRequestHealthAuthorization"]
+- ["PSo30UIResponderStandardEditActions", "applicationSignificantTimeChange"]
+- ["PSo30UIResponderStandardEditActions", "applicationWillEnterForeground"]
+- ["PSo30UIResponderStandardEditActions", "applicationWillResignActive"]
+- ["PSo30UIResponderStandardEditActions", "applicationWillTerminate"]
+- ["PSo30UIResponderStandardEditActions", "displayOrder"]
+- ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "itemText"]
+- ["PSo30UIResponderStandardEditActions", "managedObjectContext"]
+- ["PSo30UIResponderStandardEditActions", "managedObjectContext.storage"]
+- ["PSo30UIResponderStandardEditActions", "managedObjectModel"]
+- ["PSo30UIResponderStandardEditActions", "managedObjectModel.storage"]
+- ["PSo30UIResponderStandardEditActions", "persistentStoreCoordinator"]
+- ["PSo30UIResponderStandardEditActions", "persistentStoreCoordinator.storage"]
+- ["PSo30UIResponderStandardEditActions", "purchaseManager"]
+- ["PSo30UIResponderStandardEditActions", "purchaseManagerDidDeferred"]
+- ["PSo30UIResponderStandardEditActions", "purchaseManagerDidFinishRestore"]
+- ["PSo30UIResponderStandardEditActions", "saveContext"]
+- ["PSo30UIResponderStandardEditActions", "userDefaults"]
+- ["PSo30UIResponderStandardEditActions", "window"]
+- ["PSo30UIResponderStandardEditActions", ""]
 - !private ["Su", "deinit"]
 - !private ["Vs6UInt16", "deinit"]
 - !private ["Vs6UInt32", "deinit"]
@@ -868,6 +1053,52 @@ depends-member:
 - !private ["Vs5UInt8", "deinit"]
 - !private ["Sc", "deinit"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["C10SimpleTodo18XXXPurchaseManager", "deinit"]
+- !private ["C10SimpleTodo18XXXPurchaseManager", "delegate"]
+- !private ["C10SimpleTodo18XXXPurchaseManager", "sharedManager"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "AnyObject"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "FIRApp"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "NSBundle"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "NSError"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "NSFileManager"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "NSInferMappingModelAutomaticallyOption"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "NSLocalizedDescriptionKey"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "NSLocalizedFailureReasonErrorKey"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "NSLog"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "NSManagedObjectContext"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "NSManagedObjectModel"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "NSMigratePersistentStoresAutomaticallyOption"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "NSPersistentStoreCoordinator"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "NSSQLiteStoreType"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "NSUnderlyingErrorKey"]
+- ["P10SimpleTodo26XXXPurchaseManagerDelegate", "NSUserDefaults"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "SKPaymentQueue"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "String"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "XXXPurchaseManager"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "abort"]
+- ["P10SimpleTodo26XXXPurchaseManagerDelegate", "application"]
+- ["P10SimpleTodo26XXXPurchaseManagerDelegate", "applicationDidBecomeActive"]
+- ["P10SimpleTodo26XXXPurchaseManagerDelegate", "applicationDidEnterBackground"]
+- ["P10SimpleTodo26XXXPurchaseManagerDelegate", "applicationDidFinishLaunching"]
+- ["P10SimpleTodo26XXXPurchaseManagerDelegate", "applicationDidReceiveMemoryWarning"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "applicationDocumentsDirectory"]
+- ["P10SimpleTodo26XXXPurchaseManagerDelegate", "applicationProtectedDataDidBecomeAvailable"]
+- ["P10SimpleTodo26XXXPurchaseManagerDelegate", "applicationProtectedDataWillBecomeUnavailable"]
+- ["P10SimpleTodo26XXXPurchaseManagerDelegate", "applicationShouldRequestHealthAuthorization"]
+- ["P10SimpleTodo26XXXPurchaseManagerDelegate", "applicationSignificantTimeChange"]
+- ["P10SimpleTodo26XXXPurchaseManagerDelegate", "applicationWillEnterForeground"]
+- ["P10SimpleTodo26XXXPurchaseManagerDelegate", "applicationWillResignActive"]
+- ["P10SimpleTodo26XXXPurchaseManagerDelegate", "applicationWillTerminate"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "managedObjectContext"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "managedObjectModel"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "persistentStoreCoordinator"]
+- ["P10SimpleTodo26XXXPurchaseManagerDelegate", "purchaseManager"]
+- ["P10SimpleTodo26XXXPurchaseManagerDelegate", "purchaseManagerDidDeferred"]
+- ["P10SimpleTodo26XXXPurchaseManagerDelegate", "purchaseManagerDidFinishRestore"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "saveContext"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "userDefaults"]
+- ["P10SimpleTodo26XXXPurchaseManagerDelegate", "window"]
+- ["P10SimpleTodo26XXXPurchaseManagerDelegate", ""]
 - !private ["Ps10_ArrayType", "Generator"]
 - !private ["Ps10_ArrayType", "Index"]
 - !private ["Ps10_ArrayType", "SubSequence"]
@@ -896,7 +1127,9 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "Generator"]
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
 - !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
 - !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
@@ -965,6 +1198,7 @@ depends-nominal:
 - !private "CSo12NSDictionary"
 - !private "CSo7NSError"
 - !private "PSo17NSFastEnumeration"
+- !private "PSo20NSFetchRequestResult"
 - !private "CSo13NSFileManager"
 - !private "PSo9NSLocking"
 - !private "CSo22NSManagedObjectContext"
@@ -986,6 +1220,8 @@ depends-nominal:
 - !private "Ps21RandomAccessIndexType"
 - !private "Ps30RangeReplaceableCollectionType"
 - !private "Ps16RawRepresentable"
+- !private "CSo14SKPaymentQueue"
+- !private "PSo28SKPaymentTransactionObserver"
 - !private "Ps12SequenceType"
 - !private "Ps14SetAlgebraType"
 - !private "Ps17SignedIntegerType"
@@ -998,6 +1234,7 @@ depends-nominal:
 - !private "Ps24StringLiteralConvertible"
 - "PSo21UIApplicationDelegate"
 - "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
 - !private "Su"
 - !private "Vs6UInt16"
 - !private "Vs6UInt32"
@@ -1005,6 +1242,8 @@ depends-nominal:
 - !private "Vs5UInt8"
 - !private "Sc"
 - !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "C10SimpleTodo18XXXPurchaseManager"
+- "P10SimpleTodo26XXXPurchaseManagerDelegate"
 - !private "Ps10_ArrayType"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
 - !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
@@ -1023,92 +1262,91 @@ depends-nominal:
 - !private "Ps18_SignedIntegerType"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Firebase/Analytics/Sources/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-- "./GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
-- "./GoogleMobileAds.framework/Headers/GADAdReward.h"
-- "./GoogleMobileAds.framework/Headers/GADSearchRequest.h"
-- "./GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
-- "./GoogleMobileAds.framework/Headers/GADDynamicHeightSearchRequest.h"
-- "./GoogleMobileAds.framework/Headers/GADMediatedNativeContentAd.h"
-- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAppInstallAd.h"
-- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAdNotificationSource.h"
-- "./GoogleMobileAds.framework/Headers/GADCustomEventParameters.h"
-- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAdDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAd.h"
-- "./GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
-- "./GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
-- "./GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
-- "./GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
-- "./GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
-- "./GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
-- "./GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
-- "./GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
-- "./GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
-- "./GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
-- "./GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
-- "./GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADNativeAd.h"
-- "./GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
-- "./GoogleMobileAds.framework/Headers/DFPRequest.h"
-- "./GoogleMobileAds.framework/Headers/DFPInterstitial.h"
-- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
-- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
-- "./GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
-- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
-- "./GoogleMobileAds.framework/Headers/DFPBannerView.h"
-- "./GoogleMobileAds.framework/Headers/GADVideoOptions.h"
-- "./GoogleMobileAds.framework/Headers/GADVideoControllerDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADVideoController.h"
-- "./GoogleMobileAds.framework/Headers/GADNativeExpressAdViewDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADNativeExpressAdView.h"
-- "./GoogleMobileAds.framework/Headers/GADMobileAds.h"
-- "./GoogleMobileAds.framework/Headers/GADMediaView.h"
-- "./GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADInterstitial.h"
-- "./GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
-- "./GoogleMobileAds.framework/Headers/GADExtras.h"
-- "./GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADAdLoader.h"
-- "./GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
-- "./GoogleMobileAds.framework/Headers/GADCorrelator.h"
-- "./GoogleMobileAds.framework/Headers/GADRequestError.h"
-- "./GoogleMobileAds.framework/Headers/GADRequest.h"
-- "./GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADBannerView.h"
-- "./GoogleMobileAds.framework/Headers/GADAdSize.h"
-- "./GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
-- "./GoogleMobileAds.framework/Headers/GADAdDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
-- "./GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
-- "./GoogleMobileAds.framework/Modules/module.modulemap"
-- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/GoogleMobileAds.framework/Modules/module.modulemap"
-- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
-- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
-- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIROptions.h"
-- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRConfiguration.h"
-- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRApp.h"
-- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsConfiguration.h"
-- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
-- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
-- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
-- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
-- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
-- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
-- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Firebase/Analytics/Sources/Firebase.h"
-interface-hash: "026b66236b7fcf6e74c11db2c45a415b"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Firebase/Analytics/Sources/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdReward.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADSearchRequest.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADDynamicHeightSearchRequest.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADMediatedNativeContentAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADMediatedNativeAppInstallAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADMediatedNativeAdNotificationSource.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventParameters.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADMediatedNativeAdDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADMediatedNativeAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADVideoOptions.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADVideoControllerDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADVideoController.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeExpressAdViewDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeExpressAdView.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADMobileAds.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADMediaView.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADExtras.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdLoader.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCorrelator.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADRequest.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADBannerView.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIROptions.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRConfiguration.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRApp.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsConfiguration.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Firebase/Analytics/Sources/Firebase.h"
+interface-hash: "9f85dcb010836c209906a6ad567d75c2"

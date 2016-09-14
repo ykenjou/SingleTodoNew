@@ -6,36 +6,42 @@ provides-nominal:
 provides-member:
 - ["C10SimpleTodo18EditViewController", ""]
 provides-dynamic-lookup:
-- "pushSaveButton"
-- "appDelegate"
-- "didReceiveMemoryWarning"
-- "viewDidLoad"
-- "textView"
 - "pushCancelButton"
+- "appDelegate"
+- "viewDidLoad"
+- "didReceiveMemoryWarning"
+- "textView"
+- "pushSaveButton"
 depends-top-level:
-- !private "String"
-- !private "UIBarButtonSystemItem"
-- !private "UIBarButtonItem"
-- !private "NSPredicate"
-- "UITextView"
-- "UIViewController"
-- !private "UIBarStyle"
-- !private "AddViewController"
-- "UIApplication"
-- !private "UIColor"
-- !private "UIToolbar"
-- !private "BooleanLiteralType"
-- !private "!="
-- !private "NSFetchRequest"
-- "EditViewController"
-- !private "print"
 - !private "NSInteger"
+- !private "String"
+- "UIViewController"
+- "EditViewController"
+- "UITextView"
+- !private "UIAlertAction"
+- !private "Void"
+- !private "UIAlertActionStyle"
 - !private "StringLiteralType"
+- !private "Array"
+- "UIApplication"
+- !private "NSPredicate"
+- !private "UIToolbar"
+- !private "UIBarButtonItem"
+- !private "UIAlertControllerStyle"
+- !private "AddViewController"
+- !private "NSFetchRequest"
+- !private "print"
+- !private "UIColor"
+- "BooleanLiteralType"
+- !private "UIAlertController"
+- "AppDelegate"
+- !private "NSLocalizedString"
 - !private "CGRect"
 - !private "Item"
+- !private "UIBarStyle"
+- !private "UIBarButtonSystemItem"
+- !private "!="
 - !private "NSCharacterSet"
-- !private "Array"
-- "AppDelegate"
 depends-member:
 - !private ["C10SimpleTodo17AddViewController", "pushCancelButton"]
 - !private ["C10SimpleTodo17AddViewController", "pushSaveButton"]
@@ -44,13 +50,19 @@ depends-member:
 - !private ["Ps9AnyObject", "CGRect"]
 - !private ["Ps9AnyObject", "NSCharacterSet"]
 - !private ["Ps9AnyObject", "NSFetchRequest"]
+- !private ["Ps9AnyObject", "NSLocalizedString"]
 - !private ["Ps9AnyObject", "NSPredicate"]
+- !private ["Ps9AnyObject", "UIAlertAction"]
+- !private ["Ps9AnyObject", "UIAlertActionStyle"]
+- !private ["Ps9AnyObject", "UIAlertController"]
+- !private ["Ps9AnyObject", "UIAlertControllerStyle"]
 - ["Ps9AnyObject", "UIApplication"]
 - !private ["Ps9AnyObject", "UIBarButtonItem"]
 - !private ["Ps9AnyObject", "UIBarButtonSystemItem"]
 - !private ["Ps9AnyObject", "UIBarStyle"]
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIToolbar"]
+- !private ["Ps9AnyObject", "addAction"]
 - ["Ps9AnyObject", "appDelegate"]
 - !private ["Ps9AnyObject", "barStyle"]
 - !private ["Ps9AnyObject", "becomeFirstResponder"]
@@ -72,6 +84,7 @@ depends-member:
 - !private ["Ps9AnyObject", "managedObjectContext"]
 - !private ["Ps9AnyObject", "newlineCharacterSet"]
 - !private ["Ps9AnyObject", "predicate"]
+- !private ["Ps9AnyObject", "presentViewController"]
 - !private ["Ps9AnyObject", "print"]
 - ["Ps9AnyObject", "pushCancelButton"]
 - ["Ps9AnyObject", "pushSaveButton"]
@@ -101,6 +114,15 @@ depends-member:
 - !private ["CSo7CALayer", "borderColor"]
 - !private ["CSo7CALayer", "borderWidth"]
 - !private ["CSo7CALayer", "cornerRadius"]
+- !private ["PSo15CALayerDelegate", "barStyle"]
+- !private ["PSo15CALayerDelegate", "becomeFirstResponder"]
+- !private ["PSo15CALayerDelegate", "bounds"]
+- !private ["PSo15CALayerDelegate", "init"]
+- !private ["PSo15CALayerDelegate", "inputAccessoryView"]
+- !private ["PSo15CALayerDelegate", "items"]
+- !private ["PSo15CALayerDelegate", "layer"]
+- !private ["PSo15CALayerDelegate", "resignFirstResponder"]
+- !private ["PSo15CALayerDelegate", "text"]
 - !private ["PSo13CAMediaTiming", "borderColor"]
 - !private ["PSo13CAMediaTiming", "borderWidth"]
 - !private ["PSo13CAMediaTiming", "cornerRadius"]
@@ -112,13 +134,19 @@ depends-member:
 - !private ["Ps11CVarArgType", "CGRect"]
 - !private ["Ps11CVarArgType", "NSCharacterSet"]
 - !private ["Ps11CVarArgType", "NSFetchRequest"]
+- !private ["Ps11CVarArgType", "NSLocalizedString"]
 - !private ["Ps11CVarArgType", "NSPredicate"]
+- !private ["Ps11CVarArgType", "UIAlertAction"]
+- !private ["Ps11CVarArgType", "UIAlertActionStyle"]
+- !private ["Ps11CVarArgType", "UIAlertController"]
+- !private ["Ps11CVarArgType", "UIAlertControllerStyle"]
 - ["Ps11CVarArgType", "UIApplication"]
 - !private ["Ps11CVarArgType", "UIBarButtonItem"]
 - !private ["Ps11CVarArgType", "UIBarButtonSystemItem"]
 - !private ["Ps11CVarArgType", "UIBarStyle"]
 - !private ["Ps11CVarArgType", "UIColor"]
 - !private ["Ps11CVarArgType", "UIToolbar"]
+- !private ["Ps11CVarArgType", "addAction"]
 - ["Ps11CVarArgType", "appDelegate"]
 - !private ["Ps11CVarArgType", "barStyle"]
 - !private ["Ps11CVarArgType", "becomeFirstResponder"]
@@ -140,6 +168,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "managedObjectContext"]
 - !private ["Ps11CVarArgType", "newlineCharacterSet"]
 - !private ["Ps11CVarArgType", "predicate"]
+- !private ["Ps11CVarArgType", "presentViewController"]
 - !private ["Ps11CVarArgType", "print"]
 - ["Ps11CVarArgType", "pushCancelButton"]
 - ["Ps11CVarArgType", "pushSaveButton"]
@@ -166,13 +195,19 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "NSCharacterSet"]
 - !private ["Ps28CustomDebugStringConvertible", "NSFetchRequest"]
+- !private ["Ps28CustomDebugStringConvertible", "NSLocalizedString"]
 - !private ["Ps28CustomDebugStringConvertible", "NSPredicate"]
+- !private ["Ps28CustomDebugStringConvertible", "UIAlertAction"]
+- !private ["Ps28CustomDebugStringConvertible", "UIAlertActionStyle"]
+- !private ["Ps28CustomDebugStringConvertible", "UIAlertController"]
+- !private ["Ps28CustomDebugStringConvertible", "UIAlertControllerStyle"]
 - ["Ps28CustomDebugStringConvertible", "UIApplication"]
 - !private ["Ps28CustomDebugStringConvertible", "UIBarButtonItem"]
 - !private ["Ps28CustomDebugStringConvertible", "UIBarButtonSystemItem"]
 - !private ["Ps28CustomDebugStringConvertible", "UIBarStyle"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UIToolbar"]
+- !private ["Ps28CustomDebugStringConvertible", "addAction"]
 - ["Ps28CustomDebugStringConvertible", "appDelegate"]
 - !private ["Ps28CustomDebugStringConvertible", "barStyle"]
 - !private ["Ps28CustomDebugStringConvertible", "becomeFirstResponder"]
@@ -194,6 +229,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "managedObjectContext"]
 - !private ["Ps28CustomDebugStringConvertible", "newlineCharacterSet"]
 - !private ["Ps28CustomDebugStringConvertible", "predicate"]
+- !private ["Ps28CustomDebugStringConvertible", "presentViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - ["Ps28CustomDebugStringConvertible", "pushCancelButton"]
 - ["Ps28CustomDebugStringConvertible", "pushSaveButton"]
@@ -214,7 +250,12 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "NSCharacterSet"]
 - !private ["Ps23CustomStringConvertible", "NSFetchRequest"]
+- !private ["Ps23CustomStringConvertible", "NSLocalizedString"]
 - !private ["Ps23CustomStringConvertible", "NSPredicate"]
+- !private ["Ps23CustomStringConvertible", "UIAlertAction"]
+- !private ["Ps23CustomStringConvertible", "UIAlertActionStyle"]
+- !private ["Ps23CustomStringConvertible", "UIAlertController"]
+- !private ["Ps23CustomStringConvertible", "UIAlertControllerStyle"]
 - ["Ps23CustomStringConvertible", "UIApplication"]
 - !private ["Ps23CustomStringConvertible", "UIBarButtonItem"]
 - !private ["Ps23CustomStringConvertible", "UIBarButtonSystemItem"]
@@ -222,6 +263,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "UIToolbar"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "addAction"]
 - ["Ps23CustomStringConvertible", "appDelegate"]
 - !private ["Ps23CustomStringConvertible", "barStyle"]
 - !private ["Ps23CustomStringConvertible", "becomeFirstResponder"]
@@ -243,6 +285,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "managedObjectContext"]
 - !private ["Ps23CustomStringConvertible", "newlineCharacterSet"]
 - !private ["Ps23CustomStringConvertible", "predicate"]
+- !private ["Ps23CustomStringConvertible", "presentViewController"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - ["Ps23CustomStringConvertible", "pushCancelButton"]
 - ["Ps23CustomStringConvertible", "pushSaveButton"]
@@ -263,8 +306,13 @@ depends-member:
 - !private ["C10SimpleTodo18EditViewController", "NSCharacterSet"]
 - !private ["C10SimpleTodo18EditViewController", "NSFetchRequest"]
 - !private ["C10SimpleTodo18EditViewController", "NSInteger"]
+- !private ["C10SimpleTodo18EditViewController", "NSLocalizedString"]
 - !private ["C10SimpleTodo18EditViewController", "NSPredicate"]
 - !private ["C10SimpleTodo18EditViewController", "String"]
+- !private ["C10SimpleTodo18EditViewController", "UIAlertAction"]
+- !private ["C10SimpleTodo18EditViewController", "UIAlertActionStyle"]
+- !private ["C10SimpleTodo18EditViewController", "UIAlertController"]
+- !private ["C10SimpleTodo18EditViewController", "UIAlertControllerStyle"]
 - ["C10SimpleTodo18EditViewController", "UIApplication"]
 - !private ["C10SimpleTodo18EditViewController", "UIBarButtonItem"]
 - !private ["C10SimpleTodo18EditViewController", "UIBarButtonSystemItem"]
@@ -272,27 +320,36 @@ depends-member:
 - !private ["C10SimpleTodo18EditViewController", "UIColor"]
 - ["C10SimpleTodo18EditViewController", "UITextView"]
 - !private ["C10SimpleTodo18EditViewController", "UIToolbar"]
+- !private ["C10SimpleTodo18EditViewController", "Void"]
 - ["C10SimpleTodo18EditViewController", "appDelegate"]
 - ["C10SimpleTodo18EditViewController", "deinit"]
 - ["C10SimpleTodo18EditViewController", "didReceiveMemoryWarning"]
 - !private ["C10SimpleTodo18EditViewController", "dismissViewControllerAnimated"]
 - ["C10SimpleTodo18EditViewController", "init"]
+- !private ["C10SimpleTodo18EditViewController", "presentViewController"]
 - !private ["C10SimpleTodo18EditViewController", "print"]
 - ["C10SimpleTodo18EditViewController", "pushCancelButton"]
 - ["C10SimpleTodo18EditViewController", "pushSaveButton"]
 - ["C10SimpleTodo18EditViewController", "textView"]
 - !private ["C10SimpleTodo18EditViewController", "view"]
 - ["C10SimpleTodo18EditViewController", "viewDidLoad"]
+- !private ["Ps9Equatable", "ActionSheet"]
 - !private ["Ps9Equatable", "AddViewController"]
 - !private ["Ps9Equatable", "CGColor"]
 - !private ["Ps9Equatable", "CGRect"]
+- !private ["Ps9Equatable", "Cancel"]
 - !private ["Ps9Equatable", "Default"]
 - !private ["Ps9Equatable", "FlexibleSpace"]
 - !private ["Ps9Equatable", "NSCharacterSet"]
 - !private ["Ps9Equatable", "NSFetchRequest"]
+- !private ["Ps9Equatable", "NSLocalizedString"]
 - !private ["Ps9Equatable", "NSPredicate"]
 - !private ["Ps9Equatable", "Save"]
 - !private ["Ps9Equatable", "Stop"]
+- !private ["Ps9Equatable", "UIAlertAction"]
+- !private ["Ps9Equatable", "UIAlertActionStyle"]
+- !private ["Ps9Equatable", "UIAlertController"]
+- !private ["Ps9Equatable", "UIAlertControllerStyle"]
 - ["Ps9Equatable", "UIApplication"]
 - !private ["Ps9Equatable", "UIBarButtonItem"]
 - !private ["Ps9Equatable", "UIBarButtonSystemItem"]
@@ -300,6 +357,7 @@ depends-member:
 - !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "UIToolbar"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "addAction"]
 - ["Ps9Equatable", "appDelegate"]
 - !private ["Ps9Equatable", "barStyle"]
 - !private ["Ps9Equatable", "becomeFirstResponder"]
@@ -321,6 +379,7 @@ depends-member:
 - !private ["Ps9Equatable", "managedObjectContext"]
 - !private ["Ps9Equatable", "newlineCharacterSet"]
 - !private ["Ps9Equatable", "predicate"]
+- !private ["Ps9Equatable", "presentViewController"]
 - !private ["Ps9Equatable", "print"]
 - ["Ps9Equatable", "pushCancelButton"]
 - ["Ps9Equatable", "pushSaveButton"]
@@ -336,16 +395,23 @@ depends-member:
 - ["Ps9Equatable", ""]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "stringByTrimmingCharactersInSet"]
 - !private ["Ps13GeneratorType", "Element"]
+- !private ["Ps8Hashable", "ActionSheet"]
 - !private ["Ps8Hashable", "AddViewController"]
 - !private ["Ps8Hashable", "CGColor"]
 - !private ["Ps8Hashable", "CGRect"]
+- !private ["Ps8Hashable", "Cancel"]
 - !private ["Ps8Hashable", "Default"]
 - !private ["Ps8Hashable", "FlexibleSpace"]
 - !private ["Ps8Hashable", "NSCharacterSet"]
 - !private ["Ps8Hashable", "NSFetchRequest"]
+- !private ["Ps8Hashable", "NSLocalizedString"]
 - !private ["Ps8Hashable", "NSPredicate"]
 - !private ["Ps8Hashable", "Save"]
 - !private ["Ps8Hashable", "Stop"]
+- !private ["Ps8Hashable", "UIAlertAction"]
+- !private ["Ps8Hashable", "UIAlertActionStyle"]
+- !private ["Ps8Hashable", "UIAlertController"]
+- !private ["Ps8Hashable", "UIAlertControllerStyle"]
 - ["Ps8Hashable", "UIApplication"]
 - !private ["Ps8Hashable", "UIBarButtonItem"]
 - !private ["Ps8Hashable", "UIBarButtonSystemItem"]
@@ -353,6 +419,7 @@ depends-member:
 - !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "UIToolbar"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "addAction"]
 - ["Ps8Hashable", "appDelegate"]
 - !private ["Ps8Hashable", "barStyle"]
 - !private ["Ps8Hashable", "becomeFirstResponder"]
@@ -374,6 +441,7 @@ depends-member:
 - !private ["Ps8Hashable", "managedObjectContext"]
 - !private ["Ps8Hashable", "newlineCharacterSet"]
 - !private ["Ps8Hashable", "predicate"]
+- !private ["Ps8Hashable", "presentViewController"]
 - !private ["Ps8Hashable", "print"]
 - ["Ps8Hashable", "pushCancelButton"]
 - ["Ps8Hashable", "pushSaveButton"]
@@ -386,6 +454,7 @@ depends-member:
 - !private ["Ps8Hashable", "view"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
+- !private ["SQ", "deinit"]
 - !private ["Ps9Indexable", "Element"]
 - !private ["Ps9Indexable", "Generator"]
 - !private ["Ps9Indexable", "Index"]
@@ -393,6 +462,7 @@ depends-member:
 - !private ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "subscript"]
 - !private ["Vs17IndexingGenerator", "Element"]
+- !private ["C10SimpleTodo4Item", "deinit"]
 - !private ["C10SimpleTodo4Item", "text"]
 - !private ["Ps14MirrorPathType", "stringByTrimmingCharactersInSet"]
 - !private ["Ps21MutableCollectionType", "Element"]
@@ -410,13 +480,19 @@ depends-member:
 - !private ["PSo8NSCoding", "CGRect"]
 - !private ["PSo8NSCoding", "NSCharacterSet"]
 - !private ["PSo8NSCoding", "NSFetchRequest"]
+- !private ["PSo8NSCoding", "NSLocalizedString"]
 - !private ["PSo8NSCoding", "NSPredicate"]
+- !private ["PSo8NSCoding", "UIAlertAction"]
+- !private ["PSo8NSCoding", "UIAlertActionStyle"]
+- !private ["PSo8NSCoding", "UIAlertController"]
+- !private ["PSo8NSCoding", "UIAlertControllerStyle"]
 - ["PSo8NSCoding", "UIApplication"]
 - !private ["PSo8NSCoding", "UIBarButtonItem"]
 - !private ["PSo8NSCoding", "UIBarButtonSystemItem"]
 - !private ["PSo8NSCoding", "UIBarStyle"]
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIToolbar"]
+- !private ["PSo8NSCoding", "addAction"]
 - ["PSo8NSCoding", "appDelegate"]
 - !private ["PSo8NSCoding", "barStyle"]
 - !private ["PSo8NSCoding", "becomeFirstResponder"]
@@ -434,6 +510,7 @@ depends-member:
 - !private ["PSo8NSCoding", "lightGrayColor"]
 - !private ["PSo8NSCoding", "newlineCharacterSet"]
 - !private ["PSo8NSCoding", "predicate"]
+- !private ["PSo8NSCoding", "presentViewController"]
 - !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "pushCancelButton"]
 - ["PSo8NSCoding", "pushSaveButton"]
@@ -454,17 +531,24 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "CGRect"]
 - !private ["PSo26NSExtensionRequestHandling", "NSCharacterSet"]
 - !private ["PSo26NSExtensionRequestHandling", "NSFetchRequest"]
+- !private ["PSo26NSExtensionRequestHandling", "NSLocalizedString"]
 - !private ["PSo26NSExtensionRequestHandling", "NSPredicate"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertAction"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertActionStyle"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertController"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertControllerStyle"]
 - ["PSo26NSExtensionRequestHandling", "UIApplication"]
 - !private ["PSo26NSExtensionRequestHandling", "UIBarButtonItem"]
 - !private ["PSo26NSExtensionRequestHandling", "UIBarButtonSystemItem"]
 - !private ["PSo26NSExtensionRequestHandling", "UIBarStyle"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIToolbar"]
+- !private ["PSo26NSExtensionRequestHandling", "addAction"]
 - ["PSo26NSExtensionRequestHandling", "appDelegate"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - !private ["PSo26NSExtensionRequestHandling", "dismissViewControllerAnimated"]
 - ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "pushCancelButton"]
 - ["PSo26NSExtensionRequestHandling", "pushSaveButton"]
@@ -474,6 +558,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["CSo14NSFetchRequest", "init"]
 - !private ["CSo14NSFetchRequest", "predicate"]
+- !private ["PSo20NSFetchRequestResult", "text"]
 - !private ["PSo9NSLocking", "executeFetchRequest"]
 - !private ["CSo15NSManagedObject", "text"]
 - !private ["CSo22NSManagedObjectContext", "executeFetchRequest"]
@@ -488,8 +573,13 @@ depends-member:
 - !private ["CSo8NSObject", "NSCharacterSet"]
 - !private ["CSo8NSObject", "NSFetchRequest"]
 - !private ["CSo8NSObject", "NSInteger"]
+- !private ["CSo8NSObject", "NSLocalizedString"]
 - !private ["CSo8NSObject", "NSPredicate"]
 - !private ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UIAlertAction"]
+- !private ["CSo8NSObject", "UIAlertActionStyle"]
+- !private ["CSo8NSObject", "UIAlertController"]
+- !private ["CSo8NSObject", "UIAlertControllerStyle"]
 - ["CSo8NSObject", "UIApplication"]
 - !private ["CSo8NSObject", "UIBarButtonItem"]
 - !private ["CSo8NSObject", "UIBarButtonSystemItem"]
@@ -497,6 +587,8 @@ depends-member:
 - !private ["CSo8NSObject", "UIColor"]
 - ["CSo8NSObject", "UITextView"]
 - !private ["CSo8NSObject", "UIToolbar"]
+- !private ["CSo8NSObject", "Void"]
+- !private ["CSo8NSObject", "addAction"]
 - ["CSo8NSObject", "appDelegate"]
 - !private ["CSo8NSObject", "barStyle"]
 - !private ["CSo8NSObject", "becomeFirstResponder"]
@@ -518,6 +610,7 @@ depends-member:
 - !private ["CSo8NSObject", "managedObjectContext"]
 - !private ["CSo8NSObject", "newlineCharacterSet"]
 - !private ["CSo8NSObject", "predicate"]
+- !private ["CSo8NSObject", "presentViewController"]
 - !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "pushCancelButton"]
 - ["CSo8NSObject", "pushSaveButton"]
@@ -534,13 +627,19 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "CGRect"]
 - !private ["PSo16NSObjectProtocol", "NSCharacterSet"]
 - !private ["PSo16NSObjectProtocol", "NSFetchRequest"]
+- !private ["PSo16NSObjectProtocol", "NSLocalizedString"]
 - !private ["PSo16NSObjectProtocol", "NSPredicate"]
+- !private ["PSo16NSObjectProtocol", "UIAlertAction"]
+- !private ["PSo16NSObjectProtocol", "UIAlertActionStyle"]
+- !private ["PSo16NSObjectProtocol", "UIAlertController"]
+- !private ["PSo16NSObjectProtocol", "UIAlertControllerStyle"]
 - ["PSo16NSObjectProtocol", "UIApplication"]
 - !private ["PSo16NSObjectProtocol", "UIBarButtonItem"]
 - !private ["PSo16NSObjectProtocol", "UIBarButtonSystemItem"]
 - !private ["PSo16NSObjectProtocol", "UIBarStyle"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIToolbar"]
+- !private ["PSo16NSObjectProtocol", "addAction"]
 - ["PSo16NSObjectProtocol", "appDelegate"]
 - !private ["PSo16NSObjectProtocol", "barStyle"]
 - !private ["PSo16NSObjectProtocol", "becomeFirstResponder"]
@@ -562,6 +661,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "managedObjectContext"]
 - !private ["PSo16NSObjectProtocol", "newlineCharacterSet"]
 - !private ["PSo16NSObjectProtocol", "predicate"]
+- !private ["PSo16NSObjectProtocol", "presentViewController"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "pushCancelButton"]
 - ["PSo16NSObjectProtocol", "pushSaveButton"]
@@ -580,6 +680,7 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "CGColor"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "lightGrayColor"]
+- !private ["PSo14NSSecureCoding", "newlineCharacterSet"]
 - !private ["PSo14NSSecureCoding", "stringByTrimmingCharactersInSet"]
 - !private ["CSo8NSString", "stringByTrimmingCharactersInSet"]
 - ["Sq", "deinit"]
@@ -587,6 +688,8 @@ depends-member:
 - !private ["Ps30RangeReplaceableCollectionType", "Element"]
 - !private ["Ps30RangeReplaceableCollectionType", "Index"]
 - !private ["Ps30RangeReplaceableCollectionType", "subscript"]
+- !private ["Ps16RawRepresentable", "ActionSheet"]
+- !private ["Ps16RawRepresentable", "Cancel"]
 - !private ["Ps16RawRepresentable", "Default"]
 - !private ["Ps16RawRepresentable", "FlexibleSpace"]
 - !private ["Ps16RawRepresentable", "Save"]
@@ -615,6 +718,12 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
 - !private ["PSo29UIAccessibilityIdentification", "resignFirstResponder"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["CSo13UIAlertAction", "init"]
+- !private ["OSC18UIAlertActionStyle", "Cancel"]
+- !private ["OSC18UIAlertActionStyle", "Default"]
+- !private ["CSo17UIAlertController", "addAction"]
+- !private ["CSo17UIAlertController", "init"]
+- !private ["OSC22UIAlertControllerStyle", "ActionSheet"]
 - !private ["PSo12UIAppearance", "barStyle"]
 - !private ["PSo12UIAppearance", "becomeFirstResponder"]
 - !private ["PSo12UIAppearance", "bounds"]
@@ -628,13 +737,19 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "CGRect"]
 - !private ["PSo21UIAppearanceContainer", "NSCharacterSet"]
 - !private ["PSo21UIAppearanceContainer", "NSFetchRequest"]
+- !private ["PSo21UIAppearanceContainer", "NSLocalizedString"]
 - !private ["PSo21UIAppearanceContainer", "NSPredicate"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertAction"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertActionStyle"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertController"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertControllerStyle"]
 - ["PSo21UIAppearanceContainer", "UIApplication"]
 - !private ["PSo21UIAppearanceContainer", "UIBarButtonItem"]
 - !private ["PSo21UIAppearanceContainer", "UIBarButtonSystemItem"]
 - !private ["PSo21UIAppearanceContainer", "UIBarStyle"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIToolbar"]
+- !private ["PSo21UIAppearanceContainer", "addAction"]
 - ["PSo21UIAppearanceContainer", "appDelegate"]
 - !private ["PSo21UIAppearanceContainer", "barStyle"]
 - !private ["PSo21UIAppearanceContainer", "becomeFirstResponder"]
@@ -645,6 +760,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "inputAccessoryView"]
 - !private ["PSo21UIAppearanceContainer", "items"]
 - !private ["PSo21UIAppearanceContainer", "layer"]
+- !private ["PSo21UIAppearanceContainer", "presentViewController"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "pushCancelButton"]
 - ["PSo21UIAppearanceContainer", "pushSaveButton"]
@@ -675,17 +791,24 @@ depends-member:
 - !private ["PSo18UIContentContainer", "CGRect"]
 - !private ["PSo18UIContentContainer", "NSCharacterSet"]
 - !private ["PSo18UIContentContainer", "NSFetchRequest"]
+- !private ["PSo18UIContentContainer", "NSLocalizedString"]
 - !private ["PSo18UIContentContainer", "NSPredicate"]
+- !private ["PSo18UIContentContainer", "UIAlertAction"]
+- !private ["PSo18UIContentContainer", "UIAlertActionStyle"]
+- !private ["PSo18UIContentContainer", "UIAlertController"]
+- !private ["PSo18UIContentContainer", "UIAlertControllerStyle"]
 - ["PSo18UIContentContainer", "UIApplication"]
 - !private ["PSo18UIContentContainer", "UIBarButtonItem"]
 - !private ["PSo18UIContentContainer", "UIBarButtonSystemItem"]
 - !private ["PSo18UIContentContainer", "UIBarStyle"]
 - !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIToolbar"]
+- !private ["PSo18UIContentContainer", "addAction"]
 - ["PSo18UIContentContainer", "appDelegate"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - !private ["PSo18UIContentContainer", "dismissViewControllerAnimated"]
 - ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "presentViewController"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "pushCancelButton"]
 - ["PSo18UIContentContainer", "pushSaveButton"]
@@ -693,6 +816,11 @@ depends-member:
 - !private ["PSo18UIContentContainer", "view"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "becomeFirstResponder"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "inputAccessoryView"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "layer"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "resignFirstResponder"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
 - !private ["PSo17UICoordinateSpace", "barStyle"]
 - !private ["PSo17UICoordinateSpace", "becomeFirstResponder"]
 - !private ["PSo17UICoordinateSpace", "bounds"]
@@ -715,13 +843,19 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "CGRect"]
 - !private ["PSo18UIFocusEnvironment", "NSCharacterSet"]
 - !private ["PSo18UIFocusEnvironment", "NSFetchRequest"]
+- !private ["PSo18UIFocusEnvironment", "NSLocalizedString"]
 - !private ["PSo18UIFocusEnvironment", "NSPredicate"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertAction"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertActionStyle"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertController"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertControllerStyle"]
 - ["PSo18UIFocusEnvironment", "UIApplication"]
 - !private ["PSo18UIFocusEnvironment", "UIBarButtonItem"]
 - !private ["PSo18UIFocusEnvironment", "UIBarButtonSystemItem"]
 - !private ["PSo18UIFocusEnvironment", "UIBarStyle"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIToolbar"]
+- !private ["PSo18UIFocusEnvironment", "addAction"]
 - ["PSo18UIFocusEnvironment", "appDelegate"]
 - !private ["PSo18UIFocusEnvironment", "barStyle"]
 - !private ["PSo18UIFocusEnvironment", "becomeFirstResponder"]
@@ -732,6 +866,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "inputAccessoryView"]
 - !private ["PSo18UIFocusEnvironment", "items"]
 - !private ["PSo18UIFocusEnvironment", "layer"]
+- !private ["PSo18UIFocusEnvironment", "presentViewController"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "pushCancelButton"]
 - ["PSo18UIFocusEnvironment", "pushSaveButton"]
@@ -741,6 +876,15 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "view"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "barStyle"]
+- !private ["PSo11UIFocusItem", "becomeFirstResponder"]
+- !private ["PSo11UIFocusItem", "bounds"]
+- !private ["PSo11UIFocusItem", "init"]
+- !private ["PSo11UIFocusItem", "inputAccessoryView"]
+- !private ["PSo11UIFocusItem", "items"]
+- !private ["PSo11UIFocusItem", "layer"]
+- !private ["PSo11UIFocusItem", "resignFirstResponder"]
+- !private ["PSo11UIFocusItem", "text"]
 - !private ["PSo10UIKeyInput", "becomeFirstResponder"]
 - !private ["PSo10UIKeyInput", "inputAccessoryView"]
 - !private ["PSo10UIKeyInput", "layer"]
@@ -753,8 +897,13 @@ depends-member:
 - !private ["CSo11UIResponder", "NSCharacterSet"]
 - !private ["CSo11UIResponder", "NSFetchRequest"]
 - !private ["CSo11UIResponder", "NSInteger"]
+- !private ["CSo11UIResponder", "NSLocalizedString"]
 - !private ["CSo11UIResponder", "NSPredicate"]
 - !private ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "UIAlertAction"]
+- !private ["CSo11UIResponder", "UIAlertActionStyle"]
+- !private ["CSo11UIResponder", "UIAlertController"]
+- !private ["CSo11UIResponder", "UIAlertControllerStyle"]
 - ["CSo11UIResponder", "UIApplication"]
 - !private ["CSo11UIResponder", "UIBarButtonItem"]
 - !private ["CSo11UIResponder", "UIBarButtonSystemItem"]
@@ -762,6 +911,8 @@ depends-member:
 - !private ["CSo11UIResponder", "UIColor"]
 - ["CSo11UIResponder", "UITextView"]
 - !private ["CSo11UIResponder", "UIToolbar"]
+- !private ["CSo11UIResponder", "Void"]
+- !private ["CSo11UIResponder", "addAction"]
 - ["CSo11UIResponder", "appDelegate"]
 - !private ["CSo11UIResponder", "barStyle"]
 - !private ["CSo11UIResponder", "becomeFirstResponder"]
@@ -776,6 +927,7 @@ depends-member:
 - !private ["CSo11UIResponder", "items"]
 - !private ["CSo11UIResponder", "layer"]
 - !private ["CSo11UIResponder", "managedObjectContext"]
+- !private ["CSo11UIResponder", "presentViewController"]
 - !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "pushCancelButton"]
 - ["CSo11UIResponder", "pushSaveButton"]
@@ -786,6 +938,49 @@ depends-member:
 - ["CSo11UIResponder", "textView"]
 - !private ["CSo11UIResponder", "view"]
 - ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "AddViewController"]
+- !private ["PSo30UIResponderStandardEditActions", "CGRect"]
+- !private ["PSo30UIResponderStandardEditActions", "NSCharacterSet"]
+- !private ["PSo30UIResponderStandardEditActions", "NSFetchRequest"]
+- !private ["PSo30UIResponderStandardEditActions", "NSLocalizedString"]
+- !private ["PSo30UIResponderStandardEditActions", "NSPredicate"]
+- !private ["PSo30UIResponderStandardEditActions", "UIAlertAction"]
+- !private ["PSo30UIResponderStandardEditActions", "UIAlertActionStyle"]
+- !private ["PSo30UIResponderStandardEditActions", "UIAlertController"]
+- !private ["PSo30UIResponderStandardEditActions", "UIAlertControllerStyle"]
+- ["PSo30UIResponderStandardEditActions", "UIApplication"]
+- !private ["PSo30UIResponderStandardEditActions", "UIBarButtonItem"]
+- !private ["PSo30UIResponderStandardEditActions", "UIBarButtonSystemItem"]
+- !private ["PSo30UIResponderStandardEditActions", "UIBarStyle"]
+- !private ["PSo30UIResponderStandardEditActions", "UIColor"]
+- !private ["PSo30UIResponderStandardEditActions", "UIToolbar"]
+- !private ["PSo30UIResponderStandardEditActions", "addAction"]
+- ["PSo30UIResponderStandardEditActions", "appDelegate"]
+- !private ["PSo30UIResponderStandardEditActions", "barStyle"]
+- !private ["PSo30UIResponderStandardEditActions", "becomeFirstResponder"]
+- !private ["PSo30UIResponderStandardEditActions", "bounds"]
+- ["PSo30UIResponderStandardEditActions", "delegate"]
+- ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- !private ["PSo30UIResponderStandardEditActions", "dismissViewControllerAnimated"]
+- !private ["PSo30UIResponderStandardEditActions", "displayOrder"]
+- ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "inputAccessoryView"]
+- !private ["PSo30UIResponderStandardEditActions", "itemText"]
+- !private ["PSo30UIResponderStandardEditActions", "items"]
+- !private ["PSo30UIResponderStandardEditActions", "layer"]
+- !private ["PSo30UIResponderStandardEditActions", "managedObjectContext"]
+- !private ["PSo30UIResponderStandardEditActions", "presentViewController"]
+- !private ["PSo30UIResponderStandardEditActions", "print"]
+- ["PSo30UIResponderStandardEditActions", "pushCancelButton"]
+- ["PSo30UIResponderStandardEditActions", "pushSaveButton"]
+- !private ["PSo30UIResponderStandardEditActions", "resignFirstResponder"]
+- !private ["PSo30UIResponderStandardEditActions", "saveContext"]
+- ["PSo30UIResponderStandardEditActions", "sharedApplication"]
+- !private ["PSo30UIResponderStandardEditActions", "text"]
+- ["PSo30UIResponderStandardEditActions", "textView"]
+- !private ["PSo30UIResponderStandardEditActions", "view"]
+- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
 - !private ["CSo12UIScrollView", "becomeFirstResponder"]
 - !private ["CSo12UIScrollView", "inputAccessoryView"]
 - !private ["CSo12UIScrollView", "layer"]
@@ -795,17 +990,24 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "CGRect"]
 - !private ["PSo16UIStateRestoring", "NSCharacterSet"]
 - !private ["PSo16UIStateRestoring", "NSFetchRequest"]
+- !private ["PSo16UIStateRestoring", "NSLocalizedString"]
 - !private ["PSo16UIStateRestoring", "NSPredicate"]
+- !private ["PSo16UIStateRestoring", "UIAlertAction"]
+- !private ["PSo16UIStateRestoring", "UIAlertActionStyle"]
+- !private ["PSo16UIStateRestoring", "UIAlertController"]
+- !private ["PSo16UIStateRestoring", "UIAlertControllerStyle"]
 - ["PSo16UIStateRestoring", "UIApplication"]
 - !private ["PSo16UIStateRestoring", "UIBarButtonItem"]
 - !private ["PSo16UIStateRestoring", "UIBarButtonSystemItem"]
 - !private ["PSo16UIStateRestoring", "UIBarStyle"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIToolbar"]
+- !private ["PSo16UIStateRestoring", "addAction"]
 - ["PSo16UIStateRestoring", "appDelegate"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - !private ["PSo16UIStateRestoring", "dismissViewControllerAnimated"]
 - ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "presentViewController"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "pushCancelButton"]
 - ["PSo16UIStateRestoring", "pushSaveButton"]
@@ -835,13 +1037,19 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "CGRect"]
 - !private ["PSo18UITraitEnvironment", "NSCharacterSet"]
 - !private ["PSo18UITraitEnvironment", "NSFetchRequest"]
+- !private ["PSo18UITraitEnvironment", "NSLocalizedString"]
 - !private ["PSo18UITraitEnvironment", "NSPredicate"]
+- !private ["PSo18UITraitEnvironment", "UIAlertAction"]
+- !private ["PSo18UITraitEnvironment", "UIAlertActionStyle"]
+- !private ["PSo18UITraitEnvironment", "UIAlertController"]
+- !private ["PSo18UITraitEnvironment", "UIAlertControllerStyle"]
 - ["PSo18UITraitEnvironment", "UIApplication"]
 - !private ["PSo18UITraitEnvironment", "UIBarButtonItem"]
 - !private ["PSo18UITraitEnvironment", "UIBarButtonSystemItem"]
 - !private ["PSo18UITraitEnvironment", "UIBarStyle"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIToolbar"]
+- !private ["PSo18UITraitEnvironment", "addAction"]
 - ["PSo18UITraitEnvironment", "appDelegate"]
 - !private ["PSo18UITraitEnvironment", "barStyle"]
 - !private ["PSo18UITraitEnvironment", "becomeFirstResponder"]
@@ -852,6 +1060,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "inputAccessoryView"]
 - !private ["PSo18UITraitEnvironment", "items"]
 - !private ["PSo18UITraitEnvironment", "layer"]
+- !private ["PSo18UITraitEnvironment", "presentViewController"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "pushCancelButton"]
 - ["PSo18UITraitEnvironment", "pushSaveButton"]
@@ -877,8 +1086,13 @@ depends-member:
 - !private ["CSo16UIViewController", "NSCharacterSet"]
 - !private ["CSo16UIViewController", "NSFetchRequest"]
 - !private ["CSo16UIViewController", "NSInteger"]
+- !private ["CSo16UIViewController", "NSLocalizedString"]
 - !private ["CSo16UIViewController", "NSPredicate"]
 - !private ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "UIAlertAction"]
+- !private ["CSo16UIViewController", "UIAlertActionStyle"]
+- !private ["CSo16UIViewController", "UIAlertController"]
+- !private ["CSo16UIViewController", "UIAlertControllerStyle"]
 - ["CSo16UIViewController", "UIApplication"]
 - !private ["CSo16UIViewController", "UIBarButtonItem"]
 - !private ["CSo16UIViewController", "UIBarButtonSystemItem"]
@@ -886,10 +1100,13 @@ depends-member:
 - !private ["CSo16UIViewController", "UIColor"]
 - ["CSo16UIViewController", "UITextView"]
 - !private ["CSo16UIViewController", "UIToolbar"]
+- !private ["CSo16UIViewController", "Void"]
+- !private ["CSo16UIViewController", "addAction"]
 - ["CSo16UIViewController", "appDelegate"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - !private ["CSo16UIViewController", "dismissViewControllerAnimated"]
 - ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "presentViewController"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "pushCancelButton"]
 - ["CSo16UIViewController", "pushSaveButton"]
@@ -898,6 +1115,10 @@ depends-member:
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "stringByTrimmingCharactersInSet"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "displayOrder"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "itemText"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "managedObjectContext"]
+- !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "saveContext"]
 - !private ["Ps10_ArrayType", "Element"]
 - !private ["Ps10_ArrayType", "Index"]
 - !private ["Ps10_ArrayType", "subscript"]
@@ -942,6 +1163,7 @@ depends-nominal:
 - !private "Ps25BooleanLiteralConvertible"
 - !private "Ps11BooleanType"
 - !private "CSo7CALayer"
+- !private "PSo15CALayerDelegate"
 - !private "PSo13CAMediaTiming"
 - !private "V12CoreGraphics7CGFloat"
 - !private "VSC6CGRect"
@@ -955,6 +1177,7 @@ depends-nominal:
 - !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
 - !private "Ps13GeneratorType"
 - "Ps8Hashable"
+- !private "SQ"
 - !private "Ps9Indexable"
 - !private "Vs17IndexingGenerator"
 - !private "C10SimpleTodo4Item"
@@ -967,6 +1190,7 @@ depends-nominal:
 - !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
 - !private "CSo14NSFetchRequest"
+- !private "PSo20NSFetchRequestResult"
 - !private "PSo9NSLocking"
 - !private "CSo15NSManagedObject"
 - !private "CSo22NSManagedObjectContext"
@@ -989,6 +1213,10 @@ depends-nominal:
 - !private "Ps30StringInterpolationConvertible"
 - !private "Ps24StringLiteralConvertible"
 - !private "PSo29UIAccessibilityIdentification"
+- !private "CSo13UIAlertAction"
+- !private "OSC18UIAlertActionStyle"
+- !private "CSo17UIAlertController"
+- !private "OSC22UIAlertControllerStyle"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - "CSo13UIApplication"
@@ -1000,11 +1228,14 @@ depends-nominal:
 - !private "OSC10UIBarStyle"
 - !private "CSo7UIColor"
 - "PSo18UIContentContainer"
+- !private "PSo30UIContentSizeCategoryAdjusting"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
 - !private "PSo10UIKeyInput"
 - "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
 - !private "CSo12UIScrollView"
 - "PSo16UIStateRestoring"
 - !private "PSo11UITextInput"
@@ -1015,6 +1246,7 @@ depends-nominal:
 - !private "CSo6UIView"
 - "CSo16UIViewController"
 - !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "P10SimpleTodo26XXXPurchaseManagerDelegate"
 - !private "Ps10_ArrayType"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
 - !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
@@ -1028,92 +1260,91 @@ depends-nominal:
 - !private "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Firebase/Analytics/Sources/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-- "./GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
-- "./GoogleMobileAds.framework/Headers/GADAdReward.h"
-- "./GoogleMobileAds.framework/Headers/GADSearchRequest.h"
-- "./GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
-- "./GoogleMobileAds.framework/Headers/GADDynamicHeightSearchRequest.h"
-- "./GoogleMobileAds.framework/Headers/GADMediatedNativeContentAd.h"
-- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAppInstallAd.h"
-- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAdNotificationSource.h"
-- "./GoogleMobileAds.framework/Headers/GADCustomEventParameters.h"
-- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAdDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAd.h"
-- "./GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
-- "./GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
-- "./GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
-- "./GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
-- "./GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
-- "./GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
-- "./GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
-- "./GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
-- "./GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
-- "./GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
-- "./GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
-- "./GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADNativeAd.h"
-- "./GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
-- "./GoogleMobileAds.framework/Headers/DFPRequest.h"
-- "./GoogleMobileAds.framework/Headers/DFPInterstitial.h"
-- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
-- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
-- "./GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
-- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
-- "./GoogleMobileAds.framework/Headers/DFPBannerView.h"
-- "./GoogleMobileAds.framework/Headers/GADVideoOptions.h"
-- "./GoogleMobileAds.framework/Headers/GADVideoControllerDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADVideoController.h"
-- "./GoogleMobileAds.framework/Headers/GADNativeExpressAdViewDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADNativeExpressAdView.h"
-- "./GoogleMobileAds.framework/Headers/GADMobileAds.h"
-- "./GoogleMobileAds.framework/Headers/GADMediaView.h"
-- "./GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADInterstitial.h"
-- "./GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
-- "./GoogleMobileAds.framework/Headers/GADExtras.h"
-- "./GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADAdLoader.h"
-- "./GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
-- "./GoogleMobileAds.framework/Headers/GADCorrelator.h"
-- "./GoogleMobileAds.framework/Headers/GADRequestError.h"
-- "./GoogleMobileAds.framework/Headers/GADRequest.h"
-- "./GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADBannerView.h"
-- "./GoogleMobileAds.framework/Headers/GADAdSize.h"
-- "./GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
-- "./GoogleMobileAds.framework/Headers/GADAdDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
-- "./GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
-- "./GoogleMobileAds.framework/Modules/module.modulemap"
-- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/GoogleMobileAds.framework/Modules/module.modulemap"
-- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
-- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
-- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIROptions.h"
-- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRConfiguration.h"
-- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRApp.h"
-- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsConfiguration.h"
-- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
-- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
-- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
-- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
-- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
-- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
-- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Firebase/Analytics/Sources/Firebase.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Firebase/Analytics/Sources/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdReward.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADSearchRequest.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADDynamicHeightSearchRequest.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADMediatedNativeContentAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADMediatedNativeAppInstallAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADMediatedNativeAdNotificationSource.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventParameters.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADMediatedNativeAdDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADMediatedNativeAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADVideoOptions.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADVideoControllerDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADVideoController.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeExpressAdViewDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeExpressAdView.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADMobileAds.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADMediaView.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADExtras.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdLoader.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCorrelator.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADRequest.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADBannerView.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIROptions.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRConfiguration.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRApp.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsConfiguration.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Firebase/Analytics/Sources/Firebase.h"
 interface-hash: "eeb715c6545cb6d59646f36980d9f7fc"

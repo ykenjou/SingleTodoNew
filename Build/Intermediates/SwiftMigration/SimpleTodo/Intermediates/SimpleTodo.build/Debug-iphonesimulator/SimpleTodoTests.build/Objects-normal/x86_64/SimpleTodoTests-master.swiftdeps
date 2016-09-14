@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "f42400496289b76ac59fd8cc8e9665da"
+build_time: [527146883, 590193000]
+inputs:
+  "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodoTests/SimpleTodoTests.swift": [527074630, 0]

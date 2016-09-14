@@ -1,13 +1,20 @@
-version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
-options: "bbcf9ef7abfa64b767ab46047572ca93"
-build_time: [525275130, 348568000]
+version: "Apple Swift version 2.3 (swiftlang-800.10.12 clang-800.0.38)"
+options: "9b6167f3b1288ef14c344da1804fe71a"
+build_time: [527154042, 645164000]
 inputs:
-  "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/SimpleTodo/FontSizeViewController.swift": [525178337, 0]
-  "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/SimpleTodo/MainViewController.swift": [525204185, 0]
-  "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/SimpleTodo/AppDelegate.swift": [525275098, 0]
-  "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/SimpleTodo/AddViewController.swift": [525032041, 0]
-  "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/SimpleTodo/SettingViewController.swift": [525203148, 0]
-  "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/SimpleTodo/Item.swift": [524796698, 0]
-  "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/SimpleTodo/Item+CoreDataProperties.swift": [524844604, 0]
-  "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/SimpleTodo/EditViewController.swift": [525031841, 0]
-  "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/SimpleTodo/GadController.swift": [525144659, 0]
+  "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/PurchaseViewController.swift": [527074630, 0]
+  "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/ColorViewController.swift": [527074630, 0]
+  "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/FontSizeViewController.swift": [527074630, 0]
+  "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/XXXPurchaseManager.swift": [527074630, 0]
+  "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/XXXProductManager.swift": [527074630, 0]
+  "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/MainViewController.swift": [527154036, 0]
+  "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/Log.swift": [527074630, 0]
+  "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/Log+CoreDataProperties.swift": [527074630, 0]
+  "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/AppDelegate.swift": [527074630, 0]
+  "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/LogViewController.swift": [527074630, 0]
+  "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/AddViewController.swift": [527154029, 0]
+  "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/SettingViewController.swift": [527074630, 0]
+  "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/Item.swift": [527074630, 0]
+  "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/Item+CoreDataProperties.swift": [527074630, 0]
+  "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/EditViewController.swift": [527074630, 0]
+  "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/GadController.swift": [527074630, 0]

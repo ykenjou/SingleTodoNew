@@ -508,8 +508,14 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
     private func setFirstItemData(text:String,checked:NSNumber){
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let fetchRequest = NSFetchRequest(entityName: "Item")
-        var error: NSError? = nil
-        let count = appDelegate.managedObjectContext.countForFetchRequest(fetchRequest, error: &error)
+        //var error: NSError? = nil
+        var count: NSInteger? = nil
+        do {
+            count = try appDelegate.managedObjectContext.countForFetchRequest(fetchRequest)
+        } catch let error as NSError? {
+            print(error)
+        }
+        //let count = appDelegate.managedObjectContext.countForFetchRequest(fetchRequest)
         
         let item = NSEntityDescription.insertNewObjectForEntityForName("Item", inManagedObjectContext: appDelegate.managedObjectContext) as! Item
         item.text = text
