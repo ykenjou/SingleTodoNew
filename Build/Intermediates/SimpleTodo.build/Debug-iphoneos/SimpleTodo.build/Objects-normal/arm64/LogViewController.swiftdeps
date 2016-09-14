@@ -6,45 +6,46 @@ provides-nominal:
 provides-member:
 - ["C10SimpleTodo17LogViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "userDefaults"
-- "pushCloseButton"
-- "fetchedResultsController"
-- "viewWillAppear"
-- "numberOfSectionsInTableView"
 - "appDelegate"
+- "tableView"
+- "tableView"
+- "tableView"
+- "viewDidLoad"
+- "fetchedResultsController"
+- "pushCloseButton"
+- "viewWillAppear"
+- "pushSaveButton"
+- "numberOfSectionsInTableView"
+- "userDefaults"
 - "didReceiveMemoryWarning"
-- "tableView"
-- "tableView"
-- "tableView"
 depends-top-level:
-- "UIBarButtonItem"
+- !private "UIView"
+- !private "CGFloat"
+- "UITableViewCell"
+- !private "NSSortDescriptor"
+- "UITableView"
 - !private "UITableViewAutomaticDimension"
+- "LogViewController"
+- "UIViewController"
+- !private "Log"
+- "BooleanLiteralType"
+- "NSFetchedResultsControllerDelegate"
+- !private "UILabel"
+- "NSUserDefaults"
+- "UIApplication"
+- "Int"
+- !private "NSFetchRequest"
+- !private "print"
+- "NSFetchedResultsController"
+- "UITableViewDataSource"
+- "AppDelegate"
+- "Bool"
+- "UITableViewDelegate"
+- "UIBarButtonItem"
 - !private "UIFont"
+- "StringLiteralType"
 - "NSIndexPath"
 - "Array"
-- "UITableViewDelegate"
-- !private "print"
-- "UITableViewDataSource"
-- !private "UIView"
-- "UIViewController"
-- "NSFetchedResultsControllerDelegate"
-- "BooleanLiteralType"
-- "AppDelegate"
-- "LogViewController"
-- !private "UILabel"
-- "UITableViewCell"
-- "NSUserDefaults"
-- !private "NSSortDescriptor"
-- !private "Log"
-- "Bool"
-- "StringLiteralType"
-- !private "CGFloat"
-- "UIApplication"
-- !private "NSFetchRequest"
-- "UITableView"
-- "Int"
-- "NSFetchedResultsController"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
@@ -71,6 +72,7 @@ depends-member:
 - !private ["Ps9AnyObject", "floatForKey"]
 - !private ["Ps9AnyObject", "font"]
 - ["Ps9AnyObject", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["Ps9AnyObject", "indexPathsForSelectedRows"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "managedObjectContext"]
 - ["Ps9AnyObject", "numberOfSectionsInTableView"]
@@ -78,6 +80,7 @@ depends-member:
 - !private ["Ps9AnyObject", "performFetch"]
 - !private ["Ps9AnyObject", "print"]
 - ["Ps9AnyObject", "pushCloseButton"]
+- ["Ps9AnyObject", "pushSaveButton"]
 - !private ["Ps9AnyObject", "reloadData"]
 - !private ["Ps9AnyObject", "rowHeight"]
 - ["Ps9AnyObject", "scrollViewDidEndDecelerating"]
@@ -158,6 +161,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "floatForKey"]
 - !private ["Ps11CVarArgType", "font"]
 - ["Ps11CVarArgType", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["Ps11CVarArgType", "indexPathsForSelectedRows"]
 - ["Ps11CVarArgType", "init"]
 - !private ["Ps11CVarArgType", "managedObjectContext"]
 - ["Ps11CVarArgType", "numberOfSectionsInTableView"]
@@ -165,6 +169,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "performFetch"]
 - !private ["Ps11CVarArgType", "print"]
 - ["Ps11CVarArgType", "pushCloseButton"]
+- ["Ps11CVarArgType", "pushSaveButton"]
 - !private ["Ps11CVarArgType", "reloadData"]
 - !private ["Ps11CVarArgType", "rowHeight"]
 - ["Ps11CVarArgType", "scrollViewDidEndDecelerating"]
@@ -234,6 +239,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "floatForKey"]
 - !private ["Ps28CustomDebugStringConvertible", "font"]
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["Ps28CustomDebugStringConvertible", "indexPathsForSelectedRows"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "managedObjectContext"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInTableView"]
@@ -241,6 +247,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "performFetch"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - ["Ps28CustomDebugStringConvertible", "pushCloseButton"]
+- ["Ps28CustomDebugStringConvertible", "pushSaveButton"]
 - !private ["Ps28CustomDebugStringConvertible", "reloadData"]
 - !private ["Ps28CustomDebugStringConvertible", "rowHeight"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewDidEndDecelerating"]
@@ -303,6 +310,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "floatForKey"]
 - !private ["Ps23CustomStringConvertible", "font"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["Ps23CustomStringConvertible", "indexPathsForSelectedRows"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "managedObjectContext"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInTableView"]
@@ -310,6 +318,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "performFetch"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - ["Ps23CustomStringConvertible", "pushCloseButton"]
+- ["Ps23CustomStringConvertible", "pushSaveButton"]
 - !private ["Ps23CustomStringConvertible", "reloadData"]
 - !private ["Ps23CustomStringConvertible", "rowHeight"]
 - ["Ps23CustomStringConvertible", "scrollViewDidEndDecelerating"]
@@ -367,6 +376,7 @@ depends-member:
 - !private ["Ps9Equatable", "floatForKey"]
 - !private ["Ps9Equatable", "font"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["Ps9Equatable", "indexPathsForSelectedRows"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "managedObjectContext"]
 - ["Ps9Equatable", "numberOfSectionsInTableView"]
@@ -374,6 +384,7 @@ depends-member:
 - !private ["Ps9Equatable", "performFetch"]
 - !private ["Ps9Equatable", "print"]
 - ["Ps9Equatable", "pushCloseButton"]
+- ["Ps9Equatable", "pushSaveButton"]
 - !private ["Ps9Equatable", "reloadData"]
 - !private ["Ps9Equatable", "rowHeight"]
 - ["Ps9Equatable", "scrollViewDidEndDecelerating"]
@@ -435,6 +446,7 @@ depends-member:
 - !private ["Ps8Hashable", "floatForKey"]
 - !private ["Ps8Hashable", "font"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["Ps8Hashable", "indexPathsForSelectedRows"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "managedObjectContext"]
 - ["Ps8Hashable", "numberOfSectionsInTableView"]
@@ -442,6 +454,7 @@ depends-member:
 - !private ["Ps8Hashable", "performFetch"]
 - !private ["Ps8Hashable", "print"]
 - ["Ps8Hashable", "pushCloseButton"]
+- ["Ps8Hashable", "pushSaveButton"]
 - !private ["Ps8Hashable", "reloadData"]
 - !private ["Ps8Hashable", "rowHeight"]
 - ["Ps8Hashable", "scrollViewDidEndDecelerating"]
@@ -521,6 +534,7 @@ depends-member:
 - ["C10SimpleTodo17LogViewController", "numberOfSectionsInTableView"]
 - !private ["C10SimpleTodo17LogViewController", "print"]
 - ["C10SimpleTodo17LogViewController", "pushCloseButton"]
+- ["C10SimpleTodo17LogViewController", "pushSaveButton"]
 - ["C10SimpleTodo17LogViewController", "scrollViewDidEndDecelerating"]
 - ["C10SimpleTodo17LogViewController", "scrollViewDidEndDragging"]
 - ["C10SimpleTodo17LogViewController", "scrollViewDidEndScrollingAnimation"]
@@ -581,10 +595,12 @@ depends-member:
 - ["PSo8NSCoding", "fetchedResultsController.storage"]
 - !private ["PSo8NSCoding", "font"]
 - ["PSo8NSCoding", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo8NSCoding", "indexPathsForSelectedRows"]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
 - !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "pushCloseButton"]
+- ["PSo8NSCoding", "pushSaveButton"]
 - !private ["PSo8NSCoding", "reloadData"]
 - !private ["PSo8NSCoding", "rowHeight"]
 - ["PSo8NSCoding", "scrollViewDidEndDecelerating"]
@@ -635,6 +651,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "pushCloseButton"]
+- ["PSo26NSExtensionRequestHandling", "pushSaveButton"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDecelerating"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDragging"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndScrollingAnimation"]
@@ -730,6 +747,7 @@ depends-member:
 - !private ["CSo8NSObject", "floatForKey"]
 - !private ["CSo8NSObject", "font"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["CSo8NSObject", "indexPathsForSelectedRows"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "managedObjectContext"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
@@ -737,6 +755,7 @@ depends-member:
 - !private ["CSo8NSObject", "performFetch"]
 - !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "pushCloseButton"]
+- ["CSo8NSObject", "pushSaveButton"]
 - !private ["CSo8NSObject", "reloadData"]
 - !private ["CSo8NSObject", "rowHeight"]
 - ["CSo8NSObject", "scrollViewDidEndDecelerating"]
@@ -789,6 +808,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "floatForKey"]
 - !private ["PSo16NSObjectProtocol", "font"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo16NSObjectProtocol", "indexPathsForSelectedRows"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "managedObjectContext"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
@@ -796,6 +816,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "performFetch"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "pushCloseButton"]
+- ["PSo16NSObjectProtocol", "pushSaveButton"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
 - !private ["PSo16NSObjectProtocol", "rowHeight"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDecelerating"]
@@ -865,6 +886,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo29UIAccessibilityIdentification", "estimatedRowHeight"]
 - !private ["PSo29UIAccessibilityIdentification", "font"]
+- !private ["PSo29UIAccessibilityIdentification", "indexPathsForSelectedRows"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
 - !private ["PSo29UIAccessibilityIdentification", "rowHeight"]
@@ -875,6 +897,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo12UIAppearance", "estimatedRowHeight"]
 - !private ["PSo12UIAppearance", "font"]
+- !private ["PSo12UIAppearance", "indexPathsForSelectedRows"]
 - !private ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "reloadData"]
 - !private ["PSo12UIAppearance", "rowHeight"]
@@ -903,10 +926,12 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "fetchedResultsController.storage"]
 - !private ["PSo21UIAppearanceContainer", "font"]
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo21UIAppearanceContainer", "indexPathsForSelectedRows"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "pushCloseButton"]
+- ["PSo21UIAppearanceContainer", "pushSaveButton"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
 - !private ["PSo21UIAppearanceContainer", "rowHeight"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDecelerating"]
@@ -956,6 +981,7 @@ depends-member:
 - ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "pushCloseButton"]
+- ["PSo18UIContentContainer", "pushSaveButton"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDecelerating"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDragging"]
 - ["PSo18UIContentContainer", "scrollViewDidEndScrollingAnimation"]
@@ -979,6 +1005,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo17UICoordinateSpace", "estimatedRowHeight"]
 - !private ["PSo17UICoordinateSpace", "font"]
+- !private ["PSo17UICoordinateSpace", "indexPathsForSelectedRows"]
 - !private ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
 - !private ["PSo17UICoordinateSpace", "rowHeight"]
@@ -989,6 +1016,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo13UIDynamicItem", "estimatedRowHeight"]
 - !private ["PSo13UIDynamicItem", "font"]
+- !private ["PSo13UIDynamicItem", "indexPathsForSelectedRows"]
 - !private ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
 - !private ["PSo13UIDynamicItem", "rowHeight"]
@@ -1017,10 +1045,12 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "fetchedResultsController.storage"]
 - !private ["PSo18UIFocusEnvironment", "font"]
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo18UIFocusEnvironment", "indexPathsForSelectedRows"]
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "pushCloseButton"]
+- ["PSo18UIFocusEnvironment", "pushSaveButton"]
 - !private ["PSo18UIFocusEnvironment", "reloadData"]
 - !private ["PSo18UIFocusEnvironment", "rowHeight"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDecelerating"]
@@ -1081,11 +1111,13 @@ depends-member:
 - ["CSo11UIResponder", "fetchedResultsController.storage"]
 - !private ["CSo11UIResponder", "font"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["CSo11UIResponder", "indexPathsForSelectedRows"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "managedObjectContext"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
 - !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "pushCloseButton"]
+- ["CSo11UIResponder", "pushSaveButton"]
 - !private ["CSo11UIResponder", "reloadData"]
 - !private ["CSo11UIResponder", "rowHeight"]
 - ["CSo11UIResponder", "scrollViewDidEndDecelerating"]
@@ -1112,6 +1144,7 @@ depends-member:
 - !private ["CSo11UIResponder", "viewWithTag"]
 - !private ["CSo12UIScrollView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo12UIScrollView", "estimatedRowHeight"]
+- !private ["CSo12UIScrollView", "indexPathsForSelectedRows"]
 - !private ["CSo12UIScrollView", "reloadData"]
 - !private ["CSo12UIScrollView", "rowHeight"]
 - !private ["CSo12UIScrollView", "tableFooterView"]
@@ -1171,6 +1204,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "pushCloseButton"]
+- ["PSo16UIStateRestoring", "pushSaveButton"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDecelerating"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDragging"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndScrollingAnimation"]
@@ -1192,6 +1226,7 @@ depends-member:
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo11UITableView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo11UITableView", "estimatedRowHeight"]
+- !private ["CSo11UITableView", "indexPathsForSelectedRows"]
 - !private ["CSo11UITableView", "reloadData"]
 - !private ["CSo11UITableView", "rowHeight"]
 - !private ["CSo11UITableView", "tableFooterView"]
@@ -1286,10 +1321,12 @@ depends-member:
 - ["PSo18UITraitEnvironment", "fetchedResultsController.storage"]
 - !private ["PSo18UITraitEnvironment", "font"]
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo18UITraitEnvironment", "indexPathsForSelectedRows"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "pushCloseButton"]
+- ["PSo18UITraitEnvironment", "pushSaveButton"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
 - !private ["PSo18UITraitEnvironment", "rowHeight"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDecelerating"]
@@ -1318,6 +1355,7 @@ depends-member:
 - !private ["CSo6UIView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo6UIView", "estimatedRowHeight"]
 - !private ["CSo6UIView", "font"]
+- !private ["CSo6UIView", "indexPathsForSelectedRows"]
 - !private ["CSo6UIView", "init"]
 - !private ["CSo6UIView", "reloadData"]
 - !private ["CSo6UIView", "rowHeight"]
@@ -1355,6 +1393,7 @@ depends-member:
 - ["CSo16UIViewController", "numberOfSectionsInTableView"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "pushCloseButton"]
+- ["CSo16UIViewController", "pushSaveButton"]
 - ["CSo16UIViewController", "scrollViewDidEndDecelerating"]
 - ["CSo16UIViewController", "scrollViewDidEndDragging"]
 - ["CSo16UIViewController", "scrollViewDidEndScrollingAnimation"]
@@ -1423,6 +1462,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps12_Reflectable", "estimatedRowHeight"]
 - !private ["Ps12_Reflectable", "font"]
+- !private ["Ps12_Reflectable", "indexPathsForSelectedRows"]
 - !private ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "reloadData"]
 - !private ["Ps12_Reflectable", "rowHeight"]
@@ -1618,4 +1658,4 @@ depends-external:
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Firebase/Analytics/Sources/Firebase.h"
-interface-hash: "cfa5d87aa0c592809b47d2924895e464"
+interface-hash: "556a9fed1dd4f67e9646529a7ecb01b6"

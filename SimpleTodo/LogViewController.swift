@@ -89,6 +89,12 @@ class LogViewController: UIViewController ,UITableViewDataSource , UITableViewDe
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
+    @IBAction func pushSaveButton(sender: UIBarButtonItem) {
+        
+        
+        
+    }
+
     /*
     // MARK: - Navigation
 

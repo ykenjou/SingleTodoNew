@@ -272,25 +272,29 @@ SWIFT_CLASS("_TtC10SimpleTodo3Log")
 @property (nonatomic, strong) NSDate * _Nullable time;
 @end
 
+@class NSFetchedResultsController;
 @class UITableView;
 @class NSIndexPath;
 @class UITableViewCell;
+@class UIBarButtonItem;
 
 SWIFT_CLASS("_TtC10SimpleTodo17LogViewController")
 @interface LogViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, NSFetchedResultsControllerDelegate, UITableViewDataSource>
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 @property (nonatomic, strong) AppDelegate * _Nonnull appDelegate;
+@property (nonatomic, readonly, strong) NSUserDefaults * _Nonnull userDefaults;
+@property (nonatomic, strong) NSFetchedResultsController * _Nonnull fetchedResultsController;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (IBAction)pushCloseButton:(UIBarButtonItem * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSFetchedResultsController;
-@class UIBarButtonItem;
 @class UILongPressGestureRecognizer;
 @class UITableViewRowAction;
 @class UIToolbar;
@@ -329,6 +333,7 @@ SWIFT_CLASS("_TtC10SimpleTodo18MainViewController")
 - (void)pushTrashButton;
 - (void)pushAddButton;
 - (void)setEditing:(BOOL)editing animated:(BOOL)animated;
+- (IBAction)pushMemoButton:(UIBarButtonItem * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

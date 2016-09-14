@@ -6,8 +6,8 @@ provides-member:
 - ["C10SimpleTodo3Log", "text"]
 - ["C10SimpleTodo3Log", "time"]
 provides-dynamic-lookup:
-- "text"
 - "time"
+- "text"
 depends-top-level:
 - "String"
 - "NSDate"
