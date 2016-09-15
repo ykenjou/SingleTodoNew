@@ -82,19 +82,25 @@ class EditViewController: UIViewController {
     func pushSaveButton(){
         let textViewString = textView.text.stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
         if textViewString != "" {
-            let fetchRequest = NSFetchRequest(entityName: "Item")
-            let precidate = NSPredicate(format: "displayOrder == %d", appDelegate.displayOrder! as NSInteger)
-            fetchRequest.predicate = precidate
+            if self.appDelegate.itemText != textView.text {
+                let fetchRequest = NSFetchRequest(entityName: "Item")
+                let precidate = NSPredicate(format: "displayOrder == %d", appDelegate.displayOrder! as NSInteger)
+                fetchRequest.predicate = precidate
+                
+                do {
+                    let items = try appDelegate.managedObjectContext.executeFetchRequest(fetchRequest) as! [Item]
+                    items[0].text = textViewString
+                } catch {
+                    print("error")
+                }
+                
+                let log = NSEntityDescription.insertNewObjectForEntityForName("Log", inManagedObjectContext: appDelegate.managedObjectContext) as! Log
+                log.text = textViewString
+                let now = NSDate()
+                log.time = now
             
-            do {
-                let items = try appDelegate.managedObjectContext.executeFetchRequest(fetchRequest) as! [Item]
-                items[0].text = textViewString
-            } catch {
-                print("error")
+                appDelegate.saveContext()
             }
-        
-            appDelegate.saveContext()
-            
             self.textView.resignFirstResponder()
             self.dismissViewControllerAnimated(true, completion: nil)
         }

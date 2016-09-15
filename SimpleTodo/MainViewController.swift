@@ -590,21 +590,3 @@ extension UIView {
         }
     }
 }
-
-
-/*
- extension UINavigationBar{
- 
- override public func sizeThatFits(size: CGSize) -> CGSize {
- let userDefaults = NSUserDefaults.standardUserDefaults()
- let newSize: CGSize?
- if userDefaults.boolForKey("showAd"){
- newSize = CGSizeMake(UIScreen.mainScreen().bounds.width, 94)
- } else {
- newSize = CGSizeMake(UIScreen.mainScreen().bounds.width, 44)
- }
- 
- return newSize!
- }
- }
- */

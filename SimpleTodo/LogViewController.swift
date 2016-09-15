@@ -15,9 +15,12 @@ class LogViewController: UIViewController ,UITableViewDataSource , UITableViewDe
     @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var btmToolbar: UIToolbar!
     
-    var appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    @IBOutlet weak var popupView: UIView!
     
     @IBOutlet weak var headerView: UIView!
+    
+    var appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    @IBOutlet weak var zeroView: UIView!
     let userDefaults = NSUserDefaults.standardUserDefaults()
     
     lazy var fetchedResultsController: NSFetchedResultsController = {
@@ -50,7 +53,7 @@ class LogViewController: UIViewController ,UITableViewDataSource , UITableViewDe
             print("An error occurred")
         }
 
-        let maxLogs:NSInteger = 20
+        let maxLogs:NSInteger = 50
         let fetchRequest = NSFetchRequest(entityName: "Log")
         var logCount: NSInteger? = nil
         do {
@@ -131,6 +134,15 @@ class LogViewController: UIViewController ,UITableViewDataSource , UITableViewDe
             
         }
     }
+    
+    func showPopMessageView(){
+        popupView.fadeIn(.Normal)
+        let delay = 2 * Double(NSEC_PER_SEC)
+        let time  = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+        dispatch_after(time, dispatch_get_main_queue(), {
+            self.popupView.fadeOut(.Normal)
+        })
+    }
 
 
     override func didReceiveMemoryWarning() {
@@ -149,6 +161,9 @@ class LogViewController: UIViewController ,UITableViewDataSource , UITableViewDe
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let sections = fetchedResultsController.sections {
             let currentSection = sections[section]
+            if currentSection.numberOfObjects == 0{
+                zeroView.hidden = false
+            }
             
             return currentSection.numberOfObjects
         }
@@ -164,6 +179,11 @@ class LogViewController: UIViewController ,UITableViewDataSource , UITableViewDe
         label?.text = log.text
         let fontSize :CGFloat = CGFloat(userDefaults.floatForKey("fontSize"))
         label?.font = UIFont.systemFontOfSize(fontSize)
+        
+        let subLabel : UILabel? = cell.contentView.viewWithTag(2) as? UILabel
+        let formatter : NSDateFormatter = NSDateFormatter()
+        formatter.dateFormat = "yyyy/MM/dd HH:mm"
+        subLabel?.text = formatter.stringFromDate(log.time!) 
         
         return cell
     }
@@ -211,6 +231,8 @@ class LogViewController: UIViewController ,UITableViewDataSource , UITableViewDe
             
             appDelegate.saveContext()
             self.dismissViewControllerAnimated(true, completion: nil)
+        } else {
+            showPopMessageView()
         }
 
     }
@@ -226,3 +248,5 @@ class LogViewController: UIViewController ,UITableViewDataSource , UITableViewDe
     */
 
 }
+
+

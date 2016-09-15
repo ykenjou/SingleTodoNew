@@ -7,8 +7,8 @@ provides-member:
 - ["C10SimpleTodo4Item", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Item"
 - "NSManagedObject"
+- "Item"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", ""]

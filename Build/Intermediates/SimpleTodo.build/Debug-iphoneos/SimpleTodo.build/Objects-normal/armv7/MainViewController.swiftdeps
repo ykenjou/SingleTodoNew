@@ -14,128 +14,128 @@ provides-member:
 - ["CSo6UIView", "fadeOut"]
 - ["CSo6UIView", "fadeOut"]
 provides-dynamic-lookup:
-- "pushAddButton"
-- "popMessageView"
-- "setBadgeValue"
 - "btmToolBar"
-- "settingButton"
-- "btmToolBarConstraint"
-- "appDelegate"
-- "pushMemoButton"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "numberOfSectionsInTableView"
-- "pushTrashButton"
-- "tableBtmConstraint"
-- "setNaviToolbarColor"
-- "setEditing"
-- "fetchedResultsController"
-- "fadeIn"
-- "controllerDidChangeContent"
-- "fadeOut"
-- "viewDidLoad"
-- "cellLongPressed"
-- "gadController"
-- "setCheckedValue"
-- "userDefaults"
-- "showPopMessageView"
 - "bannerView"
 - "viewWillAppear"
+- "showPopMessageView"
+- "settingButton"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "popMessageView"
+- "viewDidLoad"
+- "gadController"
+- "fadeIn"
+- "setCheckedValue"
+- "fadeOut"
+- "userDefaults"
+- "setNaviToolbarColor"
+- "pushMemoButton"
+- "fetchedResultsController"
+- "setEditing"
+- "numberOfSectionsInTableView"
+- "controllerDidChangeContent"
+- "pushTrashButton"
+- "btmToolBarConstraint"
+- "appDelegate"
+- "cellLongPressed"
+- "setBadgeValue"
 - "didReceiveMemoryWarning"
+- "pushAddButton"
+- "tableBtmConstraint"
 depends-top-level:
-- "NSLayoutConstraint"
-- !private "Int64"
-- !private "dispatch_async"
 - "NSNumber"
-- "UIApplication"
-- "Array"
-- !private "AudioServicesPlaySystemSound"
-- !private "print"
-- !private "..<"
-- !private "CGPointMake"
-- !private "NSFetchRequest"
-- !private "<"
+- !private "UITableViewAutomaticDimension"
 - !private "DISPATCH_TIME_NOW"
-- !private "+"
-- !private "NSMakeRange"
-- !private "LogViewController"
-- "BooleanLiteralType"
-- !private "AddViewController"
-- !private "UIColor"
-- !private "UIUserNotificationType"
-- !private "UIUserNotificationSettings"
-- !private "UITableViewScrollPosition"
+- !private "NSStrikethroughStyleAttributeName"
+- !private "CGPointMake"
+- "UIView"
 - !private "UILabel"
-- !private "Item"
-- !private "UIActivityViewController"
-- !private "UIStoryboard"
-- !private "Double"
-- !private "NSEC_PER_SEC"
-- "Bool"
-- !private "!="
-- "UIBarButtonItem"
-- "UITableViewRowAction"
-- "UITableViewCell"
-- "NSIndexPath"
-- "StringLiteralType"
-- !private "-"
-- "GADBannerViewDelegate"
-- !private "UIBarButtonSystemItem"
-- !private "NSSortDescriptor"
-- "UINavigationControllerDelegate"
-- "Int"
-- "AppDelegate"
-- !private "NSMutableAttributedString"
-- "NSInteger"
-- "UIGestureRecognizerDelegate"
-- !private "CGRectMake"
-- "NSFetchedResultsControllerDelegate"
-- !private "NSArray"
-- !private "NSError"
-- "MainViewController"
-- "UITableViewDelegate"
-- "NSFetchedResultsController"
-- "UITableViewDataSource"
-- !private "CGFloat"
-- !private "dispatch_time"
+- "FadeType"
 - !private "CGRectGetMidX"
-- !private "NSEntityDescription"
+- "NSIndexPath"
+- "UIBarButtonItem"
+- !private "NSForegroundColorAttributeName"
+- !private "Item"
+- !private "+"
+- "GADBannerView"
+- !private "NSFetchRequest"
+- !private "CGRectMake"
+- "UITableViewCell"
+- "StringLiteralType"
+- "NSTimeInterval"
+- !private "dispatch_get_main_queue"
+- !private "UIFont"
+- !private "AudioServicesPlaySystemSound"
+- !private "..<"
+- !private "!="
+- !private "dispatch_after"
+- !private "UITableViewCellSelectionStyle"
+- !private "<"
+- !private "UIUserNotificationSettings"
+- !private "UIStoryboard"
+- !private "LogViewController"
+- !private "NSMakeRange"
+- !private "UITableViewScrollPosition"
+- "UIApplication"
+- "Bool"
+- !private "UIPasteboard"
+- !private "AddViewController"
+- "GadController"
+- !private "NSError"
 - !private "ColorViewController"
+- "BooleanLiteralType"
 - !private "EditViewController"
+- "AppDelegate"
+- "NSUserDefaults"
 - !private "*"
 - !private "NSManagedObject"
-- !private "String"
-- !private "UITableViewCellSelectionStyle"
-- "FadeType"
-- !private "NSForegroundColorAttributeName"
-- !private "UIGestureRecognizerState"
-- "UITableView"
-- "NSUserDefaults"
-- !private "NSLocalizedString"
-- "GadController"
-- !private "NSPredicate"
-- "UIView"
-- !private "dispatch_after"
-- !private "CGRectGetMidY"
-- !private "NSStrikethroughStyleAttributeName"
-- !private "dispatch_get_main_queue"
-- !private "UITableViewAutomaticDimension"
-- !private "UIPasteboard"
-- "NSTimeInterval"
 - "=="
-- "UILongPressGestureRecognizer"
-- !private "UIFont"
 - !private "~="
-- !private "AnyObject"
-- "UIViewController"
-- !private "Dictionary"
+- !private "NSSortDescriptor"
+- !private "String"
+- "NSInteger"
 - "UIToolbar"
-- "GADBannerView"
+- !private "UIUserNotificationType"
+- !private "NSArray"
+- !private "CGRectGetMidY"
+- !private "Double"
+- "NSLayoutConstraint"
+- !private "CGFloat"
+- "NSFetchedResultsController"
+- "UITableView"
+- "Int"
+- "Array"
+- !private "AnyObject"
+- !private "NSEC_PER_SEC"
+- !private "UIActivityViewController"
+- !private "NSPredicate"
+- "GADBannerViewDelegate"
+- !private "UIGestureRecognizerState"
+- "UINavigationControllerDelegate"
+- !private "UIBarButtonSystemItem"
+- "UITableViewRowAction"
+- !private "NSEntityDescription"
+- "UIGestureRecognizerDelegate"
+- "UILongPressGestureRecognizer"
+- !private "Int64"
+- !private "NSLocalizedString"
+- "NSFetchedResultsControllerDelegate"
+- !private "Dictionary"
+- "MainViewController"
+- !private "NSMutableAttributedString"
+- "UITableViewDelegate"
+- "UIViewController"
+- !private "-"
+- !private "dispatch_time"
+- !private "dispatch_async"
+- !private "UIColor"
+- !private "print"
+- "UITableViewDataSource"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Normal"]
 - !private ["Ps16AbsoluteValuable", "init"]
@@ -375,6 +375,44 @@ depends-member:
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
 - !private ["CSo7CALayer", "cornerRadius"]
+- !private ["PSo15CALayerDelegate", "FadeType"]
+- !private ["PSo15CALayerDelegate", "UIView"]
+- !private ["PSo15CALayerDelegate", "addGestureRecognizer"]
+- !private ["PSo15CALayerDelegate", "addSubview"]
+- !private ["PSo15CALayerDelegate", "alpha"]
+- !private ["PSo15CALayerDelegate", "animateWithDuration"]
+- !private ["PSo15CALayerDelegate", "attributedText"]
+- !private ["PSo15CALayerDelegate", "autoresizingMask"]
+- !private ["PSo15CALayerDelegate", "barTintColor"]
+- !private ["PSo15CALayerDelegate", "bounds"]
+- !private ["PSo15CALayerDelegate", "cellForRowAtIndexPath"]
+- !private ["PSo15CALayerDelegate", "contentView"]
+- !private ["PSo15CALayerDelegate", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo15CALayerDelegate", "editing"]
+- !private ["PSo15CALayerDelegate", "estimatedRowHeight"]
+- !private ["PSo15CALayerDelegate", "fadeIn"]
+- !private ["PSo15CALayerDelegate", "fadeOut"]
+- !private ["PSo15CALayerDelegate", "font"]
+- !private ["PSo15CALayerDelegate", "frame"]
+- !private ["PSo15CALayerDelegate", "gadBannerInit"]
+- !private ["PSo15CALayerDelegate", "hidden"]
+- !private ["PSo15CALayerDelegate", "indexPathForRowAtPoint"]
+- !private ["PSo15CALayerDelegate", "indexPathsForSelectedRows"]
+- ["PSo15CALayerDelegate", "init"]
+- !private ["PSo15CALayerDelegate", "items"]
+- !private ["PSo15CALayerDelegate", "layer"]
+- !private ["PSo15CALayerDelegate", "reloadData"]
+- !private ["PSo15CALayerDelegate", "removeFromSuperview"]
+- !private ["PSo15CALayerDelegate", "rowHeight"]
+- !private ["PSo15CALayerDelegate", "selectRowAtIndexPath"]
+- !private ["PSo15CALayerDelegate", "selectionStyle"]
+- !private ["PSo15CALayerDelegate", "setEditing"]
+- !private ["PSo15CALayerDelegate", "tableFooterView"]
+- !private ["PSo15CALayerDelegate", "text"]
+- !private ["PSo15CALayerDelegate", "tintColor"]
+- !private ["PSo15CALayerDelegate", "titleTextAttributes"]
+- !private ["PSo15CALayerDelegate", "translucent"]
+- !private ["PSo15CALayerDelegate", "viewWithTag"]
 - !private ["PSo13CAMediaTiming", "cornerRadius"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["V12CoreGraphics7CGFloat", "init"]
@@ -1681,7 +1719,6 @@ depends-member:
 - !private ["Ps8Hashable", "viewWithTag"]
 - !private ["Ps8Hashable", "whiteColor"]
 - ["Ps8Hashable", ""]
-- !private ["SQ", "deinit"]
 - !private ["Ps9Indexable", "Element"]
 - !private ["Ps9Indexable", "Generator"]
 - !private ["Ps9Indexable", "Index"]
@@ -1720,6 +1757,7 @@ depends-member:
 - !private ["Ps11IntegerType", "init"]
 - !private ["Ps12IntervalType", "Generator"]
 - !private ["C10SimpleTodo4Item", "checked"]
+- !private ["C10SimpleTodo4Item", "deinit"]
 - !private ["C10SimpleTodo4Item", "displayOrder"]
 - !private ["C10SimpleTodo4Item", "text"]
 - !private ["C10SimpleTodo17LogViewController", "deinit"]
@@ -2187,6 +2225,10 @@ depends-member:
 - !private ["CSo14NSFetchRequest", "init"]
 - !private ["CSo14NSFetchRequest", "predicate"]
 - !private ["CSo14NSFetchRequest", "sortDescriptors"]
+- !private ["PSo20NSFetchRequestResult", "checked"]
+- !private ["PSo20NSFetchRequestResult", "displayOrder"]
+- !private ["PSo20NSFetchRequestResult", "setValue"]
+- !private ["PSo20NSFetchRequestResult", "text"]
 - !private ["CSo26NSFetchedResultsController", "delegate"]
 - !private ["CSo26NSFetchedResultsController", "init"]
 - !private ["CSo26NSFetchedResultsController", "objectAtIndexPath"]
@@ -3197,6 +3239,9 @@ depends-member:
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
 - ["PSo18UIContentContainer", "viewWillAppear"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "attributedText"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "font"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
 - !private ["PSo17UICoordinateSpace", "FadeType"]
 - !private ["PSo17UICoordinateSpace", "UIView"]
 - !private ["PSo17UICoordinateSpace", "addGestureRecognizer"]
@@ -3427,6 +3472,44 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewWillAppear"]
 - !private ["PSo18UIFocusEnvironment", "viewWithTag"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "FadeType"]
+- !private ["PSo11UIFocusItem", "UIView"]
+- !private ["PSo11UIFocusItem", "addGestureRecognizer"]
+- !private ["PSo11UIFocusItem", "addSubview"]
+- !private ["PSo11UIFocusItem", "alpha"]
+- !private ["PSo11UIFocusItem", "animateWithDuration"]
+- !private ["PSo11UIFocusItem", "attributedText"]
+- !private ["PSo11UIFocusItem", "autoresizingMask"]
+- !private ["PSo11UIFocusItem", "barTintColor"]
+- !private ["PSo11UIFocusItem", "bounds"]
+- !private ["PSo11UIFocusItem", "cellForRowAtIndexPath"]
+- !private ["PSo11UIFocusItem", "contentView"]
+- !private ["PSo11UIFocusItem", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo11UIFocusItem", "editing"]
+- !private ["PSo11UIFocusItem", "estimatedRowHeight"]
+- !private ["PSo11UIFocusItem", "fadeIn"]
+- !private ["PSo11UIFocusItem", "fadeOut"]
+- !private ["PSo11UIFocusItem", "font"]
+- !private ["PSo11UIFocusItem", "frame"]
+- !private ["PSo11UIFocusItem", "gadBannerInit"]
+- !private ["PSo11UIFocusItem", "hidden"]
+- !private ["PSo11UIFocusItem", "indexPathForRowAtPoint"]
+- !private ["PSo11UIFocusItem", "indexPathsForSelectedRows"]
+- ["PSo11UIFocusItem", "init"]
+- !private ["PSo11UIFocusItem", "items"]
+- !private ["PSo11UIFocusItem", "layer"]
+- !private ["PSo11UIFocusItem", "reloadData"]
+- !private ["PSo11UIFocusItem", "removeFromSuperview"]
+- !private ["PSo11UIFocusItem", "rowHeight"]
+- !private ["PSo11UIFocusItem", "selectRowAtIndexPath"]
+- !private ["PSo11UIFocusItem", "selectionStyle"]
+- !private ["PSo11UIFocusItem", "setEditing"]
+- !private ["PSo11UIFocusItem", "tableFooterView"]
+- !private ["PSo11UIFocusItem", "text"]
+- !private ["PSo11UIFocusItem", "tintColor"]
+- !private ["PSo11UIFocusItem", "titleTextAttributes"]
+- !private ["PSo11UIFocusItem", "translucent"]
+- !private ["PSo11UIFocusItem", "viewWithTag"]
 - !private ["CSo6UIFont", "systemFontOfSize"]
 - !private ["CSo19UIGestureRecognizer", "delegate"]
 - !private ["CSo19UIGestureRecognizer", "init"]
@@ -3836,6 +3919,166 @@ depends-member:
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
 - ["CSo11UIResponder", "viewWillAppear"]
 - !private ["CSo11UIResponder", "viewWithTag"]
+- !private ["PSo30UIResponderStandardEditActions", "AudioServicesPlaySystemSound"]
+- !private ["PSo30UIResponderStandardEditActions", "CGFloat"]
+- !private ["PSo30UIResponderStandardEditActions", "CGPointMake"]
+- !private ["PSo30UIResponderStandardEditActions", "CGRectGetMidX"]
+- !private ["PSo30UIResponderStandardEditActions", "CGRectGetMidY"]
+- !private ["PSo30UIResponderStandardEditActions", "CGRectMake"]
+- !private ["PSo30UIResponderStandardEditActions", "ColorViewController"]
+- !private ["PSo30UIResponderStandardEditActions", "DISPATCH_TIME_NOW"]
+- !private ["PSo30UIResponderStandardEditActions", "Double"]
+- !private ["PSo30UIResponderStandardEditActions", "FadeType"]
+- ["PSo30UIResponderStandardEditActions", "GadController"]
+- !private ["PSo30UIResponderStandardEditActions", "Int64"]
+- !private ["PSo30UIResponderStandardEditActions", "MainViewController"]
+- !private ["PSo30UIResponderStandardEditActions", "NSEC_PER_SEC"]
+- !private ["PSo30UIResponderStandardEditActions", "NSEntityDescription"]
+- !private ["PSo30UIResponderStandardEditActions", "NSFetchRequest"]
+- !private ["PSo30UIResponderStandardEditActions", "NSFetchedResultsController"]
+- !private ["PSo30UIResponderStandardEditActions", "NSForegroundColorAttributeName"]
+- !private ["PSo30UIResponderStandardEditActions", "NSIndexPath"]
+- !private ["PSo30UIResponderStandardEditActions", "NSLocalizedString"]
+- !private ["PSo30UIResponderStandardEditActions", "NSMakeRange"]
+- !private ["PSo30UIResponderStandardEditActions", "NSMutableAttributedString"]
+- !private ["PSo30UIResponderStandardEditActions", "NSPredicate"]
+- !private ["PSo30UIResponderStandardEditActions", "NSSortDescriptor"]
+- !private ["PSo30UIResponderStandardEditActions", "NSStrikethroughStyleAttributeName"]
+- ["PSo30UIResponderStandardEditActions", "NSUserDefaults"]
+- !private ["PSo30UIResponderStandardEditActions", "UIActivityViewController"]
+- ["PSo30UIResponderStandardEditActions", "UIApplication"]
+- !private ["PSo30UIResponderStandardEditActions", "UIBarButtonItem"]
+- !private ["PSo30UIResponderStandardEditActions", "UIBarButtonSystemItem"]
+- !private ["PSo30UIResponderStandardEditActions", "UIColor"]
+- !private ["PSo30UIResponderStandardEditActions", "UIFont"]
+- !private ["PSo30UIResponderStandardEditActions", "UIGestureRecognizerState"]
+- !private ["PSo30UIResponderStandardEditActions", "UILongPressGestureRecognizer"]
+- !private ["PSo30UIResponderStandardEditActions", "UIPasteboard"]
+- !private ["PSo30UIResponderStandardEditActions", "UIStoryboard"]
+- !private ["PSo30UIResponderStandardEditActions", "UITableViewAutomaticDimension"]
+- !private ["PSo30UIResponderStandardEditActions", "UITableViewCellSelectionStyle"]
+- !private ["PSo30UIResponderStandardEditActions", "UITableViewRowAction"]
+- !private ["PSo30UIResponderStandardEditActions", "UITableViewScrollPosition"]
+- !private ["PSo30UIResponderStandardEditActions", "UIUserNotificationSettings"]
+- !private ["PSo30UIResponderStandardEditActions", "UIUserNotificationType"]
+- !private ["PSo30UIResponderStandardEditActions", "UIView"]
+- ["PSo30UIResponderStandardEditActions", "ad"]
+- ["PSo30UIResponderStandardEditActions", "adView"]
+- ["PSo30UIResponderStandardEditActions", "adViewDidDismissScreen"]
+- ["PSo30UIResponderStandardEditActions", "adViewDidReceiveAd"]
+- ["PSo30UIResponderStandardEditActions", "adViewWillDismissScreen"]
+- ["PSo30UIResponderStandardEditActions", "adViewWillLeaveApplication"]
+- ["PSo30UIResponderStandardEditActions", "adViewWillPresentScreen"]
+- !private ["PSo30UIResponderStandardEditActions", "addGestureRecognizer"]
+- !private ["PSo30UIResponderStandardEditActions", "addSubview"]
+- !private ["PSo30UIResponderStandardEditActions", "alpha"]
+- !private ["PSo30UIResponderStandardEditActions", "animateWithDuration"]
+- ["PSo30UIResponderStandardEditActions", "appDelegate"]
+- !private ["PSo30UIResponderStandardEditActions", "applicationIconBadgeNumber"]
+- !private ["PSo30UIResponderStandardEditActions", "attributedText"]
+- !private ["PSo30UIResponderStandardEditActions", "autoresizingMask"]
+- ["PSo30UIResponderStandardEditActions", "bannerView"]
+- !private ["PSo30UIResponderStandardEditActions", "barTintColor"]
+- !private ["PSo30UIResponderStandardEditActions", "blueColor"]
+- !private ["PSo30UIResponderStandardEditActions", "bounds"]
+- ["PSo30UIResponderStandardEditActions", "btmToolBar"]
+- ["PSo30UIResponderStandardEditActions", "btmToolBarConstraint"]
+- !private ["PSo30UIResponderStandardEditActions", "cellForRowAtIndexPath"]
+- ["PSo30UIResponderStandardEditActions", "cellLongPressed"]
+- !private ["PSo30UIResponderStandardEditActions", "contentView"]
+- ["PSo30UIResponderStandardEditActions", "controller"]
+- ["PSo30UIResponderStandardEditActions", "controllerDidChangeContent"]
+- ["PSo30UIResponderStandardEditActions", "controllerWillChangeContent"]
+- !private ["PSo30UIResponderStandardEditActions", "darkGrayColor"]
+- ["PSo30UIResponderStandardEditActions", "delegate"]
+- !private ["PSo30UIResponderStandardEditActions", "dequeueReusableCellWithIdentifier"]
+- ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- !private ["PSo30UIResponderStandardEditActions", "dispatch_after"]
+- !private ["PSo30UIResponderStandardEditActions", "dispatch_async"]
+- !private ["PSo30UIResponderStandardEditActions", "dispatch_get_main_queue"]
+- !private ["PSo30UIResponderStandardEditActions", "dispatch_time"]
+- !private ["PSo30UIResponderStandardEditActions", "displayOrder"]
+- !private ["PSo30UIResponderStandardEditActions", "editButtonItem"]
+- !private ["PSo30UIResponderStandardEditActions", "editing"]
+- !private ["PSo30UIResponderStandardEditActions", "estimatedRowHeight"]
+- ["PSo30UIResponderStandardEditActions", "fadeIn"]
+- ["PSo30UIResponderStandardEditActions", "fadeOut"]
+- ["PSo30UIResponderStandardEditActions", "fetchedResultsController"]
+- ["PSo30UIResponderStandardEditActions", "fetchedResultsController.storage"]
+- !private ["PSo30UIResponderStandardEditActions", "font"]
+- !private ["PSo30UIResponderStandardEditActions", "frame"]
+- !private ["PSo30UIResponderStandardEditActions", "gadBannerInit"]
+- ["PSo30UIResponderStandardEditActions", "gadController"]
+- ["PSo30UIResponderStandardEditActions", "gestureRecognizer"]
+- ["PSo30UIResponderStandardEditActions", "gestureRecognizerShouldBegin"]
+- !private ["PSo30UIResponderStandardEditActions", "greenColor"]
+- !private ["PSo30UIResponderStandardEditActions", "hidden"]
+- ["PSo30UIResponderStandardEditActions", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo30UIResponderStandardEditActions", "indexPathForRowAtPoint"]
+- !private ["PSo30UIResponderStandardEditActions", "indexPathsForSelectedRows"]
+- ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "itemText"]
+- !private ["PSo30UIResponderStandardEditActions", "items"]
+- !private ["PSo30UIResponderStandardEditActions", "layer"]
+- !private ["PSo30UIResponderStandardEditActions", "lightGrayColor"]
+- !private ["PSo30UIResponderStandardEditActions", "managedObjectContext"]
+- !private ["PSo30UIResponderStandardEditActions", "navigationBar"]
+- ["PSo30UIResponderStandardEditActions", "navigationController"]
+- ["PSo30UIResponderStandardEditActions", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["PSo30UIResponderStandardEditActions", "navigationControllerSupportedInterfaceOrientations"]
+- ["PSo30UIResponderStandardEditActions", "numberOfSectionsInTableView"]
+- !private ["PSo30UIResponderStandardEditActions", "orangeColor"]
+- ["PSo30UIResponderStandardEditActions", "popMessageView"]
+- !private ["PSo30UIResponderStandardEditActions", "popoverPresentationController"]
+- !private ["PSo30UIResponderStandardEditActions", "presentViewController"]
+- !private ["PSo30UIResponderStandardEditActions", "print"]
+- !private ["PSo30UIResponderStandardEditActions", "purpleColor"]
+- ["PSo30UIResponderStandardEditActions", "pushAddButton"]
+- ["PSo30UIResponderStandardEditActions", "pushMemoButton"]
+- ["PSo30UIResponderStandardEditActions", "pushTrashButton"]
+- !private ["PSo30UIResponderStandardEditActions", "redColor"]
+- !private ["PSo30UIResponderStandardEditActions", "registerUserNotificationSettings"]
+- !private ["PSo30UIResponderStandardEditActions", "reloadData"]
+- !private ["PSo30UIResponderStandardEditActions", "removeFromSuperview"]
+- !private ["PSo30UIResponderStandardEditActions", "rowHeight"]
+- !private ["PSo30UIResponderStandardEditActions", "saveContext"]
+- ["PSo30UIResponderStandardEditActions", "scrollViewDidEndDecelerating"]
+- ["PSo30UIResponderStandardEditActions", "scrollViewDidEndDragging"]
+- ["PSo30UIResponderStandardEditActions", "scrollViewDidEndScrollingAnimation"]
+- ["PSo30UIResponderStandardEditActions", "scrollViewDidEndZooming"]
+- ["PSo30UIResponderStandardEditActions", "scrollViewDidScroll"]
+- ["PSo30UIResponderStandardEditActions", "scrollViewDidScrollToTop"]
+- ["PSo30UIResponderStandardEditActions", "scrollViewDidZoom"]
+- ["PSo30UIResponderStandardEditActions", "scrollViewShouldScrollToTop"]
+- ["PSo30UIResponderStandardEditActions", "scrollViewWillBeginDecelerating"]
+- ["PSo30UIResponderStandardEditActions", "scrollViewWillBeginDragging"]
+- ["PSo30UIResponderStandardEditActions", "scrollViewWillBeginZooming"]
+- ["PSo30UIResponderStandardEditActions", "scrollViewWillEndDragging"]
+- ["PSo30UIResponderStandardEditActions", "sectionIndexTitlesForTableView"]
+- !private ["PSo30UIResponderStandardEditActions", "selectRowAtIndexPath"]
+- !private ["PSo30UIResponderStandardEditActions", "selectionStyle"]
+- ["PSo30UIResponderStandardEditActions", "setBadgeValue"]
+- ["PSo30UIResponderStandardEditActions", "setCheckedValue"]
+- ["PSo30UIResponderStandardEditActions", "setEditing"]
+- ["PSo30UIResponderStandardEditActions", "setFirstItemData"]
+- ["PSo30UIResponderStandardEditActions", "setNaviToolbarColor"]
+- ["PSo30UIResponderStandardEditActions", "settingButton"]
+- ["PSo30UIResponderStandardEditActions", "sharedApplication"]
+- ["PSo30UIResponderStandardEditActions", "showPopMessageView"]
+- ["PSo30UIResponderStandardEditActions", "tableBtmConstraint"]
+- !private ["PSo30UIResponderStandardEditActions", "tableFooterView"]
+- ["PSo30UIResponderStandardEditActions", "tableView"]
+- !private ["PSo30UIResponderStandardEditActions", "text"]
+- !private ["PSo30UIResponderStandardEditActions", "tintColor"]
+- !private ["PSo30UIResponderStandardEditActions", "titleTextAttributes"]
+- !private ["PSo30UIResponderStandardEditActions", "translucent"]
+- ["PSo30UIResponderStandardEditActions", "userDefaults"]
+- !private ["PSo30UIResponderStandardEditActions", "view"]
+- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", "viewForZoomingInScrollView"]
+- ["PSo30UIResponderStandardEditActions", "viewWillAppear"]
+- !private ["PSo30UIResponderStandardEditActions", "viewWithTag"]
+- ["PSo30UIResponderStandardEditActions", ""]
 - !private ["CSo12UIScrollView", "addGestureRecognizer"]
 - !private ["CSo12UIScrollView", "cellForRowAtIndexPath"]
 - !private ["CSo12UIScrollView", "dequeueReusableCellWithIdentifier"]
@@ -4784,6 +5027,7 @@ depends-nominal:
 - !private "Ps25BooleanLiteralConvertible"
 - !private "Ps11BooleanType"
 - !private "CSo7CALayer"
+- "PSo15CALayerDelegate"
 - !private "PSo13CAMediaTiming"
 - !private "V12CoreGraphics7CGFloat"
 - !private "VSC6CGRect"
@@ -4809,7 +5053,6 @@ depends-nominal:
 - !private "Ps13GeneratorType"
 - !private "Vs16HalfOpenInterval"
 - "Ps8Hashable"
-- !private "SQ"
 - !private "Ps9Indexable"
 - !private "Vs17IndexingGenerator"
 - !private "Si"
@@ -4833,6 +5076,7 @@ depends-nominal:
 - "PSo26NSExtensionRequestHandling"
 - !private "PSo17NSFastEnumeration"
 - !private "CSo14NSFetchRequest"
+- !private "PSo20NSFetchRequestResult"
 - !private "CSo26NSFetchedResultsController"
 - "PSo34NSFetchedResultsControllerDelegate"
 - !private "PSo27NSFetchedResultsSectionInfo"
@@ -4880,9 +5124,11 @@ depends-nominal:
 - !private "PSo16UIBarPositioning"
 - !private "CSo7UIColor"
 - "PSo18UIContentContainer"
+- !private "PSo30UIContentSizeCategoryAdjusting"
 - "PSo17UICoordinateSpace"
 - "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
+- "PSo11UIFocusItem"
 - !private "CSo6UIFont"
 - !private "CSo19UIGestureRecognizer"
 - "PSo27UIGestureRecognizerDelegate"
@@ -4896,6 +5142,7 @@ depends-nominal:
 - !private "CSo31UIPopoverPresentationController"
 - !private "CSo24UIPresentationController"
 - "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
 - !private "CSo12UIScrollView"
 - "PSo20UIScrollViewDelegate"
 - "PSo16UIStateRestoring"
@@ -4936,80 +5183,79 @@ depends-nominal:
 - !private "Ps18_SignedIntegerType"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Firebase/Analytics/Sources/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreData.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
-- "./GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
-- "./GoogleMobileAds.framework/Headers/GADAdReward.h"
-- "./GoogleMobileAds.framework/Headers/GADSearchRequest.h"
-- "./GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
-- "./GoogleMobileAds.framework/Headers/GADDynamicHeightSearchRequest.h"
-- "./GoogleMobileAds.framework/Headers/GADMediatedNativeContentAd.h"
-- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAppInstallAd.h"
-- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAdNotificationSource.h"
-- "./GoogleMobileAds.framework/Headers/GADCustomEventParameters.h"
-- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAdDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAd.h"
-- "./GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
-- "./GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
-- "./GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
-- "./GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
-- "./GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
-- "./GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
-- "./GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
-- "./GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
-- "./GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
-- "./GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
-- "./GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
-- "./GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADNativeAd.h"
-- "./GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
-- "./GoogleMobileAds.framework/Headers/DFPRequest.h"
-- "./GoogleMobileAds.framework/Headers/DFPInterstitial.h"
-- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
-- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
-- "./GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
-- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
-- "./GoogleMobileAds.framework/Headers/DFPBannerView.h"
-- "./GoogleMobileAds.framework/Headers/GADVideoOptions.h"
-- "./GoogleMobileAds.framework/Headers/GADVideoControllerDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADVideoController.h"
-- "./GoogleMobileAds.framework/Headers/GADNativeExpressAdViewDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADNativeExpressAdView.h"
-- "./GoogleMobileAds.framework/Headers/GADMobileAds.h"
-- "./GoogleMobileAds.framework/Headers/GADMediaView.h"
-- "./GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADInterstitial.h"
-- "./GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
-- "./GoogleMobileAds.framework/Headers/GADExtras.h"
-- "./GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADAdLoader.h"
-- "./GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
-- "./GoogleMobileAds.framework/Headers/GADCorrelator.h"
-- "./GoogleMobileAds.framework/Headers/GADRequestError.h"
-- "./GoogleMobileAds.framework/Headers/GADRequest.h"
-- "./GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GADBannerView.h"
-- "./GoogleMobileAds.framework/Headers/GADAdSize.h"
-- "./GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
-- "./GoogleMobileAds.framework/Headers/GADAdDelegate.h"
-- "./GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
-- "./GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
-- "./GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdReward.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADSearchRequest.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADDynamicHeightSearchRequest.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADMediatedNativeContentAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADMediatedNativeAppInstallAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADMediatedNativeAdNotificationSource.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventParameters.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADMediatedNativeAdDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADMediatedNativeAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADVideoOptions.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADVideoControllerDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADVideoController.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeExpressAdViewDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeExpressAdView.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADMobileAds.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADMediaView.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADExtras.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdLoader.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCorrelator.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADRequest.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADBannerView.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Modules/module.modulemap"
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
