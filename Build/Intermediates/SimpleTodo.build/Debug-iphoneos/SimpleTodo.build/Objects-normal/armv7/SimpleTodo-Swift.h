@@ -286,14 +286,17 @@ SWIFT_CLASS("_TtC10SimpleTodo17LogViewController")
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 @property (nonatomic, weak) IBOutlet UINavigationBar * _Null_unspecified navigationBar;
 @property (nonatomic, weak) IBOutlet UIToolbar * _Null_unspecified btmToolbar;
-@property (nonatomic, strong) AppDelegate * _Nonnull appDelegate;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified popupView;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified headerView;
+@property (nonatomic, strong) AppDelegate * _Nonnull appDelegate;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified zeroView;
 @property (nonatomic, readonly, strong) NSUserDefaults * _Nonnull userDefaults;
 @property (nonatomic, strong) NSFetchedResultsController * _Nonnull fetchedResultsController;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)controllerDidChangeContent:(NSFetchedResultsController * _Nonnull)controller;
 - (void)setNaviToolbarColor;
+- (void)showPopMessageView;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;

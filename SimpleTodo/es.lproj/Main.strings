@@ -56,6 +56,9 @@
 /* Class = "UITableViewSection"; footerTitle = "　"; ObjectID = "Z7N-lT-Klb"; */
 "Z7N-lT-Klb.footerTitle" = "　";
 
+/* Class = "UINavigationItem"; title = "Input history"; ObjectID = "ZHc-CF-Lte"; */
+"ZHc-CF-Lte.title" = "historial de entradas";
+
 /* Class = "UILabel"; text = "Registro los artículos plurales a un newline"; ObjectID = "eNv-8q-nKe"; */
 "eNv-8q-nKe.text" = "Registro los artículos plurales a un newline";
 
@@ -100,3 +103,9 @@
 
 /* Class = "UINavigationItem"; title = "Color"; ObjectID = "zVh-yw-8Pz"; */
 "zVh-yw-8Pz.title" = "Color";
+
+/* Class = "UILabel"; text = "Please choose at least one item from the list"; ObjectID = "MWk-AC-FST"; */
+"MWk-AC-FST.text" = "Por favor, elija al menos un elemento de la lista";
+
+/* Class = "UILabel"; text = "The list of histories of the item which you input is displayed here.\nYou can enroll in a list of Todo again by choosing an item among a list, and pushing + button of the lower right."; ObjectID = "rOR-8P-8F7"; */
+"rOR-8P-8F7.text" = "Esta pantalla muestra una lista de historial de entrada.\nCuando se pulsa el botón + en la parte inferior derecha para seleccionar un elemento de la lista, puede volver a registrarse en la lista de tareas.";

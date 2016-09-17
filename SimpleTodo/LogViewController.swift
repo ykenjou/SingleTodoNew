@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import AudioToolbox
 
 class LogViewController: UIViewController ,UITableViewDataSource , UITableViewDelegate , NSFetchedResultsControllerDelegate{
     
@@ -182,10 +183,23 @@ class LogViewController: UIViewController ,UITableViewDataSource , UITableViewDe
         
         let subLabel : UILabel? = cell.contentView.viewWithTag(2) as? UILabel
         let formatter : NSDateFormatter = NSDateFormatter()
-        formatter.dateFormat = "yyyy/MM/dd HH:mm"
+        //formatter.dateFormat = "yyyy/MM/dd HH:mm"
+        formatter.dateFormat = "yyyy/MM/dd"
         subLabel?.text = formatter.stringFromDate(log.time!) 
         
         return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if userDefaults.boolForKey("sound") {
+            AudioServicesPlaySystemSound(1104)
+        }
+    }
+    
+    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        if userDefaults.boolForKey("sound") {
+            AudioServicesPlaySystemSound(1104)
+        }
     }
 
     @IBAction func pushCloseButton(sender: UIBarButtonItem) {

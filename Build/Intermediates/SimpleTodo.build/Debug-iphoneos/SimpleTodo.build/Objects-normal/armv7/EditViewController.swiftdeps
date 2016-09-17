@@ -6,42 +6,45 @@ provides-nominal:
 provides-member:
 - ["C10SimpleTodo18EditViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "pushCancelButton"
 - "didReceiveMemoryWarning"
-- "textView"
-- "appDelegate"
 - "pushSaveButton"
+- "textView"
+- "pushCancelButton"
+- "appDelegate"
+- "viewDidLoad"
 depends-top-level:
-- !private "Array"
-- !private "NSCharacterSet"
-- !private "NSLocalizedString"
-- !private "UIAlertAction"
-- "AppDelegate"
-- "EditViewController"
-- !private "UIBarButtonItem"
-- !private "NSInteger"
-- !private "!="
-- !private "NSFetchRequest"
-- !private "AddViewController"
-- !private "UIColor"
-- "BooleanLiteralType"
-- "UIViewController"
-- !private "UIAlertController"
-- !private "UIBarButtonSystemItem"
-- !private "UIToolbar"
-- !private "Void"
-- !private "NSPredicate"
-- !private "CGRect"
-- !private "UIAlertControllerStyle"
-- !private "UIBarStyle"
-- !private "String"
-- "UIApplication"
-- !private "StringLiteralType"
 - "UITextView"
 - !private "UIAlertActionStyle"
-- !private "Item"
+- !private "UIBarButtonSystemItem"
+- !private "NSDate"
+- !private "NSPredicate"
+- !private "NSInteger"
+- !private "!="
+- "BooleanLiteralType"
+- !private "UIAlertControllerStyle"
+- !private "NSEntityDescription"
+- !private "Log"
+- !private "UIToolbar"
+- "UIApplication"
+- !private "NSCharacterSet"
+- !private "UIBarStyle"
+- !private "CGRect"
+- !private "UIAlertController"
+- !private "String"
+- !private "StringLiteralType"
+- !private "NSLocalizedString"
+- !private "Void"
+- !private "Array"
 - !private "print"
+- !private "UIBarButtonItem"
+- !private "NSFetchRequest"
+- !private "Item"
+- !private "UIAlertAction"
+- "EditViewController"
+- "AppDelegate"
+- !private "UIColor"
+- !private "AddViewController"
+- "UIViewController"
 depends-member:
 - !private ["C10SimpleTodo17AddViewController", "pushCancelButton"]
 - !private ["C10SimpleTodo17AddViewController", "pushSaveButton"]
@@ -49,6 +52,8 @@ depends-member:
 - !private ["Ps9AnyObject", "CGColor"]
 - !private ["Ps9AnyObject", "CGRect"]
 - !private ["Ps9AnyObject", "NSCharacterSet"]
+- !private ["Ps9AnyObject", "NSDate"]
+- !private ["Ps9AnyObject", "NSEntityDescription"]
 - !private ["Ps9AnyObject", "NSFetchRequest"]
 - !private ["Ps9AnyObject", "NSLocalizedString"]
 - !private ["Ps9AnyObject", "NSPredicate"]
@@ -77,6 +82,7 @@ depends-member:
 - !private ["Ps9AnyObject", "executeFetchRequest"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "inputAccessoryView"]
+- !private ["Ps9AnyObject", "insertNewObjectForEntityForName"]
 - !private ["Ps9AnyObject", "itemText"]
 - !private ["Ps9AnyObject", "items"]
 - !private ["Ps9AnyObject", "layer"]
@@ -94,6 +100,7 @@ depends-member:
 - !private ["Ps9AnyObject", "stringByTrimmingCharactersInSet"]
 - !private ["Ps9AnyObject", "text"]
 - ["Ps9AnyObject", "textView"]
+- !private ["Ps9AnyObject", "time"]
 - !private ["Ps9AnyObject", "view"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
@@ -133,6 +140,8 @@ depends-member:
 - !private ["Ps11CVarArgType", "CGColor"]
 - !private ["Ps11CVarArgType", "CGRect"]
 - !private ["Ps11CVarArgType", "NSCharacterSet"]
+- !private ["Ps11CVarArgType", "NSDate"]
+- !private ["Ps11CVarArgType", "NSEntityDescription"]
 - !private ["Ps11CVarArgType", "NSFetchRequest"]
 - !private ["Ps11CVarArgType", "NSLocalizedString"]
 - !private ["Ps11CVarArgType", "NSPredicate"]
@@ -161,6 +170,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "executeFetchRequest"]
 - ["Ps11CVarArgType", "init"]
 - !private ["Ps11CVarArgType", "inputAccessoryView"]
+- !private ["Ps11CVarArgType", "insertNewObjectForEntityForName"]
 - !private ["Ps11CVarArgType", "itemText"]
 - !private ["Ps11CVarArgType", "items"]
 - !private ["Ps11CVarArgType", "layer"]
@@ -178,6 +188,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "stringByTrimmingCharactersInSet"]
 - !private ["Ps11CVarArgType", "text"]
 - ["Ps11CVarArgType", "textView"]
+- !private ["Ps11CVarArgType", "time"]
 - !private ["Ps11CVarArgType", "view"]
 - ["Ps11CVarArgType", "viewDidLoad"]
 - ["Ps11CVarArgType", ""]
@@ -194,6 +205,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "NSCharacterSet"]
+- !private ["Ps28CustomDebugStringConvertible", "NSDate"]
+- !private ["Ps28CustomDebugStringConvertible", "NSEntityDescription"]
 - !private ["Ps28CustomDebugStringConvertible", "NSFetchRequest"]
 - !private ["Ps28CustomDebugStringConvertible", "NSLocalizedString"]
 - !private ["Ps28CustomDebugStringConvertible", "NSPredicate"]
@@ -222,6 +235,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "executeFetchRequest"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "inputAccessoryView"]
+- !private ["Ps28CustomDebugStringConvertible", "insertNewObjectForEntityForName"]
 - !private ["Ps28CustomDebugStringConvertible", "itemText"]
 - !private ["Ps28CustomDebugStringConvertible", "items"]
 - !private ["Ps28CustomDebugStringConvertible", "layer"]
@@ -240,6 +254,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - ["Ps28CustomDebugStringConvertible", "textView"]
+- !private ["Ps28CustomDebugStringConvertible", "time"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
@@ -249,6 +264,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Element"]
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "NSCharacterSet"]
+- !private ["Ps23CustomStringConvertible", "NSDate"]
+- !private ["Ps23CustomStringConvertible", "NSEntityDescription"]
 - !private ["Ps23CustomStringConvertible", "NSFetchRequest"]
 - !private ["Ps23CustomStringConvertible", "NSLocalizedString"]
 - !private ["Ps23CustomStringConvertible", "NSPredicate"]
@@ -278,6 +295,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "executeFetchRequest"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "inputAccessoryView"]
+- !private ["Ps23CustomStringConvertible", "insertNewObjectForEntityForName"]
 - !private ["Ps23CustomStringConvertible", "itemText"]
 - !private ["Ps23CustomStringConvertible", "items"]
 - !private ["Ps23CustomStringConvertible", "layer"]
@@ -296,6 +314,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - ["Ps23CustomStringConvertible", "textView"]
+- !private ["Ps23CustomStringConvertible", "time"]
 - !private ["Ps23CustomStringConvertible", "view"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
@@ -303,7 +322,10 @@ depends-member:
 - ["C10SimpleTodo18EditViewController", "AppDelegate"]
 - !private ["C10SimpleTodo18EditViewController", "CGRect"]
 - !private ["C10SimpleTodo18EditViewController", "Item"]
+- !private ["C10SimpleTodo18EditViewController", "Log"]
 - !private ["C10SimpleTodo18EditViewController", "NSCharacterSet"]
+- !private ["C10SimpleTodo18EditViewController", "NSDate"]
+- !private ["C10SimpleTodo18EditViewController", "NSEntityDescription"]
 - !private ["C10SimpleTodo18EditViewController", "NSFetchRequest"]
 - !private ["C10SimpleTodo18EditViewController", "NSInteger"]
 - !private ["C10SimpleTodo18EditViewController", "NSLocalizedString"]
@@ -341,6 +363,8 @@ depends-member:
 - !private ["Ps9Equatable", "Default"]
 - !private ["Ps9Equatable", "FlexibleSpace"]
 - !private ["Ps9Equatable", "NSCharacterSet"]
+- !private ["Ps9Equatable", "NSDate"]
+- !private ["Ps9Equatable", "NSEntityDescription"]
 - !private ["Ps9Equatable", "NSFetchRequest"]
 - !private ["Ps9Equatable", "NSLocalizedString"]
 - !private ["Ps9Equatable", "NSPredicate"]
@@ -372,6 +396,7 @@ depends-member:
 - !private ["Ps9Equatable", "executeFetchRequest"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "inputAccessoryView"]
+- !private ["Ps9Equatable", "insertNewObjectForEntityForName"]
 - !private ["Ps9Equatable", "itemText"]
 - !private ["Ps9Equatable", "items"]
 - !private ["Ps9Equatable", "layer"]
@@ -389,6 +414,7 @@ depends-member:
 - !private ["Ps9Equatable", "stringByTrimmingCharactersInSet"]
 - !private ["Ps9Equatable", "text"]
 - ["Ps9Equatable", "textView"]
+- !private ["Ps9Equatable", "time"]
 - !private ["Ps9Equatable", "view"]
 - ["Ps9Equatable", "viewDidLoad"]
 - !private ["Ps9Equatable", "width"]
@@ -403,6 +429,8 @@ depends-member:
 - !private ["Ps8Hashable", "Default"]
 - !private ["Ps8Hashable", "FlexibleSpace"]
 - !private ["Ps8Hashable", "NSCharacterSet"]
+- !private ["Ps8Hashable", "NSDate"]
+- !private ["Ps8Hashable", "NSEntityDescription"]
 - !private ["Ps8Hashable", "NSFetchRequest"]
 - !private ["Ps8Hashable", "NSLocalizedString"]
 - !private ["Ps8Hashable", "NSPredicate"]
@@ -434,6 +462,7 @@ depends-member:
 - !private ["Ps8Hashable", "executeFetchRequest"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "inputAccessoryView"]
+- !private ["Ps8Hashable", "insertNewObjectForEntityForName"]
 - !private ["Ps8Hashable", "itemText"]
 - !private ["Ps8Hashable", "items"]
 - !private ["Ps8Hashable", "layer"]
@@ -451,6 +480,7 @@ depends-member:
 - !private ["Ps8Hashable", "stringByTrimmingCharactersInSet"]
 - !private ["Ps8Hashable", "text"]
 - ["Ps8Hashable", "textView"]
+- !private ["Ps8Hashable", "time"]
 - !private ["Ps8Hashable", "view"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
@@ -464,6 +494,8 @@ depends-member:
 - !private ["Vs17IndexingGenerator", "Element"]
 - !private ["C10SimpleTodo4Item", "deinit"]
 - !private ["C10SimpleTodo4Item", "text"]
+- !private ["C10SimpleTodo3Log", "text"]
+- !private ["C10SimpleTodo3Log", "time"]
 - !private ["Ps14MirrorPathType", "stringByTrimmingCharactersInSet"]
 - !private ["Ps21MutableCollectionType", "Element"]
 - !private ["Ps21MutableCollectionType", "Index"]
@@ -479,6 +511,8 @@ depends-member:
 - !private ["PSo8NSCoding", "CGColor"]
 - !private ["PSo8NSCoding", "CGRect"]
 - !private ["PSo8NSCoding", "NSCharacterSet"]
+- !private ["PSo8NSCoding", "NSDate"]
+- !private ["PSo8NSCoding", "NSEntityDescription"]
 - !private ["PSo8NSCoding", "NSFetchRequest"]
 - !private ["PSo8NSCoding", "NSLocalizedString"]
 - !private ["PSo8NSCoding", "NSPredicate"]
@@ -505,6 +539,7 @@ depends-member:
 - !private ["PSo8NSCoding", "executeFetchRequest"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "inputAccessoryView"]
+- !private ["PSo8NSCoding", "insertNewObjectForEntityForName"]
 - !private ["PSo8NSCoding", "items"]
 - !private ["PSo8NSCoding", "layer"]
 - !private ["PSo8NSCoding", "lightGrayColor"]
@@ -523,13 +558,18 @@ depends-member:
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "CGColor"]
 - !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "insertNewObjectForEntityForName"]
 - !private ["PSo9NSCopying", "lightGrayColor"]
 - !private ["PSo9NSCopying", "newlineCharacterSet"]
 - !private ["PSo9NSCopying", "predicate"]
 - !private ["PSo9NSCopying", "stringByTrimmingCharactersInSet"]
+- !private ["CSo6NSDate", "init"]
+- !private ["CSo19NSEntityDescription", "insertNewObjectForEntityForName"]
 - !private ["PSo26NSExtensionRequestHandling", "AddViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "CGRect"]
 - !private ["PSo26NSExtensionRequestHandling", "NSCharacterSet"]
+- !private ["PSo26NSExtensionRequestHandling", "NSDate"]
+- !private ["PSo26NSExtensionRequestHandling", "NSEntityDescription"]
 - !private ["PSo26NSExtensionRequestHandling", "NSFetchRequest"]
 - !private ["PSo26NSExtensionRequestHandling", "NSLocalizedString"]
 - !private ["PSo26NSExtensionRequestHandling", "NSPredicate"]
@@ -556,11 +596,15 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "view"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo17NSFastEnumeration", "insertNewObjectForEntityForName"]
 - !private ["CSo14NSFetchRequest", "init"]
 - !private ["CSo14NSFetchRequest", "predicate"]
 - !private ["PSo20NSFetchRequestResult", "text"]
+- !private ["PSo20NSFetchRequestResult", "time"]
 - !private ["PSo9NSLocking", "executeFetchRequest"]
+- !private ["CSo15NSManagedObject", "deinit"]
 - !private ["CSo15NSManagedObject", "text"]
+- !private ["CSo15NSManagedObject", "time"]
 - !private ["CSo22NSManagedObjectContext", "executeFetchRequest"]
 - !private ["PSo16NSMutableCopying", "newlineCharacterSet"]
 - !private ["PSo16NSMutableCopying", "stringByTrimmingCharactersInSet"]
@@ -570,7 +614,10 @@ depends-member:
 - !private ["CSo8NSObject", "CGColor"]
 - !private ["CSo8NSObject", "CGRect"]
 - !private ["CSo8NSObject", "Item"]
+- !private ["CSo8NSObject", "Log"]
 - !private ["CSo8NSObject", "NSCharacterSet"]
+- !private ["CSo8NSObject", "NSDate"]
+- !private ["CSo8NSObject", "NSEntityDescription"]
 - !private ["CSo8NSObject", "NSFetchRequest"]
 - !private ["CSo8NSObject", "NSInteger"]
 - !private ["CSo8NSObject", "NSLocalizedString"]
@@ -603,6 +650,7 @@ depends-member:
 - !private ["CSo8NSObject", "executeFetchRequest"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "inputAccessoryView"]
+- !private ["CSo8NSObject", "insertNewObjectForEntityForName"]
 - !private ["CSo8NSObject", "itemText"]
 - !private ["CSo8NSObject", "items"]
 - !private ["CSo8NSObject", "layer"]
@@ -620,12 +668,15 @@ depends-member:
 - !private ["CSo8NSObject", "stringByTrimmingCharactersInSet"]
 - !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "textView"]
+- !private ["CSo8NSObject", "time"]
 - !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "AddViewController"]
 - !private ["PSo16NSObjectProtocol", "CGColor"]
 - !private ["PSo16NSObjectProtocol", "CGRect"]
 - !private ["PSo16NSObjectProtocol", "NSCharacterSet"]
+- !private ["PSo16NSObjectProtocol", "NSDate"]
+- !private ["PSo16NSObjectProtocol", "NSEntityDescription"]
 - !private ["PSo16NSObjectProtocol", "NSFetchRequest"]
 - !private ["PSo16NSObjectProtocol", "NSLocalizedString"]
 - !private ["PSo16NSObjectProtocol", "NSPredicate"]
@@ -654,6 +705,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "executeFetchRequest"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "inputAccessoryView"]
+- !private ["PSo16NSObjectProtocol", "insertNewObjectForEntityForName"]
 - !private ["PSo16NSObjectProtocol", "itemText"]
 - !private ["PSo16NSObjectProtocol", "items"]
 - !private ["PSo16NSObjectProtocol", "layer"]
@@ -671,6 +723,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "stringByTrimmingCharactersInSet"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "textView"]
+- !private ["PSo16NSObjectProtocol", "time"]
 - !private ["PSo16NSObjectProtocol", "view"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
@@ -736,6 +789,8 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "AddViewController"]
 - !private ["PSo21UIAppearanceContainer", "CGRect"]
 - !private ["PSo21UIAppearanceContainer", "NSCharacterSet"]
+- !private ["PSo21UIAppearanceContainer", "NSDate"]
+- !private ["PSo21UIAppearanceContainer", "NSEntityDescription"]
 - !private ["PSo21UIAppearanceContainer", "NSFetchRequest"]
 - !private ["PSo21UIAppearanceContainer", "NSLocalizedString"]
 - !private ["PSo21UIAppearanceContainer", "NSPredicate"]
@@ -790,6 +845,8 @@ depends-member:
 - !private ["PSo18UIContentContainer", "AddViewController"]
 - !private ["PSo18UIContentContainer", "CGRect"]
 - !private ["PSo18UIContentContainer", "NSCharacterSet"]
+- !private ["PSo18UIContentContainer", "NSDate"]
+- !private ["PSo18UIContentContainer", "NSEntityDescription"]
 - !private ["PSo18UIContentContainer", "NSFetchRequest"]
 - !private ["PSo18UIContentContainer", "NSLocalizedString"]
 - !private ["PSo18UIContentContainer", "NSPredicate"]
@@ -842,6 +899,8 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "AddViewController"]
 - !private ["PSo18UIFocusEnvironment", "CGRect"]
 - !private ["PSo18UIFocusEnvironment", "NSCharacterSet"]
+- !private ["PSo18UIFocusEnvironment", "NSDate"]
+- !private ["PSo18UIFocusEnvironment", "NSEntityDescription"]
 - !private ["PSo18UIFocusEnvironment", "NSFetchRequest"]
 - !private ["PSo18UIFocusEnvironment", "NSLocalizedString"]
 - !private ["PSo18UIFocusEnvironment", "NSPredicate"]
@@ -894,7 +953,10 @@ depends-member:
 - ["CSo11UIResponder", "AppDelegate"]
 - !private ["CSo11UIResponder", "CGRect"]
 - !private ["CSo11UIResponder", "Item"]
+- !private ["CSo11UIResponder", "Log"]
 - !private ["CSo11UIResponder", "NSCharacterSet"]
+- !private ["CSo11UIResponder", "NSDate"]
+- !private ["CSo11UIResponder", "NSEntityDescription"]
 - !private ["CSo11UIResponder", "NSFetchRequest"]
 - !private ["CSo11UIResponder", "NSInteger"]
 - !private ["CSo11UIResponder", "NSLocalizedString"]
@@ -941,6 +1003,8 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "AddViewController"]
 - !private ["PSo30UIResponderStandardEditActions", "CGRect"]
 - !private ["PSo30UIResponderStandardEditActions", "NSCharacterSet"]
+- !private ["PSo30UIResponderStandardEditActions", "NSDate"]
+- !private ["PSo30UIResponderStandardEditActions", "NSEntityDescription"]
 - !private ["PSo30UIResponderStandardEditActions", "NSFetchRequest"]
 - !private ["PSo30UIResponderStandardEditActions", "NSLocalizedString"]
 - !private ["PSo30UIResponderStandardEditActions", "NSPredicate"]
@@ -989,6 +1053,8 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "AddViewController"]
 - !private ["PSo16UIStateRestoring", "CGRect"]
 - !private ["PSo16UIStateRestoring", "NSCharacterSet"]
+- !private ["PSo16UIStateRestoring", "NSDate"]
+- !private ["PSo16UIStateRestoring", "NSEntityDescription"]
 - !private ["PSo16UIStateRestoring", "NSFetchRequest"]
 - !private ["PSo16UIStateRestoring", "NSLocalizedString"]
 - !private ["PSo16UIStateRestoring", "NSPredicate"]
@@ -1036,6 +1102,8 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "AddViewController"]
 - !private ["PSo18UITraitEnvironment", "CGRect"]
 - !private ["PSo18UITraitEnvironment", "NSCharacterSet"]
+- !private ["PSo18UITraitEnvironment", "NSDate"]
+- !private ["PSo18UITraitEnvironment", "NSEntityDescription"]
 - !private ["PSo18UITraitEnvironment", "NSFetchRequest"]
 - !private ["PSo18UITraitEnvironment", "NSLocalizedString"]
 - !private ["PSo18UITraitEnvironment", "NSPredicate"]
@@ -1083,7 +1151,10 @@ depends-member:
 - ["CSo16UIViewController", "AppDelegate"]
 - !private ["CSo16UIViewController", "CGRect"]
 - !private ["CSo16UIViewController", "Item"]
+- !private ["CSo16UIViewController", "Log"]
 - !private ["CSo16UIViewController", "NSCharacterSet"]
+- !private ["CSo16UIViewController", "NSDate"]
+- !private ["CSo16UIViewController", "NSEntityDescription"]
 - !private ["CSo16UIViewController", "NSFetchRequest"]
 - !private ["CSo16UIViewController", "NSInteger"]
 - !private ["CSo16UIViewController", "NSLocalizedString"]
@@ -1181,6 +1252,7 @@ depends-nominal:
 - !private "Ps9Indexable"
 - !private "Vs17IndexingGenerator"
 - !private "C10SimpleTodo4Item"
+- !private "C10SimpleTodo3Log"
 - !private "Ps14MirrorPathType"
 - !private "Ps21MutableCollectionType"
 - !private "Ps16MutableIndexable"
@@ -1188,7 +1260,10 @@ depends-nominal:
 - !private "CSo14NSCharacterSet"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
+- !private "CSo6NSDate"
+- !private "CSo19NSEntityDescription"
 - "PSo26NSExtensionRequestHandling"
+- !private "PSo17NSFastEnumeration"
 - !private "CSo14NSFetchRequest"
 - !private "PSo20NSFetchRequestResult"
 - !private "PSo9NSLocking"
