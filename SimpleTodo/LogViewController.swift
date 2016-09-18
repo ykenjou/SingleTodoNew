@@ -54,7 +54,7 @@ class LogViewController: UIViewController ,UITableViewDataSource , UITableViewDe
             print("An error occurred")
         }
 
-        let maxLogs:NSInteger = 50
+        let maxLogs:NSInteger = 100
         let fetchRequest = NSFetchRequest(entityName: "Log")
         var logCount: NSInteger? = nil
         do {
@@ -104,6 +104,10 @@ class LogViewController: UIViewController ,UITableViewDataSource , UITableViewDe
             navigationBar.barTintColor = colorViewController.blueColor
             btmToolbar.barTintColor = colorViewController.blueColor
             headerView.backgroundColor = colorViewController.blueColor
+        case "deepblue":
+            navigationBar.barTintColor = colorViewController.deepBlueColor
+            btmToolbar.barTintColor = colorViewController.deepBlueColor
+            headerView.backgroundColor = colorViewController.deepBlueColor
         case "red":
             navigationBar.barTintColor = colorViewController.redColor
             btmToolbar.barTintColor = colorViewController.redColor

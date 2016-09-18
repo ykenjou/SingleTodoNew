@@ -6,45 +6,45 @@ provides-nominal:
 provides-member:
 - ["C10SimpleTodo18EditViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
-- "pushSaveButton"
-- "textView"
 - "pushCancelButton"
-- "appDelegate"
+- "textView"
 - "viewDidLoad"
+- "didReceiveMemoryWarning"
+- "appDelegate"
+- "pushSaveButton"
 depends-top-level:
-- "UITextView"
-- !private "UIAlertActionStyle"
-- !private "UIBarButtonSystemItem"
-- !private "NSDate"
-- !private "NSPredicate"
-- !private "NSInteger"
-- !private "!="
-- "BooleanLiteralType"
-- !private "UIAlertControllerStyle"
+- "UIViewController"
+- !private "String"
 - !private "NSEntityDescription"
 - !private "Log"
+- !private "UIAlertActionStyle"
+- !private "NSPredicate"
+- !private "NSInteger"
 - !private "UIToolbar"
-- "UIApplication"
-- !private "NSCharacterSet"
-- !private "UIBarStyle"
+- "AppDelegate"
+- !private "Item"
+- "BooleanLiteralType"
 - !private "CGRect"
+- !private "UIAlertAction"
+- !private "NSCharacterSet"
+- !private "print"
+- !private "Void"
+- "UITextView"
+- !private "AddViewController"
+- "EditViewController"
+- !private "Array"
+- !private "UIBarButtonSystemItem"
+- !private "UIBarStyle"
+- !private "UIBarButtonItem"
+- !private "!="
+- !private "UIColor"
+- !private "NSDate"
 - !private "UIAlertController"
-- !private "String"
+- "UIApplication"
+- !private "UIAlertControllerStyle"
 - !private "StringLiteralType"
 - !private "NSLocalizedString"
-- !private "Void"
-- !private "Array"
-- !private "print"
-- !private "UIBarButtonItem"
 - !private "NSFetchRequest"
-- !private "Item"
-- !private "UIAlertAction"
-- "EditViewController"
-- "AppDelegate"
-- !private "UIColor"
-- !private "AddViewController"
-- "UIViewController"
 depends-member:
 - !private ["C10SimpleTodo17AddViewController", "pushCancelButton"]
 - !private ["C10SimpleTodo17AddViewController", "pushSaveButton"]
@@ -1050,6 +1050,8 @@ depends-member:
 - !private ["CSo12UIScrollView", "layer"]
 - !private ["CSo12UIScrollView", "resignFirstResponder"]
 - !private ["CSo12UIScrollView", "text"]
+- !private ["PSo20UIScrollViewDelegate", "pushCancelButton"]
+- !private ["PSo20UIScrollViewDelegate", "pushSaveButton"]
 - !private ["PSo16UIStateRestoring", "AddViewController"]
 - !private ["PSo16UIStateRestoring", "CGRect"]
 - !private ["PSo16UIStateRestoring", "NSCharacterSet"]
@@ -1096,6 +1098,8 @@ depends-member:
 - !private ["CSo10UITextView", "layer"]
 - !private ["CSo10UITextView", "resignFirstResponder"]
 - !private ["CSo10UITextView", "text"]
+- !private ["PSo18UITextViewDelegate", "pushCancelButton"]
+- !private ["PSo18UITextViewDelegate", "pushSaveButton"]
 - !private ["CSo9UIToolbar", "barStyle"]
 - !private ["CSo9UIToolbar", "init"]
 - !private ["CSo9UIToolbar", "items"]
@@ -1312,10 +1316,12 @@ depends-nominal:
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - !private "CSo12UIScrollView"
+- !private "PSo20UIScrollViewDelegate"
 - "PSo16UIStateRestoring"
 - !private "PSo11UITextInput"
 - !private "PSo17UITextInputTraits"
 - !private "CSo10UITextView"
+- !private "PSo18UITextViewDelegate"
 - !private "CSo9UIToolbar"
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"

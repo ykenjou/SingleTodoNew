@@ -6,12 +6,12 @@ provides-member:
 - ["C10SimpleTodo3Log", "text"]
 - ["C10SimpleTodo3Log", "time"]
 provides-dynamic-lookup:
-- "time"
 - "text"
+- "time"
 depends-top-level:
-- "NSDate"
 - "Log"
 - "String"
+- "NSDate"
 depends-member:
 - ["Ps9AnyObject", "text"]
 - ["Ps9AnyObject", "time"]

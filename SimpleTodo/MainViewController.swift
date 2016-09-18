@@ -153,6 +153,9 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
         case "blue":
             navigationController!.navigationBar.barTintColor = colorViewController.blueColor
             btmToolBar.barTintColor = colorViewController.blueColor
+        case "deepblue":
+            navigationController!.navigationBar.barTintColor = colorViewController.deepBlueColor
+            btmToolBar.barTintColor = colorViewController.deepBlueColor
         case "red":
             navigationController!.navigationBar.barTintColor = colorViewController.redColor
             btmToolBar.barTintColor = colorViewController.redColor

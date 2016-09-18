@@ -6,81 +6,81 @@ provides-nominal:
 provides-member:
 - ["C10SimpleTodo17LogViewController", ""]
 provides-dynamic-lookup:
-- "controllerDidChangeContent"
-- "pushSaveButton"
-- "appDelegate"
-- "userDefaults"
-- "pushCloseButton"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "navigationBar"
-- "popupView"
-- "fetchedResultsController"
-- "viewWillAppear"
 - "showPopMessageView"
+- "userDefaults"
+- "appDelegate"
 - "setNaviToolbarColor"
+- "fetchedResultsController"
+- "pushCloseButton"
+- "pushSaveButton"
 - "zeroView"
-- "headerView"
 - "numberOfSectionsInTableView"
-- "viewDidLoad"
-- "didReceiveMemoryWarning"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "headerView"
+- "controllerDidChangeContent"
+- "viewWillAppear"
 - "btmToolbar"
+- "viewDidLoad"
+- "popupView"
+- "didReceiveMemoryWarning"
+- "navigationBar"
 depends-top-level:
-- "UIToolbar"
-- "UIApplication"
-- !private "..<"
-- !private "DISPATCH_TIME_NOW"
-- "NSUserDefaults"
-- !private "dispatch_time"
-- !private ">"
-- !private "AudioServicesPlaySystemSound"
-- !private "Int64"
-- "Array"
-- "Int"
 - "StringLiteralType"
-- "UIBarButtonItem"
-- !private "NSDate"
-- "UINavigationBar"
-- "NSFetchedResultsControllerDelegate"
-- !private "print"
-- !private "Item"
-- !private "dispatch_after"
-- !private "Log"
-- "UITableViewDataSource"
-- "UIView"
-- "AppDelegate"
-- "NSFetchedResultsController"
-- !private "ColorViewController"
-- "UITableViewDelegate"
-- !private "dispatch_get_main_queue"
-- !private "NSPredicate"
+- !private "NSDateFormatter"
 - "UITableViewCell"
-- !private "NSEntityDescription"
-- "UITableView"
+- "NSUserDefaults"
+- "UIApplication"
+- !private "dispatch_after"
+- "UIToolbar"
+- !private ">"
+- "UINavigationBar"
+- !private "AudioServicesPlaySystemSound"
 - "LogViewController"
+- "Array"
+- "UIBarButtonItem"
+- !private "dispatch_get_main_queue"
+- "NSFetchedResultsController"
+- !private "dispatch_time"
+- !private "UIFont"
+- "UITableView"
+- !private "Item"
+- !private "DISPATCH_TIME_NOW"
+- "Bool"
+- !private "Int64"
+- !private "NSEntityDescription"
+- "UIView"
+- !private "NSInteger"
+- !private "Log"
+- !private "Double"
 - !private "UILabel"
+- !private "*"
+- !private "String"
+- !private "NSPredicate"
+- !private "NSError"
+- !private "NSEC_PER_SEC"
+- "Int"
+- !private "NSFetchRequest"
 - !private "~="
 - !private "=="
-- !private "CGFloat"
-- !private "String"
-- !private "NSEC_PER_SEC"
-- !private "NSFetchRequest"
-- !private "Double"
-- !private "UIFont"
-- !private "NSInteger"
-- "Bool"
-- "NSIndexPath"
-- !private "NSDateFormatter"
 - !private "UITableViewAutomaticDimension"
-- !private "NSError"
-- !private "NSSortDescriptor"
-- !private "+"
-- "UIViewController"
+- !private "ColorViewController"
+- !private "CGFloat"
+- "NSIndexPath"
 - "BooleanLiteralType"
-- !private "*"
+- !private "+"
+- !private "NSSortDescriptor"
+- "NSFetchedResultsControllerDelegate"
+- "AppDelegate"
+- !private "..<"
+- !private "NSDate"
+- "UIViewController"
+- "UITableViewDelegate"
+- "UITableViewDataSource"
+- !private "print"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Normal"]
 - !private ["Ps16AbsoluteValuable", "init"]
@@ -118,6 +118,7 @@ depends-member:
 - !private ["Ps9AnyObject", "countForFetchRequest"]
 - !private ["Ps9AnyObject", "darkGrayColor"]
 - !private ["Ps9AnyObject", "dateFormat"]
+- !private ["Ps9AnyObject", "deepBlueColor"]
 - ["Ps9AnyObject", "delegate"]
 - !private ["Ps9AnyObject", "deleteObject"]
 - !private ["Ps9AnyObject", "dequeueReusableCellWithIdentifier"]
@@ -279,6 +280,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "countForFetchRequest"]
 - !private ["Ps11CVarArgType", "darkGrayColor"]
 - !private ["Ps11CVarArgType", "dateFormat"]
+- !private ["Ps11CVarArgType", "deepBlueColor"]
 - ["Ps11CVarArgType", "delegate"]
 - !private ["Ps11CVarArgType", "deleteObject"]
 - !private ["Ps11CVarArgType", "dequeueReusableCellWithIdentifier"]
@@ -363,6 +365,7 @@ depends-member:
 - !private ["Ps14CollectionType", "subscript"]
 - !private ["C10SimpleTodo19ColorViewController", "blueColor"]
 - !private ["C10SimpleTodo19ColorViewController", "darkGrayColor"]
+- !private ["C10SimpleTodo19ColorViewController", "deepBlueColor"]
 - !private ["C10SimpleTodo19ColorViewController", "greenColor"]
 - !private ["C10SimpleTodo19ColorViewController", "init"]
 - !private ["C10SimpleTodo19ColorViewController", "lightGrayColor"]
@@ -415,6 +418,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "countForFetchRequest"]
 - !private ["Ps28CustomDebugStringConvertible", "darkGrayColor"]
 - !private ["Ps28CustomDebugStringConvertible", "dateFormat"]
+- !private ["Ps28CustomDebugStringConvertible", "deepBlueColor"]
 - ["Ps28CustomDebugStringConvertible", "delegate"]
 - !private ["Ps28CustomDebugStringConvertible", "deleteObject"]
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCellWithIdentifier"]
@@ -535,6 +539,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "countForFetchRequest"]
 - !private ["Ps23CustomStringConvertible", "darkGrayColor"]
 - !private ["Ps23CustomStringConvertible", "dateFormat"]
+- !private ["Ps23CustomStringConvertible", "deepBlueColor"]
 - ["Ps23CustomStringConvertible", "delegate"]
 - !private ["Ps23CustomStringConvertible", "deleteObject"]
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCellWithIdentifier"]
@@ -653,6 +658,7 @@ depends-member:
 - !private ["Ps9Equatable", "countForFetchRequest"]
 - !private ["Ps9Equatable", "darkGrayColor"]
 - !private ["Ps9Equatable", "dateFormat"]
+- !private ["Ps9Equatable", "deepBlueColor"]
 - ["Ps9Equatable", "delegate"]
 - !private ["Ps9Equatable", "deleteObject"]
 - !private ["Ps9Equatable", "dequeueReusableCellWithIdentifier"]
@@ -779,6 +785,7 @@ depends-member:
 - !private ["Ps8Hashable", "countForFetchRequest"]
 - !private ["Ps8Hashable", "darkGrayColor"]
 - !private ["Ps8Hashable", "dateFormat"]
+- !private ["Ps8Hashable", "deepBlueColor"]
 - ["Ps8Hashable", "delegate"]
 - !private ["Ps8Hashable", "deleteObject"]
 - !private ["Ps8Hashable", "dequeueReusableCellWithIdentifier"]
@@ -1018,6 +1025,7 @@ depends-member:
 - !private ["PSo8NSCoding", "countForFetchRequest"]
 - !private ["PSo8NSCoding", "darkGrayColor"]
 - !private ["PSo8NSCoding", "dateFormat"]
+- !private ["PSo8NSCoding", "deepBlueColor"]
 - !private ["PSo8NSCoding", "deleteObject"]
 - !private ["PSo8NSCoding", "dequeueReusableCellWithIdentifier"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
@@ -1118,6 +1126,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "controllerDidChangeContent"]
 - ["PSo26NSExtensionRequestHandling", "controllerWillChangeContent"]
 - !private ["PSo26NSExtensionRequestHandling", "darkGrayColor"]
+- !private ["PSo26NSExtensionRequestHandling", "deepBlueColor"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - !private ["PSo26NSExtensionRequestHandling", "dismissViewControllerAnimated"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_after"]
@@ -1294,6 +1303,7 @@ depends-member:
 - !private ["CSo8NSObject", "countForFetchRequest"]
 - !private ["CSo8NSObject", "darkGrayColor"]
 - !private ["CSo8NSObject", "dateFormat"]
+- !private ["CSo8NSObject", "deepBlueColor"]
 - !private ["CSo8NSObject", "deinit"]
 - ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "deleteObject"]
@@ -1403,6 +1413,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "countForFetchRequest"]
 - !private ["PSo16NSObjectProtocol", "darkGrayColor"]
 - !private ["PSo16NSObjectProtocol", "dateFormat"]
+- !private ["PSo16NSObjectProtocol", "deepBlueColor"]
 - ["PSo16NSObjectProtocol", "delegate"]
 - !private ["PSo16NSObjectProtocol", "deleteObject"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCellWithIdentifier"]
@@ -1598,6 +1609,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "controllerDidChangeContent"]
 - ["PSo21UIAppearanceContainer", "controllerWillChangeContent"]
 - !private ["PSo21UIAppearanceContainer", "darkGrayColor"]
+- !private ["PSo21UIAppearanceContainer", "deepBlueColor"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithIdentifier"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - !private ["PSo21UIAppearanceContainer", "dismissViewControllerAnimated"]
@@ -1686,6 +1698,7 @@ depends-member:
 - ["PSo18UIContentContainer", "controllerDidChangeContent"]
 - ["PSo18UIContentContainer", "controllerWillChangeContent"]
 - !private ["PSo18UIContentContainer", "darkGrayColor"]
+- !private ["PSo18UIContentContainer", "deepBlueColor"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - !private ["PSo18UIContentContainer", "dismissViewControllerAnimated"]
 - !private ["PSo18UIContentContainer", "dispatch_after"]
@@ -1797,6 +1810,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "controllerDidChangeContent"]
 - ["PSo18UIFocusEnvironment", "controllerWillChangeContent"]
 - !private ["PSo18UIFocusEnvironment", "darkGrayColor"]
+- !private ["PSo18UIFocusEnvironment", "deepBlueColor"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCellWithIdentifier"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UIFocusEnvironment", "dismissViewControllerAnimated"]
@@ -1922,6 +1936,7 @@ depends-member:
 - ["CSo11UIResponder", "controllerDidChangeContent"]
 - ["CSo11UIResponder", "controllerWillChangeContent"]
 - !private ["CSo11UIResponder", "darkGrayColor"]
+- !private ["CSo11UIResponder", "deepBlueColor"]
 - ["CSo11UIResponder", "delegate"]
 - !private ["CSo11UIResponder", "dequeueReusableCellWithIdentifier"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
@@ -2011,6 +2026,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "controllerDidChangeContent"]
 - ["PSo30UIResponderStandardEditActions", "controllerWillChangeContent"]
 - !private ["PSo30UIResponderStandardEditActions", "darkGrayColor"]
+- !private ["PSo30UIResponderStandardEditActions", "deepBlueColor"]
 - ["PSo30UIResponderStandardEditActions", "delegate"]
 - !private ["PSo30UIResponderStandardEditActions", "dequeueReusableCellWithIdentifier"]
 - ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
@@ -2159,6 +2175,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "controllerDidChangeContent"]
 - ["PSo16UIStateRestoring", "controllerWillChangeContent"]
 - !private ["PSo16UIStateRestoring", "darkGrayColor"]
+- !private ["PSo16UIStateRestoring", "deepBlueColor"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - !private ["PSo16UIStateRestoring", "dismissViewControllerAnimated"]
 - !private ["PSo16UIStateRestoring", "dispatch_after"]
@@ -2352,6 +2369,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "controllerDidChangeContent"]
 - ["PSo18UITraitEnvironment", "controllerWillChangeContent"]
 - !private ["PSo18UITraitEnvironment", "darkGrayColor"]
+- !private ["PSo18UITraitEnvironment", "deepBlueColor"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithIdentifier"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UITraitEnvironment", "dismissViewControllerAnimated"]
@@ -2467,6 +2485,7 @@ depends-member:
 - ["CSo16UIViewController", "controllerDidChangeContent"]
 - ["CSo16UIViewController", "controllerWillChangeContent"]
 - !private ["CSo16UIViewController", "darkGrayColor"]
+- !private ["CSo16UIViewController", "deepBlueColor"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - !private ["CSo16UIViewController", "dismissViewControllerAnimated"]
 - !private ["CSo16UIViewController", "dispatch_after"]

@@ -9,11 +9,12 @@
 import UIKit
 import CoreData
 
-class EditViewController: UIViewController {
+class EditViewController: UIViewController ,UITextViewDelegate {
 
     var appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
     @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var textCountLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +38,9 @@ class EditViewController: UIViewController {
         textView.becomeFirstResponder()
         
         textView.text = self.appDelegate.itemText as! String
+        textView.delegate = self
+        
+        textCountLabel.text = String(textView.text.characters.count)
 
         // Do any additional setup after loading the view.
     }
@@ -44,6 +48,14 @@ class EditViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func textViewDidChange(textView: UITextView) {
+        textCountLabel.text = String(textView.text.characters.count)
+    }
+    
+    func textViewDidEndEditing(textView: UITextView) {
+        textCountLabel.text = String(textView.text.characters.count)
     }
     
     func pushCancelButton(){

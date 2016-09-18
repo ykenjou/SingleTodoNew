@@ -11,6 +11,7 @@ import UIKit
 class ColorViewController: UIViewController {
 
     @IBOutlet weak var blueButton: UIButton!
+    @IBOutlet weak var deepBlueButton: UIButton!
     @IBOutlet weak var redButton: UIButton!
     @IBOutlet weak var greenButton: UIButton!
     @IBOutlet weak var orangeButton: UIButton!
@@ -18,11 +19,11 @@ class ColorViewController: UIViewController {
     @IBOutlet weak var lightgrayButton: UIButton!
     @IBOutlet weak var darkgrayButton: UIButton!
     
-    //let blueColor:UIColor = UIColor(red: 28 / 255, green: 67 / 255, blue: 155 / 255, alpha: 1.0)
     //let blueColor:UIColor = UIColor(red: 33 / 255, green: 105 / 255, blue: 166 / 255, alpha: 1.0)
     //let blueColor:UIColor = UIColor(red: 91 / 255, green: 155 / 255, blue: 235 / 255, alpha: 1.0)
     //let blueColor:UIColor = UIColor(red: 35 / 255, green: 150 / 255, blue: 225 / 255, alpha: 1.0)
     let blueColor:UIColor = UIColor(red: 29 / 255, green: 161 / 255, blue: 242 / 255, alpha: 1.0)
+    let deepBlueColor:UIColor = UIColor(red: 28 / 255, green: 67 / 255, blue: 155 / 255, alpha: 1.0)
     let redColor:UIColor = UIColor(red: 198 / 255, green: 40 / 255, blue: 40 / 255, alpha: 1.0)
     let greenColor:UIColor = UIColor(red: 24 / 255, green: 118 / 255, blue: 59 / 255, alpha: 1.0)
     let orangeColor:UIColor = UIColor(red: 255 / 255, green: 138 / 255, blue: 51 / 255, alpha: 1.0)
@@ -46,6 +47,9 @@ class ColorViewController: UIViewController {
         
         blueButton.backgroundColor = blueColor
         blueButton.layer.cornerRadius = 10
+        
+        deepBlueButton.backgroundColor = deepBlueColor
+        deepBlueButton.layer.cornerRadius = 10
         
         redButton.backgroundColor = redColor
         redButton.layer.cornerRadius = 10
@@ -77,6 +81,11 @@ class ColorViewController: UIViewController {
     @IBAction func pushBlueButton(sender: UIButton) {
         navigationController!.navigationBar.barTintColor = blueColor
         userDefaults.setObject("blue", forKey: "color")
+    }
+    
+    @IBAction func pushDeepBlueButton(sender: UIButton) {
+        navigationController!.navigationBar.barTintColor = deepBlueColor
+        userDefaults.setObject("deepblue", forKey: "color")
     }
     
     @IBAction func pushRedButton(sender: UIButton) {

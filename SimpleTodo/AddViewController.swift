@@ -9,11 +9,12 @@
 import UIKit
 import CoreData
 
-class AddViewController: UIViewController {
+class AddViewController: UIViewController ,UITextViewDelegate{
     
     @IBOutlet weak var textView: UITextView!
     
     @IBOutlet weak var returnSwitch: UISwitch!
+    @IBOutlet weak var textCountLabel: UILabel!
     
     var swtichBool :Bool = true
     
@@ -39,6 +40,9 @@ class AddViewController: UIViewController {
         textView.layer.borderColor = UIColor.lightGrayColor().CGColor
         
         textView.becomeFirstResponder()
+        textView.delegate = self
+        
+        textCountLabel.text = "0"
         
     }
     
@@ -51,6 +55,14 @@ class AddViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func textViewDidChange(textView: UITextView) {
+        textCountLabel.text = String(textView.text.characters.count)
+    }
+    
+    func textViewDidEndEditing(textView: UITextView) {
+        textCountLabel.text = String(textView.text.characters.count)
     }
     
     private func setItemData(text:String){

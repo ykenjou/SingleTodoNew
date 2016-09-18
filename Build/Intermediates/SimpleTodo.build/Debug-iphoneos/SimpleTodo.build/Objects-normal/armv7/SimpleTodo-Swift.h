@@ -103,19 +103,22 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
-@class UISwitch;
 @class UITextView;
+@class UISwitch;
+@class UILabel;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC10SimpleTodo17AddViewController")
-@interface AddViewController : UIViewController
+@interface AddViewController : UIViewController <UIScrollViewDelegate, UITextViewDelegate>
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified textView;
 @property (nonatomic, weak) IBOutlet UISwitch * _Null_unspecified returnSwitch;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified textCountLabel;
 @property (nonatomic) BOOL swtichBool;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
+- (void)textViewDidChange:(UITextView * _Nonnull)textView;
 - (IBAction)switchChange:(UISwitch * _Nonnull)sender;
 - (void)pushCancelButton;
 - (void)pushSaveButton;
@@ -175,6 +178,7 @@ SWIFT_CLASS("_TtC10SimpleTodo11AppDelegate")
 SWIFT_CLASS("_TtC10SimpleTodo19ColorViewController")
 @interface ColorViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified blueButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified deepBlueButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified redButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified greenButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified orangeButton;
@@ -182,6 +186,7 @@ SWIFT_CLASS("_TtC10SimpleTodo19ColorViewController")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified lightgrayButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified darkgrayButton;
 @property (nonatomic, readonly, strong) UIColor * _Nonnull blueColor;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull deepBlueColor;
 @property (nonatomic, readonly, strong) UIColor * _Nonnull redColor;
 @property (nonatomic, readonly, strong) UIColor * _Nonnull greenColor;
 @property (nonatomic, readonly, strong) UIColor * _Nonnull orangeColor;
@@ -194,6 +199,7 @@ SWIFT_CLASS("_TtC10SimpleTodo19ColorViewController")
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)pushBlueButton:(UIButton * _Nonnull)sender;
+- (IBAction)pushDeepBlueButton:(UIButton * _Nonnull)sender;
 - (IBAction)pushRedButton:(UIButton * _Nonnull)sender;
 - (IBAction)pushGreenButton:(UIButton * _Nonnull)sender;
 - (IBAction)pushOrangeButton:(UIButton * _Nonnull)sender;
@@ -301,6 +307,8 @@ SWIFT_CLASS("_TtC10SimpleTodo17LogViewController")
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView didDeselectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (IBAction)pushCloseButton:(UIBarButtonItem * _Nonnull)sender;
 - (IBAction)pushSaveButton:(UIBarButtonItem * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -349,7 +357,6 @@ SWIFT_CLASS("_TtC10SimpleTodo18MainViewController")
 @end
 
 @class UIActivityIndicatorView;
-@class UILabel;
 
 SWIFT_CLASS("_TtC10SimpleTodo22PurchaseViewController")
 @interface PurchaseViewController : UIViewController <XXXPurchaseManagerDelegate>

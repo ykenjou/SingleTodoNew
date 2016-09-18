@@ -32,12 +32,12 @@
 		F28BE53B1D6A0804009DB92E /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28BE53A1D6A0804009DB92E /* EventKitUI.framework */; };
 		F28BE53D1D6A0809009DB92E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28BE53C1D6A0809009DB92E /* MessageUI.framework */; };
 		F28BE5411D6A0815009DB92E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28BE5401D6A0815009DB92E /* SystemConfiguration.framework */; };
-		F28BE5451D6A0949009DB92E /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28BE5441D6A0949009DB92E /* GoogleMobileAds.framework */; };
 		F297D4EC1D653E1B00093327 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297D4EA1D653E1B00093327 /* Item+CoreDataProperties.swift */; };
 		F297D4ED1D653E1B00093327 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297D4EB1D653E1B00093327 /* Item.swift */; };
 		F29E9F421D870BAD00D93E20 /* Log+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29E9F401D870BAD00D93E20 /* Log+CoreDataProperties.swift */; };
 		F29E9F431D870BAD00D93E20 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29E9F411D870BAD00D93E20 /* Log.swift */; };
 		F2AF8A351D72DA6D00699C41 /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AF8A341D72DA6D00699C41 /* PurchaseViewController.swift */; };
+		F2B7FDE81D8E383B00C0B398 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28BE5441D6A0949009DB92E /* GoogleMobileAds.framework */; };
 		F2C80F281D76C48000CE404B /* XXXProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C80F271D76C48000CE404B /* XXXProductManager.swift */; };
 		F2E6BE9D1D71DE7D008EA404 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = F2E6BE9C1D71DE7D008EA404 /* arrow.png */; };
 		F2F6FF031D8831D700BBC0D5 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F6FF021D8831D700BBC0D5 /* LogViewController.swift */; };
@@ -135,9 +135,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2B7FDE81D8E383B00C0B398 /* GoogleMobileAds.framework in Frameworks */,
 				F28BE5411D6A0815009DB92E /* SystemConfiguration.framework in Frameworks */,
 				F28BE53D1D6A0809009DB92E /* MessageUI.framework in Frameworks */,
-				F28BE5451D6A0949009DB92E /* GoogleMobileAds.framework in Frameworks */,
 				F209D70E1D7339D8000D5C04 /* StoreKit.framework in Frameworks */,
 				F28BE53B1D6A0804009DB92E /* EventKitUI.framework in Frameworks */,
 				F28BE5391D6A07FF009DB92E /* EventKit.framework in Frameworks */,

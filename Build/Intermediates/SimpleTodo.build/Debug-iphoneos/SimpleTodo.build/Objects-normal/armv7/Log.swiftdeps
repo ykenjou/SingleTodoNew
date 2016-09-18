@@ -7,8 +7,8 @@ provides-member:
 - ["C10SimpleTodo3Log", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Log"
 - "NSManagedObject"
+- "Log"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", ""]
