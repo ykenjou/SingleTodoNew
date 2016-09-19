@@ -6,51 +6,51 @@ provides-nominal:
 provides-member:
 - ["C10SimpleTodo22PurchaseViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
-- "purchaseActivityView"
 - "purchaseManagerDidFinishRestore"
 - "purchaseManagerDidDeferred"
-- "restoreButton"
-- "viewDidLoad"
+- "startRestore"
+- "purchaseButton"
+- "buttonActivityView"
+- "userDefaults"
+- "statusLabel"
 - "purchaseManager"
 - "purchaseManager"
 - "purchaseManager"
 - "buttonStatusChange"
-- "userDefaults"
-- "statusLabel"
-- "startPurchase"
-- "purchaseButton"
-- "startRestore"
-- "buttonActivityView"
-- "pushRestoreButton"
+- "didReceiveMemoryWarning"
 - "pushPurchaseButton"
+- "restoreButton"
+- "pushRestoreButton"
+- "purchaseActivityView"
+- "startPurchase"
+- "viewDidLoad"
 depends-top-level:
-- "XXXPurchaseManager"
-- "UIActivityIndicatorView"
-- "NSError"
-- "PurchaseViewController"
-- !private "CGPointMake"
-- !private "SKProduct"
-- !private "UIColor"
+- !private "UIActivityIndicatorViewStyle"
 - "SKPaymentTransaction"
 - "String"
-- "UIViewController"
-- !private "UIAlertController"
-- !private "StringLiteralType"
+- !private ">"
 - "XXXPurchaseManagerDelegate"
 - !private "NSLocalizedString"
 - "Bool"
+- "Void"
+- "UIButton"
+- !private "XXXProductManager"
+- !private "StringLiteralType"
+- !private "UIAlertController"
 - "UILabel"
 - "NSUserDefaults"
-- !private "XXXProductManager"
-- !private "Array"
-- !private "UIAlertAction"
-- !private "BooleanLiteralType"
-- "UIButton"
-- "Void"
+- !private "CGPointMake"
 - !private "/"
-- !private ">"
-- !private "UIActivityIndicatorViewStyle"
+- !private "SKProduct"
+- "PurchaseViewController"
+- !private "UIColor"
+- "XXXPurchaseManager"
+- !private "UIAlertAction"
+- "NSError"
+- "UIActivityIndicatorView"
+- !private "BooleanLiteralType"
+- "UIViewController"
+- !private "Array"
 depends-member:
 - !private ["Ps9AnyObject", "CGColor"]
 - !private ["Ps9AnyObject", "CGPointMake"]
@@ -924,7 +924,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo8UIButton", "addSubview"]
 - !private ["CSo8UIButton", "alpha"]
-- !private ["CSo8UIButton", "bounds"]
 - !private ["CSo8UIButton", "enabled"]
 - !private ["CSo8UIButton", "layer"]
 - !private ["CSo8UIButton", "setTitle"]
@@ -965,7 +964,6 @@ depends-member:
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
 - !private ["CSo9UIControl", "addSubview"]
 - !private ["CSo9UIControl", "alpha"]
-- !private ["CSo9UIControl", "bounds"]
 - !private ["CSo9UIControl", "enabled"]
 - !private ["CSo9UIControl", "layer"]
 - !private ["CSo9UIControl", "setTitle"]

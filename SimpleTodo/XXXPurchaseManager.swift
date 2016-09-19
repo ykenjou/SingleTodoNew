@@ -141,6 +141,8 @@ class XXXPurchaseManager: NSObject , SKPaymentTransactionObserver {
         //リストア完了時に呼ばれる
         self.delegate?.purchaseManagerDidFinishRestore?(self)
         self.isRestore = false
+        
+        
     }
     
     

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0F97E6A9469B73FBE2CCA485 /* Pods_SimpleTodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC8B5EAC8A9B2488D6BA4AF /* Pods_SimpleTodo.framework */; };
+		F2026E041D9024E400E22D9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2026E061D9024E400E22D9A /* InfoPlist.strings */; };
+		F2026E091D9024E500E22D9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2026E0B1D9024E500E22D9A /* InfoPlist.strings */; };
 		F209D70E1D7339D8000D5C04 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F209D70D1D7339D8000D5C04 /* StoreKit.framework */; };
 		F20D26531D77BE0000C9840F /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D26521D77BE0000C9840F /* ColorViewController.swift */; };
 		F20D26551D7872A900C9840F /* XXXPurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D26541D7872A900C9840F /* XXXPurchaseManager.swift */; };
@@ -72,6 +74,10 @@
 /* Begin PBXFileReference section */
 		6179BAD27CF3AA36C71ECE7B /* Pods-SimpleTodo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTodo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTodo/Pods-SimpleTodo.debug.xcconfig"; sourceTree = "<group>"; };
 		8FA803D703C1922C0F2C90B0 /* Pods-SimpleTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTodo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleTodo/Pods-SimpleTodo.release.xcconfig"; sourceTree = "<group>"; };
+		F2026E051D9024E400E22D9A /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F2026E0A1D9024E500E22D9A /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F2026E0C1D90257B00E22D9A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F2026E0D1D90257B00E22D9A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F209D70D1D7339D8000D5C04 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		F20D26521D77BE0000C9840F /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 		F20D26541D7872A900C9840F /* XXXPurchaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XXXPurchaseManager.swift; sourceTree = "<group>"; };
@@ -270,6 +276,7 @@
 		F2FFBDC71D6498F900D73796 /* SimpleTodoTests */ = {
 			isa = PBXGroup;
 			children = (
+				F2026E0B1D9024E500E22D9A /* InfoPlist.strings */,
 				F2FFBDC81D6498F900D73796 /* SimpleTodoTests.swift */,
 				F2FFBDCA1D6498F900D73796 /* Info.plist */,
 			);
@@ -279,6 +286,7 @@
 		F2FFBDD21D6498F900D73796 /* SimpleTodoUITests */ = {
 			isa = PBXGroup;
 			children = (
+				F2026E061D9024E400E22D9A /* InfoPlist.strings */,
 				F2FFBDD31D6498F900D73796 /* SimpleTodoUITests.swift */,
 				F2FFBDD51D6498F900D73796 /* Info.plist */,
 			);
@@ -430,6 +438,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F279FE441D6C81E800306CFA /* GoogleService-Info.plist in Resources */,
+				F2026E091D9024E500E22D9A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +447,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F279FE451D6C81E800306CFA /* GoogleService-Info.plist in Resources */,
+				F2026E041D9024E400E22D9A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +558,24 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		F2026E061D9024E400E22D9A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2026E051D9024E400E22D9A /* ja */,
+				F2026E0C1D90257B00E22D9A /* es */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F2026E0B1D9024E500E22D9A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2026E0A1D9024E500E22D9A /* ja */,
+				F2026E0D1D90257B00E22D9A /* es */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		F248D7251D7D28F200355D8B /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

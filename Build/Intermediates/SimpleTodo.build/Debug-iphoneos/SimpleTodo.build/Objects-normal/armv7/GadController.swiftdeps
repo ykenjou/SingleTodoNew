@@ -8,15 +8,15 @@ provides-member:
 provides-dynamic-lookup:
 - "gadBannerInit"
 depends-top-level:
-- "GADBannerViewDelegate"
-- "GADBannerView"
 - "CGFloat"
 - !private "StringLiteralType"
-- !private "CGSizeMake"
 - "GadController"
-- "UIViewController"
-- !private "kGADAdSizeBanner"
+- !private "CGSizeMake"
 - !private "GADRequest"
+- "UIViewController"
+- "GADBannerView"
+- !private "kGADAdSizeBanner"
+- "GADBannerViewDelegate"
 depends-member:
 - !private ["Ps9AnyObject", "CGSizeMake"]
 - !private ["Ps9AnyObject", "GADBannerView"]

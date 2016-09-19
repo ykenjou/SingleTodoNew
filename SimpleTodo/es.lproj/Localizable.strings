@@ -1,40 +1,79 @@
-/*
-  Localizable.strings
-  SimpleTodo
-
-  Created by kenjou yutaka on 2016/09/05.
-  Copyright © 2016年 yutaka kenjo. All rights reserved.
-*/
-
-"firstData" = "Empujas + el botón en el fondo y por favor agrega un artículo";
-"secondData" = "Puedo anular el artículo que se ha verificado con una izquierda el más bajo botón de caja de basura";
-"thirdData" = "Puedo revisar un texto por el empujón y sostenimiento del artículo";
-"fourthData" = "Botón de la 'copia' y 'compartir' se mostrará en un golpe desde la derecha";
-"editTitle" = "editar";
-"copyTitle" = "copia";
-"shareTitle" = "compartir";
-
-"textDestruction" = "Destrucción del texto";
-"textDestConfirm" = "¿Puedo destruir un texto de la entrada?";
+/* 破棄する */
 "allowtextDestruction" = "Cancelación";
-"notDestruction" = "No lo cancelo";
 
-"changeDestruction" = "Cambia la destrucción";
+/* アプリタイトル */
+"appName" = "Sola lista de tareas";
+
+/* アプリURL */
+"appUrl" = "https://itunes.apple.com/es/app/id1148391383";
+
+/* 変更破棄の確認テキスト */
 "changeDestConfirm" = "¿Puedo destruir el texto que cambié?";
 
-"purchasedStatus" = "Ya te has comprado";
-"purchaseFinish" = "La compra fue completada";
-"ok" = "OK";
-"purchaseFail" = "No pude comprarlo";
-"purcaseDefferd" = "Está esperando aprobación de la compra";
+/* 変更破棄 */
+"changeDestruction" = "Cambia la destrucción";
 
-"productFail" = "No pude adquirir un producto.";
-
-"purchaseInvalid" = "La compra se pone no válida poniendo.";
-"purchaseProcessing" = "Está durante la contabilidad.";
-"restoreProcessing" = "Está durante el proceso de la re-tienda.";
-"purchaseInterruption" = "El proceso de la compra fue detenido.\nPuedo transmitirlo libre como él es.";
+/* 続行 */
 "continue" = "La continuación";
 
-"appName" = "Sola lista de tareas";
-"appUrl" = "https://itunes.apple.com/es/app/id1148391383";
+/* copyタイトル */
+"copyTitle" = "copia";
+
+/* editタイトル */
+"editTitle" = "editar";
+
+/* 1番目のデータ */
+"firstData" = "Empujas + el botón en el fondo y por favor agrega un artículo";
+
+/* 4番目のデータ */
+"fourthData" = "Botón de la 'copia' y 'compartir' se mostrará en un golpe desde la derecha";
+
+/* 破棄しない */
+"notDestruction" = "No lo cancelo";
+
+/* ok */
+"ok" = "OK";
+
+/* プロダクト取得失敗 */
+"productFail" = "No pude adquirir un producto.";
+
+/* 購入待機 */
+"purcaseDefferd" = "Está esperando aprobación de la compra";
+
+/* 購入失敗 */
+"purchaseFail" = "No pude comprarlo";
+
+/* 購入完了 */
+"purchaseFinish" = "La compra fue completada";
+
+/* 購入中断 */
+"purchaseInterruption" = "El proceso de la compra fue detenido.
+Puedo transmitirlo libre como él es.";
+
+/* 購入設定無効 */
+"purchaseInvalid" = "La compra se pone no válida poniendo.";
+
+/* 課金処理中 */
+"purchaseProcessing" = "Está durante la contabilidad.";
+
+/* 購入済みです */
+"purchasedStatus" = "Ya te has comprado";
+
+/* リストア処理中 */
+"restoreProcessing" = "Está durante el proceso de la re-tienda.";
+
+/* 2番目のデータ */
+"secondData" = "Puedo anular el artículo que se ha verificado con una izquierda el más bajo botón de caja de basura";
+
+/* shareタイトル */
+"shareTitle" = "compartir";
+
+/* テキスト破棄確認テキスト */
+"textDestConfirm" = "¿Puedo destruir un texto de la entrada?";
+
+/* テキスト破棄 */
+"textDestruction" = "Destrucción del texto";
+
+/* 3番目のデータ */
+"thirdData" = "Puedo revisar un texto por el empujón y sostenimiento del artículo";
+

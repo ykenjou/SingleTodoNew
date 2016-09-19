@@ -35,7 +35,8 @@ class PurchaseViewController: UIViewController ,XXXPurchaseManagerDelegate {
         purchaseButton.setTitleColor(UIColor.redColor(), forState: .Highlighted)
         
         buttonActivityView = UIActivityIndicatorView()
-        buttonActivityView.center = CGPointMake(purchaseButton.bounds.size.width / 2, purchaseButton.bounds.size.height / 2)
+        //buttonActivityView.center = CGPointMake(purchaseButton.bounds.size.width / 2, purchaseButton.bounds.size.height / 2)
+        buttonActivityView.center = CGPointMake(60, 22)
         buttonActivityView.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
         purchaseButton.addSubview(buttonActivityView)
         buttonActivityView.startAnimating()
@@ -198,8 +199,10 @@ class PurchaseViewController: UIViewController ,XXXPurchaseManagerDelegate {
          インジケータなどを表示していたら非表示に
 
          */
+        
         purchaseActivityView.removeFromSuperview()
         buttonStatusChange()
+        
         /*
         let ac = UIAlertController(title: "restore finish!", message: nil, preferredStyle: .Alert)
         ac.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))

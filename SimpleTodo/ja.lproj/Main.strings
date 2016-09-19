@@ -1,15 +1,17 @@
-
-/* Class = "UILabel"; text = "Font size"; ObjectID = "28D-yf-gKd"; */
-"28D-yf-gKd.text" = "文字サイズ";
-
 /* Class = "UILabel"; text = "Label"; ObjectID = "5Ao-Hb-81S"; */
 "5Ao-Hb-81S.text" = "Label";
 
 /* Class = "UILabel"; text = "・The view area on the list is expanded"; ObjectID = "5EE-fX-Kv3"; */
 "5EE-fX-Kv3.text" = "・リストの表示領域が拡大されます";
 
+/* Class = "UIButton"; normalTitle = "deep blue"; ObjectID = "5fQ-jb-fwJ"; */
+"5fQ-jb-fwJ.normalTitle" = "deep blue";
+
 /* Class = "UITableViewSection"; footerTitle = " "; ObjectID = "9D3-xZ-DK6"; */
 "9D3-xZ-DK6.footerTitle" = " ";
+
+/* Class = "UILabel"; text = "Font size"; ObjectID = "28D-yf-gKd"; */
+"28D-yf-gKd.text" = "文字サイズ";
 
 /* Class = "UILabel"; text = "Review App (App Store)"; ObjectID = "A80-FS-cN2"; */
 "A80-FS-cN2.text" = "アプリをレビューする (App Store)";
@@ -102,7 +104,8 @@
 "ogH-dh-Bd4.title" = "設定";
 
 /* Class = "UILabel"; text = "The list of histories of the item which you input is displayed here.\nYou can enroll in a list of Todo again by choosing an item among a list, and pushing + button of the lower right."; ObjectID = "rOR-8P-8F7"; */
-"rOR-8P-8F7.text" = "この画面には入力履歴のリストが表示されます。\nリストから項目を選択して右下の＋ボタンを押すと、Todoリストに再登録できます。";
+"rOR-8P-8F7.text" = "この画面には入力履歴のリストが表示されます。
+リストから項目を選択して右下の＋ボタンを押すと、Todoリストに再登録できます。";
 
 /* Class = "UIButton"; normalTitle = "orange"; ObjectID = "ubj-LG-PgT"; */
 "ubj-LG-PgT.normalTitle" = "orange";
@@ -118,3 +121,4 @@
 
 /* Class = "UINavigationItem"; title = "Color"; ObjectID = "zVh-yw-8Pz"; */
 "zVh-yw-8Pz.title" = "カラー";
+

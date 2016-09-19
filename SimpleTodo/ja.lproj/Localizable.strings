@@ -1,40 +1,79 @@
-/* 
-  Localizable.strings
-  SimpleTodo
-
-  Created by kenjou yutaka on 2016/09/05.
-  Copyright © 2016年 yutaka kenjo. All rights reserved.
-*/
-
-"firstData" = "下にある＋ボタンを押して項目を追加してください";
-"secondData" = "左下のゴミ箱ボタンでチェック済みの項目を削除できます";
-"thirdData" = "項目の長押しでテキストを編集できます";
-"fourthData" = "右からのスワイプで「コピー」や「共有」のボタンが表示されます";
-"editTitle" = "編集";
-"copyTitle" = "コピー";
-"shareTitle" = "共有";
-
-"textDestruction" = "テキスト破棄";
-"textDestConfirm" = "入力済みのテキストを破棄してもいいですか?";
+/* 破棄する */
 "allowtextDestruction" = "破棄する";
-"notDestruction" = "破棄しない";
 
-"changeDestruction" = "変更破棄";
+/* アプリタイトル */
+"appName" = "Single Todoリスト";
+
+/* アプリURL */
+"appUrl" = "https://itunes.apple.com/jp/app/id1148391383";
+
+/* 変更破棄の確認テキスト */
 "changeDestConfirm" = "変更したテキストを破棄してもいいですか?";
 
-"purchasedStatus" = "購入済みです";
-"purchaseFinish" = "購入が完了しました";
-"ok" = "OK";
-"purchaseFail" = "購入できませんでした";
-"purcaseDefferd" = "購入の承認待ちです";
+/* 変更破棄 */
+"changeDestruction" = "変更破棄";
 
-"productFail" = "プロダクトを取得できませんでした。";
-
-"purchaseInvalid" = "設定で購入が無効になっています。";
-"purchaseProcessing" = "課金処理中です。";
-"restoreProcessing" = "リストア処理中です。";
-"purchaseInterruption" = "は購入処理が中断されていました。\nこのまま無料でダウンロードできます。";
+/* 続行 */
 "continue" = "続行";
 
-"appName" = "Single Todoリスト";
-"appUrl" = "https://itunes.apple.com/jp/app/id1148391383";
+/* copyタイトル */
+"copyTitle" = "コピー";
+
+/* editタイトル */
+"editTitle" = "編集";
+
+/* 1番目のデータ */
+"firstData" = "下にある＋ボタンを押して項目を追加してください";
+
+/* 4番目のデータ */
+"fourthData" = "右からのスワイプで「コピー」や「共有」のボタンが表示されます";
+
+/* 破棄しない */
+"notDestruction" = "破棄しない";
+
+/* ok */
+"ok" = "OK";
+
+/* プロダクト取得失敗 */
+"productFail" = "プロダクトを取得できませんでした。";
+
+/* 購入待機 */
+"purcaseDefferd" = "購入の承認待ちです";
+
+/* 購入失敗 */
+"purchaseFail" = "購入できませんでした";
+
+/* 購入完了 */
+"purchaseFinish" = "購入が完了しました";
+
+/* 購入中断 */
+"purchaseInterruption" = "は購入処理が中断されていました。
+このまま無料でダウンロードできます。";
+
+/* 購入設定無効 */
+"purchaseInvalid" = "設定で購入が無効になっています。";
+
+/* 課金処理中 */
+"purchaseProcessing" = "課金処理中です。";
+
+/* 購入済みです */
+"purchasedStatus" = "購入済みです";
+
+/* リストア処理中 */
+"restoreProcessing" = "リストア処理中です。";
+
+/* 2番目のデータ */
+"secondData" = "左下のゴミ箱ボタンでチェック済みの項目を削除できます";
+
+/* shareタイトル */
+"shareTitle" = "共有";
+
+/* テキスト破棄確認テキスト */
+"textDestConfirm" = "入力済みのテキストを破棄してもいいですか?";
+
+/* テキスト破棄 */
+"textDestruction" = "テキスト破棄";
+
+/* 3番目のデータ */
+"thirdData" = "項目の長押しでテキストを編集できます";
+

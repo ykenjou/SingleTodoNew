@@ -119,6 +119,7 @@ SWIFT_CLASS("_TtC10SimpleTodo17AddViewController")
 - (void)viewWillAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (void)textViewDidChange:(UITextView * _Nonnull)textView;
+- (void)textViewDidEndEditing:(UITextView * _Nonnull)textView;
 - (IBAction)switchChange:(UISwitch * _Nonnull)sender;
 - (void)pushCancelButton;
 - (void)pushSaveButton;
@@ -212,11 +213,14 @@ SWIFT_CLASS("_TtC10SimpleTodo19ColorViewController")
 
 
 SWIFT_CLASS("_TtC10SimpleTodo18EditViewController")
-@interface EditViewController : UIViewController
+@interface EditViewController : UIViewController <UIScrollViewDelegate, UITextViewDelegate>
 @property (nonatomic, strong) AppDelegate * _Nonnull appDelegate;
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified textView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified textCountLabel;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (void)textViewDidChange:(UITextView * _Nonnull)textView;
+- (void)textViewDidEndEditing:(UITextView * _Nonnull)textView;
 - (void)pushCancelButton;
 - (void)pushSaveButton;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

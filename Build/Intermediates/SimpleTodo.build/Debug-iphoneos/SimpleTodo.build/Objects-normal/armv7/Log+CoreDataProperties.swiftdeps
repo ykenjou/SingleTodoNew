@@ -9,9 +9,9 @@ provides-dynamic-lookup:
 - "text"
 - "time"
 depends-top-level:
+- "NSDate"
 - "Log"
 - "String"
-- "NSDate"
 depends-member:
 - ["Ps9AnyObject", "text"]
 - ["Ps9AnyObject", "time"]

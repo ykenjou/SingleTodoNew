@@ -6,59 +6,60 @@ provides-nominal:
 provides-member:
 - ["C10SimpleTodo17AddViewController", ""]
 provides-dynamic-lookup:
+- "viewWillAppear"
 - "didReceiveMemoryWarning"
 - "swtichBool"
+- "textView"
+- "textViewDidEndEditing"
+- "returnSwitch"
 - "pushCancelButton"
 - "viewDidLoad"
-- "returnSwitch"
-- "textViewDidChange"
 - "pushSaveButton"
+- "textViewDidChange"
 - "switchChange"
-- "textView"
 - "textCountLabel"
-- "viewWillAppear"
 depends-top-level:
-- !private "UIColor"
-- !private "Log"
-- "UITextViewDelegate"
+- !private "UIAlertControllerStyle"
 - !private "UIAlertAction"
-- !private "AppDelegate"
-- !private "..<"
 - !private "UnicodeScalarType"
+- !private "NSEntityDescription"
+- "BooleanLiteralType"
+- !private "CGRect"
 - !private "NSFetchRequest"
-- !private "NSCharacterSet"
-- !private "=="
 - !private "print"
 - !private "Item"
-- !private "UIAlertActionStyle"
-- !private "StringLiteralType"
-- "UIViewController"
-- !private "UIApplication"
-- !private "NSLocalizedString"
-- "UISwitch"
-- !private "NSError"
-- !private "+"
-- "Bool"
-- !private "CGRect"
-- !private "UIBarButtonSystemItem"
-- "UILabel"
-- !private "UIAlertControllerStyle"
 - !private "UIBarStyle"
-- !private "Void"
-- !private "NSDate"
-- !private "UIBarButtonItem"
-- !private "NSPredicate"
-- !private "String"
 - !private "UIToolbar"
-- !private "UIAlertController"
-- !private "NSEntityDescription"
-- !private "&&"
 - "AddViewController"
-- !private "Array"
-- !private "!="
-- "BooleanLiteralType"
-- !private "NSInteger"
+- !private "NSError"
+- !private "UIApplication"
+- !private "UIBarButtonItem"
 - "UITextView"
+- !private "&&"
+- !private "+"
+- !private "NSPredicate"
+- !private "Log"
+- !private "UIAlertActionStyle"
+- "UILabel"
+- !private "AppDelegate"
+- !private "NSDate"
+- !private "Void"
+- !private "UIBarButtonSystemItem"
+- !private "UIColor"
+- !private "..<"
+- "Bool"
+- !private "!="
+- "UISwitch"
+- !private "NSLocalizedString"
+- !private "StringLiteralType"
+- !private "=="
+- "UIViewController"
+- "UITextViewDelegate"
+- !private "Array"
+- !private "NSInteger"
+- !private "NSCharacterSet"
+- !private "String"
+- !private "UIAlertController"
 depends-member:
 - !private ["C10SimpleTodo17AddViewController", "AddViewController"]
 - !private ["C10SimpleTodo17AddViewController", "AppDelegate"]
@@ -134,6 +135,7 @@ depends-member:
 - !private ["Ps9AnyObject", "NSFetchRequest"]
 - !private ["Ps9AnyObject", "NSLocalizedString"]
 - !private ["Ps9AnyObject", "NSPredicate"]
+- !private ["Ps9AnyObject", "String"]
 - !private ["Ps9AnyObject", "UIAlertAction"]
 - !private ["Ps9AnyObject", "UIAlertActionStyle"]
 - !private ["Ps9AnyObject", "UIAlertController"]
@@ -242,6 +244,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "barStyle"]
 - !private ["PSo15CALayerDelegate", "becomeFirstResponder"]
 - !private ["PSo15CALayerDelegate", "bounds"]
+- !private ["PSo15CALayerDelegate", "delegate"]
 - !private ["PSo15CALayerDelegate", "init"]
 - !private ["PSo15CALayerDelegate", "inputAccessoryView"]
 - !private ["PSo15CALayerDelegate", "items"]
@@ -266,6 +269,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "NSFetchRequest"]
 - !private ["Ps11CVarArgType", "NSLocalizedString"]
 - !private ["Ps11CVarArgType", "NSPredicate"]
+- !private ["Ps11CVarArgType", "String"]
 - !private ["Ps11CVarArgType", "UIAlertAction"]
 - !private ["Ps11CVarArgType", "UIAlertActionStyle"]
 - !private ["Ps11CVarArgType", "UIAlertController"]
@@ -360,6 +364,7 @@ depends-member:
 - !private ["Ps10Comparable", "characters"]
 - !private ["Ps10Comparable", "componentsSeparatedByString"]
 - !private ["Ps10Comparable", "containsString"]
+- !private ["Ps10Comparable", "init"]
 - !private ["Ps10Comparable", "stringByTrimmingCharactersInSet"]
 - !private ["Ps28CustomDebugStringConvertible", "AddViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "CGColor"]
@@ -373,6 +378,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "NSFetchRequest"]
 - !private ["Ps28CustomDebugStringConvertible", "NSLocalizedString"]
 - !private ["Ps28CustomDebugStringConvertible", "NSPredicate"]
+- !private ["Ps28CustomDebugStringConvertible", "String"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertAction"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertActionStyle"]
@@ -466,6 +472,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "NSFetchRequest"]
 - !private ["Ps23CustomStringConvertible", "NSLocalizedString"]
 - !private ["Ps23CustomStringConvertible", "NSPredicate"]
+- !private ["Ps23CustomStringConvertible", "String"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "UIAlertAction"]
 - !private ["Ps23CustomStringConvertible", "UIAlertActionStyle"]
@@ -565,6 +572,7 @@ depends-member:
 - !private ["Ps9Equatable", "NSPredicate"]
 - !private ["Ps9Equatable", "Save"]
 - !private ["Ps9Equatable", "Stop"]
+- !private ["Ps9Equatable", "String"]
 - !private ["Ps9Equatable", "UIAlertAction"]
 - !private ["Ps9Equatable", "UIAlertActionStyle"]
 - !private ["Ps9Equatable", "UIAlertController"]
@@ -647,6 +655,7 @@ depends-member:
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "characters"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "componentsSeparatedByString"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "containsString"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "stringByTrimmingCharactersInSet"]
 - !private ["Ps16ForwardIndexType", "Distance"]
 - !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
@@ -671,6 +680,7 @@ depends-member:
 - !private ["Ps8Hashable", "NSPredicate"]
 - !private ["Ps8Hashable", "Save"]
 - !private ["Ps8Hashable", "Stop"]
+- !private ["Ps8Hashable", "String"]
 - !private ["Ps8Hashable", "UIAlertAction"]
 - !private ["Ps8Hashable", "UIAlertActionStyle"]
 - !private ["Ps8Hashable", "UIAlertController"]
@@ -762,6 +772,7 @@ depends-member:
 - !private ["Si", "Distance"]
 - !private ["Si", "IntegerLiteralType"]
 - !private ["Si", "_DisabledRangeIndex"]
+- !private ["Si", "deinit"]
 - !private ["Ps21IntegerArithmeticType", "Distance"]
 - !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
 - !private ["Ps21IntegerArithmeticType", "_DisabledRangeIndex"]
@@ -784,6 +795,7 @@ depends-member:
 - !private ["Ps14MirrorPathType", "characters"]
 - !private ["Ps14MirrorPathType", "componentsSeparatedByString"]
 - !private ["Ps14MirrorPathType", "containsString"]
+- !private ["Ps14MirrorPathType", "init"]
 - !private ["Ps14MirrorPathType", "stringByTrimmingCharactersInSet"]
 - !private ["Ps21MutableCollectionType", "Element"]
 - !private ["Ps21MutableCollectionType", "Generator"]
@@ -813,6 +825,7 @@ depends-member:
 - !private ["PSo8NSCoding", "NSFetchRequest"]
 - !private ["PSo8NSCoding", "NSLocalizedString"]
 - !private ["PSo8NSCoding", "NSPredicate"]
+- !private ["PSo8NSCoding", "String"]
 - !private ["PSo8NSCoding", "UIAlertAction"]
 - !private ["PSo8NSCoding", "UIAlertActionStyle"]
 - !private ["PSo8NSCoding", "UIAlertController"]
@@ -834,6 +847,7 @@ depends-member:
 - !private ["PSo8NSCoding", "containsString"]
 - !private ["PSo8NSCoding", "cornerRadius"]
 - !private ["PSo8NSCoding", "countForFetchRequest"]
+- !private ["PSo8NSCoding", "delegate"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - !private ["PSo8NSCoding", "dismissViewControllerAnimated"]
 - !private ["PSo8NSCoding", "executeFetchRequest"]
@@ -902,6 +916,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "NSFetchRequest"]
 - !private ["PSo26NSExtensionRequestHandling", "NSLocalizedString"]
 - !private ["PSo26NSExtensionRequestHandling", "NSPredicate"]
+- !private ["PSo26NSExtensionRequestHandling", "String"]
 - !private ["PSo26NSExtensionRequestHandling", "UIAlertAction"]
 - !private ["PSo26NSExtensionRequestHandling", "UIAlertActionStyle"]
 - !private ["PSo26NSExtensionRequestHandling", "UIAlertController"]
@@ -1075,6 +1090,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSFetchRequest"]
 - !private ["PSo16NSObjectProtocol", "NSLocalizedString"]
 - !private ["PSo16NSObjectProtocol", "NSPredicate"]
+- !private ["PSo16NSObjectProtocol", "String"]
 - !private ["PSo16NSObjectProtocol", "UIAlertAction"]
 - !private ["PSo16NSObjectProtocol", "UIAlertActionStyle"]
 - !private ["PSo16NSObjectProtocol", "UIAlertController"]
@@ -1170,6 +1186,7 @@ depends-member:
 - !private ["Ps16OutputStreamType", "characters"]
 - !private ["Ps16OutputStreamType", "componentsSeparatedByString"]
 - !private ["Ps16OutputStreamType", "containsString"]
+- !private ["Ps16OutputStreamType", "init"]
 - !private ["Ps16OutputStreamType", "stringByTrimmingCharactersInSet"]
 - !private ["Ps21RandomAccessIndexType", "Distance"]
 - !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
@@ -1208,6 +1225,7 @@ depends-member:
 - !private ["Ps10Streamable", "characters"]
 - !private ["Ps10Streamable", "componentsSeparatedByString"]
 - !private ["Ps10Streamable", "containsString"]
+- !private ["Ps10Streamable", "init"]
 - !private ["Ps10Streamable", "stringByTrimmingCharactersInSet"]
 - !private ["Ps10Strideable", "Distance"]
 - !private ["Ps10Strideable", "IntegerLiteralType"]
@@ -1216,18 +1234,22 @@ depends-member:
 - !private ["SS", "componentsSeparatedByString"]
 - !private ["SS", "containsString"]
 - !private ["SS", "deinit"]
+- !private ["SS", "init"]
 - !private ["SS", "stringByTrimmingCharactersInSet"]
 - !private ["Ps30StringInterpolationConvertible", "characters"]
 - !private ["Ps30StringInterpolationConvertible", "componentsSeparatedByString"]
 - !private ["Ps30StringInterpolationConvertible", "containsString"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
 - !private ["Ps30StringInterpolationConvertible", "stringByTrimmingCharactersInSet"]
 - !private ["Ps24StringLiteralConvertible", "characters"]
 - !private ["Ps24StringLiteralConvertible", "componentsSeparatedByString"]
 - !private ["Ps24StringLiteralConvertible", "containsString"]
+- !private ["Ps24StringLiteralConvertible", "init"]
 - !private ["Ps24StringLiteralConvertible", "stringByTrimmingCharactersInSet"]
 - !private ["PSo29UIAccessibilityIdentification", "barStyle"]
 - !private ["PSo29UIAccessibilityIdentification", "becomeFirstResponder"]
 - !private ["PSo29UIAccessibilityIdentification", "bounds"]
+- !private ["PSo29UIAccessibilityIdentification", "delegate"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "inputAccessoryView"]
 - !private ["PSo29UIAccessibilityIdentification", "items"]
@@ -1244,6 +1266,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "barStyle"]
 - !private ["PSo12UIAppearance", "becomeFirstResponder"]
 - !private ["PSo12UIAppearance", "bounds"]
+- !private ["PSo12UIAppearance", "delegate"]
 - !private ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "inputAccessoryView"]
 - !private ["PSo12UIAppearance", "items"]
@@ -1259,6 +1282,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "NSFetchRequest"]
 - !private ["PSo21UIAppearanceContainer", "NSLocalizedString"]
 - !private ["PSo21UIAppearanceContainer", "NSPredicate"]
+- !private ["PSo21UIAppearanceContainer", "String"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertAction"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertActionStyle"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertController"]
@@ -1273,6 +1297,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "barStyle"]
 - !private ["PSo21UIAppearanceContainer", "becomeFirstResponder"]
 - !private ["PSo21UIAppearanceContainer", "bounds"]
+- !private ["PSo21UIAppearanceContainer", "delegate"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - !private ["PSo21UIAppearanceContainer", "dismissViewControllerAnimated"]
 - ["PSo21UIAppearanceContainer", "init"]
@@ -1338,6 +1363,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "NSFetchRequest"]
 - !private ["PSo18UIContentContainer", "NSLocalizedString"]
 - !private ["PSo18UIContentContainer", "NSPredicate"]
+- !private ["PSo18UIContentContainer", "String"]
 - !private ["PSo18UIContentContainer", "UIAlertAction"]
 - !private ["PSo18UIContentContainer", "UIAlertActionStyle"]
 - !private ["PSo18UIContentContainer", "UIAlertController"]
@@ -1386,6 +1412,7 @@ depends-member:
 - ["PSo18UIContentContainer", "viewWillAppear"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "becomeFirstResponder"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "delegate"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "inputAccessoryView"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "layer"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "resignFirstResponder"]
@@ -1394,6 +1421,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "barStyle"]
 - !private ["PSo17UICoordinateSpace", "becomeFirstResponder"]
 - !private ["PSo17UICoordinateSpace", "bounds"]
+- !private ["PSo17UICoordinateSpace", "delegate"]
 - !private ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "inputAccessoryView"]
 - !private ["PSo17UICoordinateSpace", "items"]
@@ -1404,6 +1432,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "barStyle"]
 - !private ["PSo13UIDynamicItem", "becomeFirstResponder"]
 - !private ["PSo13UIDynamicItem", "bounds"]
+- !private ["PSo13UIDynamicItem", "delegate"]
 - !private ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "inputAccessoryView"]
 - !private ["PSo13UIDynamicItem", "items"]
@@ -1419,6 +1448,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "NSFetchRequest"]
 - !private ["PSo18UIFocusEnvironment", "NSLocalizedString"]
 - !private ["PSo18UIFocusEnvironment", "NSPredicate"]
+- !private ["PSo18UIFocusEnvironment", "String"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertAction"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertActionStyle"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertController"]
@@ -1433,6 +1463,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "barStyle"]
 - !private ["PSo18UIFocusEnvironment", "becomeFirstResponder"]
 - !private ["PSo18UIFocusEnvironment", "bounds"]
+- !private ["PSo18UIFocusEnvironment", "delegate"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UIFocusEnvironment", "dismissViewControllerAnimated"]
 - ["PSo18UIFocusEnvironment", "init"]
@@ -1478,6 +1509,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "barStyle"]
 - !private ["PSo11UIFocusItem", "becomeFirstResponder"]
 - !private ["PSo11UIFocusItem", "bounds"]
+- !private ["PSo11UIFocusItem", "delegate"]
 - !private ["PSo11UIFocusItem", "init"]
 - !private ["PSo11UIFocusItem", "inputAccessoryView"]
 - !private ["PSo11UIFocusItem", "items"]
@@ -1486,10 +1518,12 @@ depends-member:
 - !private ["PSo11UIFocusItem", "resignFirstResponder"]
 - !private ["PSo11UIFocusItem", "text"]
 - !private ["PSo10UIKeyInput", "becomeFirstResponder"]
+- !private ["PSo10UIKeyInput", "delegate"]
 - !private ["PSo10UIKeyInput", "inputAccessoryView"]
 - !private ["PSo10UIKeyInput", "layer"]
 - !private ["PSo10UIKeyInput", "resignFirstResponder"]
 - !private ["PSo10UIKeyInput", "text"]
+- !private ["CSo7UILabel", "text"]
 - !private ["CSo11UIResponder", "AddViewController"]
 - !private ["CSo11UIResponder", "AppDelegate"]
 - ["CSo11UIResponder", "Bool"]
@@ -1576,6 +1610,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "NSFetchRequest"]
 - !private ["PSo30UIResponderStandardEditActions", "NSLocalizedString"]
 - !private ["PSo30UIResponderStandardEditActions", "NSPredicate"]
+- !private ["PSo30UIResponderStandardEditActions", "String"]
 - !private ["PSo30UIResponderStandardEditActions", "UIAlertAction"]
 - !private ["PSo30UIResponderStandardEditActions", "UIAlertActionStyle"]
 - !private ["PSo30UIResponderStandardEditActions", "UIAlertController"]
@@ -1637,6 +1672,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "viewWillAppear"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["CSo12UIScrollView", "becomeFirstResponder"]
+- !private ["CSo12UIScrollView", "delegate"]
 - !private ["CSo12UIScrollView", "inputAccessoryView"]
 - !private ["CSo12UIScrollView", "layer"]
 - !private ["CSo12UIScrollView", "resignFirstResponder"]
@@ -1649,6 +1685,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "NSFetchRequest"]
 - !private ["PSo20UIScrollViewDelegate", "NSLocalizedString"]
 - !private ["PSo20UIScrollViewDelegate", "NSPredicate"]
+- !private ["PSo20UIScrollViewDelegate", "String"]
 - !private ["PSo20UIScrollViewDelegate", "UIAlertAction"]
 - !private ["PSo20UIScrollViewDelegate", "UIAlertActionStyle"]
 - !private ["PSo20UIScrollViewDelegate", "UIAlertController"]
@@ -1678,6 +1715,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "scrollViewWillEndDragging"]
 - !private ["PSo20UIScrollViewDelegate", "setItemData"]
 - !private ["PSo20UIScrollViewDelegate", "swtichBool"]
+- !private ["PSo20UIScrollViewDelegate", "textCountLabel"]
 - ["PSo20UIScrollViewDelegate", "textView"]
 - ["PSo20UIScrollViewDelegate", "textViewDidBeginEditing"]
 - ["PSo20UIScrollViewDelegate", "textViewDidChange"]
@@ -1696,6 +1734,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "NSFetchRequest"]
 - !private ["PSo16UIStateRestoring", "NSLocalizedString"]
 - !private ["PSo16UIStateRestoring", "NSPredicate"]
+- !private ["PSo16UIStateRestoring", "String"]
 - !private ["PSo16UIStateRestoring", "UIAlertAction"]
 - !private ["PSo16UIStateRestoring", "UIAlertActionStyle"]
 - !private ["PSo16UIStateRestoring", "UIAlertController"]
@@ -1745,16 +1784,19 @@ depends-member:
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo8UISwitch", "on"]
 - !private ["PSo11UITextInput", "becomeFirstResponder"]
+- !private ["PSo11UITextInput", "delegate"]
 - !private ["PSo11UITextInput", "inputAccessoryView"]
 - !private ["PSo11UITextInput", "layer"]
 - !private ["PSo11UITextInput", "resignFirstResponder"]
 - !private ["PSo11UITextInput", "text"]
 - !private ["PSo17UITextInputTraits", "becomeFirstResponder"]
+- !private ["PSo17UITextInputTraits", "delegate"]
 - !private ["PSo17UITextInputTraits", "inputAccessoryView"]
 - !private ["PSo17UITextInputTraits", "layer"]
 - !private ["PSo17UITextInputTraits", "resignFirstResponder"]
 - !private ["PSo17UITextInputTraits", "text"]
 - !private ["CSo10UITextView", "becomeFirstResponder"]
+- !private ["CSo10UITextView", "delegate"]
 - !private ["CSo10UITextView", "inputAccessoryView"]
 - !private ["CSo10UITextView", "layer"]
 - !private ["CSo10UITextView", "resignFirstResponder"]
@@ -1767,6 +1809,7 @@ depends-member:
 - !private ["PSo18UITextViewDelegate", "NSFetchRequest"]
 - !private ["PSo18UITextViewDelegate", "NSLocalizedString"]
 - !private ["PSo18UITextViewDelegate", "NSPredicate"]
+- !private ["PSo18UITextViewDelegate", "String"]
 - !private ["PSo18UITextViewDelegate", "UIAlertAction"]
 - !private ["PSo18UITextViewDelegate", "UIAlertActionStyle"]
 - !private ["PSo18UITextViewDelegate", "UIAlertController"]
@@ -1796,6 +1839,7 @@ depends-member:
 - ["PSo18UITextViewDelegate", "scrollViewWillEndDragging"]
 - !private ["PSo18UITextViewDelegate", "setItemData"]
 - !private ["PSo18UITextViewDelegate", "swtichBool"]
+- !private ["PSo18UITextViewDelegate", "textCountLabel"]
 - ["PSo18UITextViewDelegate", "textView"]
 - ["PSo18UITextViewDelegate", "textViewDidBeginEditing"]
 - ["PSo18UITextViewDelegate", "textViewDidChange"]
@@ -1817,6 +1861,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "NSFetchRequest"]
 - !private ["PSo18UITraitEnvironment", "NSLocalizedString"]
 - !private ["PSo18UITraitEnvironment", "NSPredicate"]
+- !private ["PSo18UITraitEnvironment", "String"]
 - !private ["PSo18UITraitEnvironment", "UIAlertAction"]
 - !private ["PSo18UITraitEnvironment", "UIAlertActionStyle"]
 - !private ["PSo18UITraitEnvironment", "UIAlertController"]
@@ -1831,6 +1876,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "barStyle"]
 - !private ["PSo18UITraitEnvironment", "becomeFirstResponder"]
 - !private ["PSo18UITraitEnvironment", "bounds"]
+- !private ["PSo18UITraitEnvironment", "delegate"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UITraitEnvironment", "dismissViewControllerAnimated"]
 - ["PSo18UITraitEnvironment", "init"]
@@ -1876,6 +1922,7 @@ depends-member:
 - !private ["CSo6UIView", "barStyle"]
 - !private ["CSo6UIView", "becomeFirstResponder"]
 - !private ["CSo6UIView", "bounds"]
+- !private ["CSo6UIView", "delegate"]
 - !private ["CSo6UIView", "init"]
 - !private ["CSo6UIView", "inputAccessoryView"]
 - !private ["CSo6UIView", "items"]
@@ -1952,6 +1999,7 @@ depends-member:
 - !private ["Ps31UnicodeScalarLiteralConvertible", "characters"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "componentsSeparatedByString"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "containsString"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "stringByTrimmingCharactersInSet"]
 - !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "managedObjectContext"]
 - !private ["P10SimpleTodo26XXXPurchaseManagerDelegate", "saveContext"]
@@ -1965,6 +2013,7 @@ depends-member:
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "characters"]
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "componentsSeparatedByString"]
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "containsString"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "stringByTrimmingCharactersInSet"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
@@ -1972,14 +2021,17 @@ depends-member:
 - !private ["Ps32_BuiltinStringLiteralConvertible", "characters"]
 - !private ["Ps32_BuiltinStringLiteralConvertible", "componentsSeparatedByString"]
 - !private ["Ps32_BuiltinStringLiteralConvertible", "containsString"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
 - !private ["Ps32_BuiltinStringLiteralConvertible", "stringByTrimmingCharactersInSet"]
 - !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "characters"]
 - !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "componentsSeparatedByString"]
 - !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "containsString"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
 - !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "stringByTrimmingCharactersInSet"]
 - !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "characters"]
 - !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "componentsSeparatedByString"]
 - !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "containsString"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "stringByTrimmingCharactersInSet"]
 - !private ["Ps24_ColorLiteralConvertible", "CGColor"]
 - !private ["Ps24_ColorLiteralConvertible", "lightGrayColor"]
@@ -2010,6 +2062,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "componentsSeparatedByString"]
 - !private ["Ps21_ObjectiveCBridgeable", "containsString"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "stringByTrimmingCharactersInSet"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
@@ -2031,6 +2084,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "componentsSeparatedByString"]
 - !private ["Ps12_Reflectable", "containsString"]
 - !private ["Ps12_Reflectable", "count"]
+- !private ["Ps12_Reflectable", "delegate"]
 - !private ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "inputAccessoryView"]
 - !private ["Ps12_Reflectable", "items"]
@@ -2147,6 +2201,7 @@ depends-nominal:
 - "PSo18UIFocusEnvironment"
 - !private "PSo11UIFocusItem"
 - !private "PSo10UIKeyInput"
+- !private "CSo7UILabel"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - !private "CSo12UIScrollView"
@@ -2269,4 +2324,4 @@ depends-external:
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Firebase/Analytics/Sources/Firebase.h"
-interface-hash: "5501d1a10e7647bdab4edf8fc2c938ff"
+interface-hash: "b3fb7ba933d9665d0177c202746f648b"
