@@ -47,8 +47,7 @@
 "purchaseFinish" = "La compra fue completada";
 
 /* 購入中断 */
-"purchaseInterruption" = "El proceso de la compra fue detenido.
-Puedo transmitirlo libre como él es.";
+"purchaseInterruption" = "El proceso de la compra fue detenido.\nPuedo transmitirlo libre como él es.";
 
 /* 購入設定無効 */
 "purchaseInvalid" = "La compra se pone no válida poniendo.";

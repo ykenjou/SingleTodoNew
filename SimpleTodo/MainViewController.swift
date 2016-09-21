@@ -25,6 +25,8 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
     let gadController = GadController()
     var bannerView:GADBannerView? = nil
     
+    var addActivityView: UIActivityIndicatorView!
+    
     @IBOutlet weak var btmToolBarConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var tableBtmConstraint: NSLayoutConstraint!
@@ -101,6 +103,12 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
         bannerView = gadController.gadBannerInit(self.view.frame.width, frameHeight: 50, viewController: self)
         
         popMessageView.layer.cornerRadius = 10
+        
+        
+        addActivityView = UIActivityIndicatorView()
+        addActivityView.center = CGPointMake(self.view.bounds.size.width / 2, self.view.bounds.size.height / 2)
+        addActivityView.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
+        addActivityView.startAnimating()
         
     }
     
@@ -490,21 +498,24 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
     }
     
     func pushAddButton(){
+        
+        if UIDevice.currentDevice().userInterfaceIdiom == .Pad{
+            self.view.addSubview(addActivityView)
+        }
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let addViewController = storyboard.instantiateViewControllerWithIdentifier("AddViewController") as! AddViewController
-        
-        /*
-         let delay = 0 * Double(NSEC_PER_SEC)
-         let time  = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
-         dispatch_after(time, dispatch_get_main_queue(), {
-         self.presentViewController(addViewController as UIViewController, animated: true, completion: nil)
-         })
-         */
         
         
         
         dispatch_async(dispatch_get_main_queue()) {
-            self.presentViewController(addViewController as UIViewController, animated: true, completion: nil)
+            self.presentViewController(addViewController as UIViewController, animated: true, completion: self.deleteAddActivityView)
+        }
+    }
+    
+    func deleteAddActivityView(){
+        if UIDevice.currentDevice().userInterfaceIdiom == .Pad{
+            addActivityView.removeFromSuperview()
         }
     }
     

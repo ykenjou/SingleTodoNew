@@ -1,6 +1,6 @@
-version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
-options: "fb0a159f509cc8097ca9bf0c32ec244e"
-build_time: [526447226, 935295000]
+version: "Apple Swift version 2.3 (swiftlang-800.10.12 clang-800.0.38)"
+options: "09f9f86c9991136c6bed83560273aa80"
+build_time: [527670965, 789599000]
 inputs:
   "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/PurchaseViewController.swift": [9223372036854775807, 0]
   "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/ColorViewController.swift": [9223372036854775807, 0]
@@ -8,7 +8,10 @@ inputs:
   "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/XXXPurchaseManager.swift": [9223372036854775807, 0]
   "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/XXXProductManager.swift": [9223372036854775807, 0]
   "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/MainViewController.swift": [9223372036854775807, 0]
+  "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/Log.swift": [9223372036854775807, 0]
+  "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/Log+CoreDataProperties.swift": [9223372036854775807, 0]
   "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/AppDelegate.swift": [9223372036854775807, 0]
+  "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/LogViewController.swift": [9223372036854775807, 0]
   "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/AddViewController.swift": [9223372036854775807, 0]
   "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/SettingViewController.swift": [9223372036854775807, 0]
   "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/Item.swift": [9223372036854775807, 0]

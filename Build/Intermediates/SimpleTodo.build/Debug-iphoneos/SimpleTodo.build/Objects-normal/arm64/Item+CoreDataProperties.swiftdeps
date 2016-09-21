@@ -8,12 +8,12 @@ provides-member:
 - ["C10SimpleTodo4Item", "text"]
 provides-dynamic-lookup:
 - "displayOrder"
-- "checked"
 - "text"
+- "checked"
 depends-top-level:
-- "NSNumber"
 - "String"
 - "Item"
+- "NSNumber"
 depends-member:
 - ["Ps9AnyObject", "checked"]
 - ["Ps9AnyObject", "displayOrder"]

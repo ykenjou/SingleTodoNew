@@ -143,7 +143,7 @@ class SettingViewController: UITableViewController {
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         let upgradeTestCell = NSIndexPath(forRow: 1, inSection: 0)
         if indexPath == upgradeTestCell {
-            //テスト時に44に設定
+            //通常0 テスト時に44に設定
             return 0
         }
         return 44

@@ -14,128 +14,134 @@ provides-member:
 - ["CSo6UIView", "fadeOut"]
 - ["CSo6UIView", "fadeOut"]
 provides-dynamic-lookup:
-- "btmToolBar"
-- "bannerView"
-- "pushMemoButton"
-- "setEditing"
-- "numberOfSectionsInTableView"
-- "setBadgeValue"
-- "didReceiveMemoryWarning"
-- "popMessageView"
-- "settingButton"
-- "viewDidLoad"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "viewWillAppear"
-- "gadController"
-- "userDefaults"
-- "setNaviToolbarColor"
-- "tableBtmConstraint"
-- "pushTrashButton"
-- "fetchedResultsController"
-- "showPopMessageView"
 - "fadeOut"
-- "cellLongPressed"
-- "pushAddButton"
-- "controllerDidChangeContent"
-- "btmToolBarConstraint"
-- "appDelegate"
-- "setCheckedValue"
+- "pushMemoButton"
 - "fadeIn"
+- "bannerView"
+- "gadController"
+- "setEditing"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "setNaviToolbarColor"
+- "addActivityView"
+- "didReceiveMemoryWarning"
+- "setCheckedValue"
+- "showPopMessageView"
+- "btmToolBarConstraint"
+- "deleteAddActivityView"
+- "cellLongPressed"
+- "controllerDidChangeContent"
+- "settingButton"
+- "appDelegate"
+- "viewDidLoad"
+- "pushAddButton"
+- "tableBtmConstraint"
+- "setBadgeValue"
+- "popMessageView"
+- "userDefaults"
+- "fetchedResultsController"
+- "viewWillAppear"
+- "pushTrashButton"
+- "btmToolBar"
+- "numberOfSectionsInTableView"
 depends-top-level:
-- !private "Double"
-- "UIBarButtonItem"
-- !private "UITableViewAutomaticDimension"
-- "UIView"
-- !private "NSEC_PER_SEC"
-- !private "EditViewController"
-- !private "NSManagedObject"
-- !private "NSFetchRequest"
-- "NSLayoutConstraint"
-- "StringLiteralType"
-- !private "NSPredicate"
-- "UITableViewCell"
-- !private "NSStrikethroughStyleAttributeName"
-- !private "NSEntityDescription"
-- !private "NSArray"
-- !private "UIPasteboard"
-- !private "UIStoryboard"
-- "GADBannerView"
-- !private "UIFont"
-- !private "*"
-- !private "CGRectGetMidY"
-- !private "..<"
-- !private "NSLocalizedString"
-- !private "UIUserNotificationSettings"
-- "UITableView"
-- "UITableViewRowAction"
-- !private "DISPATCH_TIME_NOW"
-- !private "CGFloat"
-- !private "dispatch_time"
-- !private "Int64"
-- !private "dispatch_async"
-- "NSFetchedResultsController"
-- !private "String"
-- "MainViewController"
-- !private "+"
-- !private "UILabel"
-- "GadController"
-- !private "CGRectGetMidX"
-- !private "Item"
-- !private "CGRectMake"
-- "UIApplication"
-- "NSNumber"
-- "BooleanLiteralType"
-- !private "LogViewController"
-- !private "NSMutableAttributedString"
-- "UIViewController"
-- !private "dispatch_after"
-- "NSTimeInterval"
-- "UITableViewDataSource"
-- "UILongPressGestureRecognizer"
-- "NSUserDefaults"
-- "AppDelegate"
-- !private "UIUserNotificationType"
-- "UITableViewDelegate"
-- !private "~="
-- "=="
-- "NSFetchedResultsControllerDelegate"
-- !private "dispatch_get_main_queue"
-- "UIGestureRecognizerDelegate"
-- !private "UIBarButtonSystemItem"
-- !private "UITableViewScrollPosition"
-- "UINavigationControllerDelegate"
-- "FadeType"
-- !private "NSSortDescriptor"
-- !private "ColorViewController"
-- "GADBannerViewDelegate"
-- !private "UIGestureRecognizerState"
-- "Bool"
-- !private "!="
-- !private "NSError"
-- "Array"
-- !private "AudioServicesPlaySystemSound"
-- "Int"
-- "NSInteger"
-- !private "UITableViewCellSelectionStyle"
-- !private "UIActivityViewController"
-- !private "NSMakeRange"
-- !private "<"
-- !private "-"
-- !private "print"
-- !private "AnyObject"
-- !private "UIColor"
-- !private "CGPointMake"
 - "UIToolbar"
-- !private "Dictionary"
-- !private "NSForegroundColorAttributeName"
-- "NSIndexPath"
+- !private "NSMutableAttributedString"
+- "GadController"
+- "NSInteger"
+- !private "CGFloat"
+- !private "CGRectGetMidY"
+- "UIActivityIndicatorView"
 - !private "AddViewController"
+- "UITableViewCell"
+- "Bool"
+- !private "UIStoryboard"
+- "StringLiteralType"
+- "GADBannerView"
+- !private "NSLocalizedString"
+- !private "UITableViewCellSelectionStyle"
+- !private "String"
+- !private "NSManagedObject"
+- "UIViewController"
+- "Array"
+- "Int"
+- !private "/"
+- !private "UIColor"
+- !private "-"
+- !private "UIPasteboard"
+- "UINavigationControllerDelegate"
+- "UIApplication"
+- !private "UILabel"
+- !private "CGPointMake"
+- "GADBannerViewDelegate"
+- !private "dispatch_after"
+- !private "NSSortDescriptor"
+- "NSFetchedResultsControllerDelegate"
+- !private "UITableViewAutomaticDimension"
+- "UIBarButtonItem"
+- !private "UIGestureRecognizerState"
+- "UIGestureRecognizerDelegate"
+- !private "print"
+- !private "NSStrikethroughStyleAttributeName"
+- !private "..<"
+- "UITableViewDataSource"
+- "AppDelegate"
+- !private "NSFetchRequest"
+- !private "NSForegroundColorAttributeName"
+- !private "Dictionary"
+- !private "<"
+- "UITableViewDelegate"
+- "NSIndexPath"
+- !private "dispatch_get_main_queue"
+- !private "UIDevice"
+- !private "UIUserNotificationSettings"
+- "BooleanLiteralType"
+- !private "NSPredicate"
+- "FadeType"
+- !private "dispatch_time"
+- !private "AnyObject"
+- !private "DISPATCH_TIME_NOW"
+- !private "NSMakeRange"
+- !private "UIFont"
+- "UITableViewRowAction"
+- "=="
+- !private "~="
+- !private "NSEntityDescription"
+- !private "dispatch_async"
+- !private "NSArray"
+- "NSNumber"
+- "UIView"
+- "MainViewController"
+- !private "UIBarButtonSystemItem"
+- !private "!="
+- !private "Int64"
+- !private "+"
+- "UILongPressGestureRecognizer"
+- !private "CGRectMake"
+- !private "NSEC_PER_SEC"
+- !private "Item"
+- "NSUserDefaults"
+- !private "EditViewController"
+- !private "NSError"
+- !private "Double"
+- "NSLayoutConstraint"
+- !private "*"
+- !private "UITableViewScrollPosition"
+- !private "LogViewController"
+- "NSTimeInterval"
+- !private "UIUserNotificationType"
+- !private "ColorViewController"
+- !private "AudioServicesPlaySystemSound"
+- "NSFetchedResultsController"
+- !private "UIActivityViewController"
+- "UITableView"
+- !private "UIActivityIndicatorViewStyle"
+- !private "CGRectGetMidX"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Normal"]
 - !private ["Ps16AbsoluteValuable", "init"]
@@ -166,11 +172,14 @@ depends-member:
 - !private ["Ps9AnyObject", "NSSortDescriptor"]
 - !private ["Ps9AnyObject", "NSStrikethroughStyleAttributeName"]
 - ["Ps9AnyObject", "NSUserDefaults"]
+- !private ["Ps9AnyObject", "UIActivityIndicatorView"]
+- !private ["Ps9AnyObject", "UIActivityIndicatorViewStyle"]
 - !private ["Ps9AnyObject", "UIActivityViewController"]
 - ["Ps9AnyObject", "UIApplication"]
 - !private ["Ps9AnyObject", "UIBarButtonItem"]
 - !private ["Ps9AnyObject", "UIBarButtonSystemItem"]
 - !private ["Ps9AnyObject", "UIColor"]
+- !private ["Ps9AnyObject", "UIDevice"]
 - !private ["Ps9AnyObject", "UIFont"]
 - !private ["Ps9AnyObject", "UIGestureRecognizerState"]
 - !private ["Ps9AnyObject", "UILongPressGestureRecognizer"]
@@ -183,6 +192,7 @@ depends-member:
 - !private ["Ps9AnyObject", "UIUserNotificationSettings"]
 - !private ["Ps9AnyObject", "UIUserNotificationType"]
 - !private ["Ps9AnyObject", "UIView"]
+- !private ["Ps9AnyObject", "activityIndicatorViewStyle"]
 - ["Ps9AnyObject", "ad"]
 - ["Ps9AnyObject", "adView"]
 - ["Ps9AnyObject", "adViewDidDismissScreen"]
@@ -190,6 +200,7 @@ depends-member:
 - ["Ps9AnyObject", "adViewWillDismissScreen"]
 - ["Ps9AnyObject", "adViewWillLeaveApplication"]
 - ["Ps9AnyObject", "adViewWillPresentScreen"]
+- ["Ps9AnyObject", "addActivityView"]
 - !private ["Ps9AnyObject", "addAttribute"]
 - !private ["Ps9AnyObject", "addGestureRecognizer"]
 - !private ["Ps9AnyObject", "addSubview"]
@@ -210,6 +221,7 @@ depends-member:
 - ["Ps9AnyObject", "btmToolBarConstraint"]
 - !private ["Ps9AnyObject", "cellForRowAtIndexPath"]
 - ["Ps9AnyObject", "cellLongPressed"]
+- !private ["Ps9AnyObject", "center"]
 - !private ["Ps9AnyObject", "checked"]
 - !private ["Ps9AnyObject", "constant"]
 - !private ["Ps9AnyObject", "contentView"]
@@ -219,10 +231,12 @@ depends-member:
 - !private ["Ps9AnyObject", "cornerRadius"]
 - !private ["Ps9AnyObject", "count"]
 - !private ["Ps9AnyObject", "countForFetchRequest"]
+- !private ["Ps9AnyObject", "currentDevice"]
 - !private ["Ps9AnyObject", "darkGrayColor"]
 - !private ["Ps9AnyObject", "deepBlueColor"]
 - !private ["Ps9AnyObject", "deinit"]
 - ["Ps9AnyObject", "delegate"]
+- ["Ps9AnyObject", "deleteAddActivityView"]
 - !private ["Ps9AnyObject", "deleteObject"]
 - !private ["Ps9AnyObject", "dequeueReusableCellWithIdentifier"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
@@ -318,6 +332,7 @@ depends-member:
 - !private ["Ps9AnyObject", "sourceRect"]
 - !private ["Ps9AnyObject", "sourceView"]
 - ["Ps9AnyObject", "standardUserDefaults"]
+- !private ["Ps9AnyObject", "startAnimating"]
 - !private ["Ps9AnyObject", "state"]
 - !private ["Ps9AnyObject", "stringForKey"]
 - !private ["Ps9AnyObject", "systemFontOfSize"]
@@ -329,6 +344,7 @@ depends-member:
 - !private ["Ps9AnyObject", "titleTextAttributes"]
 - !private ["Ps9AnyObject", "translucent"]
 - ["Ps9AnyObject", "userDefaults"]
+- !private ["Ps9AnyObject", "userInterfaceIdiom"]
 - !private ["Ps9AnyObject", "view"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", "viewForZoomingInScrollView"]
@@ -378,6 +394,7 @@ depends-member:
 - !private ["CSo7CALayer", "cornerRadius"]
 - !private ["PSo15CALayerDelegate", "FadeType"]
 - !private ["PSo15CALayerDelegate", "UIView"]
+- !private ["PSo15CALayerDelegate", "activityIndicatorViewStyle"]
 - !private ["PSo15CALayerDelegate", "addGestureRecognizer"]
 - !private ["PSo15CALayerDelegate", "addSubview"]
 - !private ["PSo15CALayerDelegate", "alpha"]
@@ -387,6 +404,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "barTintColor"]
 - !private ["PSo15CALayerDelegate", "bounds"]
 - !private ["PSo15CALayerDelegate", "cellForRowAtIndexPath"]
+- !private ["PSo15CALayerDelegate", "center"]
 - !private ["PSo15CALayerDelegate", "contentView"]
 - !private ["PSo15CALayerDelegate", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo15CALayerDelegate", "editing"]
@@ -408,6 +426,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "selectRowAtIndexPath"]
 - !private ["PSo15CALayerDelegate", "selectionStyle"]
 - !private ["PSo15CALayerDelegate", "setEditing"]
+- !private ["PSo15CALayerDelegate", "startAnimating"]
 - !private ["PSo15CALayerDelegate", "tableFooterView"]
 - !private ["PSo15CALayerDelegate", "text"]
 - !private ["PSo15CALayerDelegate", "tintColor"]
@@ -419,7 +438,10 @@ depends-member:
 - !private ["V12CoreGraphics7CGFloat", "init"]
 - !private ["VSC6CGRect", "height"]
 - !private ["VSC6CGRect", "origin"]
+- !private ["VSC6CGRect", "size"]
 - !private ["VSC6CGRect", "width"]
+- !private ["VSC6CGSize", "height"]
+- !private ["VSC6CGSize", "width"]
 - !private ["Ps11CVarArgType", "AudioServicesPlaySystemSound"]
 - !private ["Ps11CVarArgType", "CGFloat"]
 - !private ["Ps11CVarArgType", "CGPointMake"]
@@ -450,11 +472,14 @@ depends-member:
 - ["Ps11CVarArgType", "NSUserDefaults"]
 - !private ["Ps11CVarArgType", "Normal"]
 - !private ["Ps11CVarArgType", "Stride"]
+- !private ["Ps11CVarArgType", "UIActivityIndicatorView"]
+- !private ["Ps11CVarArgType", "UIActivityIndicatorViewStyle"]
 - !private ["Ps11CVarArgType", "UIActivityViewController"]
 - ["Ps11CVarArgType", "UIApplication"]
 - !private ["Ps11CVarArgType", "UIBarButtonItem"]
 - !private ["Ps11CVarArgType", "UIBarButtonSystemItem"]
 - !private ["Ps11CVarArgType", "UIColor"]
+- !private ["Ps11CVarArgType", "UIDevice"]
 - !private ["Ps11CVarArgType", "UIFont"]
 - !private ["Ps11CVarArgType", "UIGestureRecognizerState"]
 - !private ["Ps11CVarArgType", "UILongPressGestureRecognizer"]
@@ -468,6 +493,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "UIUserNotificationType"]
 - !private ["Ps11CVarArgType", "UIView"]
 - !private ["Ps11CVarArgType", "_DisabledRangeIndex"]
+- !private ["Ps11CVarArgType", "activityIndicatorViewStyle"]
 - ["Ps11CVarArgType", "ad"]
 - ["Ps11CVarArgType", "adView"]
 - ["Ps11CVarArgType", "adViewDidDismissScreen"]
@@ -475,6 +501,7 @@ depends-member:
 - ["Ps11CVarArgType", "adViewWillDismissScreen"]
 - ["Ps11CVarArgType", "adViewWillLeaveApplication"]
 - ["Ps11CVarArgType", "adViewWillPresentScreen"]
+- ["Ps11CVarArgType", "addActivityView"]
 - !private ["Ps11CVarArgType", "addAttribute"]
 - !private ["Ps11CVarArgType", "addGestureRecognizer"]
 - !private ["Ps11CVarArgType", "addSubview"]
@@ -495,6 +522,7 @@ depends-member:
 - ["Ps11CVarArgType", "btmToolBarConstraint"]
 - !private ["Ps11CVarArgType", "cellForRowAtIndexPath"]
 - ["Ps11CVarArgType", "cellLongPressed"]
+- !private ["Ps11CVarArgType", "center"]
 - !private ["Ps11CVarArgType", "checked"]
 - !private ["Ps11CVarArgType", "constant"]
 - !private ["Ps11CVarArgType", "contentView"]
@@ -504,10 +532,12 @@ depends-member:
 - !private ["Ps11CVarArgType", "cornerRadius"]
 - !private ["Ps11CVarArgType", "count"]
 - !private ["Ps11CVarArgType", "countForFetchRequest"]
+- !private ["Ps11CVarArgType", "currentDevice"]
 - !private ["Ps11CVarArgType", "darkGrayColor"]
 - !private ["Ps11CVarArgType", "deepBlueColor"]
 - !private ["Ps11CVarArgType", "deinit"]
 - ["Ps11CVarArgType", "delegate"]
+- ["Ps11CVarArgType", "deleteAddActivityView"]
 - !private ["Ps11CVarArgType", "deleteObject"]
 - !private ["Ps11CVarArgType", "dequeueReusableCellWithIdentifier"]
 - ["Ps11CVarArgType", "didReceiveMemoryWarning"]
@@ -604,6 +634,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "sourceRect"]
 - !private ["Ps11CVarArgType", "sourceView"]
 - ["Ps11CVarArgType", "standardUserDefaults"]
+- !private ["Ps11CVarArgType", "startAnimating"]
 - !private ["Ps11CVarArgType", "state"]
 - !private ["Ps11CVarArgType", "stringForKey"]
 - !private ["Ps11CVarArgType", "systemFontOfSize"]
@@ -615,6 +646,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "titleTextAttributes"]
 - !private ["Ps11CVarArgType", "translucent"]
 - ["Ps11CVarArgType", "userDefaults"]
+- !private ["Ps11CVarArgType", "userInterfaceIdiom"]
 - !private ["Ps11CVarArgType", "view"]
 - ["Ps11CVarArgType", "viewDidLoad"]
 - ["Ps11CVarArgType", "viewForZoomingInScrollView"]
@@ -680,11 +712,14 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Normal"]
 - ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "UIActivityIndicatorView"]
+- !private ["Ps28CustomDebugStringConvertible", "UIActivityIndicatorViewStyle"]
 - !private ["Ps28CustomDebugStringConvertible", "UIActivityViewController"]
 - ["Ps28CustomDebugStringConvertible", "UIApplication"]
 - !private ["Ps28CustomDebugStringConvertible", "UIBarButtonItem"]
 - !private ["Ps28CustomDebugStringConvertible", "UIBarButtonSystemItem"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
+- !private ["Ps28CustomDebugStringConvertible", "UIDevice"]
 - !private ["Ps28CustomDebugStringConvertible", "UIFont"]
 - !private ["Ps28CustomDebugStringConvertible", "UIGestureRecognizerState"]
 - !private ["Ps28CustomDebugStringConvertible", "UILongPressGestureRecognizer"]
@@ -699,6 +734,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIView"]
 - !private ["Ps28CustomDebugStringConvertible", "Value"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "activityIndicatorViewStyle"]
 - ["Ps28CustomDebugStringConvertible", "ad"]
 - ["Ps28CustomDebugStringConvertible", "adView"]
 - ["Ps28CustomDebugStringConvertible", "adViewDidDismissScreen"]
@@ -706,6 +742,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "adViewWillDismissScreen"]
 - ["Ps28CustomDebugStringConvertible", "adViewWillLeaveApplication"]
 - ["Ps28CustomDebugStringConvertible", "adViewWillPresentScreen"]
+- ["Ps28CustomDebugStringConvertible", "addActivityView"]
 - !private ["Ps28CustomDebugStringConvertible", "addAttribute"]
 - !private ["Ps28CustomDebugStringConvertible", "addGestureRecognizer"]
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
@@ -726,6 +763,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "btmToolBarConstraint"]
 - !private ["Ps28CustomDebugStringConvertible", "cellForRowAtIndexPath"]
 - ["Ps28CustomDebugStringConvertible", "cellLongPressed"]
+- !private ["Ps28CustomDebugStringConvertible", "center"]
 - !private ["Ps28CustomDebugStringConvertible", "checked"]
 - !private ["Ps28CustomDebugStringConvertible", "constant"]
 - !private ["Ps28CustomDebugStringConvertible", "contentView"]
@@ -735,9 +773,11 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "countForFetchRequest"]
+- !private ["Ps28CustomDebugStringConvertible", "currentDevice"]
 - !private ["Ps28CustomDebugStringConvertible", "darkGrayColor"]
 - !private ["Ps28CustomDebugStringConvertible", "deepBlueColor"]
 - ["Ps28CustomDebugStringConvertible", "delegate"]
+- ["Ps28CustomDebugStringConvertible", "deleteAddActivityView"]
 - !private ["Ps28CustomDebugStringConvertible", "deleteObject"]
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCellWithIdentifier"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
@@ -833,6 +873,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "sourceRect"]
 - !private ["Ps28CustomDebugStringConvertible", "sourceView"]
 - ["Ps28CustomDebugStringConvertible", "standardUserDefaults"]
+- !private ["Ps28CustomDebugStringConvertible", "startAnimating"]
 - !private ["Ps28CustomDebugStringConvertible", "state"]
 - !private ["Ps28CustomDebugStringConvertible", "stringForKey"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
@@ -845,6 +886,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "titleTextAttributes"]
 - !private ["Ps28CustomDebugStringConvertible", "translucent"]
 - ["Ps28CustomDebugStringConvertible", "userDefaults"]
+- !private ["Ps28CustomDebugStringConvertible", "userInterfaceIdiom"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", "viewForZoomingInScrollView"]
@@ -887,11 +929,14 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Normal"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "UIActivityIndicatorView"]
+- !private ["Ps23CustomStringConvertible", "UIActivityIndicatorViewStyle"]
 - !private ["Ps23CustomStringConvertible", "UIActivityViewController"]
 - ["Ps23CustomStringConvertible", "UIApplication"]
 - !private ["Ps23CustomStringConvertible", "UIBarButtonItem"]
 - !private ["Ps23CustomStringConvertible", "UIBarButtonSystemItem"]
 - !private ["Ps23CustomStringConvertible", "UIColor"]
+- !private ["Ps23CustomStringConvertible", "UIDevice"]
 - !private ["Ps23CustomStringConvertible", "UIFont"]
 - !private ["Ps23CustomStringConvertible", "UIGestureRecognizerState"]
 - !private ["Ps23CustomStringConvertible", "UILongPressGestureRecognizer"]
@@ -908,6 +953,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "activityIndicatorViewStyle"]
 - ["Ps23CustomStringConvertible", "ad"]
 - ["Ps23CustomStringConvertible", "adView"]
 - ["Ps23CustomStringConvertible", "adViewDidDismissScreen"]
@@ -915,6 +961,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "adViewWillDismissScreen"]
 - ["Ps23CustomStringConvertible", "adViewWillLeaveApplication"]
 - ["Ps23CustomStringConvertible", "adViewWillPresentScreen"]
+- ["Ps23CustomStringConvertible", "addActivityView"]
 - !private ["Ps23CustomStringConvertible", "addAttribute"]
 - !private ["Ps23CustomStringConvertible", "addGestureRecognizer"]
 - !private ["Ps23CustomStringConvertible", "addSubview"]
@@ -935,6 +982,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "btmToolBarConstraint"]
 - !private ["Ps23CustomStringConvertible", "cellForRowAtIndexPath"]
 - ["Ps23CustomStringConvertible", "cellLongPressed"]
+- !private ["Ps23CustomStringConvertible", "center"]
 - !private ["Ps23CustomStringConvertible", "checked"]
 - !private ["Ps23CustomStringConvertible", "constant"]
 - !private ["Ps23CustomStringConvertible", "contentView"]
@@ -944,9 +992,11 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "cornerRadius"]
 - !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "countForFetchRequest"]
+- !private ["Ps23CustomStringConvertible", "currentDevice"]
 - !private ["Ps23CustomStringConvertible", "darkGrayColor"]
 - !private ["Ps23CustomStringConvertible", "deepBlueColor"]
 - ["Ps23CustomStringConvertible", "delegate"]
+- ["Ps23CustomStringConvertible", "deleteAddActivityView"]
 - !private ["Ps23CustomStringConvertible", "deleteObject"]
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCellWithIdentifier"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
@@ -1043,6 +1093,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "sourceRect"]
 - !private ["Ps23CustomStringConvertible", "sourceView"]
 - ["Ps23CustomStringConvertible", "standardUserDefaults"]
+- !private ["Ps23CustomStringConvertible", "startAnimating"]
 - !private ["Ps23CustomStringConvertible", "state"]
 - !private ["Ps23CustomStringConvertible", "stringForKey"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
@@ -1055,6 +1106,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "titleTextAttributes"]
 - !private ["Ps23CustomStringConvertible", "translucent"]
 - ["Ps23CustomStringConvertible", "userDefaults"]
+- !private ["Ps23CustomStringConvertible", "userInterfaceIdiom"]
 - !private ["Ps23CustomStringConvertible", "view"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", "viewForZoomingInScrollView"]
@@ -1090,6 +1142,7 @@ depends-member:
 - !private ["Ps9Equatable", "FlexibleWidth"]
 - ["Ps9Equatable", "GadController"]
 - !private ["Ps9Equatable", "Generator"]
+- !private ["Ps9Equatable", "Gray"]
 - !private ["Ps9Equatable", "Int64"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "MainViewController"]
@@ -1108,15 +1161,19 @@ depends-member:
 - ["Ps9Equatable", "NSUserDefaults"]
 - !private ["Ps9Equatable", "None"]
 - !private ["Ps9Equatable", "Normal"]
+- !private ["Ps9Equatable", "Pad"]
 - ["Ps9Equatable", "RawValue"]
 - !private ["Ps9Equatable", "Slow"]
 - !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "Trash"]
+- !private ["Ps9Equatable", "UIActivityIndicatorView"]
+- !private ["Ps9Equatable", "UIActivityIndicatorViewStyle"]
 - !private ["Ps9Equatable", "UIActivityViewController"]
 - ["Ps9Equatable", "UIApplication"]
 - !private ["Ps9Equatable", "UIBarButtonItem"]
 - !private ["Ps9Equatable", "UIBarButtonSystemItem"]
 - !private ["Ps9Equatable", "UIColor"]
+- !private ["Ps9Equatable", "UIDevice"]
 - !private ["Ps9Equatable", "UIFont"]
 - !private ["Ps9Equatable", "UIGestureRecognizerState"]
 - !private ["Ps9Equatable", "UILongPressGestureRecognizer"]
@@ -1131,6 +1188,7 @@ depends-member:
 - !private ["Ps9Equatable", "UIView"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "activityIndicatorViewStyle"]
 - ["Ps9Equatable", "ad"]
 - ["Ps9Equatable", "adView"]
 - ["Ps9Equatable", "adViewDidDismissScreen"]
@@ -1138,6 +1196,7 @@ depends-member:
 - ["Ps9Equatable", "adViewWillDismissScreen"]
 - ["Ps9Equatable", "adViewWillLeaveApplication"]
 - ["Ps9Equatable", "adViewWillPresentScreen"]
+- ["Ps9Equatable", "addActivityView"]
 - !private ["Ps9Equatable", "addAttribute"]
 - !private ["Ps9Equatable", "addGestureRecognizer"]
 - !private ["Ps9Equatable", "addSubview"]
@@ -1158,6 +1217,7 @@ depends-member:
 - ["Ps9Equatable", "btmToolBarConstraint"]
 - !private ["Ps9Equatable", "cellForRowAtIndexPath"]
 - ["Ps9Equatable", "cellLongPressed"]
+- !private ["Ps9Equatable", "center"]
 - !private ["Ps9Equatable", "checked"]
 - !private ["Ps9Equatable", "constant"]
 - !private ["Ps9Equatable", "contentView"]
@@ -1167,9 +1227,11 @@ depends-member:
 - !private ["Ps9Equatable", "cornerRadius"]
 - !private ["Ps9Equatable", "count"]
 - !private ["Ps9Equatable", "countForFetchRequest"]
+- !private ["Ps9Equatable", "currentDevice"]
 - !private ["Ps9Equatable", "darkGrayColor"]
 - !private ["Ps9Equatable", "deepBlueColor"]
 - ["Ps9Equatable", "delegate"]
+- ["Ps9Equatable", "deleteAddActivityView"]
 - !private ["Ps9Equatable", "deleteObject"]
 - !private ["Ps9Equatable", "dequeueReusableCellWithIdentifier"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
@@ -1265,10 +1327,12 @@ depends-member:
 - ["Ps9Equatable", "settingButton"]
 - ["Ps9Equatable", "sharedApplication"]
 - ["Ps9Equatable", "showPopMessageView"]
+- !private ["Ps9Equatable", "size"]
 - !private ["Ps9Equatable", "sortDescriptors"]
 - !private ["Ps9Equatable", "sourceRect"]
 - !private ["Ps9Equatable", "sourceView"]
 - ["Ps9Equatable", "standardUserDefaults"]
+- !private ["Ps9Equatable", "startAnimating"]
 - !private ["Ps9Equatable", "state"]
 - !private ["Ps9Equatable", "stringForKey"]
 - !private ["Ps9Equatable", "systemFontOfSize"]
@@ -1280,6 +1344,7 @@ depends-member:
 - !private ["Ps9Equatable", "titleTextAttributes"]
 - !private ["Ps9Equatable", "translucent"]
 - ["Ps9Equatable", "userDefaults"]
+- !private ["Ps9Equatable", "userInterfaceIdiom"]
 - !private ["Ps9Equatable", "view"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", "viewForZoomingInScrollView"]
@@ -1330,11 +1395,14 @@ depends-member:
 - !private ["PSo13GADAdDelegate", "NSSortDescriptor"]
 - !private ["PSo13GADAdDelegate", "NSStrikethroughStyleAttributeName"]
 - ["PSo13GADAdDelegate", "NSUserDefaults"]
+- !private ["PSo13GADAdDelegate", "UIActivityIndicatorView"]
+- !private ["PSo13GADAdDelegate", "UIActivityIndicatorViewStyle"]
 - !private ["PSo13GADAdDelegate", "UIActivityViewController"]
 - ["PSo13GADAdDelegate", "UIApplication"]
 - !private ["PSo13GADAdDelegate", "UIBarButtonItem"]
 - !private ["PSo13GADAdDelegate", "UIBarButtonSystemItem"]
 - !private ["PSo13GADAdDelegate", "UIColor"]
+- !private ["PSo13GADAdDelegate", "UIDevice"]
 - !private ["PSo13GADAdDelegate", "UIFont"]
 - !private ["PSo13GADAdDelegate", "UIGestureRecognizerState"]
 - !private ["PSo13GADAdDelegate", "UILongPressGestureRecognizer"]
@@ -1354,6 +1422,7 @@ depends-member:
 - ["PSo13GADAdDelegate", "adViewWillDismissScreen"]
 - ["PSo13GADAdDelegate", "adViewWillLeaveApplication"]
 - ["PSo13GADAdDelegate", "adViewWillPresentScreen"]
+- !private ["PSo13GADAdDelegate", "addActivityView"]
 - !private ["PSo13GADAdDelegate", "appDelegate"]
 - !private ["PSo13GADAdDelegate", "bannerView"]
 - !private ["PSo13GADAdDelegate", "btmToolBar"]
@@ -1361,6 +1430,7 @@ depends-member:
 - ["PSo13GADAdDelegate", "controller"]
 - ["PSo13GADAdDelegate", "controllerDidChangeContent"]
 - ["PSo13GADAdDelegate", "controllerWillChangeContent"]
+- !private ["PSo13GADAdDelegate", "deleteAddActivityView"]
 - !private ["PSo13GADAdDelegate", "dispatch_after"]
 - !private ["PSo13GADAdDelegate", "dispatch_async"]
 - !private ["PSo13GADAdDelegate", "dispatch_get_main_queue"]
@@ -1435,11 +1505,14 @@ depends-member:
 - !private ["PSo21GADBannerViewDelegate", "NSSortDescriptor"]
 - !private ["PSo21GADBannerViewDelegate", "NSStrikethroughStyleAttributeName"]
 - ["PSo21GADBannerViewDelegate", "NSUserDefaults"]
+- !private ["PSo21GADBannerViewDelegate", "UIActivityIndicatorView"]
+- !private ["PSo21GADBannerViewDelegate", "UIActivityIndicatorViewStyle"]
 - !private ["PSo21GADBannerViewDelegate", "UIActivityViewController"]
 - ["PSo21GADBannerViewDelegate", "UIApplication"]
 - !private ["PSo21GADBannerViewDelegate", "UIBarButtonItem"]
 - !private ["PSo21GADBannerViewDelegate", "UIBarButtonSystemItem"]
 - !private ["PSo21GADBannerViewDelegate", "UIColor"]
+- !private ["PSo21GADBannerViewDelegate", "UIDevice"]
 - !private ["PSo21GADBannerViewDelegate", "UIFont"]
 - !private ["PSo21GADBannerViewDelegate", "UIGestureRecognizerState"]
 - !private ["PSo21GADBannerViewDelegate", "UILongPressGestureRecognizer"]
@@ -1459,6 +1532,7 @@ depends-member:
 - ["PSo21GADBannerViewDelegate", "adViewWillDismissScreen"]
 - ["PSo21GADBannerViewDelegate", "adViewWillLeaveApplication"]
 - ["PSo21GADBannerViewDelegate", "adViewWillPresentScreen"]
+- !private ["PSo21GADBannerViewDelegate", "addActivityView"]
 - !private ["PSo21GADBannerViewDelegate", "appDelegate"]
 - !private ["PSo21GADBannerViewDelegate", "bannerView"]
 - !private ["PSo21GADBannerViewDelegate", "btmToolBar"]
@@ -1466,6 +1540,7 @@ depends-member:
 - ["PSo21GADBannerViewDelegate", "controller"]
 - ["PSo21GADBannerViewDelegate", "controllerDidChangeContent"]
 - ["PSo21GADBannerViewDelegate", "controllerWillChangeContent"]
+- !private ["PSo21GADBannerViewDelegate", "deleteAddActivityView"]
 - !private ["PSo21GADBannerViewDelegate", "dispatch_after"]
 - !private ["PSo21GADBannerViewDelegate", "dispatch_async"]
 - !private ["PSo21GADBannerViewDelegate", "dispatch_get_main_queue"]
@@ -1531,6 +1606,7 @@ depends-member:
 - !private ["Ps8Hashable", "FadeType"]
 - !private ["Ps8Hashable", "FlexibleSpace"]
 - ["Ps8Hashable", "GadController"]
+- !private ["Ps8Hashable", "Gray"]
 - !private ["Ps8Hashable", "Int64"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "MainViewController"]
@@ -1549,15 +1625,19 @@ depends-member:
 - ["Ps8Hashable", "NSUserDefaults"]
 - !private ["Ps8Hashable", "None"]
 - !private ["Ps8Hashable", "Normal"]
+- !private ["Ps8Hashable", "Pad"]
 - ["Ps8Hashable", "RawValue"]
 - !private ["Ps8Hashable", "Slow"]
 - !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "Trash"]
+- !private ["Ps8Hashable", "UIActivityIndicatorView"]
+- !private ["Ps8Hashable", "UIActivityIndicatorViewStyle"]
 - !private ["Ps8Hashable", "UIActivityViewController"]
 - ["Ps8Hashable", "UIApplication"]
 - !private ["Ps8Hashable", "UIBarButtonItem"]
 - !private ["Ps8Hashable", "UIBarButtonSystemItem"]
 - !private ["Ps8Hashable", "UIColor"]
+- !private ["Ps8Hashable", "UIDevice"]
 - !private ["Ps8Hashable", "UIFont"]
 - !private ["Ps8Hashable", "UIGestureRecognizerState"]
 - !private ["Ps8Hashable", "UILongPressGestureRecognizer"]
@@ -1572,6 +1652,7 @@ depends-member:
 - !private ["Ps8Hashable", "UIView"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "activityIndicatorViewStyle"]
 - ["Ps8Hashable", "ad"]
 - ["Ps8Hashable", "adView"]
 - ["Ps8Hashable", "adViewDidDismissScreen"]
@@ -1579,6 +1660,7 @@ depends-member:
 - ["Ps8Hashable", "adViewWillDismissScreen"]
 - ["Ps8Hashable", "adViewWillLeaveApplication"]
 - ["Ps8Hashable", "adViewWillPresentScreen"]
+- ["Ps8Hashable", "addActivityView"]
 - !private ["Ps8Hashable", "addAttribute"]
 - !private ["Ps8Hashable", "addGestureRecognizer"]
 - !private ["Ps8Hashable", "addSubview"]
@@ -1599,6 +1681,7 @@ depends-member:
 - ["Ps8Hashable", "btmToolBarConstraint"]
 - !private ["Ps8Hashable", "cellForRowAtIndexPath"]
 - ["Ps8Hashable", "cellLongPressed"]
+- !private ["Ps8Hashable", "center"]
 - !private ["Ps8Hashable", "checked"]
 - !private ["Ps8Hashable", "constant"]
 - !private ["Ps8Hashable", "contentView"]
@@ -1608,9 +1691,11 @@ depends-member:
 - !private ["Ps8Hashable", "cornerRadius"]
 - !private ["Ps8Hashable", "count"]
 - !private ["Ps8Hashable", "countForFetchRequest"]
+- !private ["Ps8Hashable", "currentDevice"]
 - !private ["Ps8Hashable", "darkGrayColor"]
 - !private ["Ps8Hashable", "deepBlueColor"]
 - ["Ps8Hashable", "delegate"]
+- ["Ps8Hashable", "deleteAddActivityView"]
 - !private ["Ps8Hashable", "deleteObject"]
 - !private ["Ps8Hashable", "dequeueReusableCellWithIdentifier"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
@@ -1708,6 +1793,7 @@ depends-member:
 - !private ["Ps8Hashable", "sourceRect"]
 - !private ["Ps8Hashable", "sourceView"]
 - ["Ps8Hashable", "standardUserDefaults"]
+- !private ["Ps8Hashable", "startAnimating"]
 - !private ["Ps8Hashable", "state"]
 - !private ["Ps8Hashable", "stringForKey"]
 - !private ["Ps8Hashable", "systemFontOfSize"]
@@ -1719,6 +1805,7 @@ depends-member:
 - !private ["Ps8Hashable", "titleTextAttributes"]
 - !private ["Ps8Hashable", "translucent"]
 - ["Ps8Hashable", "userDefaults"]
+- !private ["Ps8Hashable", "userInterfaceIdiom"]
 - !private ["Ps8Hashable", "view"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", "viewForZoomingInScrollView"]
@@ -1809,11 +1896,14 @@ depends-member:
 - !private ["C10SimpleTodo18MainViewController", "NSStrikethroughStyleAttributeName"]
 - ["C10SimpleTodo18MainViewController", "NSUserDefaults"]
 - !private ["C10SimpleTodo18MainViewController", "String"]
+- ["C10SimpleTodo18MainViewController", "UIActivityIndicatorView"]
+- !private ["C10SimpleTodo18MainViewController", "UIActivityIndicatorViewStyle"]
 - !private ["C10SimpleTodo18MainViewController", "UIActivityViewController"]
 - ["C10SimpleTodo18MainViewController", "UIApplication"]
 - ["C10SimpleTodo18MainViewController", "UIBarButtonItem"]
 - !private ["C10SimpleTodo18MainViewController", "UIBarButtonSystemItem"]
 - !private ["C10SimpleTodo18MainViewController", "UIColor"]
+- !private ["C10SimpleTodo18MainViewController", "UIDevice"]
 - !private ["C10SimpleTodo18MainViewController", "UIFont"]
 - !private ["C10SimpleTodo18MainViewController", "UIGestureRecognizerState"]
 - !private ["C10SimpleTodo18MainViewController", "UILabel"]
@@ -1838,6 +1928,7 @@ depends-member:
 - ["C10SimpleTodo18MainViewController", "adViewWillDismissScreen"]
 - ["C10SimpleTodo18MainViewController", "adViewWillLeaveApplication"]
 - ["C10SimpleTodo18MainViewController", "adViewWillPresentScreen"]
+- ["C10SimpleTodo18MainViewController", "addActivityView"]
 - ["C10SimpleTodo18MainViewController", "appDelegate"]
 - ["C10SimpleTodo18MainViewController", "bannerView"]
 - ["C10SimpleTodo18MainViewController", "btmToolBar"]
@@ -1847,6 +1938,7 @@ depends-member:
 - ["C10SimpleTodo18MainViewController", "controllerDidChangeContent"]
 - ["C10SimpleTodo18MainViewController", "controllerWillChangeContent"]
 - ["C10SimpleTodo18MainViewController", "deinit"]
+- ["C10SimpleTodo18MainViewController", "deleteAddActivityView"]
 - ["C10SimpleTodo18MainViewController", "didReceiveMemoryWarning"]
 - !private ["C10SimpleTodo18MainViewController", "dispatch_after"]
 - !private ["C10SimpleTodo18MainViewController", "dispatch_async"]
@@ -1954,11 +2046,14 @@ depends-member:
 - !private ["PSo8NSCoding", "NSSortDescriptor"]
 - !private ["PSo8NSCoding", "NSStrikethroughStyleAttributeName"]
 - ["PSo8NSCoding", "NSUserDefaults"]
+- !private ["PSo8NSCoding", "UIActivityIndicatorView"]
+- !private ["PSo8NSCoding", "UIActivityIndicatorViewStyle"]
 - !private ["PSo8NSCoding", "UIActivityViewController"]
 - ["PSo8NSCoding", "UIApplication"]
 - !private ["PSo8NSCoding", "UIBarButtonItem"]
 - !private ["PSo8NSCoding", "UIBarButtonSystemItem"]
 - !private ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "UIDevice"]
 - !private ["PSo8NSCoding", "UIFont"]
 - !private ["PSo8NSCoding", "UIGestureRecognizerState"]
 - !private ["PSo8NSCoding", "UILongPressGestureRecognizer"]
@@ -1971,6 +2066,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UIUserNotificationSettings"]
 - !private ["PSo8NSCoding", "UIUserNotificationType"]
 - !private ["PSo8NSCoding", "UIView"]
+- !private ["PSo8NSCoding", "activityIndicatorViewStyle"]
 - ["PSo8NSCoding", "ad"]
 - ["PSo8NSCoding", "adView"]
 - ["PSo8NSCoding", "adViewDidDismissScreen"]
@@ -1978,6 +2074,7 @@ depends-member:
 - ["PSo8NSCoding", "adViewWillDismissScreen"]
 - ["PSo8NSCoding", "adViewWillLeaveApplication"]
 - ["PSo8NSCoding", "adViewWillPresentScreen"]
+- ["PSo8NSCoding", "addActivityView"]
 - !private ["PSo8NSCoding", "addAttribute"]
 - !private ["PSo8NSCoding", "addGestureRecognizer"]
 - !private ["PSo8NSCoding", "addSubview"]
@@ -1995,6 +2092,7 @@ depends-member:
 - ["PSo8NSCoding", "btmToolBarConstraint"]
 - !private ["PSo8NSCoding", "cellForRowAtIndexPath"]
 - ["PSo8NSCoding", "cellLongPressed"]
+- !private ["PSo8NSCoding", "center"]
 - !private ["PSo8NSCoding", "contentView"]
 - ["PSo8NSCoding", "controller"]
 - ["PSo8NSCoding", "controllerDidChangeContent"]
@@ -2004,6 +2102,7 @@ depends-member:
 - !private ["PSo8NSCoding", "countForFetchRequest"]
 - !private ["PSo8NSCoding", "darkGrayColor"]
 - !private ["PSo8NSCoding", "deepBlueColor"]
+- ["PSo8NSCoding", "deleteAddActivityView"]
 - !private ["PSo8NSCoding", "deleteObject"]
 - !private ["PSo8NSCoding", "dequeueReusableCellWithIdentifier"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
@@ -2081,6 +2180,7 @@ depends-member:
 - ["PSo8NSCoding", "settingButton"]
 - ["PSo8NSCoding", "showPopMessageView"]
 - !private ["PSo8NSCoding", "sortDescriptors"]
+- !private ["PSo8NSCoding", "startAnimating"]
 - ["PSo8NSCoding", "tableBtmConstraint"]
 - !private ["PSo8NSCoding", "tableFooterView"]
 - ["PSo8NSCoding", "tableView"]
@@ -2136,11 +2236,14 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "NSSortDescriptor"]
 - !private ["PSo26NSExtensionRequestHandling", "NSStrikethroughStyleAttributeName"]
 - ["PSo26NSExtensionRequestHandling", "NSUserDefaults"]
+- !private ["PSo26NSExtensionRequestHandling", "UIActivityIndicatorView"]
+- !private ["PSo26NSExtensionRequestHandling", "UIActivityIndicatorViewStyle"]
 - !private ["PSo26NSExtensionRequestHandling", "UIActivityViewController"]
 - ["PSo26NSExtensionRequestHandling", "UIApplication"]
 - !private ["PSo26NSExtensionRequestHandling", "UIBarButtonItem"]
 - !private ["PSo26NSExtensionRequestHandling", "UIBarButtonSystemItem"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
+- !private ["PSo26NSExtensionRequestHandling", "UIDevice"]
 - !private ["PSo26NSExtensionRequestHandling", "UIFont"]
 - !private ["PSo26NSExtensionRequestHandling", "UIGestureRecognizerState"]
 - !private ["PSo26NSExtensionRequestHandling", "UILongPressGestureRecognizer"]
@@ -2160,6 +2263,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "adViewWillDismissScreen"]
 - ["PSo26NSExtensionRequestHandling", "adViewWillLeaveApplication"]
 - ["PSo26NSExtensionRequestHandling", "adViewWillPresentScreen"]
+- ["PSo26NSExtensionRequestHandling", "addActivityView"]
 - ["PSo26NSExtensionRequestHandling", "appDelegate"]
 - ["PSo26NSExtensionRequestHandling", "bannerView"]
 - !private ["PSo26NSExtensionRequestHandling", "blueColor"]
@@ -2171,6 +2275,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "controllerWillChangeContent"]
 - !private ["PSo26NSExtensionRequestHandling", "darkGrayColor"]
 - !private ["PSo26NSExtensionRequestHandling", "deepBlueColor"]
+- ["PSo26NSExtensionRequestHandling", "deleteAddActivityView"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_after"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_async"]
@@ -2268,11 +2373,14 @@ depends-member:
 - !private ["PSo34NSFetchedResultsControllerDelegate", "NSSortDescriptor"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "NSStrikethroughStyleAttributeName"]
 - ["PSo34NSFetchedResultsControllerDelegate", "NSUserDefaults"]
+- !private ["PSo34NSFetchedResultsControllerDelegate", "UIActivityIndicatorView"]
+- !private ["PSo34NSFetchedResultsControllerDelegate", "UIActivityIndicatorViewStyle"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "UIActivityViewController"]
 - ["PSo34NSFetchedResultsControllerDelegate", "UIApplication"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "UIBarButtonItem"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "UIBarButtonSystemItem"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "UIColor"]
+- !private ["PSo34NSFetchedResultsControllerDelegate", "UIDevice"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "UIFont"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "UIGestureRecognizerState"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "UILongPressGestureRecognizer"]
@@ -2292,6 +2400,7 @@ depends-member:
 - ["PSo34NSFetchedResultsControllerDelegate", "adViewWillDismissScreen"]
 - ["PSo34NSFetchedResultsControllerDelegate", "adViewWillLeaveApplication"]
 - ["PSo34NSFetchedResultsControllerDelegate", "adViewWillPresentScreen"]
+- !private ["PSo34NSFetchedResultsControllerDelegate", "addActivityView"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "appDelegate"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "bannerView"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "btmToolBar"]
@@ -2299,6 +2408,7 @@ depends-member:
 - ["PSo34NSFetchedResultsControllerDelegate", "controller"]
 - ["PSo34NSFetchedResultsControllerDelegate", "controllerDidChangeContent"]
 - ["PSo34NSFetchedResultsControllerDelegate", "controllerWillChangeContent"]
+- !private ["PSo34NSFetchedResultsControllerDelegate", "deleteAddActivityView"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "dispatch_after"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "dispatch_async"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "dispatch_get_main_queue"]
@@ -2410,11 +2520,14 @@ depends-member:
 - ["CSo8NSObject", "NSTimeInterval"]
 - ["CSo8NSObject", "NSUserDefaults"]
 - !private ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UIActivityIndicatorView"]
+- !private ["CSo8NSObject", "UIActivityIndicatorViewStyle"]
 - !private ["CSo8NSObject", "UIActivityViewController"]
 - ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIBarButtonItem"]
 - !private ["CSo8NSObject", "UIBarButtonSystemItem"]
 - !private ["CSo8NSObject", "UIColor"]
+- !private ["CSo8NSObject", "UIDevice"]
 - !private ["CSo8NSObject", "UIFont"]
 - !private ["CSo8NSObject", "UIGestureRecognizerState"]
 - !private ["CSo8NSObject", "UILabel"]
@@ -2432,6 +2545,7 @@ depends-member:
 - !private ["CSo8NSObject", "UIUserNotificationType"]
 - ["CSo8NSObject", "UIView"]
 - !private ["CSo8NSObject", "UIViewController"]
+- !private ["CSo8NSObject", "activityIndicatorViewStyle"]
 - ["CSo8NSObject", "ad"]
 - ["CSo8NSObject", "adView"]
 - ["CSo8NSObject", "adViewDidDismissScreen"]
@@ -2439,6 +2553,7 @@ depends-member:
 - ["CSo8NSObject", "adViewWillDismissScreen"]
 - ["CSo8NSObject", "adViewWillLeaveApplication"]
 - ["CSo8NSObject", "adViewWillPresentScreen"]
+- ["CSo8NSObject", "addActivityView"]
 - !private ["CSo8NSObject", "addAttribute"]
 - !private ["CSo8NSObject", "addGestureRecognizer"]
 - !private ["CSo8NSObject", "addSubview"]
@@ -2459,6 +2574,7 @@ depends-member:
 - ["CSo8NSObject", "btmToolBarConstraint"]
 - !private ["CSo8NSObject", "cellForRowAtIndexPath"]
 - ["CSo8NSObject", "cellLongPressed"]
+- !private ["CSo8NSObject", "center"]
 - !private ["CSo8NSObject", "checked"]
 - !private ["CSo8NSObject", "constant"]
 - !private ["CSo8NSObject", "contentView"]
@@ -2468,10 +2584,12 @@ depends-member:
 - !private ["CSo8NSObject", "cornerRadius"]
 - !private ["CSo8NSObject", "count"]
 - !private ["CSo8NSObject", "countForFetchRequest"]
+- !private ["CSo8NSObject", "currentDevice"]
 - !private ["CSo8NSObject", "darkGrayColor"]
 - !private ["CSo8NSObject", "deepBlueColor"]
 - !private ["CSo8NSObject", "deinit"]
 - ["CSo8NSObject", "delegate"]
+- ["CSo8NSObject", "deleteAddActivityView"]
 - !private ["CSo8NSObject", "deleteObject"]
 - !private ["CSo8NSObject", "dequeueReusableCellWithIdentifier"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
@@ -2567,6 +2685,7 @@ depends-member:
 - !private ["CSo8NSObject", "sourceRect"]
 - !private ["CSo8NSObject", "sourceView"]
 - ["CSo8NSObject", "standardUserDefaults"]
+- !private ["CSo8NSObject", "startAnimating"]
 - !private ["CSo8NSObject", "state"]
 - !private ["CSo8NSObject", "stringForKey"]
 - !private ["CSo8NSObject", "systemFontOfSize"]
@@ -2578,6 +2697,7 @@ depends-member:
 - !private ["CSo8NSObject", "titleTextAttributes"]
 - !private ["CSo8NSObject", "translucent"]
 - ["CSo8NSObject", "userDefaults"]
+- !private ["CSo8NSObject", "userInterfaceIdiom"]
 - !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
@@ -2610,11 +2730,14 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSSortDescriptor"]
 - !private ["PSo16NSObjectProtocol", "NSStrikethroughStyleAttributeName"]
 - ["PSo16NSObjectProtocol", "NSUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "UIActivityIndicatorView"]
+- !private ["PSo16NSObjectProtocol", "UIActivityIndicatorViewStyle"]
 - !private ["PSo16NSObjectProtocol", "UIActivityViewController"]
 - ["PSo16NSObjectProtocol", "UIApplication"]
 - !private ["PSo16NSObjectProtocol", "UIBarButtonItem"]
 - !private ["PSo16NSObjectProtocol", "UIBarButtonSystemItem"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "UIDevice"]
 - !private ["PSo16NSObjectProtocol", "UIFont"]
 - !private ["PSo16NSObjectProtocol", "UIGestureRecognizerState"]
 - !private ["PSo16NSObjectProtocol", "UILongPressGestureRecognizer"]
@@ -2627,6 +2750,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIUserNotificationSettings"]
 - !private ["PSo16NSObjectProtocol", "UIUserNotificationType"]
 - !private ["PSo16NSObjectProtocol", "UIView"]
+- !private ["PSo16NSObjectProtocol", "activityIndicatorViewStyle"]
 - ["PSo16NSObjectProtocol", "ad"]
 - ["PSo16NSObjectProtocol", "adView"]
 - ["PSo16NSObjectProtocol", "adViewDidDismissScreen"]
@@ -2634,6 +2758,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "adViewWillDismissScreen"]
 - ["PSo16NSObjectProtocol", "adViewWillLeaveApplication"]
 - ["PSo16NSObjectProtocol", "adViewWillPresentScreen"]
+- ["PSo16NSObjectProtocol", "addActivityView"]
 - !private ["PSo16NSObjectProtocol", "addAttribute"]
 - !private ["PSo16NSObjectProtocol", "addGestureRecognizer"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
@@ -2654,6 +2779,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "btmToolBarConstraint"]
 - !private ["PSo16NSObjectProtocol", "cellForRowAtIndexPath"]
 - ["PSo16NSObjectProtocol", "cellLongPressed"]
+- !private ["PSo16NSObjectProtocol", "center"]
 - !private ["PSo16NSObjectProtocol", "checked"]
 - !private ["PSo16NSObjectProtocol", "constant"]
 - !private ["PSo16NSObjectProtocol", "contentView"]
@@ -2663,9 +2789,11 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "cornerRadius"]
 - !private ["PSo16NSObjectProtocol", "count"]
 - !private ["PSo16NSObjectProtocol", "countForFetchRequest"]
+- !private ["PSo16NSObjectProtocol", "currentDevice"]
 - !private ["PSo16NSObjectProtocol", "darkGrayColor"]
 - !private ["PSo16NSObjectProtocol", "deepBlueColor"]
 - ["PSo16NSObjectProtocol", "delegate"]
+- ["PSo16NSObjectProtocol", "deleteAddActivityView"]
 - !private ["PSo16NSObjectProtocol", "deleteObject"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCellWithIdentifier"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
@@ -2761,6 +2889,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "sourceRect"]
 - !private ["PSo16NSObjectProtocol", "sourceView"]
 - ["PSo16NSObjectProtocol", "standardUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "startAnimating"]
 - !private ["PSo16NSObjectProtocol", "state"]
 - !private ["PSo16NSObjectProtocol", "stringForKey"]
 - !private ["PSo16NSObjectProtocol", "systemFontOfSize"]
@@ -2772,6 +2901,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "titleTextAttributes"]
 - !private ["PSo16NSObjectProtocol", "translucent"]
 - ["PSo16NSObjectProtocol", "userDefaults"]
+- !private ["PSo16NSObjectProtocol", "userInterfaceIdiom"]
 - !private ["PSo16NSObjectProtocol", "view"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
@@ -2830,8 +2960,10 @@ depends-member:
 - !private ["Ps16RawRepresentable", "FlexibleHeight"]
 - !private ["Ps16RawRepresentable", "FlexibleSpace"]
 - !private ["Ps16RawRepresentable", "FlexibleWidth"]
+- !private ["Ps16RawRepresentable", "Gray"]
 - !private ["Ps16RawRepresentable", "None"]
 - !private ["Ps16RawRepresentable", "Normal"]
+- !private ["Ps16RawRepresentable", "Pad"]
 - ["Ps16RawRepresentable", "RawValue"]
 - !private ["Ps16RawRepresentable", "Slow"]
 - !private ["Ps16RawRepresentable", "Trash"]
@@ -2879,6 +3011,7 @@ depends-member:
 - !private ["SS", "deinit"]
 - !private ["PSo29UIAccessibilityIdentification", "FadeType"]
 - !private ["PSo29UIAccessibilityIdentification", "UIView"]
+- !private ["PSo29UIAccessibilityIdentification", "activityIndicatorViewStyle"]
 - !private ["PSo29UIAccessibilityIdentification", "addGestureRecognizer"]
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "alpha"]
@@ -2888,6 +3021,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "barTintColor"]
 - !private ["PSo29UIAccessibilityIdentification", "bounds"]
 - !private ["PSo29UIAccessibilityIdentification", "cellForRowAtIndexPath"]
+- !private ["PSo29UIAccessibilityIdentification", "center"]
 - !private ["PSo29UIAccessibilityIdentification", "contentView"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo29UIAccessibilityIdentification", "editing"]
@@ -2909,16 +3043,24 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "selectRowAtIndexPath"]
 - !private ["PSo29UIAccessibilityIdentification", "selectionStyle"]
 - !private ["PSo29UIAccessibilityIdentification", "setEditing"]
+- !private ["PSo29UIAccessibilityIdentification", "startAnimating"]
 - !private ["PSo29UIAccessibilityIdentification", "tableFooterView"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "tintColor"]
 - !private ["PSo29UIAccessibilityIdentification", "titleTextAttributes"]
 - !private ["PSo29UIAccessibilityIdentification", "translucent"]
 - !private ["PSo29UIAccessibilityIdentification", "viewWithTag"]
+- !private ["CSo23UIActivityIndicatorView", "activityIndicatorViewStyle"]
+- !private ["CSo23UIActivityIndicatorView", "center"]
+- !private ["CSo23UIActivityIndicatorView", "init"]
+- !private ["CSo23UIActivityIndicatorView", "removeFromSuperview"]
+- !private ["CSo23UIActivityIndicatorView", "startAnimating"]
+- !private ["OSC28UIActivityIndicatorViewStyle", "Gray"]
 - !private ["CSo24UIActivityViewController", "init"]
 - !private ["CSo24UIActivityViewController", "popoverPresentationController"]
 - !private ["PSo12UIAppearance", "FadeType"]
 - !private ["PSo12UIAppearance", "UIView"]
+- !private ["PSo12UIAppearance", "activityIndicatorViewStyle"]
 - !private ["PSo12UIAppearance", "addGestureRecognizer"]
 - !private ["PSo12UIAppearance", "addSubview"]
 - !private ["PSo12UIAppearance", "alpha"]
@@ -2928,6 +3070,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "barTintColor"]
 - !private ["PSo12UIAppearance", "bounds"]
 - !private ["PSo12UIAppearance", "cellForRowAtIndexPath"]
+- !private ["PSo12UIAppearance", "center"]
 - !private ["PSo12UIAppearance", "contentView"]
 - !private ["PSo12UIAppearance", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo12UIAppearance", "editing"]
@@ -2949,6 +3092,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "selectRowAtIndexPath"]
 - !private ["PSo12UIAppearance", "selectionStyle"]
 - !private ["PSo12UIAppearance", "setEditing"]
+- !private ["PSo12UIAppearance", "startAnimating"]
 - !private ["PSo12UIAppearance", "tableFooterView"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "tintColor"]
@@ -2981,11 +3125,14 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "NSSortDescriptor"]
 - !private ["PSo21UIAppearanceContainer", "NSStrikethroughStyleAttributeName"]
 - ["PSo21UIAppearanceContainer", "NSUserDefaults"]
+- !private ["PSo21UIAppearanceContainer", "UIActivityIndicatorView"]
+- !private ["PSo21UIAppearanceContainer", "UIActivityIndicatorViewStyle"]
 - !private ["PSo21UIAppearanceContainer", "UIActivityViewController"]
 - ["PSo21UIAppearanceContainer", "UIApplication"]
 - !private ["PSo21UIAppearanceContainer", "UIBarButtonItem"]
 - !private ["PSo21UIAppearanceContainer", "UIBarButtonSystemItem"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
+- !private ["PSo21UIAppearanceContainer", "UIDevice"]
 - !private ["PSo21UIAppearanceContainer", "UIFont"]
 - !private ["PSo21UIAppearanceContainer", "UIGestureRecognizerState"]
 - !private ["PSo21UIAppearanceContainer", "UILongPressGestureRecognizer"]
@@ -2998,6 +3145,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIUserNotificationSettings"]
 - !private ["PSo21UIAppearanceContainer", "UIUserNotificationType"]
 - !private ["PSo21UIAppearanceContainer", "UIView"]
+- !private ["PSo21UIAppearanceContainer", "activityIndicatorViewStyle"]
 - ["PSo21UIAppearanceContainer", "ad"]
 - ["PSo21UIAppearanceContainer", "adView"]
 - ["PSo21UIAppearanceContainer", "adViewDidDismissScreen"]
@@ -3005,6 +3153,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "adViewWillDismissScreen"]
 - ["PSo21UIAppearanceContainer", "adViewWillLeaveApplication"]
 - ["PSo21UIAppearanceContainer", "adViewWillPresentScreen"]
+- ["PSo21UIAppearanceContainer", "addActivityView"]
 - !private ["PSo21UIAppearanceContainer", "addGestureRecognizer"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "alpha"]
@@ -3020,12 +3169,14 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "btmToolBarConstraint"]
 - !private ["PSo21UIAppearanceContainer", "cellForRowAtIndexPath"]
 - ["PSo21UIAppearanceContainer", "cellLongPressed"]
+- !private ["PSo21UIAppearanceContainer", "center"]
 - !private ["PSo21UIAppearanceContainer", "contentView"]
 - ["PSo21UIAppearanceContainer", "controller"]
 - ["PSo21UIAppearanceContainer", "controllerDidChangeContent"]
 - ["PSo21UIAppearanceContainer", "controllerWillChangeContent"]
 - !private ["PSo21UIAppearanceContainer", "darkGrayColor"]
 - !private ["PSo21UIAppearanceContainer", "deepBlueColor"]
+- ["PSo21UIAppearanceContainer", "deleteAddActivityView"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithIdentifier"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - !private ["PSo21UIAppearanceContainer", "dispatch_after"]
@@ -3096,6 +3247,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "showPopMessageView"]
 - !private ["PSo21UIAppearanceContainer", "sourceRect"]
 - !private ["PSo21UIAppearanceContainer", "sourceView"]
+- !private ["PSo21UIAppearanceContainer", "startAnimating"]
 - ["PSo21UIAppearanceContainer", "tableBtmConstraint"]
 - !private ["PSo21UIAppearanceContainer", "tableFooterView"]
 - ["PSo21UIAppearanceContainer", "tableView"]
@@ -3157,11 +3309,14 @@ depends-member:
 - !private ["PSo18UIContentContainer", "NSSortDescriptor"]
 - !private ["PSo18UIContentContainer", "NSStrikethroughStyleAttributeName"]
 - ["PSo18UIContentContainer", "NSUserDefaults"]
+- !private ["PSo18UIContentContainer", "UIActivityIndicatorView"]
+- !private ["PSo18UIContentContainer", "UIActivityIndicatorViewStyle"]
 - !private ["PSo18UIContentContainer", "UIActivityViewController"]
 - ["PSo18UIContentContainer", "UIApplication"]
 - !private ["PSo18UIContentContainer", "UIBarButtonItem"]
 - !private ["PSo18UIContentContainer", "UIBarButtonSystemItem"]
 - !private ["PSo18UIContentContainer", "UIColor"]
+- !private ["PSo18UIContentContainer", "UIDevice"]
 - !private ["PSo18UIContentContainer", "UIFont"]
 - !private ["PSo18UIContentContainer", "UIGestureRecognizerState"]
 - !private ["PSo18UIContentContainer", "UILongPressGestureRecognizer"]
@@ -3181,6 +3336,7 @@ depends-member:
 - ["PSo18UIContentContainer", "adViewWillDismissScreen"]
 - ["PSo18UIContentContainer", "adViewWillLeaveApplication"]
 - ["PSo18UIContentContainer", "adViewWillPresentScreen"]
+- ["PSo18UIContentContainer", "addActivityView"]
 - ["PSo18UIContentContainer", "appDelegate"]
 - ["PSo18UIContentContainer", "bannerView"]
 - !private ["PSo18UIContentContainer", "blueColor"]
@@ -3192,6 +3348,7 @@ depends-member:
 - ["PSo18UIContentContainer", "controllerWillChangeContent"]
 - !private ["PSo18UIContentContainer", "darkGrayColor"]
 - !private ["PSo18UIContentContainer", "deepBlueColor"]
+- ["PSo18UIContentContainer", "deleteAddActivityView"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - !private ["PSo18UIContentContainer", "dispatch_after"]
 - !private ["PSo18UIContentContainer", "dispatch_async"]
@@ -3257,6 +3414,7 @@ depends-member:
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
 - !private ["PSo17UICoordinateSpace", "FadeType"]
 - !private ["PSo17UICoordinateSpace", "UIView"]
+- !private ["PSo17UICoordinateSpace", "activityIndicatorViewStyle"]
 - !private ["PSo17UICoordinateSpace", "addGestureRecognizer"]
 - !private ["PSo17UICoordinateSpace", "addSubview"]
 - !private ["PSo17UICoordinateSpace", "alpha"]
@@ -3266,6 +3424,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "barTintColor"]
 - !private ["PSo17UICoordinateSpace", "bounds"]
 - !private ["PSo17UICoordinateSpace", "cellForRowAtIndexPath"]
+- !private ["PSo17UICoordinateSpace", "center"]
 - !private ["PSo17UICoordinateSpace", "contentView"]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo17UICoordinateSpace", "editing"]
@@ -3287,14 +3446,18 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "selectRowAtIndexPath"]
 - !private ["PSo17UICoordinateSpace", "selectionStyle"]
 - !private ["PSo17UICoordinateSpace", "setEditing"]
+- !private ["PSo17UICoordinateSpace", "startAnimating"]
 - !private ["PSo17UICoordinateSpace", "tableFooterView"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "tintColor"]
 - !private ["PSo17UICoordinateSpace", "titleTextAttributes"]
 - !private ["PSo17UICoordinateSpace", "translucent"]
 - !private ["PSo17UICoordinateSpace", "viewWithTag"]
+- !private ["CSo8UIDevice", "currentDevice"]
+- !private ["CSo8UIDevice", "userInterfaceIdiom"]
 - !private ["PSo13UIDynamicItem", "FadeType"]
 - !private ["PSo13UIDynamicItem", "UIView"]
+- !private ["PSo13UIDynamicItem", "activityIndicatorViewStyle"]
 - !private ["PSo13UIDynamicItem", "addGestureRecognizer"]
 - !private ["PSo13UIDynamicItem", "addSubview"]
 - !private ["PSo13UIDynamicItem", "alpha"]
@@ -3304,6 +3467,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "barTintColor"]
 - !private ["PSo13UIDynamicItem", "bounds"]
 - !private ["PSo13UIDynamicItem", "cellForRowAtIndexPath"]
+- !private ["PSo13UIDynamicItem", "center"]
 - !private ["PSo13UIDynamicItem", "contentView"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo13UIDynamicItem", "editing"]
@@ -3325,6 +3489,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "selectRowAtIndexPath"]
 - !private ["PSo13UIDynamicItem", "selectionStyle"]
 - !private ["PSo13UIDynamicItem", "setEditing"]
+- !private ["PSo13UIDynamicItem", "startAnimating"]
 - !private ["PSo13UIDynamicItem", "tableFooterView"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "tintColor"]
@@ -3357,11 +3522,14 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "NSSortDescriptor"]
 - !private ["PSo18UIFocusEnvironment", "NSStrikethroughStyleAttributeName"]
 - ["PSo18UIFocusEnvironment", "NSUserDefaults"]
+- !private ["PSo18UIFocusEnvironment", "UIActivityIndicatorView"]
+- !private ["PSo18UIFocusEnvironment", "UIActivityIndicatorViewStyle"]
 - !private ["PSo18UIFocusEnvironment", "UIActivityViewController"]
 - ["PSo18UIFocusEnvironment", "UIApplication"]
 - !private ["PSo18UIFocusEnvironment", "UIBarButtonItem"]
 - !private ["PSo18UIFocusEnvironment", "UIBarButtonSystemItem"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
+- !private ["PSo18UIFocusEnvironment", "UIDevice"]
 - !private ["PSo18UIFocusEnvironment", "UIFont"]
 - !private ["PSo18UIFocusEnvironment", "UIGestureRecognizerState"]
 - !private ["PSo18UIFocusEnvironment", "UILongPressGestureRecognizer"]
@@ -3374,6 +3542,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIUserNotificationSettings"]
 - !private ["PSo18UIFocusEnvironment", "UIUserNotificationType"]
 - !private ["PSo18UIFocusEnvironment", "UIView"]
+- !private ["PSo18UIFocusEnvironment", "activityIndicatorViewStyle"]
 - ["PSo18UIFocusEnvironment", "ad"]
 - ["PSo18UIFocusEnvironment", "adView"]
 - ["PSo18UIFocusEnvironment", "adViewDidDismissScreen"]
@@ -3381,6 +3550,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "adViewWillDismissScreen"]
 - ["PSo18UIFocusEnvironment", "adViewWillLeaveApplication"]
 - ["PSo18UIFocusEnvironment", "adViewWillPresentScreen"]
+- ["PSo18UIFocusEnvironment", "addActivityView"]
 - !private ["PSo18UIFocusEnvironment", "addGestureRecognizer"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "alpha"]
@@ -3396,12 +3566,14 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "btmToolBarConstraint"]
 - !private ["PSo18UIFocusEnvironment", "cellForRowAtIndexPath"]
 - ["PSo18UIFocusEnvironment", "cellLongPressed"]
+- !private ["PSo18UIFocusEnvironment", "center"]
 - !private ["PSo18UIFocusEnvironment", "contentView"]
 - ["PSo18UIFocusEnvironment", "controller"]
 - ["PSo18UIFocusEnvironment", "controllerDidChangeContent"]
 - ["PSo18UIFocusEnvironment", "controllerWillChangeContent"]
 - !private ["PSo18UIFocusEnvironment", "darkGrayColor"]
 - !private ["PSo18UIFocusEnvironment", "deepBlueColor"]
+- ["PSo18UIFocusEnvironment", "deleteAddActivityView"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCellWithIdentifier"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UIFocusEnvironment", "dispatch_after"]
@@ -3472,6 +3644,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "showPopMessageView"]
 - !private ["PSo18UIFocusEnvironment", "sourceRect"]
 - !private ["PSo18UIFocusEnvironment", "sourceView"]
+- !private ["PSo18UIFocusEnvironment", "startAnimating"]
 - ["PSo18UIFocusEnvironment", "tableBtmConstraint"]
 - !private ["PSo18UIFocusEnvironment", "tableFooterView"]
 - ["PSo18UIFocusEnvironment", "tableView"]
@@ -3488,6 +3661,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "FadeType"]
 - !private ["PSo11UIFocusItem", "UIView"]
+- !private ["PSo11UIFocusItem", "activityIndicatorViewStyle"]
 - !private ["PSo11UIFocusItem", "addGestureRecognizer"]
 - !private ["PSo11UIFocusItem", "addSubview"]
 - !private ["PSo11UIFocusItem", "alpha"]
@@ -3497,6 +3671,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "barTintColor"]
 - !private ["PSo11UIFocusItem", "bounds"]
 - !private ["PSo11UIFocusItem", "cellForRowAtIndexPath"]
+- !private ["PSo11UIFocusItem", "center"]
 - !private ["PSo11UIFocusItem", "contentView"]
 - !private ["PSo11UIFocusItem", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo11UIFocusItem", "editing"]
@@ -3518,6 +3693,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "selectRowAtIndexPath"]
 - !private ["PSo11UIFocusItem", "selectionStyle"]
 - !private ["PSo11UIFocusItem", "setEditing"]
+- !private ["PSo11UIFocusItem", "startAnimating"]
 - !private ["PSo11UIFocusItem", "tableFooterView"]
 - !private ["PSo11UIFocusItem", "text"]
 - !private ["PSo11UIFocusItem", "tintColor"]
@@ -3554,11 +3730,14 @@ depends-member:
 - !private ["PSo27UIGestureRecognizerDelegate", "NSSortDescriptor"]
 - !private ["PSo27UIGestureRecognizerDelegate", "NSStrikethroughStyleAttributeName"]
 - ["PSo27UIGestureRecognizerDelegate", "NSUserDefaults"]
+- !private ["PSo27UIGestureRecognizerDelegate", "UIActivityIndicatorView"]
+- !private ["PSo27UIGestureRecognizerDelegate", "UIActivityIndicatorViewStyle"]
 - !private ["PSo27UIGestureRecognizerDelegate", "UIActivityViewController"]
 - ["PSo27UIGestureRecognizerDelegate", "UIApplication"]
 - !private ["PSo27UIGestureRecognizerDelegate", "UIBarButtonItem"]
 - !private ["PSo27UIGestureRecognizerDelegate", "UIBarButtonSystemItem"]
 - !private ["PSo27UIGestureRecognizerDelegate", "UIColor"]
+- !private ["PSo27UIGestureRecognizerDelegate", "UIDevice"]
 - !private ["PSo27UIGestureRecognizerDelegate", "UIFont"]
 - !private ["PSo27UIGestureRecognizerDelegate", "UIGestureRecognizerState"]
 - !private ["PSo27UIGestureRecognizerDelegate", "UILongPressGestureRecognizer"]
@@ -3578,6 +3757,7 @@ depends-member:
 - ["PSo27UIGestureRecognizerDelegate", "adViewWillDismissScreen"]
 - ["PSo27UIGestureRecognizerDelegate", "adViewWillLeaveApplication"]
 - ["PSo27UIGestureRecognizerDelegate", "adViewWillPresentScreen"]
+- !private ["PSo27UIGestureRecognizerDelegate", "addActivityView"]
 - !private ["PSo27UIGestureRecognizerDelegate", "appDelegate"]
 - !private ["PSo27UIGestureRecognizerDelegate", "bannerView"]
 - !private ["PSo27UIGestureRecognizerDelegate", "bounds"]
@@ -3587,6 +3767,7 @@ depends-member:
 - ["PSo27UIGestureRecognizerDelegate", "controller"]
 - ["PSo27UIGestureRecognizerDelegate", "controllerDidChangeContent"]
 - ["PSo27UIGestureRecognizerDelegate", "controllerWillChangeContent"]
+- !private ["PSo27UIGestureRecognizerDelegate", "deleteAddActivityView"]
 - !private ["PSo27UIGestureRecognizerDelegate", "dispatch_after"]
 - !private ["PSo27UIGestureRecognizerDelegate", "dispatch_async"]
 - !private ["PSo27UIGestureRecognizerDelegate", "dispatch_get_main_queue"]
@@ -3672,11 +3853,14 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "NSSortDescriptor"]
 - !private ["PSo30UINavigationControllerDelegate", "NSStrikethroughStyleAttributeName"]
 - ["PSo30UINavigationControllerDelegate", "NSUserDefaults"]
+- !private ["PSo30UINavigationControllerDelegate", "UIActivityIndicatorView"]
+- !private ["PSo30UINavigationControllerDelegate", "UIActivityIndicatorViewStyle"]
 - !private ["PSo30UINavigationControllerDelegate", "UIActivityViewController"]
 - ["PSo30UINavigationControllerDelegate", "UIApplication"]
 - !private ["PSo30UINavigationControllerDelegate", "UIBarButtonItem"]
 - !private ["PSo30UINavigationControllerDelegate", "UIBarButtonSystemItem"]
 - !private ["PSo30UINavigationControllerDelegate", "UIColor"]
+- !private ["PSo30UINavigationControllerDelegate", "UIDevice"]
 - !private ["PSo30UINavigationControllerDelegate", "UIFont"]
 - !private ["PSo30UINavigationControllerDelegate", "UIGestureRecognizerState"]
 - !private ["PSo30UINavigationControllerDelegate", "UILongPressGestureRecognizer"]
@@ -3696,6 +3880,7 @@ depends-member:
 - ["PSo30UINavigationControllerDelegate", "adViewWillDismissScreen"]
 - ["PSo30UINavigationControllerDelegate", "adViewWillLeaveApplication"]
 - ["PSo30UINavigationControllerDelegate", "adViewWillPresentScreen"]
+- !private ["PSo30UINavigationControllerDelegate", "addActivityView"]
 - !private ["PSo30UINavigationControllerDelegate", "appDelegate"]
 - !private ["PSo30UINavigationControllerDelegate", "bannerView"]
 - !private ["PSo30UINavigationControllerDelegate", "btmToolBar"]
@@ -3703,6 +3888,7 @@ depends-member:
 - ["PSo30UINavigationControllerDelegate", "controller"]
 - ["PSo30UINavigationControllerDelegate", "controllerDidChangeContent"]
 - ["PSo30UINavigationControllerDelegate", "controllerWillChangeContent"]
+- !private ["PSo30UINavigationControllerDelegate", "deleteAddActivityView"]
 - !private ["PSo30UINavigationControllerDelegate", "dispatch_after"]
 - !private ["PSo30UINavigationControllerDelegate", "dispatch_async"]
 - !private ["PSo30UINavigationControllerDelegate", "dispatch_get_main_queue"]
@@ -3795,11 +3981,14 @@ depends-member:
 - ["CSo11UIResponder", "NSTimeInterval"]
 - ["CSo11UIResponder", "NSUserDefaults"]
 - !private ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "UIActivityIndicatorView"]
+- !private ["CSo11UIResponder", "UIActivityIndicatorViewStyle"]
 - !private ["CSo11UIResponder", "UIActivityViewController"]
 - ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIBarButtonItem"]
 - !private ["CSo11UIResponder", "UIBarButtonSystemItem"]
 - !private ["CSo11UIResponder", "UIColor"]
+- !private ["CSo11UIResponder", "UIDevice"]
 - !private ["CSo11UIResponder", "UIFont"]
 - !private ["CSo11UIResponder", "UIGestureRecognizerState"]
 - !private ["CSo11UIResponder", "UILabel"]
@@ -3817,6 +4006,7 @@ depends-member:
 - !private ["CSo11UIResponder", "UIUserNotificationType"]
 - ["CSo11UIResponder", "UIView"]
 - !private ["CSo11UIResponder", "UIViewController"]
+- !private ["CSo11UIResponder", "activityIndicatorViewStyle"]
 - ["CSo11UIResponder", "ad"]
 - ["CSo11UIResponder", "adView"]
 - ["CSo11UIResponder", "adViewDidDismissScreen"]
@@ -3824,6 +4014,7 @@ depends-member:
 - ["CSo11UIResponder", "adViewWillDismissScreen"]
 - ["CSo11UIResponder", "adViewWillLeaveApplication"]
 - ["CSo11UIResponder", "adViewWillPresentScreen"]
+- ["CSo11UIResponder", "addActivityView"]
 - !private ["CSo11UIResponder", "addGestureRecognizer"]
 - !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "alpha"]
@@ -3840,6 +4031,7 @@ depends-member:
 - ["CSo11UIResponder", "btmToolBarConstraint"]
 - !private ["CSo11UIResponder", "cellForRowAtIndexPath"]
 - ["CSo11UIResponder", "cellLongPressed"]
+- !private ["CSo11UIResponder", "center"]
 - !private ["CSo11UIResponder", "contentView"]
 - ["CSo11UIResponder", "controller"]
 - ["CSo11UIResponder", "controllerDidChangeContent"]
@@ -3847,6 +4039,7 @@ depends-member:
 - !private ["CSo11UIResponder", "darkGrayColor"]
 - !private ["CSo11UIResponder", "deepBlueColor"]
 - ["CSo11UIResponder", "delegate"]
+- ["CSo11UIResponder", "deleteAddActivityView"]
 - !private ["CSo11UIResponder", "dequeueReusableCellWithIdentifier"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - !private ["CSo11UIResponder", "dispatch_after"]
@@ -3921,6 +4114,7 @@ depends-member:
 - ["CSo11UIResponder", "settingButton"]
 - ["CSo11UIResponder", "sharedApplication"]
 - ["CSo11UIResponder", "showPopMessageView"]
+- !private ["CSo11UIResponder", "startAnimating"]
 - ["CSo11UIResponder", "tableBtmConstraint"]
 - !private ["CSo11UIResponder", "tableFooterView"]
 - ["CSo11UIResponder", "tableView"]
@@ -3960,11 +4154,14 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "NSSortDescriptor"]
 - !private ["PSo30UIResponderStandardEditActions", "NSStrikethroughStyleAttributeName"]
 - ["PSo30UIResponderStandardEditActions", "NSUserDefaults"]
+- !private ["PSo30UIResponderStandardEditActions", "UIActivityIndicatorView"]
+- !private ["PSo30UIResponderStandardEditActions", "UIActivityIndicatorViewStyle"]
 - !private ["PSo30UIResponderStandardEditActions", "UIActivityViewController"]
 - ["PSo30UIResponderStandardEditActions", "UIApplication"]
 - !private ["PSo30UIResponderStandardEditActions", "UIBarButtonItem"]
 - !private ["PSo30UIResponderStandardEditActions", "UIBarButtonSystemItem"]
 - !private ["PSo30UIResponderStandardEditActions", "UIColor"]
+- !private ["PSo30UIResponderStandardEditActions", "UIDevice"]
 - !private ["PSo30UIResponderStandardEditActions", "UIFont"]
 - !private ["PSo30UIResponderStandardEditActions", "UIGestureRecognizerState"]
 - !private ["PSo30UIResponderStandardEditActions", "UILongPressGestureRecognizer"]
@@ -3977,6 +4174,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "UIUserNotificationSettings"]
 - !private ["PSo30UIResponderStandardEditActions", "UIUserNotificationType"]
 - !private ["PSo30UIResponderStandardEditActions", "UIView"]
+- !private ["PSo30UIResponderStandardEditActions", "activityIndicatorViewStyle"]
 - ["PSo30UIResponderStandardEditActions", "ad"]
 - ["PSo30UIResponderStandardEditActions", "adView"]
 - ["PSo30UIResponderStandardEditActions", "adViewDidDismissScreen"]
@@ -3984,6 +4182,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "adViewWillDismissScreen"]
 - ["PSo30UIResponderStandardEditActions", "adViewWillLeaveApplication"]
 - ["PSo30UIResponderStandardEditActions", "adViewWillPresentScreen"]
+- ["PSo30UIResponderStandardEditActions", "addActivityView"]
 - !private ["PSo30UIResponderStandardEditActions", "addGestureRecognizer"]
 - !private ["PSo30UIResponderStandardEditActions", "addSubview"]
 - !private ["PSo30UIResponderStandardEditActions", "alpha"]
@@ -4000,6 +4199,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "btmToolBarConstraint"]
 - !private ["PSo30UIResponderStandardEditActions", "cellForRowAtIndexPath"]
 - ["PSo30UIResponderStandardEditActions", "cellLongPressed"]
+- !private ["PSo30UIResponderStandardEditActions", "center"]
 - !private ["PSo30UIResponderStandardEditActions", "contentView"]
 - ["PSo30UIResponderStandardEditActions", "controller"]
 - ["PSo30UIResponderStandardEditActions", "controllerDidChangeContent"]
@@ -4007,6 +4207,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "darkGrayColor"]
 - !private ["PSo30UIResponderStandardEditActions", "deepBlueColor"]
 - ["PSo30UIResponderStandardEditActions", "delegate"]
+- ["PSo30UIResponderStandardEditActions", "deleteAddActivityView"]
 - !private ["PSo30UIResponderStandardEditActions", "dequeueReusableCellWithIdentifier"]
 - ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
 - !private ["PSo30UIResponderStandardEditActions", "dispatch_after"]
@@ -4081,6 +4282,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "settingButton"]
 - ["PSo30UIResponderStandardEditActions", "sharedApplication"]
 - ["PSo30UIResponderStandardEditActions", "showPopMessageView"]
+- !private ["PSo30UIResponderStandardEditActions", "startAnimating"]
 - ["PSo30UIResponderStandardEditActions", "tableBtmConstraint"]
 - !private ["PSo30UIResponderStandardEditActions", "tableFooterView"]
 - ["PSo30UIResponderStandardEditActions", "tableView"]
@@ -4132,11 +4334,14 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "NSSortDescriptor"]
 - !private ["PSo20UIScrollViewDelegate", "NSStrikethroughStyleAttributeName"]
 - ["PSo20UIScrollViewDelegate", "NSUserDefaults"]
+- !private ["PSo20UIScrollViewDelegate", "UIActivityIndicatorView"]
+- !private ["PSo20UIScrollViewDelegate", "UIActivityIndicatorViewStyle"]
 - !private ["PSo20UIScrollViewDelegate", "UIActivityViewController"]
 - ["PSo20UIScrollViewDelegate", "UIApplication"]
 - !private ["PSo20UIScrollViewDelegate", "UIBarButtonItem"]
 - !private ["PSo20UIScrollViewDelegate", "UIBarButtonSystemItem"]
 - !private ["PSo20UIScrollViewDelegate", "UIColor"]
+- !private ["PSo20UIScrollViewDelegate", "UIDevice"]
 - !private ["PSo20UIScrollViewDelegate", "UIFont"]
 - !private ["PSo20UIScrollViewDelegate", "UIGestureRecognizerState"]
 - !private ["PSo20UIScrollViewDelegate", "UILongPressGestureRecognizer"]
@@ -4156,6 +4361,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "adViewWillDismissScreen"]
 - ["PSo20UIScrollViewDelegate", "adViewWillLeaveApplication"]
 - ["PSo20UIScrollViewDelegate", "adViewWillPresentScreen"]
+- !private ["PSo20UIScrollViewDelegate", "addActivityView"]
 - !private ["PSo20UIScrollViewDelegate", "appDelegate"]
 - !private ["PSo20UIScrollViewDelegate", "bannerView"]
 - !private ["PSo20UIScrollViewDelegate", "btmToolBar"]
@@ -4163,6 +4369,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "controller"]
 - ["PSo20UIScrollViewDelegate", "controllerDidChangeContent"]
 - ["PSo20UIScrollViewDelegate", "controllerWillChangeContent"]
+- !private ["PSo20UIScrollViewDelegate", "deleteAddActivityView"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_after"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_async"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_get_main_queue"]
@@ -4231,11 +4438,14 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "NSSortDescriptor"]
 - !private ["PSo16UIStateRestoring", "NSStrikethroughStyleAttributeName"]
 - ["PSo16UIStateRestoring", "NSUserDefaults"]
+- !private ["PSo16UIStateRestoring", "UIActivityIndicatorView"]
+- !private ["PSo16UIStateRestoring", "UIActivityIndicatorViewStyle"]
 - !private ["PSo16UIStateRestoring", "UIActivityViewController"]
 - ["PSo16UIStateRestoring", "UIApplication"]
 - !private ["PSo16UIStateRestoring", "UIBarButtonItem"]
 - !private ["PSo16UIStateRestoring", "UIBarButtonSystemItem"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
+- !private ["PSo16UIStateRestoring", "UIDevice"]
 - !private ["PSo16UIStateRestoring", "UIFont"]
 - !private ["PSo16UIStateRestoring", "UIGestureRecognizerState"]
 - !private ["PSo16UIStateRestoring", "UILongPressGestureRecognizer"]
@@ -4255,6 +4465,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "adViewWillDismissScreen"]
 - ["PSo16UIStateRestoring", "adViewWillLeaveApplication"]
 - ["PSo16UIStateRestoring", "adViewWillPresentScreen"]
+- ["PSo16UIStateRestoring", "addActivityView"]
 - ["PSo16UIStateRestoring", "appDelegate"]
 - ["PSo16UIStateRestoring", "bannerView"]
 - !private ["PSo16UIStateRestoring", "blueColor"]
@@ -4266,6 +4477,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "controllerWillChangeContent"]
 - !private ["PSo16UIStateRestoring", "darkGrayColor"]
 - !private ["PSo16UIStateRestoring", "deepBlueColor"]
+- ["PSo16UIStateRestoring", "deleteAddActivityView"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - !private ["PSo16UIStateRestoring", "dispatch_after"]
 - !private ["PSo16UIStateRestoring", "dispatch_async"]
@@ -4368,11 +4580,14 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "NSSortDescriptor"]
 - !private ["PSo21UITableViewDataSource", "NSStrikethroughStyleAttributeName"]
 - ["PSo21UITableViewDataSource", "NSUserDefaults"]
+- !private ["PSo21UITableViewDataSource", "UIActivityIndicatorView"]
+- !private ["PSo21UITableViewDataSource", "UIActivityIndicatorViewStyle"]
 - !private ["PSo21UITableViewDataSource", "UIActivityViewController"]
 - ["PSo21UITableViewDataSource", "UIApplication"]
 - !private ["PSo21UITableViewDataSource", "UIBarButtonItem"]
 - !private ["PSo21UITableViewDataSource", "UIBarButtonSystemItem"]
 - !private ["PSo21UITableViewDataSource", "UIColor"]
+- !private ["PSo21UITableViewDataSource", "UIDevice"]
 - !private ["PSo21UITableViewDataSource", "UIFont"]
 - !private ["PSo21UITableViewDataSource", "UIGestureRecognizerState"]
 - !private ["PSo21UITableViewDataSource", "UILongPressGestureRecognizer"]
@@ -4392,6 +4607,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "adViewWillDismissScreen"]
 - ["PSo21UITableViewDataSource", "adViewWillLeaveApplication"]
 - ["PSo21UITableViewDataSource", "adViewWillPresentScreen"]
+- !private ["PSo21UITableViewDataSource", "addActivityView"]
 - !private ["PSo21UITableViewDataSource", "appDelegate"]
 - !private ["PSo21UITableViewDataSource", "bannerView"]
 - !private ["PSo21UITableViewDataSource", "btmToolBar"]
@@ -4399,6 +4615,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "controller"]
 - ["PSo21UITableViewDataSource", "controllerDidChangeContent"]
 - ["PSo21UITableViewDataSource", "controllerWillChangeContent"]
+- !private ["PSo21UITableViewDataSource", "deleteAddActivityView"]
 - !private ["PSo21UITableViewDataSource", "dispatch_after"]
 - !private ["PSo21UITableViewDataSource", "dispatch_async"]
 - !private ["PSo21UITableViewDataSource", "dispatch_get_main_queue"]
@@ -4467,11 +4684,14 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "NSSortDescriptor"]
 - !private ["PSo19UITableViewDelegate", "NSStrikethroughStyleAttributeName"]
 - ["PSo19UITableViewDelegate", "NSUserDefaults"]
+- !private ["PSo19UITableViewDelegate", "UIActivityIndicatorView"]
+- !private ["PSo19UITableViewDelegate", "UIActivityIndicatorViewStyle"]
 - !private ["PSo19UITableViewDelegate", "UIActivityViewController"]
 - ["PSo19UITableViewDelegate", "UIApplication"]
 - !private ["PSo19UITableViewDelegate", "UIBarButtonItem"]
 - !private ["PSo19UITableViewDelegate", "UIBarButtonSystemItem"]
 - !private ["PSo19UITableViewDelegate", "UIColor"]
+- !private ["PSo19UITableViewDelegate", "UIDevice"]
 - !private ["PSo19UITableViewDelegate", "UIFont"]
 - !private ["PSo19UITableViewDelegate", "UIGestureRecognizerState"]
 - !private ["PSo19UITableViewDelegate", "UILongPressGestureRecognizer"]
@@ -4491,6 +4711,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "adViewWillDismissScreen"]
 - ["PSo19UITableViewDelegate", "adViewWillLeaveApplication"]
 - ["PSo19UITableViewDelegate", "adViewWillPresentScreen"]
+- !private ["PSo19UITableViewDelegate", "addActivityView"]
 - !private ["PSo19UITableViewDelegate", "appDelegate"]
 - !private ["PSo19UITableViewDelegate", "bannerView"]
 - !private ["PSo19UITableViewDelegate", "btmToolBar"]
@@ -4498,6 +4719,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "controller"]
 - ["PSo19UITableViewDelegate", "controllerDidChangeContent"]
 - ["PSo19UITableViewDelegate", "controllerWillChangeContent"]
+- !private ["PSo19UITableViewDelegate", "deleteAddActivityView"]
 - !private ["PSo19UITableViewDelegate", "dispatch_after"]
 - !private ["PSo19UITableViewDelegate", "dispatch_async"]
 - !private ["PSo19UITableViewDelegate", "dispatch_get_main_queue"]
@@ -4575,11 +4797,14 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "NSSortDescriptor"]
 - !private ["PSo18UITraitEnvironment", "NSStrikethroughStyleAttributeName"]
 - ["PSo18UITraitEnvironment", "NSUserDefaults"]
+- !private ["PSo18UITraitEnvironment", "UIActivityIndicatorView"]
+- !private ["PSo18UITraitEnvironment", "UIActivityIndicatorViewStyle"]
 - !private ["PSo18UITraitEnvironment", "UIActivityViewController"]
 - ["PSo18UITraitEnvironment", "UIApplication"]
 - !private ["PSo18UITraitEnvironment", "UIBarButtonItem"]
 - !private ["PSo18UITraitEnvironment", "UIBarButtonSystemItem"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
+- !private ["PSo18UITraitEnvironment", "UIDevice"]
 - !private ["PSo18UITraitEnvironment", "UIFont"]
 - !private ["PSo18UITraitEnvironment", "UIGestureRecognizerState"]
 - !private ["PSo18UITraitEnvironment", "UILongPressGestureRecognizer"]
@@ -4592,6 +4817,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIUserNotificationSettings"]
 - !private ["PSo18UITraitEnvironment", "UIUserNotificationType"]
 - !private ["PSo18UITraitEnvironment", "UIView"]
+- !private ["PSo18UITraitEnvironment", "activityIndicatorViewStyle"]
 - ["PSo18UITraitEnvironment", "ad"]
 - ["PSo18UITraitEnvironment", "adView"]
 - ["PSo18UITraitEnvironment", "adViewDidDismissScreen"]
@@ -4599,6 +4825,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "adViewWillDismissScreen"]
 - ["PSo18UITraitEnvironment", "adViewWillLeaveApplication"]
 - ["PSo18UITraitEnvironment", "adViewWillPresentScreen"]
+- ["PSo18UITraitEnvironment", "addActivityView"]
 - !private ["PSo18UITraitEnvironment", "addGestureRecognizer"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "alpha"]
@@ -4614,12 +4841,14 @@ depends-member:
 - ["PSo18UITraitEnvironment", "btmToolBarConstraint"]
 - !private ["PSo18UITraitEnvironment", "cellForRowAtIndexPath"]
 - ["PSo18UITraitEnvironment", "cellLongPressed"]
+- !private ["PSo18UITraitEnvironment", "center"]
 - !private ["PSo18UITraitEnvironment", "contentView"]
 - ["PSo18UITraitEnvironment", "controller"]
 - ["PSo18UITraitEnvironment", "controllerDidChangeContent"]
 - ["PSo18UITraitEnvironment", "controllerWillChangeContent"]
 - !private ["PSo18UITraitEnvironment", "darkGrayColor"]
 - !private ["PSo18UITraitEnvironment", "deepBlueColor"]
+- ["PSo18UITraitEnvironment", "deleteAddActivityView"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithIdentifier"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UITraitEnvironment", "dispatch_after"]
@@ -4690,6 +4919,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "showPopMessageView"]
 - !private ["PSo18UITraitEnvironment", "sourceRect"]
 - !private ["PSo18UITraitEnvironment", "sourceView"]
+- !private ["PSo18UITraitEnvironment", "startAnimating"]
 - ["PSo18UITraitEnvironment", "tableBtmConstraint"]
 - !private ["PSo18UITraitEnvironment", "tableFooterView"]
 - ["PSo18UITraitEnvironment", "tableView"]
@@ -4704,11 +4934,15 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewWillAppear"]
 - !private ["PSo18UITraitEnvironment", "viewWithTag"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["OSC20UIUserInterfaceIdiom", "Pad"]
+- !private ["OSC20UIUserInterfaceIdiom", "RawValue"]
+- !private ["OSC20UIUserInterfaceIdiom", "deinit"]
 - !private ["CSo26UIUserNotificationSettings", "init"]
 - !private ["VSC22UIUserNotificationType", "Badge"]
 - ["CSo6UIView", "FadeType"]
 - ["CSo6UIView", "NSTimeInterval"]
 - !private ["CSo6UIView", "UIView"]
+- !private ["CSo6UIView", "activityIndicatorViewStyle"]
 - !private ["CSo6UIView", "addGestureRecognizer"]
 - !private ["CSo6UIView", "addSubview"]
 - !private ["CSo6UIView", "alpha"]
@@ -4718,6 +4952,7 @@ depends-member:
 - !private ["CSo6UIView", "barTintColor"]
 - !private ["CSo6UIView", "bounds"]
 - !private ["CSo6UIView", "cellForRowAtIndexPath"]
+- !private ["CSo6UIView", "center"]
 - !private ["CSo6UIView", "contentView"]
 - !private ["CSo6UIView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo6UIView", "editing"]
@@ -4739,6 +4974,7 @@ depends-member:
 - !private ["CSo6UIView", "selectRowAtIndexPath"]
 - !private ["CSo6UIView", "selectionStyle"]
 - !private ["CSo6UIView", "setEditing"]
+- !private ["CSo6UIView", "startAnimating"]
 - !private ["CSo6UIView", "tableFooterView"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "tintColor"]
@@ -4789,11 +5025,14 @@ depends-member:
 - !private ["CSo16UIViewController", "NSStrikethroughStyleAttributeName"]
 - ["CSo16UIViewController", "NSUserDefaults"]
 - !private ["CSo16UIViewController", "String"]
+- ["CSo16UIViewController", "UIActivityIndicatorView"]
+- !private ["CSo16UIViewController", "UIActivityIndicatorViewStyle"]
 - !private ["CSo16UIViewController", "UIActivityViewController"]
 - ["CSo16UIViewController", "UIApplication"]
 - ["CSo16UIViewController", "UIBarButtonItem"]
 - !private ["CSo16UIViewController", "UIBarButtonSystemItem"]
 - !private ["CSo16UIViewController", "UIColor"]
+- !private ["CSo16UIViewController", "UIDevice"]
 - !private ["CSo16UIViewController", "UIFont"]
 - !private ["CSo16UIViewController", "UIGestureRecognizerState"]
 - !private ["CSo16UIViewController", "UILabel"]
@@ -4818,6 +5057,7 @@ depends-member:
 - ["CSo16UIViewController", "adViewWillDismissScreen"]
 - ["CSo16UIViewController", "adViewWillLeaveApplication"]
 - ["CSo16UIViewController", "adViewWillPresentScreen"]
+- ["CSo16UIViewController", "addActivityView"]
 - ["CSo16UIViewController", "appDelegate"]
 - ["CSo16UIViewController", "bannerView"]
 - !private ["CSo16UIViewController", "blueColor"]
@@ -4830,6 +5070,7 @@ depends-member:
 - !private ["CSo16UIViewController", "darkGrayColor"]
 - !private ["CSo16UIViewController", "deepBlueColor"]
 - !private ["CSo16UIViewController", "deinit"]
+- ["CSo16UIViewController", "deleteAddActivityView"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - !private ["CSo16UIViewController", "dispatch_after"]
 - !private ["CSo16UIViewController", "dispatch_async"]
@@ -4984,6 +5225,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "_DisabledRangeIndex"]
 - !private ["Ps12_Reflectable", "_Element"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "activityIndicatorViewStyle"]
 - !private ["Ps12_Reflectable", "addGestureRecognizer"]
 - !private ["Ps12_Reflectable", "addSubview"]
 - !private ["Ps12_Reflectable", "alpha"]
@@ -4993,6 +5235,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "barTintColor"]
 - !private ["Ps12_Reflectable", "bounds"]
 - !private ["Ps12_Reflectable", "cellForRowAtIndexPath"]
+- !private ["Ps12_Reflectable", "center"]
 - !private ["Ps12_Reflectable", "contentView"]
 - !private ["Ps12_Reflectable", "count"]
 - !private ["Ps12_Reflectable", "dequeueReusableCellWithIdentifier"]
@@ -5018,6 +5261,8 @@ depends-member:
 - !private ["Ps12_Reflectable", "selectRowAtIndexPath"]
 - !private ["Ps12_Reflectable", "selectionStyle"]
 - !private ["Ps12_Reflectable", "setEditing"]
+- !private ["Ps12_Reflectable", "size"]
+- !private ["Ps12_Reflectable", "startAnimating"]
 - !private ["Ps12_Reflectable", "subscript"]
 - !private ["Ps12_Reflectable", "tableFooterView"]
 - !private ["Ps12_Reflectable", "text"]
@@ -5050,6 +5295,7 @@ depends-nominal:
 - !private "PSo13CAMediaTiming"
 - !private "V12CoreGraphics7CGFloat"
 - !private "VSC6CGRect"
+- !private "VSC6CGSize"
 - "Ps11CVarArgType"
 - !private "Ps14CollectionType"
 - !private "C10SimpleTodo19ColorViewController"
@@ -5132,6 +5378,8 @@ depends-nominal:
 - !private "Ps10Strideable"
 - !private "SS"
 - "PSo29UIAccessibilityIdentification"
+- !private "CSo23UIActivityIndicatorView"
+- !private "OSC28UIActivityIndicatorViewStyle"
 - !private "CSo24UIActivityViewController"
 - "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -5145,6 +5393,7 @@ depends-nominal:
 - "PSo18UIContentContainer"
 - !private "PSo30UIContentSizeCategoryAdjusting"
 - "PSo17UICoordinateSpace"
+- !private "CSo8UIDevice"
 - "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
 - "PSo11UIFocusItem"
@@ -5176,6 +5425,7 @@ depends-nominal:
 - !private "OSC25UITableViewScrollPosition"
 - !private "CSo9UIToolbar"
 - "PSo18UITraitEnvironment"
+- !private "OSC20UIUserInterfaceIdiom"
 - !private "CSo26UIUserNotificationSettings"
 - !private "VSC22UIUserNotificationType"
 - "CSo6UIView"
@@ -5289,4 +5539,4 @@ depends-external:
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Firebase/Analytics/Sources/Firebase.h"
-interface-hash: "2e1d46fd70e49fc12bcb61b079e323c3"
+interface-hash: "994b68607cf71982f56c8d2067aad47b"

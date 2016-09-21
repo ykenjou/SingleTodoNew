@@ -47,8 +47,7 @@
 "purchaseFinish" = "購入が完了しました";
 
 /* 購入中断 */
-"purchaseInterruption" = "は購入処理が中断されていました。
-このまま無料でダウンロードできます。";
+"purchaseInterruption" = "は購入処理が中断されていました。\nこのまま無料でダウンロードできます。";
 
 /* 購入設定無効 */
 "purchaseInvalid" = "設定で購入が無効になっています。";
