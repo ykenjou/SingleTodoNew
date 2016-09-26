@@ -54,10 +54,15 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
         
         let trashButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Trash, target: self, action: #selector(MainViewController.pushTrashButton))
         let spacer = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: self, action: nil)
-        let addButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: #selector(MainViewController.pushAddButton))
+        //let addButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: #selector(MainViewController.pushAddButton))
+        let add2Button = UIBarButtonItem()
+        add2Button.image = UIImage(named: "plusRadiusIcon.png")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        add2Button.style = UIBarButtonItemStyle.Plain
+        add2Button.action = #selector(MainViewController.pushAddButton)
+        add2Button.target = self
         let editButton = editButtonItem()
         
-        btmToolBar.items = [trashButton,spacer,addButton,spacer,editButton]
+        btmToolBar.items = [trashButton,spacer,add2Button,spacer,editButton]
         
         // Do any additional setup after loading the view.
         do {

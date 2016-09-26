@@ -353,7 +353,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c8U-7n-1x4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1237.5999999999999" y="1286.8065967016494"/>
+            <point key="canvasLocation" x="1172" y="1227"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5f4-A4-QMg">
@@ -507,7 +507,7 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="csL-YA-yKh"/>
-                                    <barButtonItem systemItem="add" id="bDs-Eh-lXe">
+                                    <barButtonItem image="plusRadiusIcon" id="bDs-Eh-lXe">
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <action selector="pushSaveButton:" destination="sTT-Am-tkY" id="4YL-4r-YpJ"/>
@@ -837,7 +837,7 @@ You can enroll in a list of Todo again by choosing an item among a list, and pus
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="YMn-i1-h1D" kind="push" id="acb-0J-HgI"/>
+                                            <segue destination="YMn-i1-h1D" kind="push" id="TQx-xh-5wN"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -970,5 +970,6 @@ You can enroll in a list of Todo again by choosing an item among a list, and pus
     <resources>
         <image name="SettingIcon" width="26" height="26"/>
         <image name="memoIcon" width="26" height="26"/>
+        <image name="plusRadiusIcon" width="30" height="30"/>
     </resources>
 </document>

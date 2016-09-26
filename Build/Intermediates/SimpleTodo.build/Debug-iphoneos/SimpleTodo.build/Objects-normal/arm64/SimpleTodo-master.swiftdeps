@@ -1,19 +1,19 @@
 version: "Apple Swift version 2.3 (swiftlang-800.10.12 clang-800.0.38)"
 options: "0f9435004acde7deec202a50f1b291ac"
-build_time: [527674912, 246228000]
+build_time: [528176286, 93009000]
 inputs:
   "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/PurchaseViewController.swift": [527652487, 0]
   "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/ColorViewController.swift": [527477240, 0]
   "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/FontSizeViewController.swift": [527074630, 0]
   "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/XXXPurchaseManager.swift": [527616843, 0]
   "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/XXXProductManager.swift": [527074630, 0]
-  "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/MainViewController.swift": [527674885, 0]
+  "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/MainViewController.swift": [528132859, 0]
   "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/Log.swift": [527074630, 0]
   "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/Log+CoreDataProperties.swift": [527074630, 0]
   "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/AppDelegate.swift": [527435916, 0]
-  "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/LogViewController.swift": [527526239, 0]
+  "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/LogViewController.swift": [528137177, 0]
   "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/AddViewController.swift": [527525396, 0]
-  "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/SettingViewController.swift": [527669957, 0]
+  "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/SettingViewController.swift": [527993704, 0]
   "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/Item.swift": [527074630, 0]
   "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/Item+CoreDataProperties.swift": [527074630, 0]
   "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/EditViewController.swift": [527526821, 0]

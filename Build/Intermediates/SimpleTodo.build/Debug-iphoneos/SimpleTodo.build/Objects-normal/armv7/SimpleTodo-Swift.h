@@ -319,6 +319,7 @@ SWIFT_CLASS("_TtC10SimpleTodo17LogViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIActivityIndicatorView;
 @class UILongPressGestureRecognizer;
 @class UITableViewRowAction;
 @class NSLayoutConstraint;
@@ -332,6 +333,7 @@ SWIFT_CLASS("_TtC10SimpleTodo18MainViewController")
 @property (nonatomic, readonly, strong) NSUserDefaults * _Nonnull userDefaults;
 @property (nonatomic, readonly, strong) GadController * _Nonnull gadController;
 @property (nonatomic, strong) GADBannerView * _Nullable bannerView;
+@property (nonatomic, strong) UIActivityIndicatorView * _Null_unspecified addActivityView;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified btmToolBarConstraint;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified tableBtmConstraint;
 @property (nonatomic, strong) NSFetchedResultsController * _Nonnull fetchedResultsController;
@@ -354,13 +356,13 @@ SWIFT_CLASS("_TtC10SimpleTodo18MainViewController")
 - (void)tableView:(UITableView * _Nonnull)tableView moveRowAtIndexPath:(NSIndexPath * _Nonnull)sourceIndexPath toIndexPath:(NSIndexPath * _Nonnull)destinationIndexPath;
 - (void)pushTrashButton;
 - (void)pushAddButton;
+- (void)deleteAddActivityView;
 - (void)setEditing:(BOOL)editing animated:(BOOL)animated;
 - (IBAction)pushMemoButton:(UIBarButtonItem * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIActivityIndicatorView;
 
 SWIFT_CLASS("_TtC10SimpleTodo22PurchaseViewController")
 @interface PurchaseViewController : UIViewController <XXXPurchaseManagerDelegate>

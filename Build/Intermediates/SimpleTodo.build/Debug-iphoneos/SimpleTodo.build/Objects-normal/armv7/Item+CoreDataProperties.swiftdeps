@@ -7,13 +7,13 @@ provides-member:
 - ["C10SimpleTodo4Item", "displayOrder"]
 - ["C10SimpleTodo4Item", "text"]
 provides-dynamic-lookup:
+- "text"
 - "displayOrder"
 - "checked"
-- "text"
 depends-top-level:
-- "String"
 - "NSNumber"
 - "Item"
+- "String"
 depends-member:
 - ["Ps9AnyObject", "checked"]
 - ["Ps9AnyObject", "displayOrder"]
