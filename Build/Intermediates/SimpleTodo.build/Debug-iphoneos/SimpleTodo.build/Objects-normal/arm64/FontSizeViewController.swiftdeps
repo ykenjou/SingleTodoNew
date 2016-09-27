@@ -6,32 +6,32 @@ provides-nominal:
 provides-member:
 - ["C10SimpleTodo22FontSizeViewController", ""]
 provides-dynamic-lookup:
-- "numberOfComponentsInPickerView"
 - "sizeArray"
-- "didReceiveMemoryWarning"
-- "fontPickerView"
-- "viewDidLoad"
-- "pickerView"
-- "pickerView"
-- "pickerView"
 - "userDefaults"
+- "pickerView"
+- "pickerView"
+- "pickerView"
+- "fontPickerView"
+- "numberOfComponentsInPickerView"
+- "viewDidLoad"
+- "didReceiveMemoryWarning"
 depends-top-level:
+- !private "BooleanLiteralType"
+- "Int"
+- "FontSizeViewController"
+- !private "-"
 - "Array"
+- !private "Float"
+- "UIPickerView"
+- "UIPickerViewDataSource"
+- "NSUserDefaults"
+- !private "NSInteger"
 - "NSArray"
 - !private "NSNumber"
-- "UIViewController"
 - !private "StringLiteralType"
-- "Int"
-- !private "-"
 - "UIPickerViewDelegate"
+- "UIViewController"
 - "String"
-- "UIPickerViewDataSource"
-- "UIPickerView"
-- "NSUserDefaults"
-- "FontSizeViewController"
-- !private "BooleanLiteralType"
-- !private "Float"
-- !private "NSInteger"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "Element"]
@@ -494,6 +494,7 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/SimpleTodo-Bridging-Header.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Firebase/Analytics/Sources/module.modulemap"

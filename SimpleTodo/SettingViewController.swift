@@ -144,7 +144,7 @@ class SettingViewController: UITableViewController {
         let upgradeTestCell = NSIndexPath(forRow: 1, inSection: 0)
         if indexPath == upgradeTestCell {
             //通常0 テスト時に44に設定
-            return 44
+            return 0
         }
         return 44
     }

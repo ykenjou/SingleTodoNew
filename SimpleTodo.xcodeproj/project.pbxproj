@@ -88,6 +88,7 @@
 		F222563F1D68BC0D001E463B /* setting_78@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting_78@3x.png"; sourceTree = "<group>"; };
 		F23177A81D6A878D001AEFD6 /* GadController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GadController.swift; sourceTree = "<group>"; };
 		F23177AC1D6AF8CD001AEFD6 /* FontSizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontSizeViewController.swift; sourceTree = "<group>"; };
+		F23755BC1D98F4E500198986 /* SimpleTodo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleTodo-Bridging-Header.h"; sourceTree = "<group>"; };
 		F248D71F1D7D287400355D8B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		F248D7241D7D28F200355D8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F248D7261D7D28F300355D8B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -269,6 +270,7 @@
 				F20D26521D77BE0000C9840F /* ColorViewController.swift */,
 				F20D26541D7872A900C9840F /* XXXPurchaseManager.swift */,
 				F2F6FF021D8831D700BBC0D5 /* LogViewController.swift */,
+				F23755BC1D98F4E500198986 /* SimpleTodo-Bridging-Header.h */,
 			);
 			path = SimpleTodo;
 			sourceTree = "<group>";
@@ -658,7 +660,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "48047694-e6ca-4bc3-8af4-18f6c48b1886";
@@ -700,7 +702,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "48047694-e6ca-4bc3-8af4-18f6c48b1886";
 				SDKROOT = iphoneos;
@@ -714,6 +716,7 @@
 			baseConfigurationReference = 6179BAD27CF3AA36C71ECE7B /* Pods-SimpleTodo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = QTS9VPEC4Z;
@@ -722,7 +725,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SimpleTodo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -732,6 +735,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleTodo/SimpleTodo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
@@ -741,6 +746,7 @@
 			baseConfigurationReference = 8FA803D703C1922C0F2C90B0 /* Pods-SimpleTodo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = QTS9VPEC4Z;
@@ -749,7 +755,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SimpleTodo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -759,6 +765,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleTodo/SimpleTodo-Bridging-Header.h";
 				SWIFT_VERSION = 2.3;
 			};
 			name = Release;

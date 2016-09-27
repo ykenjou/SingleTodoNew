@@ -8,15 +8,15 @@ provides-member:
 provides-dynamic-lookup:
 - "gadBannerInit"
 depends-top-level:
-- !private "kGADAdSizeBanner"
-- !private "GADRequest"
-- !private "StringLiteralType"
-- "GadController"
-- !private "CGSizeMake"
 - "CGFloat"
-- "GADBannerViewDelegate"
-- "GADBannerView"
 - "UIViewController"
+- !private "CGSizeMake"
+- "GadController"
+- !private "kGADAdSizeBanner"
+- !private "StringLiteralType"
+- !private "GADRequest"
+- "GADBannerView"
+- "GADBannerViewDelegate"
 depends-member:
 - !private ["Ps9AnyObject", "CGSizeMake"]
 - !private ["Ps9AnyObject", "GADBannerView"]
@@ -543,6 +543,7 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/SimpleTodo-Bridging-Header.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Firebase/Analytics/Sources/module.modulemap"

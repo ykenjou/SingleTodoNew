@@ -280,6 +280,7 @@ SWIFT_CLASS("_TtC10SimpleTodo3Log")
 @interface Log (SWIFT_EXTENSION(SimpleTodo))
 @property (nonatomic, copy) NSString * _Nullable text;
 @property (nonatomic, strong) NSDate * _Nullable time;
+@property (nonatomic, strong) NSDate * _Nullable endtime;
 @end
 
 @class NSFetchedResultsController;

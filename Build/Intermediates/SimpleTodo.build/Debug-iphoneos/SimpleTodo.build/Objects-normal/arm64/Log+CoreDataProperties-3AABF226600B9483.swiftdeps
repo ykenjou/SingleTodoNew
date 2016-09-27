@@ -1,0 +1,146 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["C10SimpleTodo3Log", ""]
+- ["C10SimpleTodo3Log", "text"]
+- ["C10SimpleTodo3Log", "time"]
+provides-dynamic-lookup:
+- "time"
+- "text"
+depends-top-level:
+- "String"
+- "NSDate"
+- "Log"
+depends-member:
+- ["Ps9AnyObject", "text"]
+- ["Ps9AnyObject", "time"]
+- ["Ps11CVarArgType", "text"]
+- ["Ps11CVarArgType", "time"]
+- ["Ps28CustomDebugStringConvertible", "text"]
+- ["Ps28CustomDebugStringConvertible", "time"]
+- ["Ps23CustomStringConvertible", "text"]
+- ["Ps23CustomStringConvertible", "time"]
+- ["Ps9Equatable", "text"]
+- ["Ps9Equatable", "time"]
+- ["Ps8Hashable", "text"]
+- ["Ps8Hashable", "time"]
+- ["C10SimpleTodo3Log", "NSDate"]
+- ["C10SimpleTodo3Log", "String"]
+- ["C10SimpleTodo3Log", "text"]
+- ["C10SimpleTodo3Log", "time"]
+- ["PSo20NSFetchRequestResult", "text"]
+- ["PSo20NSFetchRequestResult", "time"]
+- ["CSo15NSManagedObject", "NSDate"]
+- ["CSo15NSManagedObject", "String"]
+- ["CSo15NSManagedObject", "text"]
+- ["CSo15NSManagedObject", "time"]
+- ["CSo8NSObject", "NSDate"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "text"]
+- ["CSo8NSObject", "time"]
+- ["PSo16NSObjectProtocol", "text"]
+- ["PSo16NSObjectProtocol", "time"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "C10SimpleTodo3Log"
+- "PSo20NSFetchRequestResult"
+- "CSo15NSManagedObject"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/SimpleTodo-Bridging-Header.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Firebase/Analytics/Sources/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdReward.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADSearchRequest.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADDynamicHeightSearchRequest.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADMediatedNativeContentAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADMediatedNativeAppInstallAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADMediatedNativeAdNotificationSource.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventParameters.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADMediatedNativeAdDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADMediatedNativeAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADVideoOptions.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADVideoControllerDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADVideoController.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeExpressAdViewDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADNativeExpressAdView.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADMobileAds.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADMediaView.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADExtras.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdLoader.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADCorrelator.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADRequest.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADBannerView.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GADAdDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIROptions.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRConfiguration.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRApp.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsConfiguration.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Firebase/Analytics/Sources/Firebase.h"
+interface-hash: "89e44a75c58feba13eaecb742b9d19ee"

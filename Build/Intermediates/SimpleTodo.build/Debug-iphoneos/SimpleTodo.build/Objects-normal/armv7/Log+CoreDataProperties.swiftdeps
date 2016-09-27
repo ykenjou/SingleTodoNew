@@ -5,40 +5,53 @@ provides-member:
 - ["C10SimpleTodo3Log", ""]
 - ["C10SimpleTodo3Log", "text"]
 - ["C10SimpleTodo3Log", "time"]
+- ["C10SimpleTodo3Log", "endtime"]
 provides-dynamic-lookup:
 - "time"
 - "text"
+- "endtime"
 depends-top-level:
 - "String"
 - "NSDate"
 - "Log"
 depends-member:
+- ["Ps9AnyObject", "endtime"]
 - ["Ps9AnyObject", "text"]
 - ["Ps9AnyObject", "time"]
+- ["Ps11CVarArgType", "endtime"]
 - ["Ps11CVarArgType", "text"]
 - ["Ps11CVarArgType", "time"]
+- ["Ps28CustomDebugStringConvertible", "endtime"]
 - ["Ps28CustomDebugStringConvertible", "text"]
 - ["Ps28CustomDebugStringConvertible", "time"]
+- ["Ps23CustomStringConvertible", "endtime"]
 - ["Ps23CustomStringConvertible", "text"]
 - ["Ps23CustomStringConvertible", "time"]
+- ["Ps9Equatable", "endtime"]
 - ["Ps9Equatable", "text"]
 - ["Ps9Equatable", "time"]
+- ["Ps8Hashable", "endtime"]
 - ["Ps8Hashable", "text"]
 - ["Ps8Hashable", "time"]
 - ["C10SimpleTodo3Log", "NSDate"]
 - ["C10SimpleTodo3Log", "String"]
+- ["C10SimpleTodo3Log", "endtime"]
 - ["C10SimpleTodo3Log", "text"]
 - ["C10SimpleTodo3Log", "time"]
+- ["PSo20NSFetchRequestResult", "endtime"]
 - ["PSo20NSFetchRequestResult", "text"]
 - ["PSo20NSFetchRequestResult", "time"]
 - ["CSo15NSManagedObject", "NSDate"]
 - ["CSo15NSManagedObject", "String"]
+- ["CSo15NSManagedObject", "endtime"]
 - ["CSo15NSManagedObject", "text"]
 - ["CSo15NSManagedObject", "time"]
 - ["CSo8NSObject", "NSDate"]
 - ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "endtime"]
 - ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "time"]
+- ["PSo16NSObjectProtocol", "endtime"]
 - ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "time"]
 depends-nominal:
@@ -56,6 +69,7 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/SimpleTodo-Bridging-Header.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Firebase/Analytics/Sources/module.modulemap"
@@ -142,4 +156,4 @@ depends-external:
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Firebase/Analytics/Sources/Firebase.h"
-interface-hash: "89e44a75c58feba13eaecb742b9d19ee"
+interface-hash: "cabd651f2bb6e7c1cefa98b19d685378"

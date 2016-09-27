@@ -14,137 +14,139 @@ provides-member:
 - ["CSo6UIView", "fadeOut"]
 - ["CSo6UIView", "fadeOut"]
 provides-dynamic-lookup:
-- "appDelegate"
-- "deleteAddActivityView"
-- "btmToolBarConstraint"
-- "viewDidLoad"
-- "fadeIn"
-- "addActivityView"
-- "fadeOut"
-- "pushTrashButton"
 - "popMessageView"
-- "didReceiveMemoryWarning"
-- "setNaviToolbarColor"
-- "controllerDidChangeContent"
-- "setEditing"
-- "btmToolBar"
-- "showPopMessageView"
-- "cellLongPressed"
-- "bannerView"
-- "pushMemoButton"
-- "gadController"
-- "setCheckedValue"
-- "fetchedResultsController"
-- "pushAddButton"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "userDefaults"
-- "tableBtmConstraint"
-- "viewWillAppear"
-- "setBadgeValue"
-- "numberOfSectionsInTableView"
 - "settingButton"
+- "appDelegate"
+- "addActivityView"
+- "controllerDidChangeContent"
+- "pushAddButton"
+- "setEditing"
+- "viewDidLoad"
+- "setCheckedValue"
+- "pushMemoButton"
+- "setNaviToolbarColor"
+- "tableBtmConstraint"
+- "btmToolBarConstraint"
+- "deleteAddActivityView"
+- "fadeOut"
+- "setBadgeValue"
+- "fetchedResultsController"
+- "gadController"
+- "fadeIn"
+- "didReceiveMemoryWarning"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "cellLongPressed"
+- "numberOfSectionsInTableView"
+- "viewWillAppear"
+- "bannerView"
+- "btmToolBar"
+- "pushTrashButton"
+- "showPopMessageView"
+- "userDefaults"
 depends-top-level:
-- !private "Double"
-- !private "UITableViewCellSelectionStyle"
-- !private "CGFloat"
-- "FadeType"
-- !private "UIGestureRecognizerState"
-- !private "AudioServicesPlaySystemSound"
-- !private "UIActivityViewController"
-- !private "dispatch_async"
-- !private "NSFetchRequest"
-- !private "NSMutableAttributedString"
-- !private "+"
-- !private "LogViewController"
-- !private "UIBarButtonSystemItem"
-- "NSTimeInterval"
-- "StringLiteralType"
-- !private "UIActivityIndicatorViewStyle"
-- !private "NSPredicate"
-- "MainViewController"
-- !private "UIUserNotificationType"
-- !private "!="
-- !private "UITableViewScrollPosition"
-- !private "Item"
-- !private "UIPasteboard"
-- "GADBannerView"
-- "NSInteger"
-- !private "UILabel"
-- !private "UIImageRenderingMode"
-- !private "UIFont"
-- "UILongPressGestureRecognizer"
-- "Int"
-- !private "String"
-- !private "NSForegroundColorAttributeName"
-- "UIToolbar"
-- "UIView"
-- !private "-"
-- "NSLayoutConstraint"
-- !private "NSLocalizedString"
-- "BooleanLiteralType"
-- !private "ColorViewController"
-- !private "dispatch_after"
-- !private "UIStoryboard"
-- !private "NSStrikethroughStyleAttributeName"
-- !private "dispatch_get_main_queue"
-- !private "NSMakeRange"
-- !private "Dictionary"
-- "GadController"
-- "UIActivityIndicatorView"
-- !private "NSEntityDescription"
-- "NSFetchedResultsController"
-- "=="
-- !private "UIBarButtonItemStyle"
-- "UITableViewRowAction"
-- !private "print"
-- !private "AnyObject"
-- "UIApplication"
-- "Array"
-- !private "NSSortDescriptor"
-- !private "CGPointMake"
-- !private "Int64"
-- !private "~="
-- !private "dispatch_time"
-- !private "CGRectGetMidY"
-- !private "AddViewController"
-- "UIBarButtonItem"
-- !private "DISPATCH_TIME_NOW"
-- !private "<"
-- "UITableViewCell"
-- "NSFetchedResultsControllerDelegate"
 - "UIViewController"
-- !private "UIColor"
-- !private "UIUserNotificationSettings"
-- "UIGestureRecognizerDelegate"
-- "NSUserDefaults"
-- !private "UITableViewAutomaticDimension"
-- !private "*"
-- "UINavigationControllerDelegate"
-- !private "EditViewController"
-- !private "NSManagedObject"
-- "GADBannerViewDelegate"
-- !private "CGRectGetMidX"
-- "UITableView"
-- !private "UIDevice"
 - !private "..<"
-- !private "NSError"
-- !private "CGRectMake"
-- "NSNumber"
-- !private "UIImage"
+- !private "!="
+- "UITableViewRowAction"
+- !private "dispatch_async"
+- !private "AnyObject"
+- !private "NSFetchRequest"
+- !private "NSMakeRange"
+- !private "UITableViewAutomaticDimension"
 - !private "/"
-- "NSIndexPath"
-- "UITableViewDataSource"
+- !private "dispatch_after"
+- !private "UIImage"
+- !private "dispatch_get_main_queue"
+- "UITableView"
 - !private "NSArray"
-- "Bool"
-- "UITableViewDelegate"
+- !private "UIBarButtonSystemItem"
+- !private "UIUserNotificationSettings"
+- !private "Log"
+- !private "UIFont"
+- !private "NSPredicate"
 - "AppDelegate"
+- !private "NSDate"
+- "Int"
+- !private "UILabel"
+- "GADBannerViewDelegate"
+- "NSFetchedResultsController"
+- "UIToolbar"
+- "UINavigationControllerDelegate"
+- !private "UIBarButtonItemStyle"
+- !private "*"
+- !private "UIStoryboard"
+- "FadeType"
+- !private "Double"
+- !private "NSEntityDescription"
 - !private "NSEC_PER_SEC"
+- !private "NSMutableAttributedString"
+- "UIActivityIndicatorView"
+- !private "NSStrikethroughStyleAttributeName"
+- "NSLayoutConstraint"
+- !private "+"
+- !private "UIImageRenderingMode"
+- !private "dispatch_time"
+- !private "CGPointMake"
+- !private "DISPATCH_TIME_NOW"
+- !private "Int64"
+- "NSTimeInterval"
+- !private "UIDevice"
+- "NSUserDefaults"
+- !private "LogViewController"
+- "StringLiteralType"
+- !private "NSError"
+- !private "AudioServicesPlaySystemSound"
+- !private "ColorViewController"
+- !private "UIUserNotificationType"
+- !private "Dictionary"
+- "MainViewController"
+- !private "print"
+- !private "UITableViewScrollPosition"
+- !private "NSLocalizedString"
+- !private "String"
+- !private "UIActivityIndicatorViewStyle"
+- "NSFetchedResultsControllerDelegate"
+- !private "EditViewController"
+- "UIGestureRecognizerDelegate"
+- "UITableViewDataSource"
+- !private "UITableViewCellSelectionStyle"
+- "BooleanLiteralType"
+- "UITableViewDelegate"
+- !private "NSManagedObject"
+- !private "<"
+- "UIBarButtonItem"
+- !private "NSSortDescriptor"
+- !private "-"
+- !private "CGRectMake"
+- !private "NSForegroundColorAttributeName"
+- "=="
+- !private "~="
+- "UIApplication"
+- !private "CGFloat"
+- "UITableViewCell"
+- "NSIndexPath"
+- "UIView"
+- "NSInteger"
+- !private "CGRectGetMidY"
+- !private "UIActivityViewController"
+- "NSNumber"
+- !private "Item"
+- !private "UIGestureRecognizerState"
+- "GADBannerView"
+- !private "UIPasteboard"
+- "GadController"
+- !private "CGRectGetMidX"
+- !private "UIColor"
+- "Bool"
+- "Array"
+- !private "AddViewController"
+- "UILongPressGestureRecognizer"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Normal"]
 - !private ["Ps16AbsoluteValuable", "init"]
@@ -162,6 +164,7 @@ depends-member:
 - ["Ps9AnyObject", "GadController"]
 - !private ["Ps9AnyObject", "Int64"]
 - !private ["Ps9AnyObject", "MainViewController"]
+- !private ["Ps9AnyObject", "NSDate"]
 - !private ["Ps9AnyObject", "NSEC_PER_SEC"]
 - !private ["Ps9AnyObject", "NSEntityDescription"]
 - !private ["Ps9AnyObject", "NSFetchRequest"]
@@ -254,6 +257,7 @@ depends-member:
 - !private ["Ps9AnyObject", "displayOrder"]
 - !private ["Ps9AnyObject", "editButtonItem"]
 - !private ["Ps9AnyObject", "editing"]
+- !private ["Ps9AnyObject", "endtime"]
 - !private ["Ps9AnyObject", "estimatedRowHeight"]
 - !private ["Ps9AnyObject", "executeFetchRequest"]
 - ["Ps9AnyObject", "fadeIn"]
@@ -468,6 +472,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "Int64"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "MainViewController"]
+- !private ["Ps11CVarArgType", "NSDate"]
 - !private ["Ps11CVarArgType", "NSEC_PER_SEC"]
 - !private ["Ps11CVarArgType", "NSEntityDescription"]
 - !private ["Ps11CVarArgType", "NSFetchRequest"]
@@ -563,6 +568,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "displayOrder"]
 - !private ["Ps11CVarArgType", "editButtonItem"]
 - !private ["Ps11CVarArgType", "editing"]
+- !private ["Ps11CVarArgType", "endtime"]
 - !private ["Ps11CVarArgType", "estimatedRowHeight"]
 - !private ["Ps11CVarArgType", "executeFetchRequest"]
 - ["Ps11CVarArgType", "fadeIn"]
@@ -715,6 +721,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Int64"]
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "MainViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "NSDate"]
 - !private ["Ps28CustomDebugStringConvertible", "NSEC_PER_SEC"]
 - !private ["Ps28CustomDebugStringConvertible", "NSEntityDescription"]
 - !private ["Ps28CustomDebugStringConvertible", "NSFetchRequest"]
@@ -811,6 +818,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "displayOrder"]
 - !private ["Ps28CustomDebugStringConvertible", "editButtonItem"]
 - !private ["Ps28CustomDebugStringConvertible", "editing"]
+- !private ["Ps28CustomDebugStringConvertible", "endtime"]
 - !private ["Ps28CustomDebugStringConvertible", "estimatedRowHeight"]
 - !private ["Ps28CustomDebugStringConvertible", "executeFetchRequest"]
 - ["Ps28CustomDebugStringConvertible", "fadeIn"]
@@ -940,6 +948,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "Key"]
 - !private ["Ps23CustomStringConvertible", "MainViewController"]
+- !private ["Ps23CustomStringConvertible", "NSDate"]
 - !private ["Ps23CustomStringConvertible", "NSEC_PER_SEC"]
 - !private ["Ps23CustomStringConvertible", "NSEntityDescription"]
 - !private ["Ps23CustomStringConvertible", "NSFetchRequest"]
@@ -1038,6 +1047,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "displayOrder"]
 - !private ["Ps23CustomStringConvertible", "editButtonItem"]
 - !private ["Ps23CustomStringConvertible", "editing"]
+- !private ["Ps23CustomStringConvertible", "endtime"]
 - !private ["Ps23CustomStringConvertible", "estimatedRowHeight"]
 - !private ["Ps23CustomStringConvertible", "executeFetchRequest"]
 - ["Ps23CustomStringConvertible", "fadeIn"]
@@ -1181,6 +1191,7 @@ depends-member:
 - !private ["Ps9Equatable", "Int64"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "MainViewController"]
+- !private ["Ps9Equatable", "NSDate"]
 - !private ["Ps9Equatable", "NSEC_PER_SEC"]
 - !private ["Ps9Equatable", "NSEntityDescription"]
 - !private ["Ps9Equatable", "NSFetchRequest"]
@@ -1282,6 +1293,7 @@ depends-member:
 - !private ["Ps9Equatable", "displayOrder"]
 - !private ["Ps9Equatable", "editButtonItem"]
 - !private ["Ps9Equatable", "editing"]
+- !private ["Ps9Equatable", "endtime"]
 - !private ["Ps9Equatable", "estimatedRowHeight"]
 - !private ["Ps9Equatable", "executeFetchRequest"]
 - ["Ps9Equatable", "fadeIn"]
@@ -1426,6 +1438,7 @@ depends-member:
 - ["PSo13GADAdDelegate", "GadController"]
 - !private ["PSo13GADAdDelegate", "Int64"]
 - !private ["PSo13GADAdDelegate", "MainViewController"]
+- !private ["PSo13GADAdDelegate", "NSDate"]
 - !private ["PSo13GADAdDelegate", "NSEC_PER_SEC"]
 - !private ["PSo13GADAdDelegate", "NSEntityDescription"]
 - !private ["PSo13GADAdDelegate", "NSFetchRequest"]
@@ -1539,6 +1552,7 @@ depends-member:
 - ["PSo21GADBannerViewDelegate", "GadController"]
 - !private ["PSo21GADBannerViewDelegate", "Int64"]
 - !private ["PSo21GADBannerViewDelegate", "MainViewController"]
+- !private ["PSo21GADBannerViewDelegate", "NSDate"]
 - !private ["PSo21GADBannerViewDelegate", "NSEC_PER_SEC"]
 - !private ["PSo21GADBannerViewDelegate", "NSEntityDescription"]
 - !private ["PSo21GADBannerViewDelegate", "NSFetchRequest"]
@@ -1660,6 +1674,7 @@ depends-member:
 - !private ["Ps8Hashable", "Int64"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "MainViewController"]
+- !private ["Ps8Hashable", "NSDate"]
 - !private ["Ps8Hashable", "NSEC_PER_SEC"]
 - !private ["Ps8Hashable", "NSEntityDescription"]
 - !private ["Ps8Hashable", "NSFetchRequest"]
@@ -1761,6 +1776,7 @@ depends-member:
 - !private ["Ps8Hashable", "displayOrder"]
 - !private ["Ps8Hashable", "editButtonItem"]
 - !private ["Ps8Hashable", "editing"]
+- !private ["Ps8Hashable", "endtime"]
 - !private ["Ps8Hashable", "estimatedRowHeight"]
 - !private ["Ps8Hashable", "executeFetchRequest"]
 - ["Ps8Hashable", "fadeIn"]
@@ -1913,6 +1929,8 @@ depends-member:
 - !private ["C10SimpleTodo4Item", "deinit"]
 - !private ["C10SimpleTodo4Item", "displayOrder"]
 - !private ["C10SimpleTodo4Item", "text"]
+- !private ["C10SimpleTodo3Log", "deinit"]
+- !private ["C10SimpleTodo3Log", "endtime"]
 - !private ["C10SimpleTodo17LogViewController", "deinit"]
 - !private ["C10SimpleTodo18MainViewController", "AddViewController"]
 - !private ["C10SimpleTodo18MainViewController", "AnyObject"]
@@ -1933,9 +1951,11 @@ depends-member:
 - ["C10SimpleTodo18MainViewController", "Int"]
 - !private ["C10SimpleTodo18MainViewController", "Int64"]
 - !private ["C10SimpleTodo18MainViewController", "Item"]
+- !private ["C10SimpleTodo18MainViewController", "Log"]
 - !private ["C10SimpleTodo18MainViewController", "LogViewController"]
 - !private ["C10SimpleTodo18MainViewController", "MainViewController"]
 - !private ["C10SimpleTodo18MainViewController", "NSArray"]
+- !private ["C10SimpleTodo18MainViewController", "NSDate"]
 - !private ["C10SimpleTodo18MainViewController", "NSEC_PER_SEC"]
 - !private ["C10SimpleTodo18MainViewController", "NSEntityDescription"]
 - !private ["C10SimpleTodo18MainViewController", "NSError"]
@@ -2095,6 +2115,7 @@ depends-member:
 - ["PSo8NSCoding", "GadController"]
 - !private ["PSo8NSCoding", "Int64"]
 - !private ["PSo8NSCoding", "MainViewController"]
+- !private ["PSo8NSCoding", "NSDate"]
 - !private ["PSo8NSCoding", "NSEC_PER_SEC"]
 - !private ["PSo8NSCoding", "NSEntityDescription"]
 - !private ["PSo8NSCoding", "NSFetchRequest"]
@@ -2280,6 +2301,7 @@ depends-member:
 - !private ["PSo9NSCopying", "sortDescriptors"]
 - !private ["PSo9NSCopying", "systemFontOfSize"]
 - !private ["PSo9NSCopying", "whiteColor"]
+- !private ["CSo6NSDate", "init"]
 - !private ["CSo19NSEntityDescription", "insertNewObjectForEntityForName"]
 - !private ["PSo26NSExtensionRequestHandling", "AudioServicesPlaySystemSound"]
 - !private ["PSo26NSExtensionRequestHandling", "CGFloat"]
@@ -2293,6 +2315,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "GadController"]
 - !private ["PSo26NSExtensionRequestHandling", "Int64"]
 - !private ["PSo26NSExtensionRequestHandling", "MainViewController"]
+- !private ["PSo26NSExtensionRequestHandling", "NSDate"]
 - !private ["PSo26NSExtensionRequestHandling", "NSEC_PER_SEC"]
 - !private ["PSo26NSExtensionRequestHandling", "NSEntityDescription"]
 - !private ["PSo26NSExtensionRequestHandling", "NSFetchRequest"]
@@ -2414,6 +2437,7 @@ depends-member:
 - !private ["CSo14NSFetchRequest", "sortDescriptors"]
 - !private ["PSo20NSFetchRequestResult", "checked"]
 - !private ["PSo20NSFetchRequestResult", "displayOrder"]
+- !private ["PSo20NSFetchRequestResult", "endtime"]
 - !private ["PSo20NSFetchRequestResult", "setValue"]
 - !private ["PSo20NSFetchRequestResult", "text"]
 - !private ["CSo26NSFetchedResultsController", "delegate"]
@@ -2433,6 +2457,7 @@ depends-member:
 - ["PSo34NSFetchedResultsControllerDelegate", "GadController"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "Int64"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "MainViewController"]
+- !private ["PSo34NSFetchedResultsControllerDelegate", "NSDate"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "NSEC_PER_SEC"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "NSEntityDescription"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "NSFetchRequest"]
@@ -2539,6 +2564,7 @@ depends-member:
 - !private ["CSo15NSManagedObject", "checked"]
 - !private ["CSo15NSManagedObject", "deinit"]
 - !private ["CSo15NSManagedObject", "displayOrder"]
+- !private ["CSo15NSManagedObject", "endtime"]
 - !private ["CSo15NSManagedObject", "setValue"]
 - !private ["CSo15NSManagedObject", "text"]
 - !private ["CSo22NSManagedObjectContext", "countForFetchRequest"]
@@ -2573,9 +2599,11 @@ depends-member:
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "Int64"]
 - !private ["CSo8NSObject", "Item"]
+- !private ["CSo8NSObject", "Log"]
 - !private ["CSo8NSObject", "LogViewController"]
 - !private ["CSo8NSObject", "MainViewController"]
 - !private ["CSo8NSObject", "NSArray"]
+- !private ["CSo8NSObject", "NSDate"]
 - !private ["CSo8NSObject", "NSEC_PER_SEC"]
 - !private ["CSo8NSObject", "NSEntityDescription"]
 - !private ["CSo8NSObject", "NSError"]
@@ -2680,6 +2708,7 @@ depends-member:
 - !private ["CSo8NSObject", "displayOrder"]
 - !private ["CSo8NSObject", "editButtonItem"]
 - !private ["CSo8NSObject", "editing"]
+- !private ["CSo8NSObject", "endtime"]
 - !private ["CSo8NSObject", "estimatedRowHeight"]
 - !private ["CSo8NSObject", "executeFetchRequest"]
 - ["CSo8NSObject", "fadeIn"]
@@ -2801,6 +2830,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "GadController"]
 - !private ["PSo16NSObjectProtocol", "Int64"]
 - !private ["PSo16NSObjectProtocol", "MainViewController"]
+- !private ["PSo16NSObjectProtocol", "NSDate"]
 - !private ["PSo16NSObjectProtocol", "NSEC_PER_SEC"]
 - !private ["PSo16NSObjectProtocol", "NSEntityDescription"]
 - !private ["PSo16NSObjectProtocol", "NSFetchRequest"]
@@ -2892,6 +2922,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "displayOrder"]
 - !private ["PSo16NSObjectProtocol", "editButtonItem"]
 - !private ["PSo16NSObjectProtocol", "editing"]
+- !private ["PSo16NSObjectProtocol", "endtime"]
 - !private ["PSo16NSObjectProtocol", "estimatedRowHeight"]
 - !private ["PSo16NSObjectProtocol", "executeFetchRequest"]
 - ["PSo16NSObjectProtocol", "fadeIn"]
@@ -3215,6 +3246,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "GadController"]
 - !private ["PSo21UIAppearanceContainer", "Int64"]
 - !private ["PSo21UIAppearanceContainer", "MainViewController"]
+- !private ["PSo21UIAppearanceContainer", "NSDate"]
 - !private ["PSo21UIAppearanceContainer", "NSEC_PER_SEC"]
 - !private ["PSo21UIAppearanceContainer", "NSEntityDescription"]
 - !private ["PSo21UIAppearanceContainer", "NSFetchRequest"]
@@ -3410,6 +3442,7 @@ depends-member:
 - ["PSo18UIContentContainer", "GadController"]
 - !private ["PSo18UIContentContainer", "Int64"]
 - !private ["PSo18UIContentContainer", "MainViewController"]
+- !private ["PSo18UIContentContainer", "NSDate"]
 - !private ["PSo18UIContentContainer", "NSEC_PER_SEC"]
 - !private ["PSo18UIContentContainer", "NSEntityDescription"]
 - !private ["PSo18UIContentContainer", "NSFetchRequest"]
@@ -3626,6 +3659,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "GadController"]
 - !private ["PSo18UIFocusEnvironment", "Int64"]
 - !private ["PSo18UIFocusEnvironment", "MainViewController"]
+- !private ["PSo18UIFocusEnvironment", "NSDate"]
 - !private ["PSo18UIFocusEnvironment", "NSEC_PER_SEC"]
 - !private ["PSo18UIFocusEnvironment", "NSEntityDescription"]
 - !private ["PSo18UIFocusEnvironment", "NSFetchRequest"]
@@ -3837,6 +3871,7 @@ depends-member:
 - ["PSo27UIGestureRecognizerDelegate", "GadController"]
 - !private ["PSo27UIGestureRecognizerDelegate", "Int64"]
 - !private ["PSo27UIGestureRecognizerDelegate", "MainViewController"]
+- !private ["PSo27UIGestureRecognizerDelegate", "NSDate"]
 - !private ["PSo27UIGestureRecognizerDelegate", "NSEC_PER_SEC"]
 - !private ["PSo27UIGestureRecognizerDelegate", "NSEntityDescription"]
 - !private ["PSo27UIGestureRecognizerDelegate", "NSFetchRequest"]
@@ -3966,6 +4001,7 @@ depends-member:
 - ["PSo30UINavigationControllerDelegate", "GadController"]
 - !private ["PSo30UINavigationControllerDelegate", "Int64"]
 - !private ["PSo30UINavigationControllerDelegate", "MainViewController"]
+- !private ["PSo30UINavigationControllerDelegate", "NSDate"]
 - !private ["PSo30UINavigationControllerDelegate", "NSEC_PER_SEC"]
 - !private ["PSo30UINavigationControllerDelegate", "NSEntityDescription"]
 - !private ["PSo30UINavigationControllerDelegate", "NSFetchRequest"]
@@ -4087,9 +4123,11 @@ depends-member:
 - ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "Int64"]
 - !private ["CSo11UIResponder", "Item"]
+- !private ["CSo11UIResponder", "Log"]
 - !private ["CSo11UIResponder", "LogViewController"]
 - !private ["CSo11UIResponder", "MainViewController"]
 - !private ["CSo11UIResponder", "NSArray"]
+- !private ["CSo11UIResponder", "NSDate"]
 - !private ["CSo11UIResponder", "NSEC_PER_SEC"]
 - !private ["CSo11UIResponder", "NSEntityDescription"]
 - !private ["CSo11UIResponder", "NSError"]
@@ -4273,6 +4311,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "GadController"]
 - !private ["PSo30UIResponderStandardEditActions", "Int64"]
 - !private ["PSo30UIResponderStandardEditActions", "MainViewController"]
+- !private ["PSo30UIResponderStandardEditActions", "NSDate"]
 - !private ["PSo30UIResponderStandardEditActions", "NSEC_PER_SEC"]
 - !private ["PSo30UIResponderStandardEditActions", "NSEntityDescription"]
 - !private ["PSo30UIResponderStandardEditActions", "NSFetchRequest"]
@@ -4456,6 +4495,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "GadController"]
 - !private ["PSo20UIScrollViewDelegate", "Int64"]
 - !private ["PSo20UIScrollViewDelegate", "MainViewController"]
+- !private ["PSo20UIScrollViewDelegate", "NSDate"]
 - !private ["PSo20UIScrollViewDelegate", "NSEC_PER_SEC"]
 - !private ["PSo20UIScrollViewDelegate", "NSEntityDescription"]
 - !private ["PSo20UIScrollViewDelegate", "NSFetchRequest"]
@@ -4563,6 +4603,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "GadController"]
 - !private ["PSo16UIStateRestoring", "Int64"]
 - !private ["PSo16UIStateRestoring", "MainViewController"]
+- !private ["PSo16UIStateRestoring", "NSDate"]
 - !private ["PSo16UIStateRestoring", "NSEC_PER_SEC"]
 - !private ["PSo16UIStateRestoring", "NSEntityDescription"]
 - !private ["PSo16UIStateRestoring", "NSFetchRequest"]
@@ -4708,6 +4749,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "GadController"]
 - !private ["PSo21UITableViewDataSource", "Int64"]
 - !private ["PSo21UITableViewDataSource", "MainViewController"]
+- !private ["PSo21UITableViewDataSource", "NSDate"]
 - !private ["PSo21UITableViewDataSource", "NSEC_PER_SEC"]
 - !private ["PSo21UITableViewDataSource", "NSEntityDescription"]
 - !private ["PSo21UITableViewDataSource", "NSFetchRequest"]
@@ -4815,6 +4857,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "GadController"]
 - !private ["PSo19UITableViewDelegate", "Int64"]
 - !private ["PSo19UITableViewDelegate", "MainViewController"]
+- !private ["PSo19UITableViewDelegate", "NSDate"]
 - !private ["PSo19UITableViewDelegate", "NSEC_PER_SEC"]
 - !private ["PSo19UITableViewDelegate", "NSEntityDescription"]
 - !private ["PSo19UITableViewDelegate", "NSFetchRequest"]
@@ -4931,6 +4974,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "GadController"]
 - !private ["PSo18UITraitEnvironment", "Int64"]
 - !private ["PSo18UITraitEnvironment", "MainViewController"]
+- !private ["PSo18UITraitEnvironment", "NSDate"]
 - !private ["PSo18UITraitEnvironment", "NSEC_PER_SEC"]
 - !private ["PSo18UITraitEnvironment", "NSEntityDescription"]
 - !private ["PSo18UITraitEnvironment", "NSFetchRequest"]
@@ -5153,9 +5197,11 @@ depends-member:
 - ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "Int64"]
 - !private ["CSo16UIViewController", "Item"]
+- !private ["CSo16UIViewController", "Log"]
 - !private ["CSo16UIViewController", "LogViewController"]
 - !private ["CSo16UIViewController", "MainViewController"]
 - !private ["CSo16UIViewController", "NSArray"]
+- !private ["CSo16UIViewController", "NSDate"]
 - !private ["CSo16UIViewController", "NSEC_PER_SEC"]
 - !private ["CSo16UIViewController", "NSEntityDescription"]
 - !private ["CSo16UIViewController", "NSError"]
@@ -5482,6 +5528,7 @@ depends-nominal:
 - !private "Ps11IntegerType"
 - !private "Ps12IntervalType"
 - !private "C10SimpleTodo4Item"
+- !private "C10SimpleTodo3Log"
 - !private "C10SimpleTodo17LogViewController"
 - "C10SimpleTodo18MainViewController"
 - !private "Ps14MirrorPathType"
@@ -5492,6 +5539,7 @@ depends-nominal:
 - !private "CSo18NSAttributedString"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
+- !private "CSo6NSDate"
 - !private "CSo19NSEntityDescription"
 - "PSo26NSExtensionRequestHandling"
 - !private "PSo17NSFastEnumeration"
@@ -5612,6 +5660,7 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/SimpleTodo-Bridging-Header.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Firebase/Analytics/Sources/module.modulemap"

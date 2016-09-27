@@ -16,5 +16,6 @@ extension Log {
 
     @NSManaged var text: String?
     @NSManaged var time: NSDate?
+    @NSManaged var endtime: NSDate?
 
 }

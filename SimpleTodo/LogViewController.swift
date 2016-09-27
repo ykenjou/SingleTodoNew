@@ -189,7 +189,17 @@ class LogViewController: UIViewController ,UITableViewDataSource , UITableViewDe
         let formatter : NSDateFormatter = NSDateFormatter()
         //formatter.dateFormat = "yyyy/MM/dd HH:mm"
         formatter.dateFormat = "yyyy/MM/dd"
-        subLabel?.text = formatter.stringFromDate(log.time!) 
+        subLabel?.text = formatter.stringFromDate(log.time!)
+        
+        let endTimeLabel : UILabel? = cell.contentView.viewWithTag(3) as? UILabel
+        if log.endtime != nil {
+            endTimeLabel?.text = formatter.stringFromDate(log.endtime!)
+        } else {
+            endTimeLabel?.text = ""
+        }
+        
+        
+        //print(log.endtime)
         
         return cell
     }
@@ -242,6 +252,7 @@ class LogViewController: UIViewController ,UITableViewDataSource , UITableViewDe
                     let logs = try appDelegate.managedObjectContext.executeFetchRequest(fetchRequestLog) as! [Log]
                     let now = NSDate()
                     logs[0].time = now
+                    logs[0].endtime = nil
                 } catch {
                     print("error")
                 }

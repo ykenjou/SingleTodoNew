@@ -472,6 +472,30 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
             do {
                 let items = try appDelegate.managedObjectContext.executeFetchRequest(fetchRequest) as! [Item]
                 for item in items {
+                    //完了日データを履歴に追加
+                    let text = item.text
+                    
+                    let fetchRequestLog = NSFetchRequest(entityName: "Log")
+                    let precidateLog = NSPredicate(format: "text LIKE %@", text!)
+                    fetchRequestLog.predicate = precidateLog
+                    var logCount: NSInteger? = nil
+                    do {
+                        logCount = try appDelegate.managedObjectContext.countForFetchRequest(fetchRequestLog)
+                    } catch let error as NSError? {
+                        print(error)
+                    }
+                    
+                    if logCount == 1{
+                        do {
+                            let logs = try appDelegate.managedObjectContext.executeFetchRequest(fetchRequestLog) as! [Log]
+                            let now = NSDate()
+                            logs[0].endtime = now
+                        } catch {
+                            print("error")
+                        }
+                    }
+                    
+                    //削除処理
                     appDelegate.managedObjectContext.deleteObject(item)
                 }
             } catch let error as NSError {

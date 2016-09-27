@@ -6,81 +6,82 @@ provides-nominal:
 provides-member:
 - ["C10SimpleTodo17LogViewController", ""]
 provides-dynamic-lookup:
-- "setNaviToolbarColor"
-- "userDefaults"
-- "showPopMessageView"
-- "viewWillAppear"
-- "pushCloseButton"
-- "numberOfSectionsInTableView"
-- "popupView"
-- "btmToolbar"
-- "didReceiveMemoryWarning"
-- "navigationBar"
-- "controllerDidChangeContent"
-- "headerView"
-- "zeroView"
 - "tableView"
 - "tableView"
 - "tableView"
 - "tableView"
 - "tableView"
-- "viewDidLoad"
 - "fetchedResultsController"
 - "appDelegate"
+- "numberOfSectionsInTableView"
+- "controllerDidChangeContent"
+- "showPopMessageView"
+- "popupView"
 - "pushSaveButton"
+- "viewDidLoad"
+- "viewWillAppear"
+- "navigationBar"
+- "setNaviToolbarColor"
+- "didReceiveMemoryWarning"
+- "userDefaults"
+- "btmToolbar"
+- "headerView"
+- "zeroView"
+- "pushCloseButton"
 depends-top-level:
-- !private "NSInteger"
-- "Int"
-- !private "Log"
-- "UIApplication"
-- !private "..<"
-- !private "NSEC_PER_SEC"
-- !private "Double"
-- !private "NSEntityDescription"
-- "StringLiteralType"
-- "UIBarButtonItem"
-- "UITableView"
 - !private "NSSortDescriptor"
-- !private "*"
-- "NSIndexPath"
-- !private "Int64"
-- !private "NSDateFormatter"
-- !private "dispatch_time"
-- !private "AudioServicesPlaySystemSound"
-- !private ">"
-- !private "DISPATCH_TIME_NOW"
-- !private "String"
-- !private "NSDate"
+- !private "UIFont"
 - !private "UILabel"
 - "NSFetchedResultsController"
-- "BooleanLiteralType"
-- "LogViewController"
-- "UIViewController"
-- !private "ColorViewController"
-- !private "dispatch_get_main_queue"
-- !private "dispatch_after"
-- "UITableViewDataSource"
-- "NSUserDefaults"
-- "AppDelegate"
-- !private "~="
-- "UITableViewDelegate"
-- !private "Item"
-- !private "NSPredicate"
-- !private "=="
-- "NSFetchedResultsControllerDelegate"
+- !private "*"
+- "UITableView"
+- !private "NSEC_PER_SEC"
+- "StringLiteralType"
+- "NSIndexPath"
+- !private "NSInteger"
+- !private "Double"
+- "UIBarButtonItem"
 - !private "CGFloat"
-- !private "NSError"
-- "Bool"
-- "Array"
-- !private "+"
 - "UIToolbar"
+- !private "+"
+- !private "DISPATCH_TIME_NOW"
+- !private "dispatch_time"
+- "UIViewController"
+- !private "Int64"
+- "BooleanLiteralType"
 - "UITableViewCell"
-- !private "UIFont"
-- !private "UITableViewAutomaticDimension"
+- "Bool"
+- "NSUserDefaults"
 - "UIView"
 - "UINavigationBar"
+- !private "NSDateFormatter"
 - !private "NSFetchRequest"
+- !private "Item"
+- !private "!="
+- !private "AudioServicesPlaySystemSound"
+- !private "=="
+- !private "~="
+- !private "String"
+- !private "Log"
+- !private "dispatch_get_main_queue"
+- "LogViewController"
+- !private "NSError"
+- !private "dispatch_after"
+- !private "..<"
+- !private "NSPredicate"
+- "UITableViewDataSource"
+- "UITableViewDelegate"
+- "UIApplication"
+- "AppDelegate"
+- !private "NSEntityDescription"
+- "NSFetchedResultsControllerDelegate"
+- !private "UITableViewAutomaticDimension"
+- !private "NSDate"
+- !private ">"
+- !private "ColorViewController"
 - !private "print"
+- "Int"
+- "Array"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Normal"]
 - !private ["Ps16AbsoluteValuable", "init"]
@@ -128,6 +129,7 @@ depends-member:
 - !private ["Ps9AnyObject", "dispatch_get_main_queue"]
 - !private ["Ps9AnyObject", "dispatch_time"]
 - !private ["Ps9AnyObject", "displayOrder"]
+- !private ["Ps9AnyObject", "endtime"]
 - !private ["Ps9AnyObject", "estimatedRowHeight"]
 - !private ["Ps9AnyObject", "executeFetchRequest"]
 - !private ["Ps9AnyObject", "fadeIn"]
@@ -290,6 +292,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "dispatch_get_main_queue"]
 - !private ["Ps11CVarArgType", "dispatch_time"]
 - !private ["Ps11CVarArgType", "displayOrder"]
+- !private ["Ps11CVarArgType", "endtime"]
 - !private ["Ps11CVarArgType", "estimatedRowHeight"]
 - !private ["Ps11CVarArgType", "executeFetchRequest"]
 - !private ["Ps11CVarArgType", "fadeIn"]
@@ -428,6 +431,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "dispatch_get_main_queue"]
 - !private ["Ps28CustomDebugStringConvertible", "dispatch_time"]
 - !private ["Ps28CustomDebugStringConvertible", "displayOrder"]
+- !private ["Ps28CustomDebugStringConvertible", "endtime"]
 - !private ["Ps28CustomDebugStringConvertible", "estimatedRowHeight"]
 - !private ["Ps28CustomDebugStringConvertible", "executeFetchRequest"]
 - !private ["Ps28CustomDebugStringConvertible", "fadeIn"]
@@ -549,6 +553,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "dispatch_get_main_queue"]
 - !private ["Ps23CustomStringConvertible", "dispatch_time"]
 - !private ["Ps23CustomStringConvertible", "displayOrder"]
+- !private ["Ps23CustomStringConvertible", "endtime"]
 - !private ["Ps23CustomStringConvertible", "estimatedRowHeight"]
 - !private ["Ps23CustomStringConvertible", "executeFetchRequest"]
 - !private ["Ps23CustomStringConvertible", "fadeIn"]
@@ -668,6 +673,7 @@ depends-member:
 - !private ["Ps9Equatable", "dispatch_get_main_queue"]
 - !private ["Ps9Equatable", "dispatch_time"]
 - !private ["Ps9Equatable", "displayOrder"]
+- !private ["Ps9Equatable", "endtime"]
 - !private ["Ps9Equatable", "estimatedRowHeight"]
 - !private ["Ps9Equatable", "executeFetchRequest"]
 - !private ["Ps9Equatable", "fadeIn"]
@@ -795,6 +801,7 @@ depends-member:
 - !private ["Ps8Hashable", "dispatch_get_main_queue"]
 - !private ["Ps8Hashable", "dispatch_time"]
 - !private ["Ps8Hashable", "displayOrder"]
+- !private ["Ps8Hashable", "endtime"]
 - !private ["Ps8Hashable", "estimatedRowHeight"]
 - !private ["Ps8Hashable", "executeFetchRequest"]
 - !private ["Ps8Hashable", "fadeIn"]
@@ -892,6 +899,7 @@ depends-member:
 - !private ["C10SimpleTodo4Item", "displayOrder"]
 - !private ["C10SimpleTodo4Item", "text"]
 - !private ["C10SimpleTodo3Log", "deinit"]
+- !private ["C10SimpleTodo3Log", "endtime"]
 - !private ["C10SimpleTodo3Log", "text"]
 - !private ["C10SimpleTodo3Log", "time"]
 - ["C10SimpleTodo17LogViewController", "AppDelegate"]
@@ -1176,6 +1184,7 @@ depends-member:
 - !private ["CSo14NSFetchRequest", "sortDescriptors"]
 - !private ["PSo20NSFetchRequestResult", "checked"]
 - !private ["PSo20NSFetchRequestResult", "displayOrder"]
+- !private ["PSo20NSFetchRequestResult", "endtime"]
 - !private ["PSo20NSFetchRequestResult", "text"]
 - !private ["PSo20NSFetchRequestResult", "time"]
 - !private ["CSo26NSFetchedResultsController", "delegate"]
@@ -1248,6 +1257,7 @@ depends-member:
 - !private ["CSo15NSManagedObject", "checked"]
 - !private ["CSo15NSManagedObject", "deinit"]
 - !private ["CSo15NSManagedObject", "displayOrder"]
+- !private ["CSo15NSManagedObject", "endtime"]
 - !private ["CSo15NSManagedObject", "text"]
 - !private ["CSo15NSManagedObject", "time"]
 - !private ["CSo22NSManagedObjectContext", "countForFetchRequest"]
@@ -1314,6 +1324,7 @@ depends-member:
 - !private ["CSo8NSObject", "dispatch_get_main_queue"]
 - !private ["CSo8NSObject", "dispatch_time"]
 - !private ["CSo8NSObject", "displayOrder"]
+- !private ["CSo8NSObject", "endtime"]
 - !private ["CSo8NSObject", "estimatedRowHeight"]
 - !private ["CSo8NSObject", "executeFetchRequest"]
 - !private ["CSo8NSObject", "fadeIn"]
@@ -1423,6 +1434,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "dispatch_get_main_queue"]
 - !private ["PSo16NSObjectProtocol", "dispatch_time"]
 - !private ["PSo16NSObjectProtocol", "displayOrder"]
+- !private ["PSo16NSObjectProtocol", "endtime"]
 - !private ["PSo16NSObjectProtocol", "estimatedRowHeight"]
 - !private ["PSo16NSObjectProtocol", "executeFetchRequest"]
 - !private ["PSo16NSObjectProtocol", "fadeIn"]
@@ -2749,6 +2761,7 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/kenjou/Documents/SimpleToDo/SingleTodo/SimpleTodo/SimpleTodo-Bridging-Header.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Firebase/Analytics/Sources/module.modulemap"
