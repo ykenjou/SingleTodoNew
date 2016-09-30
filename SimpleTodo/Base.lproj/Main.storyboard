@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Cwr-T5-8w8">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -523,6 +522,11 @@
                                     <navigationItem title="Input history" id="ZHc-CF-Lte"/>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOh-t7-gGS">
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="21e-nW-D6O">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -648,13 +652,16 @@ You can enroll in a list of Todo again by choosing an item among a list, and pus
                             <constraint firstItem="I20-T1-9M8" firstAttribute="top" secondItem="NyH-YG-WO9" secondAttribute="bottom" id="YL0-KS-3cV"/>
                             <constraint firstItem="hex-0p-uDJ" firstAttribute="leading" secondItem="Di0-D6-2d1" secondAttribute="leading" id="aRo-m1-1bH"/>
                             <constraint firstItem="21e-nW-D6O" firstAttribute="leading" secondItem="Di0-D6-2d1" secondAttribute="leading" id="b68-6B-ifi"/>
+                            <constraint firstItem="GOh-t7-gGS" firstAttribute="top" secondItem="Ieu-Ze-VsD" secondAttribute="bottom" constant="12" id="bL4-8h-Wlr"/>
                             <constraint firstItem="6vS-j4-G6O" firstAttribute="top" secondItem="hex-0p-uDJ" secondAttribute="bottom" id="dGN-Vg-jQU"/>
+                            <constraint firstAttribute="trailing" secondItem="GOh-t7-gGS" secondAttribute="trailing" constant="8" id="hvK-w1-XbJ"/>
                             <constraint firstItem="2Uw-rV-0rp" firstAttribute="leading" secondItem="Di0-D6-2d1" secondAttribute="leading" id="tu8-L5-AvB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Log" id="ApB-RF-bcY"/>
                     <connections>
                         <outlet property="btmToolbar" destination="NyH-YG-WO9" id="Ccj-wb-1kQ"/>
+                        <outlet property="headDateLabel" destination="GOh-t7-gGS" id="Kd2-7P-Iec"/>
                         <outlet property="headerView" destination="21e-nW-D6O" id="sda-Tf-RdF"/>
                         <outlet property="navigationBar" destination="hex-0p-uDJ" id="ytC-jw-QMz"/>
                         <outlet property="popupView" destination="a9v-Kc-CpH" id="s34-Ps-PfJ"/>

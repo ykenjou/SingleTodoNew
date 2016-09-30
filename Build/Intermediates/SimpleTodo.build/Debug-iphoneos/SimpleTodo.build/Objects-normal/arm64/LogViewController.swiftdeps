@@ -6,82 +6,92 @@ provides-nominal:
 provides-member:
 - ["C10SimpleTodo17LogViewController", ""]
 provides-dynamic-lookup:
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "fetchedResultsController"
-- "appDelegate"
-- "numberOfSectionsInTableView"
+- "didReceiveMemoryWarning"
+- "headDateLabel"
+- "pushCloseButton"
 - "controllerDidChangeContent"
-- "showPopMessageView"
-- "popupView"
+- "userDefaults"
 - "pushSaveButton"
+- "formatter"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
 - "viewDidLoad"
+- "appDelegate"
+- "fetchedResultsController"
 - "viewWillAppear"
 - "navigationBar"
+- "popupView"
 - "setNaviToolbarColor"
-- "didReceiveMemoryWarning"
-- "userDefaults"
+- "showPopMessageView"
+- "numberOfSectionsInTableView"
+- "zeroView"
+- "cal"
 - "btmToolbar"
 - "headerView"
-- "zeroView"
-- "pushCloseButton"
 depends-top-level:
-- !private "NSSortDescriptor"
-- !private "UIFont"
-- !private "UILabel"
-- "NSFetchedResultsController"
-- !private "*"
-- "UITableView"
-- !private "NSEC_PER_SEC"
-- "StringLiteralType"
-- "NSIndexPath"
-- !private "NSInteger"
-- !private "Double"
-- "UIBarButtonItem"
+- "NSCalendar"
+- !private "ColorViewController"
+- "NSFetchedResultsControllerDelegate"
+- "NSCalendarIdentifierGregorian"
+- "UITableViewDelegate"
 - !private "CGFloat"
-- "UIToolbar"
-- !private "+"
-- !private "DISPATCH_TIME_NOW"
-- !private "dispatch_time"
-- "UIViewController"
-- !private "Int64"
-- "BooleanLiteralType"
-- "UITableViewCell"
-- "Bool"
-- "NSUserDefaults"
-- "UIView"
+- "UITableViewDataSource"
 - "UINavigationBar"
-- !private "NSDateFormatter"
-- !private "NSFetchRequest"
+- "StringLiteralType"
+- "NSFetchedResultsController"
+- !private "NSDateComponents"
+- !private "dispatch_after"
+- "Bool"
+- "NSDateFormatter"
+- !private "dispatch_get_main_queue"
 - !private "Item"
-- !private "!="
-- !private "AudioServicesPlaySystemSound"
+- "LogViewController"
+- !private "NSLocale"
+- !private "NSEntityDescription"
+- !private "UIFont"
+- "BooleanLiteralType"
+- "NSUserDefaults"
+- !private "NSError"
+- !private "Log"
+- !private "dispatch_time"
+- "UIView"
+- "Array"
 - !private "=="
 - !private "~="
-- !private "String"
-- !private "Log"
-- !private "dispatch_get_main_queue"
-- "LogViewController"
-- !private "NSError"
-- !private "dispatch_after"
-- !private "..<"
-- !private "NSPredicate"
-- "UITableViewDataSource"
-- "UITableViewDelegate"
-- "UIApplication"
-- "AppDelegate"
-- !private "NSEntityDescription"
-- "NSFetchedResultsControllerDelegate"
-- !private "UITableViewAutomaticDimension"
-- !private "NSDate"
-- !private ">"
-- !private "ColorViewController"
+- "UIBarButtonItem"
+- !private "Int64"
+- !private "NSFetchRequest"
+- "UIViewController"
+- "UITableView"
 - !private "print"
+- "UIApplication"
+- !private "DISPATCH_TIME_NOW"
+- !private "+"
+- !private "UITableViewAutomaticDimension"
+- !private "NSInteger"
+- "UITableViewCell"
+- !private "..<"
+- "UIToolbar"
+- !private "NSEC_PER_SEC"
+- !private ">"
+- !private "NSCalendarUnit"
+- !private "Double"
+- !private "NSPredicate"
+- !private "AudioServicesPlaySystemSound"
 - "Int"
-- "Array"
+- "AppDelegate"
+- !private "!="
+- !private "UnicodeScalarType"
+- "NSIndexPath"
+- !private "-"
+- "UILabel"
+- !private "NSDate"
+- !private "*"
+- !private "NSSortDescriptor"
+- !private "String"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Normal"]
 - !private ["Ps16AbsoluteValuable", "init"]
@@ -91,12 +101,16 @@ depends-member:
 - !private ["Ps9AnyObject", "DISPATCH_TIME_NOW"]
 - !private ["Ps9AnyObject", "Double"]
 - !private ["Ps9AnyObject", "Int64"]
+- ["Ps9AnyObject", "NSCalendar"]
+- ["Ps9AnyObject", "NSCalendarIdentifierGregorian"]
+- !private ["Ps9AnyObject", "NSCalendarUnit"]
 - !private ["Ps9AnyObject", "NSDate"]
-- !private ["Ps9AnyObject", "NSDateFormatter"]
+- ["Ps9AnyObject", "NSDateFormatter"]
 - !private ["Ps9AnyObject", "NSEC_PER_SEC"]
 - !private ["Ps9AnyObject", "NSEntityDescription"]
 - !private ["Ps9AnyObject", "NSFetchRequest"]
 - !private ["Ps9AnyObject", "NSFetchedResultsController"]
+- !private ["Ps9AnyObject", "NSLocale"]
 - !private ["Ps9AnyObject", "NSPredicate"]
 - !private ["Ps9AnyObject", "NSSortDescriptor"]
 - ["Ps9AnyObject", "NSUserDefaults"]
@@ -110,13 +124,16 @@ depends-member:
 - !private ["Ps9AnyObject", "blueColor"]
 - !private ["Ps9AnyObject", "boolForKey"]
 - ["Ps9AnyObject", "btmToolbar"]
+- ["Ps9AnyObject", "cal"]
 - !private ["Ps9AnyObject", "cellForRowAtIndexPath"]
 - !private ["Ps9AnyObject", "checked"]
+- !private ["Ps9AnyObject", "components"]
 - !private ["Ps9AnyObject", "contentView"]
 - ["Ps9AnyObject", "controller"]
 - ["Ps9AnyObject", "controllerDidChangeContent"]
 - ["Ps9AnyObject", "controllerWillChangeContent"]
 - !private ["Ps9AnyObject", "countForFetchRequest"]
+- !private ["Ps9AnyObject", "currentLocale"]
 - !private ["Ps9AnyObject", "darkGrayColor"]
 - !private ["Ps9AnyObject", "dateFormat"]
 - !private ["Ps9AnyObject", "deepBlueColor"]
@@ -138,7 +155,9 @@ depends-member:
 - ["Ps9AnyObject", "fetchedResultsController.storage"]
 - !private ["Ps9AnyObject", "floatForKey"]
 - !private ["Ps9AnyObject", "font"]
+- ["Ps9AnyObject", "formatter"]
 - !private ["Ps9AnyObject", "greenColor"]
+- ["Ps9AnyObject", "headDateLabel"]
 - ["Ps9AnyObject", "headerView"]
 - !private ["Ps9AnyObject", "hidden"]
 - ["Ps9AnyObject", "indexPathForPreferredFocusedViewInTableView"]
@@ -146,6 +165,7 @@ depends-member:
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "insertNewObjectForEntityForName"]
 - !private ["Ps9AnyObject", "lightGrayColor"]
+- !private ["Ps9AnyObject", "locale"]
 - !private ["Ps9AnyObject", "managedObjectContext"]
 - ["Ps9AnyObject", "navigationBar"]
 - ["Ps9AnyObject", "numberOfSectionsInTableView"]
@@ -178,6 +198,7 @@ depends-member:
 - !private ["Ps9AnyObject", "sections"]
 - ["Ps9AnyObject", "setNaviToolbarColor"]
 - ["Ps9AnyObject", "sharedApplication"]
+- !private ["Ps9AnyObject", "shortWeekdaySymbols"]
 - ["Ps9AnyObject", "showPopMessageView"]
 - !private ["Ps9AnyObject", "sortDescriptors"]
 - ["Ps9AnyObject", "standardUserDefaults"]
@@ -194,6 +215,7 @@ depends-member:
 - ["Ps9AnyObject", "viewForZoomingInScrollView"]
 - ["Ps9AnyObject", "viewWillAppear"]
 - !private ["Ps9AnyObject", "viewWithTag"]
+- !private ["Ps9AnyObject", "weekday"]
 - ["Ps9AnyObject", "zeroView"]
 - ["Ps9AnyObject", ""]
 - !private ["C10SimpleTodo11AppDelegate", "managedObjectContext"]
@@ -209,6 +231,7 @@ depends-member:
 - !private ["Ps23ArrayLiteralConvertible", "Generator"]
 - !private ["Ps23ArrayLiteralConvertible", "Index"]
 - !private ["Ps23ArrayLiteralConvertible", "SubSequence"]
+- !private ["Ps23ArrayLiteralConvertible", "Weekday"]
 - !private ["Ps23ArrayLiteralConvertible", "count"]
 - !private ["Ps23ArrayLiteralConvertible", "subscript"]
 - !private ["Vs10ArraySlice", "Generator"]
@@ -252,12 +275,16 @@ depends-member:
 - !private ["Ps11CVarArgType", "Double"]
 - !private ["Ps11CVarArgType", "Int64"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
+- ["Ps11CVarArgType", "NSCalendar"]
+- ["Ps11CVarArgType", "NSCalendarIdentifierGregorian"]
+- !private ["Ps11CVarArgType", "NSCalendarUnit"]
 - !private ["Ps11CVarArgType", "NSDate"]
-- !private ["Ps11CVarArgType", "NSDateFormatter"]
+- ["Ps11CVarArgType", "NSDateFormatter"]
 - !private ["Ps11CVarArgType", "NSEC_PER_SEC"]
 - !private ["Ps11CVarArgType", "NSEntityDescription"]
 - !private ["Ps11CVarArgType", "NSFetchRequest"]
 - !private ["Ps11CVarArgType", "NSFetchedResultsController"]
+- !private ["Ps11CVarArgType", "NSLocale"]
 - !private ["Ps11CVarArgType", "NSPredicate"]
 - !private ["Ps11CVarArgType", "NSSortDescriptor"]
 - ["Ps11CVarArgType", "NSUserDefaults"]
@@ -273,13 +300,16 @@ depends-member:
 - !private ["Ps11CVarArgType", "blueColor"]
 - !private ["Ps11CVarArgType", "boolForKey"]
 - ["Ps11CVarArgType", "btmToolbar"]
+- ["Ps11CVarArgType", "cal"]
 - !private ["Ps11CVarArgType", "cellForRowAtIndexPath"]
 - !private ["Ps11CVarArgType", "checked"]
+- !private ["Ps11CVarArgType", "components"]
 - !private ["Ps11CVarArgType", "contentView"]
 - ["Ps11CVarArgType", "controller"]
 - ["Ps11CVarArgType", "controllerDidChangeContent"]
 - ["Ps11CVarArgType", "controllerWillChangeContent"]
 - !private ["Ps11CVarArgType", "countForFetchRequest"]
+- !private ["Ps11CVarArgType", "currentLocale"]
 - !private ["Ps11CVarArgType", "darkGrayColor"]
 - !private ["Ps11CVarArgType", "dateFormat"]
 - !private ["Ps11CVarArgType", "deepBlueColor"]
@@ -301,7 +331,9 @@ depends-member:
 - ["Ps11CVarArgType", "fetchedResultsController.storage"]
 - !private ["Ps11CVarArgType", "floatForKey"]
 - !private ["Ps11CVarArgType", "font"]
+- ["Ps11CVarArgType", "formatter"]
 - !private ["Ps11CVarArgType", "greenColor"]
+- ["Ps11CVarArgType", "headDateLabel"]
 - ["Ps11CVarArgType", "headerView"]
 - !private ["Ps11CVarArgType", "hidden"]
 - ["Ps11CVarArgType", "indexPathForPreferredFocusedViewInTableView"]
@@ -309,6 +341,7 @@ depends-member:
 - ["Ps11CVarArgType", "init"]
 - !private ["Ps11CVarArgType", "insertNewObjectForEntityForName"]
 - !private ["Ps11CVarArgType", "lightGrayColor"]
+- !private ["Ps11CVarArgType", "locale"]
 - !private ["Ps11CVarArgType", "managedObjectContext"]
 - ["Ps11CVarArgType", "navigationBar"]
 - ["Ps11CVarArgType", "numberOfSectionsInTableView"]
@@ -341,6 +374,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "sections"]
 - ["Ps11CVarArgType", "setNaviToolbarColor"]
 - ["Ps11CVarArgType", "sharedApplication"]
+- !private ["Ps11CVarArgType", "shortWeekdaySymbols"]
 - ["Ps11CVarArgType", "showPopMessageView"]
 - !private ["Ps11CVarArgType", "sortDescriptors"]
 - ["Ps11CVarArgType", "standardUserDefaults"]
@@ -357,6 +391,7 @@ depends-member:
 - ["Ps11CVarArgType", "viewForZoomingInScrollView"]
 - ["Ps11CVarArgType", "viewWillAppear"]
 - !private ["Ps11CVarArgType", "viewWithTag"]
+- !private ["Ps11CVarArgType", "weekday"]
 - ["Ps11CVarArgType", "zeroView"]
 - ["Ps11CVarArgType", ""]
 - !private ["Ps14CollectionType", "Element"]
@@ -389,12 +424,16 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Generator"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "Int64"]
+- ["Ps28CustomDebugStringConvertible", "NSCalendar"]
+- ["Ps28CustomDebugStringConvertible", "NSCalendarIdentifierGregorian"]
+- !private ["Ps28CustomDebugStringConvertible", "NSCalendarUnit"]
 - !private ["Ps28CustomDebugStringConvertible", "NSDate"]
-- !private ["Ps28CustomDebugStringConvertible", "NSDateFormatter"]
+- ["Ps28CustomDebugStringConvertible", "NSDateFormatter"]
 - !private ["Ps28CustomDebugStringConvertible", "NSEC_PER_SEC"]
 - !private ["Ps28CustomDebugStringConvertible", "NSEntityDescription"]
 - !private ["Ps28CustomDebugStringConvertible", "NSFetchRequest"]
 - !private ["Ps28CustomDebugStringConvertible", "NSFetchedResultsController"]
+- !private ["Ps28CustomDebugStringConvertible", "NSLocale"]
 - !private ["Ps28CustomDebugStringConvertible", "NSPredicate"]
 - !private ["Ps28CustomDebugStringConvertible", "NSSortDescriptor"]
 - ["Ps28CustomDebugStringConvertible", "NSUserDefaults"]
@@ -411,14 +450,17 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "blueColor"]
 - !private ["Ps28CustomDebugStringConvertible", "boolForKey"]
 - ["Ps28CustomDebugStringConvertible", "btmToolbar"]
+- ["Ps28CustomDebugStringConvertible", "cal"]
 - !private ["Ps28CustomDebugStringConvertible", "cellForRowAtIndexPath"]
 - !private ["Ps28CustomDebugStringConvertible", "checked"]
+- !private ["Ps28CustomDebugStringConvertible", "components"]
 - !private ["Ps28CustomDebugStringConvertible", "contentView"]
 - ["Ps28CustomDebugStringConvertible", "controller"]
 - ["Ps28CustomDebugStringConvertible", "controllerDidChangeContent"]
 - ["Ps28CustomDebugStringConvertible", "controllerWillChangeContent"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "countForFetchRequest"]
+- !private ["Ps28CustomDebugStringConvertible", "currentLocale"]
 - !private ["Ps28CustomDebugStringConvertible", "darkGrayColor"]
 - !private ["Ps28CustomDebugStringConvertible", "dateFormat"]
 - !private ["Ps28CustomDebugStringConvertible", "deepBlueColor"]
@@ -440,7 +482,9 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "fetchedResultsController.storage"]
 - !private ["Ps28CustomDebugStringConvertible", "floatForKey"]
 - !private ["Ps28CustomDebugStringConvertible", "font"]
+- ["Ps28CustomDebugStringConvertible", "formatter"]
 - !private ["Ps28CustomDebugStringConvertible", "greenColor"]
+- ["Ps28CustomDebugStringConvertible", "headDateLabel"]
 - ["Ps28CustomDebugStringConvertible", "headerView"]
 - !private ["Ps28CustomDebugStringConvertible", "hidden"]
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
@@ -448,6 +492,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "insertNewObjectForEntityForName"]
 - !private ["Ps28CustomDebugStringConvertible", "lightGrayColor"]
+- !private ["Ps28CustomDebugStringConvertible", "locale"]
 - !private ["Ps28CustomDebugStringConvertible", "managedObjectContext"]
 - ["Ps28CustomDebugStringConvertible", "navigationBar"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInTableView"]
@@ -480,6 +525,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "sections"]
 - ["Ps28CustomDebugStringConvertible", "setNaviToolbarColor"]
 - ["Ps28CustomDebugStringConvertible", "sharedApplication"]
+- !private ["Ps28CustomDebugStringConvertible", "shortWeekdaySymbols"]
 - ["Ps28CustomDebugStringConvertible", "showPopMessageView"]
 - !private ["Ps28CustomDebugStringConvertible", "sortDescriptors"]
 - ["Ps28CustomDebugStringConvertible", "standardUserDefaults"]
@@ -497,6 +543,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "viewForZoomingInScrollView"]
 - ["Ps28CustomDebugStringConvertible", "viewWillAppear"]
 - !private ["Ps28CustomDebugStringConvertible", "viewWithTag"]
+- !private ["Ps28CustomDebugStringConvertible", "weekday"]
 - ["Ps28CustomDebugStringConvertible", "zeroView"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "AudioServicesPlaySystemSound"]
@@ -510,12 +557,16 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "Int64"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- ["Ps23CustomStringConvertible", "NSCalendar"]
+- ["Ps23CustomStringConvertible", "NSCalendarIdentifierGregorian"]
+- !private ["Ps23CustomStringConvertible", "NSCalendarUnit"]
 - !private ["Ps23CustomStringConvertible", "NSDate"]
-- !private ["Ps23CustomStringConvertible", "NSDateFormatter"]
+- ["Ps23CustomStringConvertible", "NSDateFormatter"]
 - !private ["Ps23CustomStringConvertible", "NSEC_PER_SEC"]
 - !private ["Ps23CustomStringConvertible", "NSEntityDescription"]
 - !private ["Ps23CustomStringConvertible", "NSFetchRequest"]
 - !private ["Ps23CustomStringConvertible", "NSFetchedResultsController"]
+- !private ["Ps23CustomStringConvertible", "NSLocale"]
 - !private ["Ps23CustomStringConvertible", "NSPredicate"]
 - !private ["Ps23CustomStringConvertible", "NSSortDescriptor"]
 - ["Ps23CustomStringConvertible", "NSUserDefaults"]
@@ -533,14 +584,17 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "blueColor"]
 - !private ["Ps23CustomStringConvertible", "boolForKey"]
 - ["Ps23CustomStringConvertible", "btmToolbar"]
+- ["Ps23CustomStringConvertible", "cal"]
 - !private ["Ps23CustomStringConvertible", "cellForRowAtIndexPath"]
 - !private ["Ps23CustomStringConvertible", "checked"]
+- !private ["Ps23CustomStringConvertible", "components"]
 - !private ["Ps23CustomStringConvertible", "contentView"]
 - ["Ps23CustomStringConvertible", "controller"]
 - ["Ps23CustomStringConvertible", "controllerDidChangeContent"]
 - ["Ps23CustomStringConvertible", "controllerWillChangeContent"]
 - !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "countForFetchRequest"]
+- !private ["Ps23CustomStringConvertible", "currentLocale"]
 - !private ["Ps23CustomStringConvertible", "darkGrayColor"]
 - !private ["Ps23CustomStringConvertible", "dateFormat"]
 - !private ["Ps23CustomStringConvertible", "deepBlueColor"]
@@ -562,7 +616,9 @@ depends-member:
 - ["Ps23CustomStringConvertible", "fetchedResultsController.storage"]
 - !private ["Ps23CustomStringConvertible", "floatForKey"]
 - !private ["Ps23CustomStringConvertible", "font"]
+- ["Ps23CustomStringConvertible", "formatter"]
 - !private ["Ps23CustomStringConvertible", "greenColor"]
+- ["Ps23CustomStringConvertible", "headDateLabel"]
 - ["Ps23CustomStringConvertible", "headerView"]
 - !private ["Ps23CustomStringConvertible", "hidden"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
@@ -570,6 +626,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "insertNewObjectForEntityForName"]
 - !private ["Ps23CustomStringConvertible", "lightGrayColor"]
+- !private ["Ps23CustomStringConvertible", "locale"]
 - !private ["Ps23CustomStringConvertible", "managedObjectContext"]
 - ["Ps23CustomStringConvertible", "navigationBar"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInTableView"]
@@ -602,6 +659,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "sections"]
 - ["Ps23CustomStringConvertible", "setNaviToolbarColor"]
 - ["Ps23CustomStringConvertible", "sharedApplication"]
+- !private ["Ps23CustomStringConvertible", "shortWeekdaySymbols"]
 - ["Ps23CustomStringConvertible", "showPopMessageView"]
 - !private ["Ps23CustomStringConvertible", "sortDescriptors"]
 - ["Ps23CustomStringConvertible", "standardUserDefaults"]
@@ -619,6 +677,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "viewForZoomingInScrollView"]
 - ["Ps23CustomStringConvertible", "viewWillAppear"]
 - !private ["Ps23CustomStringConvertible", "viewWithTag"]
+- !private ["Ps23CustomStringConvertible", "weekday"]
 - ["Ps23CustomStringConvertible", "zeroView"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Sd", "Normal"]
@@ -629,15 +688,20 @@ depends-member:
 - !private ["Ps9Equatable", "DISPATCH_TIME_NOW"]
 - !private ["Ps9Equatable", "Distance"]
 - !private ["Ps9Equatable", "Double"]
+- !private ["Ps9Equatable", "Element"]
 - !private ["Ps9Equatable", "Generator"]
 - !private ["Ps9Equatable", "Int64"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
+- ["Ps9Equatable", "NSCalendar"]
+- ["Ps9Equatable", "NSCalendarIdentifierGregorian"]
+- !private ["Ps9Equatable", "NSCalendarUnit"]
 - !private ["Ps9Equatable", "NSDate"]
-- !private ["Ps9Equatable", "NSDateFormatter"]
+- ["Ps9Equatable", "NSDateFormatter"]
 - !private ["Ps9Equatable", "NSEC_PER_SEC"]
 - !private ["Ps9Equatable", "NSEntityDescription"]
 - !private ["Ps9Equatable", "NSFetchRequest"]
 - !private ["Ps9Equatable", "NSFetchedResultsController"]
+- !private ["Ps9Equatable", "NSLocale"]
 - !private ["Ps9Equatable", "NSPredicate"]
 - !private ["Ps9Equatable", "NSSortDescriptor"]
 - ["Ps9Equatable", "NSUserDefaults"]
@@ -646,6 +710,7 @@ depends-member:
 - !private ["Ps9Equatable", "UIFont"]
 - !private ["Ps9Equatable", "UITableViewAutomaticDimension"]
 - !private ["Ps9Equatable", "UIView"]
+- !private ["Ps9Equatable", "Weekday"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "appDelegate"]
@@ -654,13 +719,16 @@ depends-member:
 - !private ["Ps9Equatable", "blueColor"]
 - !private ["Ps9Equatable", "boolForKey"]
 - ["Ps9Equatable", "btmToolbar"]
+- ["Ps9Equatable", "cal"]
 - !private ["Ps9Equatable", "cellForRowAtIndexPath"]
 - !private ["Ps9Equatable", "checked"]
+- !private ["Ps9Equatable", "components"]
 - !private ["Ps9Equatable", "contentView"]
 - ["Ps9Equatable", "controller"]
 - ["Ps9Equatable", "controllerDidChangeContent"]
 - ["Ps9Equatable", "controllerWillChangeContent"]
 - !private ["Ps9Equatable", "countForFetchRequest"]
+- !private ["Ps9Equatable", "currentLocale"]
 - !private ["Ps9Equatable", "darkGrayColor"]
 - !private ["Ps9Equatable", "dateFormat"]
 - !private ["Ps9Equatable", "deepBlueColor"]
@@ -682,7 +750,9 @@ depends-member:
 - ["Ps9Equatable", "fetchedResultsController.storage"]
 - !private ["Ps9Equatable", "floatForKey"]
 - !private ["Ps9Equatable", "font"]
+- ["Ps9Equatable", "formatter"]
 - !private ["Ps9Equatable", "greenColor"]
+- ["Ps9Equatable", "headDateLabel"]
 - ["Ps9Equatable", "headerView"]
 - !private ["Ps9Equatable", "hidden"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedViewInTableView"]
@@ -690,6 +760,7 @@ depends-member:
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "insertNewObjectForEntityForName"]
 - !private ["Ps9Equatable", "lightGrayColor"]
+- !private ["Ps9Equatable", "locale"]
 - !private ["Ps9Equatable", "managedObjectContext"]
 - ["Ps9Equatable", "navigationBar"]
 - ["Ps9Equatable", "numberOfSectionsInTableView"]
@@ -722,6 +793,7 @@ depends-member:
 - !private ["Ps9Equatable", "sections"]
 - ["Ps9Equatable", "setNaviToolbarColor"]
 - ["Ps9Equatable", "sharedApplication"]
+- !private ["Ps9Equatable", "shortWeekdaySymbols"]
 - ["Ps9Equatable", "showPopMessageView"]
 - !private ["Ps9Equatable", "sortDescriptors"]
 - ["Ps9Equatable", "standardUserDefaults"]
@@ -738,6 +810,7 @@ depends-member:
 - ["Ps9Equatable", "viewForZoomingInScrollView"]
 - ["Ps9Equatable", "viewWillAppear"]
 - !private ["Ps9Equatable", "viewWithTag"]
+- !private ["Ps9Equatable", "weekday"]
 - ["Ps9Equatable", "zeroView"]
 - ["Ps9Equatable", ""]
 - !private ["O10SimpleTodo8FadeType", "Normal"]
@@ -760,12 +833,16 @@ depends-member:
 - !private ["Ps8Hashable", "Double"]
 - !private ["Ps8Hashable", "Int64"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
+- ["Ps8Hashable", "NSCalendar"]
+- ["Ps8Hashable", "NSCalendarIdentifierGregorian"]
+- !private ["Ps8Hashable", "NSCalendarUnit"]
 - !private ["Ps8Hashable", "NSDate"]
-- !private ["Ps8Hashable", "NSDateFormatter"]
+- ["Ps8Hashable", "NSDateFormatter"]
 - !private ["Ps8Hashable", "NSEC_PER_SEC"]
 - !private ["Ps8Hashable", "NSEntityDescription"]
 - !private ["Ps8Hashable", "NSFetchRequest"]
 - !private ["Ps8Hashable", "NSFetchedResultsController"]
+- !private ["Ps8Hashable", "NSLocale"]
 - !private ["Ps8Hashable", "NSPredicate"]
 - !private ["Ps8Hashable", "NSSortDescriptor"]
 - ["Ps8Hashable", "NSUserDefaults"]
@@ -782,13 +859,16 @@ depends-member:
 - !private ["Ps8Hashable", "blueColor"]
 - !private ["Ps8Hashable", "boolForKey"]
 - ["Ps8Hashable", "btmToolbar"]
+- ["Ps8Hashable", "cal"]
 - !private ["Ps8Hashable", "cellForRowAtIndexPath"]
 - !private ["Ps8Hashable", "checked"]
+- !private ["Ps8Hashable", "components"]
 - !private ["Ps8Hashable", "contentView"]
 - ["Ps8Hashable", "controller"]
 - ["Ps8Hashable", "controllerDidChangeContent"]
 - ["Ps8Hashable", "controllerWillChangeContent"]
 - !private ["Ps8Hashable", "countForFetchRequest"]
+- !private ["Ps8Hashable", "currentLocale"]
 - !private ["Ps8Hashable", "darkGrayColor"]
 - !private ["Ps8Hashable", "dateFormat"]
 - !private ["Ps8Hashable", "deepBlueColor"]
@@ -810,7 +890,9 @@ depends-member:
 - ["Ps8Hashable", "fetchedResultsController.storage"]
 - !private ["Ps8Hashable", "floatForKey"]
 - !private ["Ps8Hashable", "font"]
+- ["Ps8Hashable", "formatter"]
 - !private ["Ps8Hashable", "greenColor"]
+- ["Ps8Hashable", "headDateLabel"]
 - ["Ps8Hashable", "headerView"]
 - !private ["Ps8Hashable", "hidden"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedViewInTableView"]
@@ -818,6 +900,7 @@ depends-member:
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "insertNewObjectForEntityForName"]
 - !private ["Ps8Hashable", "lightGrayColor"]
+- !private ["Ps8Hashable", "locale"]
 - !private ["Ps8Hashable", "managedObjectContext"]
 - ["Ps8Hashable", "navigationBar"]
 - ["Ps8Hashable", "numberOfSectionsInTableView"]
@@ -850,6 +933,7 @@ depends-member:
 - !private ["Ps8Hashable", "sections"]
 - ["Ps8Hashable", "setNaviToolbarColor"]
 - ["Ps8Hashable", "sharedApplication"]
+- !private ["Ps8Hashable", "shortWeekdaySymbols"]
 - ["Ps8Hashable", "showPopMessageView"]
 - !private ["Ps8Hashable", "sortDescriptors"]
 - ["Ps8Hashable", "standardUserDefaults"]
@@ -866,6 +950,7 @@ depends-member:
 - ["Ps8Hashable", "viewForZoomingInScrollView"]
 - ["Ps8Hashable", "viewWillAppear"]
 - !private ["Ps8Hashable", "viewWithTag"]
+- !private ["Ps8Hashable", "weekday"]
 - ["Ps8Hashable", "zeroView"]
 - ["Ps8Hashable", ""]
 - !private ["SQ", "deinit"]
@@ -913,8 +998,12 @@ depends-member:
 - !private ["C10SimpleTodo17LogViewController", "Int64"]
 - !private ["C10SimpleTodo17LogViewController", "Item"]
 - !private ["C10SimpleTodo17LogViewController", "Log"]
+- ["C10SimpleTodo17LogViewController", "NSCalendar"]
+- ["C10SimpleTodo17LogViewController", "NSCalendarIdentifierGregorian"]
+- !private ["C10SimpleTodo17LogViewController", "NSCalendarUnit"]
 - !private ["C10SimpleTodo17LogViewController", "NSDate"]
-- !private ["C10SimpleTodo17LogViewController", "NSDateFormatter"]
+- !private ["C10SimpleTodo17LogViewController", "NSDateComponents"]
+- ["C10SimpleTodo17LogViewController", "NSDateFormatter"]
 - !private ["C10SimpleTodo17LogViewController", "NSEC_PER_SEC"]
 - !private ["C10SimpleTodo17LogViewController", "NSEntityDescription"]
 - !private ["C10SimpleTodo17LogViewController", "NSError"]
@@ -922,6 +1011,7 @@ depends-member:
 - ["C10SimpleTodo17LogViewController", "NSFetchedResultsController"]
 - ["C10SimpleTodo17LogViewController", "NSIndexPath"]
 - !private ["C10SimpleTodo17LogViewController", "NSInteger"]
+- !private ["C10SimpleTodo17LogViewController", "NSLocale"]
 - !private ["C10SimpleTodo17LogViewController", "NSPredicate"]
 - !private ["C10SimpleTodo17LogViewController", "NSSortDescriptor"]
 - ["C10SimpleTodo17LogViewController", "NSUserDefaults"]
@@ -929,7 +1019,7 @@ depends-member:
 - ["C10SimpleTodo17LogViewController", "UIApplication"]
 - ["C10SimpleTodo17LogViewController", "UIBarButtonItem"]
 - !private ["C10SimpleTodo17LogViewController", "UIFont"]
-- !private ["C10SimpleTodo17LogViewController", "UILabel"]
+- ["C10SimpleTodo17LogViewController", "UILabel"]
 - ["C10SimpleTodo17LogViewController", "UINavigationBar"]
 - ["C10SimpleTodo17LogViewController", "UITableView"]
 - !private ["C10SimpleTodo17LogViewController", "UITableViewAutomaticDimension"]
@@ -938,6 +1028,7 @@ depends-member:
 - ["C10SimpleTodo17LogViewController", "UIView"]
 - ["C10SimpleTodo17LogViewController", "appDelegate"]
 - ["C10SimpleTodo17LogViewController", "btmToolbar"]
+- ["C10SimpleTodo17LogViewController", "cal"]
 - ["C10SimpleTodo17LogViewController", "controller"]
 - ["C10SimpleTodo17LogViewController", "controllerDidChangeContent"]
 - ["C10SimpleTodo17LogViewController", "controllerWillChangeContent"]
@@ -949,6 +1040,8 @@ depends-member:
 - !private ["C10SimpleTodo17LogViewController", "dispatch_time"]
 - ["C10SimpleTodo17LogViewController", "fetchedResultsController"]
 - !private ["C10SimpleTodo17LogViewController", "fetchedResultsController.storage"]
+- ["C10SimpleTodo17LogViewController", "formatter"]
+- ["C10SimpleTodo17LogViewController", "headDateLabel"]
 - ["C10SimpleTodo17LogViewController", "headerView"]
 - ["C10SimpleTodo17LogViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["C10SimpleTodo17LogViewController", "init"]
@@ -1001,18 +1094,26 @@ depends-member:
 - !private ["Ps16MutableSliceable", "SubSequence"]
 - !private ["Ps16MutableSliceable", "count"]
 - !private ["Ps16MutableSliceable", "subscript"]
+- !private ["CSo10NSCalendar", "components"]
+- ["CSo10NSCalendar", "init"]
+- !private ["VSC14NSCalendarUnit", "Element"]
+- !private ["VSC14NSCalendarUnit", "Weekday"]
 - !private ["PSo8NSCoding", "AudioServicesPlaySystemSound"]
 - !private ["PSo8NSCoding", "CGFloat"]
 - !private ["PSo8NSCoding", "ColorViewController"]
 - !private ["PSo8NSCoding", "DISPATCH_TIME_NOW"]
 - !private ["PSo8NSCoding", "Double"]
 - !private ["PSo8NSCoding", "Int64"]
+- ["PSo8NSCoding", "NSCalendar"]
+- ["PSo8NSCoding", "NSCalendarIdentifierGregorian"]
+- !private ["PSo8NSCoding", "NSCalendarUnit"]
 - !private ["PSo8NSCoding", "NSDate"]
-- !private ["PSo8NSCoding", "NSDateFormatter"]
+- ["PSo8NSCoding", "NSDateFormatter"]
 - !private ["PSo8NSCoding", "NSEC_PER_SEC"]
 - !private ["PSo8NSCoding", "NSEntityDescription"]
 - !private ["PSo8NSCoding", "NSFetchRequest"]
 - !private ["PSo8NSCoding", "NSFetchedResultsController"]
+- !private ["PSo8NSCoding", "NSLocale"]
 - !private ["PSo8NSCoding", "NSPredicate"]
 - !private ["PSo8NSCoding", "NSSortDescriptor"]
 - ["PSo8NSCoding", "NSUserDefaults"]
@@ -1025,12 +1126,15 @@ depends-member:
 - !private ["PSo8NSCoding", "barTintColor"]
 - !private ["PSo8NSCoding", "blueColor"]
 - ["PSo8NSCoding", "btmToolbar"]
+- ["PSo8NSCoding", "cal"]
 - !private ["PSo8NSCoding", "cellForRowAtIndexPath"]
+- !private ["PSo8NSCoding", "components"]
 - !private ["PSo8NSCoding", "contentView"]
 - ["PSo8NSCoding", "controller"]
 - ["PSo8NSCoding", "controllerDidChangeContent"]
 - ["PSo8NSCoding", "controllerWillChangeContent"]
 - !private ["PSo8NSCoding", "countForFetchRequest"]
+- !private ["PSo8NSCoding", "currentLocale"]
 - !private ["PSo8NSCoding", "darkGrayColor"]
 - !private ["PSo8NSCoding", "dateFormat"]
 - !private ["PSo8NSCoding", "deepBlueColor"]
@@ -1048,7 +1152,9 @@ depends-member:
 - ["PSo8NSCoding", "fetchedResultsController"]
 - ["PSo8NSCoding", "fetchedResultsController.storage"]
 - !private ["PSo8NSCoding", "font"]
+- ["PSo8NSCoding", "formatter"]
 - !private ["PSo8NSCoding", "greenColor"]
+- ["PSo8NSCoding", "headDateLabel"]
 - ["PSo8NSCoding", "headerView"]
 - !private ["PSo8NSCoding", "hidden"]
 - ["PSo8NSCoding", "indexPathForPreferredFocusedViewInTableView"]
@@ -1056,6 +1162,7 @@ depends-member:
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "insertNewObjectForEntityForName"]
 - !private ["PSo8NSCoding", "lightGrayColor"]
+- !private ["PSo8NSCoding", "locale"]
 - ["PSo8NSCoding", "navigationBar"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
 - !private ["PSo8NSCoding", "orangeColor"]
@@ -1082,6 +1189,7 @@ depends-member:
 - ["PSo8NSCoding", "scrollViewWillEndDragging"]
 - ["PSo8NSCoding", "sectionIndexTitlesForTableView"]
 - ["PSo8NSCoding", "setNaviToolbarColor"]
+- !private ["PSo8NSCoding", "shortWeekdaySymbols"]
 - ["PSo8NSCoding", "showPopMessageView"]
 - !private ["PSo8NSCoding", "sortDescriptors"]
 - !private ["PSo8NSCoding", "stringFromDate"]
@@ -1094,18 +1202,27 @@ depends-member:
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
 - ["PSo8NSCoding", "viewWillAppear"]
 - !private ["PSo8NSCoding", "viewWithTag"]
+- !private ["PSo8NSCoding", "weekday"]
 - ["PSo8NSCoding", "zeroView"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "components"]
+- !private ["PSo9NSCopying", "currentLocale"]
 - !private ["PSo9NSCopying", "dateFormat"]
-- !private ["PSo9NSCopying", "init"]
+- ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "insertNewObjectForEntityForName"]
+- !private ["PSo9NSCopying", "locale"]
 - !private ["PSo9NSCopying", "predicate"]
+- !private ["PSo9NSCopying", "shortWeekdaySymbols"]
 - !private ["PSo9NSCopying", "sortDescriptors"]
 - !private ["PSo9NSCopying", "stringFromDate"]
 - !private ["PSo9NSCopying", "systemFontOfSize"]
+- !private ["PSo9NSCopying", "weekday"]
 - !private ["CSo6NSDate", "init"]
+- !private ["CSo16NSDateComponents", "weekday"]
 - !private ["CSo15NSDateFormatter", "dateFormat"]
-- !private ["CSo15NSDateFormatter", "init"]
+- ["CSo15NSDateFormatter", "init"]
+- !private ["CSo15NSDateFormatter", "locale"]
+- !private ["CSo15NSDateFormatter", "shortWeekdaySymbols"]
 - !private ["CSo15NSDateFormatter", "stringFromDate"]
 - !private ["CSo19NSEntityDescription", "insertNewObjectForEntityForName"]
 - !private ["PSo26NSExtensionRequestHandling", "AudioServicesPlaySystemSound"]
@@ -1114,12 +1231,16 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "DISPATCH_TIME_NOW"]
 - !private ["PSo26NSExtensionRequestHandling", "Double"]
 - !private ["PSo26NSExtensionRequestHandling", "Int64"]
+- ["PSo26NSExtensionRequestHandling", "NSCalendar"]
+- ["PSo26NSExtensionRequestHandling", "NSCalendarIdentifierGregorian"]
+- !private ["PSo26NSExtensionRequestHandling", "NSCalendarUnit"]
 - !private ["PSo26NSExtensionRequestHandling", "NSDate"]
-- !private ["PSo26NSExtensionRequestHandling", "NSDateFormatter"]
+- ["PSo26NSExtensionRequestHandling", "NSDateFormatter"]
 - !private ["PSo26NSExtensionRequestHandling", "NSEC_PER_SEC"]
 - !private ["PSo26NSExtensionRequestHandling", "NSEntityDescription"]
 - !private ["PSo26NSExtensionRequestHandling", "NSFetchRequest"]
 - !private ["PSo26NSExtensionRequestHandling", "NSFetchedResultsController"]
+- !private ["PSo26NSExtensionRequestHandling", "NSLocale"]
 - !private ["PSo26NSExtensionRequestHandling", "NSPredicate"]
 - !private ["PSo26NSExtensionRequestHandling", "NSSortDescriptor"]
 - ["PSo26NSExtensionRequestHandling", "NSUserDefaults"]
@@ -1130,6 +1251,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "appDelegate"]
 - !private ["PSo26NSExtensionRequestHandling", "blueColor"]
 - ["PSo26NSExtensionRequestHandling", "btmToolbar"]
+- ["PSo26NSExtensionRequestHandling", "cal"]
 - ["PSo26NSExtensionRequestHandling", "controller"]
 - ["PSo26NSExtensionRequestHandling", "controllerDidChangeContent"]
 - ["PSo26NSExtensionRequestHandling", "controllerWillChangeContent"]
@@ -1142,7 +1264,9 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_time"]
 - ["PSo26NSExtensionRequestHandling", "fetchedResultsController"]
 - ["PSo26NSExtensionRequestHandling", "fetchedResultsController.storage"]
+- ["PSo26NSExtensionRequestHandling", "formatter"]
 - !private ["PSo26NSExtensionRequestHandling", "greenColor"]
+- ["PSo26NSExtensionRequestHandling", "headDateLabel"]
 - ["PSo26NSExtensionRequestHandling", "headerView"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo26NSExtensionRequestHandling", "init"]
@@ -1198,12 +1322,16 @@ depends-member:
 - !private ["PSo34NSFetchedResultsControllerDelegate", "DISPATCH_TIME_NOW"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "Double"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "Int64"]
+- ["PSo34NSFetchedResultsControllerDelegate", "NSCalendar"]
+- ["PSo34NSFetchedResultsControllerDelegate", "NSCalendarIdentifierGregorian"]
+- !private ["PSo34NSFetchedResultsControllerDelegate", "NSCalendarUnit"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "NSDate"]
-- !private ["PSo34NSFetchedResultsControllerDelegate", "NSDateFormatter"]
+- ["PSo34NSFetchedResultsControllerDelegate", "NSDateFormatter"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "NSEC_PER_SEC"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "NSEntityDescription"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "NSFetchRequest"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "NSFetchedResultsController"]
+- !private ["PSo34NSFetchedResultsControllerDelegate", "NSLocale"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "NSPredicate"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "NSSortDescriptor"]
 - ["PSo34NSFetchedResultsControllerDelegate", "NSUserDefaults"]
@@ -1213,6 +1341,7 @@ depends-member:
 - !private ["PSo34NSFetchedResultsControllerDelegate", "UIView"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "appDelegate"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "btmToolbar"]
+- !private ["PSo34NSFetchedResultsControllerDelegate", "cal"]
 - ["PSo34NSFetchedResultsControllerDelegate", "controller"]
 - ["PSo34NSFetchedResultsControllerDelegate", "controllerDidChangeContent"]
 - ["PSo34NSFetchedResultsControllerDelegate", "controllerWillChangeContent"]
@@ -1221,6 +1350,8 @@ depends-member:
 - !private ["PSo34NSFetchedResultsControllerDelegate", "dispatch_get_main_queue"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "dispatch_time"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "fetchedResultsController"]
+- !private ["PSo34NSFetchedResultsControllerDelegate", "formatter"]
+- !private ["PSo34NSFetchedResultsControllerDelegate", "headDateLabel"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "headerView"]
 - ["PSo34NSFetchedResultsControllerDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "navigationBar"]
@@ -1249,8 +1380,11 @@ depends-member:
 - ["PSo34NSFetchedResultsControllerDelegate", ""]
 - !private ["PSo27NSFetchedResultsSectionInfo", "numberOfObjects"]
 - !private ["CSo11NSFormatter", "dateFormat"]
-- !private ["CSo11NSFormatter", "init"]
+- ["CSo11NSFormatter", "init"]
+- !private ["CSo11NSFormatter", "locale"]
+- !private ["CSo11NSFormatter", "shortWeekdaySymbols"]
 - !private ["CSo11NSFormatter", "stringFromDate"]
+- !private ["CSo8NSLocale", "currentLocale"]
 - !private ["PSo9NSLocking", "countForFetchRequest"]
 - !private ["PSo9NSLocking", "deleteObject"]
 - !private ["PSo9NSLocking", "executeFetchRequest"]
@@ -1275,8 +1409,12 @@ depends-member:
 - !private ["CSo8NSObject", "Int64"]
 - !private ["CSo8NSObject", "Item"]
 - !private ["CSo8NSObject", "Log"]
+- ["CSo8NSObject", "NSCalendar"]
+- ["CSo8NSObject", "NSCalendarIdentifierGregorian"]
+- !private ["CSo8NSObject", "NSCalendarUnit"]
 - !private ["CSo8NSObject", "NSDate"]
-- !private ["CSo8NSObject", "NSDateFormatter"]
+- !private ["CSo8NSObject", "NSDateComponents"]
+- ["CSo8NSObject", "NSDateFormatter"]
 - !private ["CSo8NSObject", "NSEC_PER_SEC"]
 - !private ["CSo8NSObject", "NSEntityDescription"]
 - !private ["CSo8NSObject", "NSError"]
@@ -1284,6 +1422,7 @@ depends-member:
 - ["CSo8NSObject", "NSFetchedResultsController"]
 - ["CSo8NSObject", "NSIndexPath"]
 - !private ["CSo8NSObject", "NSInteger"]
+- !private ["CSo8NSObject", "NSLocale"]
 - !private ["CSo8NSObject", "NSPredicate"]
 - !private ["CSo8NSObject", "NSSortDescriptor"]
 - ["CSo8NSObject", "NSUserDefaults"]
@@ -1291,7 +1430,7 @@ depends-member:
 - ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIBarButtonItem"]
 - !private ["CSo8NSObject", "UIFont"]
-- !private ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "UINavigationBar"]
 - ["CSo8NSObject", "UITableView"]
 - !private ["CSo8NSObject", "UITableViewAutomaticDimension"]
@@ -1304,13 +1443,16 @@ depends-member:
 - !private ["CSo8NSObject", "blueColor"]
 - !private ["CSo8NSObject", "boolForKey"]
 - ["CSo8NSObject", "btmToolbar"]
+- ["CSo8NSObject", "cal"]
 - !private ["CSo8NSObject", "cellForRowAtIndexPath"]
 - !private ["CSo8NSObject", "checked"]
+- !private ["CSo8NSObject", "components"]
 - !private ["CSo8NSObject", "contentView"]
 - ["CSo8NSObject", "controller"]
 - ["CSo8NSObject", "controllerDidChangeContent"]
 - ["CSo8NSObject", "controllerWillChangeContent"]
 - !private ["CSo8NSObject", "countForFetchRequest"]
+- !private ["CSo8NSObject", "currentLocale"]
 - !private ["CSo8NSObject", "darkGrayColor"]
 - !private ["CSo8NSObject", "dateFormat"]
 - !private ["CSo8NSObject", "deepBlueColor"]
@@ -1333,7 +1475,9 @@ depends-member:
 - ["CSo8NSObject", "fetchedResultsController.storage"]
 - !private ["CSo8NSObject", "floatForKey"]
 - !private ["CSo8NSObject", "font"]
+- ["CSo8NSObject", "formatter"]
 - !private ["CSo8NSObject", "greenColor"]
+- ["CSo8NSObject", "headDateLabel"]
 - ["CSo8NSObject", "headerView"]
 - !private ["CSo8NSObject", "hidden"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedViewInTableView"]
@@ -1341,6 +1485,7 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "insertNewObjectForEntityForName"]
 - !private ["CSo8NSObject", "lightGrayColor"]
+- !private ["CSo8NSObject", "locale"]
 - !private ["CSo8NSObject", "managedObjectContext"]
 - ["CSo8NSObject", "navigationBar"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
@@ -1373,6 +1518,7 @@ depends-member:
 - !private ["CSo8NSObject", "sections"]
 - ["CSo8NSObject", "setNaviToolbarColor"]
 - ["CSo8NSObject", "sharedApplication"]
+- !private ["CSo8NSObject", "shortWeekdaySymbols"]
 - ["CSo8NSObject", "showPopMessageView"]
 - !private ["CSo8NSObject", "sortDescriptors"]
 - ["CSo8NSObject", "standardUserDefaults"]
@@ -1389,6 +1535,7 @@ depends-member:
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
 - ["CSo8NSObject", "viewWillAppear"]
 - !private ["CSo8NSObject", "viewWithTag"]
+- !private ["CSo8NSObject", "weekday"]
 - ["CSo8NSObject", "zeroView"]
 - !private ["PSo16NSObjectProtocol", "AudioServicesPlaySystemSound"]
 - !private ["PSo16NSObjectProtocol", "CGFloat"]
@@ -1396,12 +1543,16 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "DISPATCH_TIME_NOW"]
 - !private ["PSo16NSObjectProtocol", "Double"]
 - !private ["PSo16NSObjectProtocol", "Int64"]
+- ["PSo16NSObjectProtocol", "NSCalendar"]
+- ["PSo16NSObjectProtocol", "NSCalendarIdentifierGregorian"]
+- !private ["PSo16NSObjectProtocol", "NSCalendarUnit"]
 - !private ["PSo16NSObjectProtocol", "NSDate"]
-- !private ["PSo16NSObjectProtocol", "NSDateFormatter"]
+- ["PSo16NSObjectProtocol", "NSDateFormatter"]
 - !private ["PSo16NSObjectProtocol", "NSEC_PER_SEC"]
 - !private ["PSo16NSObjectProtocol", "NSEntityDescription"]
 - !private ["PSo16NSObjectProtocol", "NSFetchRequest"]
 - !private ["PSo16NSObjectProtocol", "NSFetchedResultsController"]
+- !private ["PSo16NSObjectProtocol", "NSLocale"]
 - !private ["PSo16NSObjectProtocol", "NSPredicate"]
 - !private ["PSo16NSObjectProtocol", "NSSortDescriptor"]
 - ["PSo16NSObjectProtocol", "NSUserDefaults"]
@@ -1415,13 +1566,16 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "blueColor"]
 - !private ["PSo16NSObjectProtocol", "boolForKey"]
 - ["PSo16NSObjectProtocol", "btmToolbar"]
+- ["PSo16NSObjectProtocol", "cal"]
 - !private ["PSo16NSObjectProtocol", "cellForRowAtIndexPath"]
 - !private ["PSo16NSObjectProtocol", "checked"]
+- !private ["PSo16NSObjectProtocol", "components"]
 - !private ["PSo16NSObjectProtocol", "contentView"]
 - ["PSo16NSObjectProtocol", "controller"]
 - ["PSo16NSObjectProtocol", "controllerDidChangeContent"]
 - ["PSo16NSObjectProtocol", "controllerWillChangeContent"]
 - !private ["PSo16NSObjectProtocol", "countForFetchRequest"]
+- !private ["PSo16NSObjectProtocol", "currentLocale"]
 - !private ["PSo16NSObjectProtocol", "darkGrayColor"]
 - !private ["PSo16NSObjectProtocol", "dateFormat"]
 - !private ["PSo16NSObjectProtocol", "deepBlueColor"]
@@ -1443,7 +1597,9 @@ depends-member:
 - ["PSo16NSObjectProtocol", "fetchedResultsController.storage"]
 - !private ["PSo16NSObjectProtocol", "floatForKey"]
 - !private ["PSo16NSObjectProtocol", "font"]
+- ["PSo16NSObjectProtocol", "formatter"]
 - !private ["PSo16NSObjectProtocol", "greenColor"]
+- ["PSo16NSObjectProtocol", "headDateLabel"]
 - ["PSo16NSObjectProtocol", "headerView"]
 - !private ["PSo16NSObjectProtocol", "hidden"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInTableView"]
@@ -1451,6 +1607,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "insertNewObjectForEntityForName"]
 - !private ["PSo16NSObjectProtocol", "lightGrayColor"]
+- !private ["PSo16NSObjectProtocol", "locale"]
 - !private ["PSo16NSObjectProtocol", "managedObjectContext"]
 - ["PSo16NSObjectProtocol", "navigationBar"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
@@ -1483,6 +1640,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "sections"]
 - ["PSo16NSObjectProtocol", "setNaviToolbarColor"]
 - ["PSo16NSObjectProtocol", "sharedApplication"]
+- !private ["PSo16NSObjectProtocol", "shortWeekdaySymbols"]
 - ["PSo16NSObjectProtocol", "showPopMessageView"]
 - !private ["PSo16NSObjectProtocol", "sortDescriptors"]
 - ["PSo16NSObjectProtocol", "standardUserDefaults"]
@@ -1499,13 +1657,17 @@ depends-member:
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
 - ["PSo16NSObjectProtocol", "viewWillAppear"]
 - !private ["PSo16NSObjectProtocol", "viewWithTag"]
+- !private ["PSo16NSObjectProtocol", "weekday"]
 - ["PSo16NSObjectProtocol", "zeroView"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["CSo24NSPersistentStoreRequest", "init"]
 - !private ["CSo24NSPersistentStoreRequest", "predicate"]
 - !private ["CSo24NSPersistentStoreRequest", "sortDescriptors"]
 - !private ["CSo11NSPredicate", "init"]
-- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "components"]
+- !private ["PSo14NSSecureCoding", "currentLocale"]
+- ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "weekday"]
 - !private ["CSo16NSSortDescriptor", "init"]
 - !private ["CSo8NSString", "deinit"]
 - !private ["CSo14NSUserDefaults", "boolForKey"]
@@ -1513,6 +1675,8 @@ depends-member:
 - ["CSo14NSUserDefaults", "standardUserDefaults"]
 - !private ["CSo14NSUserDefaults", "stringForKey"]
 - ["Ps21NilLiteralConvertible", "Some"]
+- !private ["Ps13OptionSetType", "Element"]
+- !private ["Ps13OptionSetType", "Weekday"]
 - ["Sq", "Some"]
 - ["Sq", "deinit"]
 - !private ["Ps21RandomAccessIndexType", "Distance"]
@@ -1528,7 +1692,9 @@ depends-member:
 - !private ["Ps30RangeReplaceableCollectionType", "SubSequence"]
 - !private ["Ps30RangeReplaceableCollectionType", "count"]
 - !private ["Ps30RangeReplaceableCollectionType", "subscript"]
+- !private ["Ps16RawRepresentable", "Element"]
 - !private ["Ps16RawRepresentable", "Normal"]
+- !private ["Ps16RawRepresentable", "Weekday"]
 - !private ["Ps12SequenceType", "Element"]
 - !private ["Ps12SequenceType", "Generator"]
 - !private ["Ps12SequenceType", "Index"]
@@ -1536,6 +1702,8 @@ depends-member:
 - !private ["Ps12SequenceType", "_Element"]
 - !private ["Ps12SequenceType", "count"]
 - !private ["Ps12SequenceType", "subscript"]
+- !private ["Ps14SetAlgebraType", "Element"]
+- !private ["Ps14SetAlgebraType", "Weekday"]
 - !private ["Ps17SignedIntegerType", "Distance"]
 - !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
 - !private ["Ps17SignedIntegerType", "_DisabledRangeIndex"]
@@ -1597,12 +1765,16 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "DISPATCH_TIME_NOW"]
 - !private ["PSo21UIAppearanceContainer", "Double"]
 - !private ["PSo21UIAppearanceContainer", "Int64"]
+- ["PSo21UIAppearanceContainer", "NSCalendar"]
+- ["PSo21UIAppearanceContainer", "NSCalendarIdentifierGregorian"]
+- !private ["PSo21UIAppearanceContainer", "NSCalendarUnit"]
 - !private ["PSo21UIAppearanceContainer", "NSDate"]
-- !private ["PSo21UIAppearanceContainer", "NSDateFormatter"]
+- ["PSo21UIAppearanceContainer", "NSDateFormatter"]
 - !private ["PSo21UIAppearanceContainer", "NSEC_PER_SEC"]
 - !private ["PSo21UIAppearanceContainer", "NSEntityDescription"]
 - !private ["PSo21UIAppearanceContainer", "NSFetchRequest"]
 - !private ["PSo21UIAppearanceContainer", "NSFetchedResultsController"]
+- !private ["PSo21UIAppearanceContainer", "NSLocale"]
 - !private ["PSo21UIAppearanceContainer", "NSPredicate"]
 - !private ["PSo21UIAppearanceContainer", "NSSortDescriptor"]
 - ["PSo21UIAppearanceContainer", "NSUserDefaults"]
@@ -1615,6 +1787,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "barTintColor"]
 - !private ["PSo21UIAppearanceContainer", "blueColor"]
 - ["PSo21UIAppearanceContainer", "btmToolbar"]
+- ["PSo21UIAppearanceContainer", "cal"]
 - !private ["PSo21UIAppearanceContainer", "cellForRowAtIndexPath"]
 - !private ["PSo21UIAppearanceContainer", "contentView"]
 - ["PSo21UIAppearanceContainer", "controller"]
@@ -1634,7 +1807,9 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "fetchedResultsController"]
 - ["PSo21UIAppearanceContainer", "fetchedResultsController.storage"]
 - !private ["PSo21UIAppearanceContainer", "font"]
+- ["PSo21UIAppearanceContainer", "formatter"]
 - !private ["PSo21UIAppearanceContainer", "greenColor"]
+- ["PSo21UIAppearanceContainer", "headDateLabel"]
 - ["PSo21UIAppearanceContainer", "headerView"]
 - !private ["PSo21UIAppearanceContainer", "hidden"]
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInTableView"]
@@ -1690,12 +1865,16 @@ depends-member:
 - !private ["PSo18UIContentContainer", "DISPATCH_TIME_NOW"]
 - !private ["PSo18UIContentContainer", "Double"]
 - !private ["PSo18UIContentContainer", "Int64"]
+- ["PSo18UIContentContainer", "NSCalendar"]
+- ["PSo18UIContentContainer", "NSCalendarIdentifierGregorian"]
+- !private ["PSo18UIContentContainer", "NSCalendarUnit"]
 - !private ["PSo18UIContentContainer", "NSDate"]
-- !private ["PSo18UIContentContainer", "NSDateFormatter"]
+- ["PSo18UIContentContainer", "NSDateFormatter"]
 - !private ["PSo18UIContentContainer", "NSEC_PER_SEC"]
 - !private ["PSo18UIContentContainer", "NSEntityDescription"]
 - !private ["PSo18UIContentContainer", "NSFetchRequest"]
 - !private ["PSo18UIContentContainer", "NSFetchedResultsController"]
+- !private ["PSo18UIContentContainer", "NSLocale"]
 - !private ["PSo18UIContentContainer", "NSPredicate"]
 - !private ["PSo18UIContentContainer", "NSSortDescriptor"]
 - ["PSo18UIContentContainer", "NSUserDefaults"]
@@ -1706,6 +1885,7 @@ depends-member:
 - ["PSo18UIContentContainer", "appDelegate"]
 - !private ["PSo18UIContentContainer", "blueColor"]
 - ["PSo18UIContentContainer", "btmToolbar"]
+- ["PSo18UIContentContainer", "cal"]
 - ["PSo18UIContentContainer", "controller"]
 - ["PSo18UIContentContainer", "controllerDidChangeContent"]
 - ["PSo18UIContentContainer", "controllerWillChangeContent"]
@@ -1718,7 +1898,9 @@ depends-member:
 - !private ["PSo18UIContentContainer", "dispatch_time"]
 - ["PSo18UIContentContainer", "fetchedResultsController"]
 - ["PSo18UIContentContainer", "fetchedResultsController.storage"]
+- ["PSo18UIContentContainer", "formatter"]
 - !private ["PSo18UIContentContainer", "greenColor"]
+- ["PSo18UIContentContainer", "headDateLabel"]
 - ["PSo18UIContentContainer", "headerView"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UIContentContainer", "init"]
@@ -1798,12 +1980,16 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "DISPATCH_TIME_NOW"]
 - !private ["PSo18UIFocusEnvironment", "Double"]
 - !private ["PSo18UIFocusEnvironment", "Int64"]
+- ["PSo18UIFocusEnvironment", "NSCalendar"]
+- ["PSo18UIFocusEnvironment", "NSCalendarIdentifierGregorian"]
+- !private ["PSo18UIFocusEnvironment", "NSCalendarUnit"]
 - !private ["PSo18UIFocusEnvironment", "NSDate"]
-- !private ["PSo18UIFocusEnvironment", "NSDateFormatter"]
+- ["PSo18UIFocusEnvironment", "NSDateFormatter"]
 - !private ["PSo18UIFocusEnvironment", "NSEC_PER_SEC"]
 - !private ["PSo18UIFocusEnvironment", "NSEntityDescription"]
 - !private ["PSo18UIFocusEnvironment", "NSFetchRequest"]
 - !private ["PSo18UIFocusEnvironment", "NSFetchedResultsController"]
+- !private ["PSo18UIFocusEnvironment", "NSLocale"]
 - !private ["PSo18UIFocusEnvironment", "NSPredicate"]
 - !private ["PSo18UIFocusEnvironment", "NSSortDescriptor"]
 - ["PSo18UIFocusEnvironment", "NSUserDefaults"]
@@ -1816,6 +2002,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "barTintColor"]
 - !private ["PSo18UIFocusEnvironment", "blueColor"]
 - ["PSo18UIFocusEnvironment", "btmToolbar"]
+- ["PSo18UIFocusEnvironment", "cal"]
 - !private ["PSo18UIFocusEnvironment", "cellForRowAtIndexPath"]
 - !private ["PSo18UIFocusEnvironment", "contentView"]
 - ["PSo18UIFocusEnvironment", "controller"]
@@ -1835,7 +2022,9 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "fetchedResultsController"]
 - ["PSo18UIFocusEnvironment", "fetchedResultsController.storage"]
 - !private ["PSo18UIFocusEnvironment", "font"]
+- ["PSo18UIFocusEnvironment", "formatter"]
 - !private ["PSo18UIFocusEnvironment", "greenColor"]
+- ["PSo18UIFocusEnvironment", "headDateLabel"]
 - ["PSo18UIFocusEnvironment", "headerView"]
 - !private ["PSo18UIFocusEnvironment", "hidden"]
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInTableView"]
@@ -1914,8 +2103,12 @@ depends-member:
 - !private ["CSo11UIResponder", "Int64"]
 - !private ["CSo11UIResponder", "Item"]
 - !private ["CSo11UIResponder", "Log"]
+- ["CSo11UIResponder", "NSCalendar"]
+- ["CSo11UIResponder", "NSCalendarIdentifierGregorian"]
+- !private ["CSo11UIResponder", "NSCalendarUnit"]
 - !private ["CSo11UIResponder", "NSDate"]
-- !private ["CSo11UIResponder", "NSDateFormatter"]
+- !private ["CSo11UIResponder", "NSDateComponents"]
+- ["CSo11UIResponder", "NSDateFormatter"]
 - !private ["CSo11UIResponder", "NSEC_PER_SEC"]
 - !private ["CSo11UIResponder", "NSEntityDescription"]
 - !private ["CSo11UIResponder", "NSError"]
@@ -1923,6 +2116,7 @@ depends-member:
 - ["CSo11UIResponder", "NSFetchedResultsController"]
 - ["CSo11UIResponder", "NSIndexPath"]
 - !private ["CSo11UIResponder", "NSInteger"]
+- !private ["CSo11UIResponder", "NSLocale"]
 - !private ["CSo11UIResponder", "NSPredicate"]
 - !private ["CSo11UIResponder", "NSSortDescriptor"]
 - ["CSo11UIResponder", "NSUserDefaults"]
@@ -1930,7 +2124,7 @@ depends-member:
 - ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIBarButtonItem"]
 - !private ["CSo11UIResponder", "UIFont"]
-- !private ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "UINavigationBar"]
 - ["CSo11UIResponder", "UITableView"]
 - !private ["CSo11UIResponder", "UITableViewAutomaticDimension"]
@@ -1942,6 +2136,7 @@ depends-member:
 - !private ["CSo11UIResponder", "barTintColor"]
 - !private ["CSo11UIResponder", "blueColor"]
 - ["CSo11UIResponder", "btmToolbar"]
+- ["CSo11UIResponder", "cal"]
 - !private ["CSo11UIResponder", "cellForRowAtIndexPath"]
 - !private ["CSo11UIResponder", "contentView"]
 - ["CSo11UIResponder", "controller"]
@@ -1962,7 +2157,9 @@ depends-member:
 - ["CSo11UIResponder", "fetchedResultsController"]
 - ["CSo11UIResponder", "fetchedResultsController.storage"]
 - !private ["CSo11UIResponder", "font"]
+- ["CSo11UIResponder", "formatter"]
 - !private ["CSo11UIResponder", "greenColor"]
+- ["CSo11UIResponder", "headDateLabel"]
 - ["CSo11UIResponder", "headerView"]
 - !private ["CSo11UIResponder", "hidden"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInTableView"]
@@ -2014,12 +2211,16 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "DISPATCH_TIME_NOW"]
 - !private ["PSo30UIResponderStandardEditActions", "Double"]
 - !private ["PSo30UIResponderStandardEditActions", "Int64"]
+- ["PSo30UIResponderStandardEditActions", "NSCalendar"]
+- ["PSo30UIResponderStandardEditActions", "NSCalendarIdentifierGregorian"]
+- !private ["PSo30UIResponderStandardEditActions", "NSCalendarUnit"]
 - !private ["PSo30UIResponderStandardEditActions", "NSDate"]
-- !private ["PSo30UIResponderStandardEditActions", "NSDateFormatter"]
+- ["PSo30UIResponderStandardEditActions", "NSDateFormatter"]
 - !private ["PSo30UIResponderStandardEditActions", "NSEC_PER_SEC"]
 - !private ["PSo30UIResponderStandardEditActions", "NSEntityDescription"]
 - !private ["PSo30UIResponderStandardEditActions", "NSFetchRequest"]
 - !private ["PSo30UIResponderStandardEditActions", "NSFetchedResultsController"]
+- !private ["PSo30UIResponderStandardEditActions", "NSLocale"]
 - !private ["PSo30UIResponderStandardEditActions", "NSPredicate"]
 - !private ["PSo30UIResponderStandardEditActions", "NSSortDescriptor"]
 - ["PSo30UIResponderStandardEditActions", "NSUserDefaults"]
@@ -2032,6 +2233,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "barTintColor"]
 - !private ["PSo30UIResponderStandardEditActions", "blueColor"]
 - ["PSo30UIResponderStandardEditActions", "btmToolbar"]
+- ["PSo30UIResponderStandardEditActions", "cal"]
 - !private ["PSo30UIResponderStandardEditActions", "cellForRowAtIndexPath"]
 - !private ["PSo30UIResponderStandardEditActions", "contentView"]
 - ["PSo30UIResponderStandardEditActions", "controller"]
@@ -2052,7 +2254,9 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "fetchedResultsController"]
 - ["PSo30UIResponderStandardEditActions", "fetchedResultsController.storage"]
 - !private ["PSo30UIResponderStandardEditActions", "font"]
+- ["PSo30UIResponderStandardEditActions", "formatter"]
 - !private ["PSo30UIResponderStandardEditActions", "greenColor"]
+- ["PSo30UIResponderStandardEditActions", "headDateLabel"]
 - ["PSo30UIResponderStandardEditActions", "headerView"]
 - !private ["PSo30UIResponderStandardEditActions", "hidden"]
 - ["PSo30UIResponderStandardEditActions", "indexPathForPreferredFocusedViewInTableView"]
@@ -2112,12 +2316,16 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "DISPATCH_TIME_NOW"]
 - !private ["PSo20UIScrollViewDelegate", "Double"]
 - !private ["PSo20UIScrollViewDelegate", "Int64"]
+- ["PSo20UIScrollViewDelegate", "NSCalendar"]
+- ["PSo20UIScrollViewDelegate", "NSCalendarIdentifierGregorian"]
+- !private ["PSo20UIScrollViewDelegate", "NSCalendarUnit"]
 - !private ["PSo20UIScrollViewDelegate", "NSDate"]
-- !private ["PSo20UIScrollViewDelegate", "NSDateFormatter"]
+- ["PSo20UIScrollViewDelegate", "NSDateFormatter"]
 - !private ["PSo20UIScrollViewDelegate", "NSEC_PER_SEC"]
 - !private ["PSo20UIScrollViewDelegate", "NSEntityDescription"]
 - !private ["PSo20UIScrollViewDelegate", "NSFetchRequest"]
 - !private ["PSo20UIScrollViewDelegate", "NSFetchedResultsController"]
+- !private ["PSo20UIScrollViewDelegate", "NSLocale"]
 - !private ["PSo20UIScrollViewDelegate", "NSPredicate"]
 - !private ["PSo20UIScrollViewDelegate", "NSSortDescriptor"]
 - ["PSo20UIScrollViewDelegate", "NSUserDefaults"]
@@ -2127,6 +2335,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "UIView"]
 - !private ["PSo20UIScrollViewDelegate", "appDelegate"]
 - !private ["PSo20UIScrollViewDelegate", "btmToolbar"]
+- !private ["PSo20UIScrollViewDelegate", "cal"]
 - ["PSo20UIScrollViewDelegate", "controller"]
 - ["PSo20UIScrollViewDelegate", "controllerDidChangeContent"]
 - ["PSo20UIScrollViewDelegate", "controllerWillChangeContent"]
@@ -2135,6 +2344,8 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "dispatch_get_main_queue"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_time"]
 - !private ["PSo20UIScrollViewDelegate", "fetchedResultsController"]
+- !private ["PSo20UIScrollViewDelegate", "formatter"]
+- !private ["PSo20UIScrollViewDelegate", "headDateLabel"]
 - !private ["PSo20UIScrollViewDelegate", "headerView"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo20UIScrollViewDelegate", "navigationBar"]
@@ -2167,12 +2378,16 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "DISPATCH_TIME_NOW"]
 - !private ["PSo16UIStateRestoring", "Double"]
 - !private ["PSo16UIStateRestoring", "Int64"]
+- ["PSo16UIStateRestoring", "NSCalendar"]
+- ["PSo16UIStateRestoring", "NSCalendarIdentifierGregorian"]
+- !private ["PSo16UIStateRestoring", "NSCalendarUnit"]
 - !private ["PSo16UIStateRestoring", "NSDate"]
-- !private ["PSo16UIStateRestoring", "NSDateFormatter"]
+- ["PSo16UIStateRestoring", "NSDateFormatter"]
 - !private ["PSo16UIStateRestoring", "NSEC_PER_SEC"]
 - !private ["PSo16UIStateRestoring", "NSEntityDescription"]
 - !private ["PSo16UIStateRestoring", "NSFetchRequest"]
 - !private ["PSo16UIStateRestoring", "NSFetchedResultsController"]
+- !private ["PSo16UIStateRestoring", "NSLocale"]
 - !private ["PSo16UIStateRestoring", "NSPredicate"]
 - !private ["PSo16UIStateRestoring", "NSSortDescriptor"]
 - ["PSo16UIStateRestoring", "NSUserDefaults"]
@@ -2183,6 +2398,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "appDelegate"]
 - !private ["PSo16UIStateRestoring", "blueColor"]
 - ["PSo16UIStateRestoring", "btmToolbar"]
+- ["PSo16UIStateRestoring", "cal"]
 - ["PSo16UIStateRestoring", "controller"]
 - ["PSo16UIStateRestoring", "controllerDidChangeContent"]
 - ["PSo16UIStateRestoring", "controllerWillChangeContent"]
@@ -2195,7 +2411,9 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "dispatch_time"]
 - ["PSo16UIStateRestoring", "fetchedResultsController"]
 - ["PSo16UIStateRestoring", "fetchedResultsController.storage"]
+- ["PSo16UIStateRestoring", "formatter"]
 - !private ["PSo16UIStateRestoring", "greenColor"]
+- ["PSo16UIStateRestoring", "headDateLabel"]
 - ["PSo16UIStateRestoring", "headerView"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo16UIStateRestoring", "init"]
@@ -2245,12 +2463,16 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "DISPATCH_TIME_NOW"]
 - !private ["PSo21UITableViewDataSource", "Double"]
 - !private ["PSo21UITableViewDataSource", "Int64"]
+- ["PSo21UITableViewDataSource", "NSCalendar"]
+- ["PSo21UITableViewDataSource", "NSCalendarIdentifierGregorian"]
+- !private ["PSo21UITableViewDataSource", "NSCalendarUnit"]
 - !private ["PSo21UITableViewDataSource", "NSDate"]
-- !private ["PSo21UITableViewDataSource", "NSDateFormatter"]
+- ["PSo21UITableViewDataSource", "NSDateFormatter"]
 - !private ["PSo21UITableViewDataSource", "NSEC_PER_SEC"]
 - !private ["PSo21UITableViewDataSource", "NSEntityDescription"]
 - !private ["PSo21UITableViewDataSource", "NSFetchRequest"]
 - !private ["PSo21UITableViewDataSource", "NSFetchedResultsController"]
+- !private ["PSo21UITableViewDataSource", "NSLocale"]
 - !private ["PSo21UITableViewDataSource", "NSPredicate"]
 - !private ["PSo21UITableViewDataSource", "NSSortDescriptor"]
 - ["PSo21UITableViewDataSource", "NSUserDefaults"]
@@ -2260,6 +2482,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "UIView"]
 - !private ["PSo21UITableViewDataSource", "appDelegate"]
 - !private ["PSo21UITableViewDataSource", "btmToolbar"]
+- !private ["PSo21UITableViewDataSource", "cal"]
 - ["PSo21UITableViewDataSource", "controller"]
 - ["PSo21UITableViewDataSource", "controllerDidChangeContent"]
 - ["PSo21UITableViewDataSource", "controllerWillChangeContent"]
@@ -2268,6 +2491,8 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "dispatch_get_main_queue"]
 - !private ["PSo21UITableViewDataSource", "dispatch_time"]
 - !private ["PSo21UITableViewDataSource", "fetchedResultsController"]
+- !private ["PSo21UITableViewDataSource", "formatter"]
+- !private ["PSo21UITableViewDataSource", "headDateLabel"]
 - !private ["PSo21UITableViewDataSource", "headerView"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo21UITableViewDataSource", "navigationBar"]
@@ -2300,12 +2525,16 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "DISPATCH_TIME_NOW"]
 - !private ["PSo19UITableViewDelegate", "Double"]
 - !private ["PSo19UITableViewDelegate", "Int64"]
+- ["PSo19UITableViewDelegate", "NSCalendar"]
+- ["PSo19UITableViewDelegate", "NSCalendarIdentifierGregorian"]
+- !private ["PSo19UITableViewDelegate", "NSCalendarUnit"]
 - !private ["PSo19UITableViewDelegate", "NSDate"]
-- !private ["PSo19UITableViewDelegate", "NSDateFormatter"]
+- ["PSo19UITableViewDelegate", "NSDateFormatter"]
 - !private ["PSo19UITableViewDelegate", "NSEC_PER_SEC"]
 - !private ["PSo19UITableViewDelegate", "NSEntityDescription"]
 - !private ["PSo19UITableViewDelegate", "NSFetchRequest"]
 - !private ["PSo19UITableViewDelegate", "NSFetchedResultsController"]
+- !private ["PSo19UITableViewDelegate", "NSLocale"]
 - !private ["PSo19UITableViewDelegate", "NSPredicate"]
 - !private ["PSo19UITableViewDelegate", "NSSortDescriptor"]
 - ["PSo19UITableViewDelegate", "NSUserDefaults"]
@@ -2315,6 +2544,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "UIView"]
 - !private ["PSo19UITableViewDelegate", "appDelegate"]
 - !private ["PSo19UITableViewDelegate", "btmToolbar"]
+- !private ["PSo19UITableViewDelegate", "cal"]
 - ["PSo19UITableViewDelegate", "controller"]
 - ["PSo19UITableViewDelegate", "controllerDidChangeContent"]
 - ["PSo19UITableViewDelegate", "controllerWillChangeContent"]
@@ -2323,6 +2553,8 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "dispatch_get_main_queue"]
 - !private ["PSo19UITableViewDelegate", "dispatch_time"]
 - !private ["PSo19UITableViewDelegate", "fetchedResultsController"]
+- !private ["PSo19UITableViewDelegate", "formatter"]
+- !private ["PSo19UITableViewDelegate", "headDateLabel"]
 - !private ["PSo19UITableViewDelegate", "headerView"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo19UITableViewDelegate", "navigationBar"]
@@ -2357,12 +2589,16 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "DISPATCH_TIME_NOW"]
 - !private ["PSo18UITraitEnvironment", "Double"]
 - !private ["PSo18UITraitEnvironment", "Int64"]
+- ["PSo18UITraitEnvironment", "NSCalendar"]
+- ["PSo18UITraitEnvironment", "NSCalendarIdentifierGregorian"]
+- !private ["PSo18UITraitEnvironment", "NSCalendarUnit"]
 - !private ["PSo18UITraitEnvironment", "NSDate"]
-- !private ["PSo18UITraitEnvironment", "NSDateFormatter"]
+- ["PSo18UITraitEnvironment", "NSDateFormatter"]
 - !private ["PSo18UITraitEnvironment", "NSEC_PER_SEC"]
 - !private ["PSo18UITraitEnvironment", "NSEntityDescription"]
 - !private ["PSo18UITraitEnvironment", "NSFetchRequest"]
 - !private ["PSo18UITraitEnvironment", "NSFetchedResultsController"]
+- !private ["PSo18UITraitEnvironment", "NSLocale"]
 - !private ["PSo18UITraitEnvironment", "NSPredicate"]
 - !private ["PSo18UITraitEnvironment", "NSSortDescriptor"]
 - ["PSo18UITraitEnvironment", "NSUserDefaults"]
@@ -2375,6 +2611,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "barTintColor"]
 - !private ["PSo18UITraitEnvironment", "blueColor"]
 - ["PSo18UITraitEnvironment", "btmToolbar"]
+- ["PSo18UITraitEnvironment", "cal"]
 - !private ["PSo18UITraitEnvironment", "cellForRowAtIndexPath"]
 - !private ["PSo18UITraitEnvironment", "contentView"]
 - ["PSo18UITraitEnvironment", "controller"]
@@ -2394,7 +2631,9 @@ depends-member:
 - ["PSo18UITraitEnvironment", "fetchedResultsController"]
 - ["PSo18UITraitEnvironment", "fetchedResultsController.storage"]
 - !private ["PSo18UITraitEnvironment", "font"]
+- ["PSo18UITraitEnvironment", "formatter"]
 - !private ["PSo18UITraitEnvironment", "greenColor"]
+- ["PSo18UITraitEnvironment", "headDateLabel"]
 - ["PSo18UITraitEnvironment", "headerView"]
 - !private ["PSo18UITraitEnvironment", "hidden"]
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInTableView"]
@@ -2467,8 +2706,12 @@ depends-member:
 - !private ["CSo16UIViewController", "Int64"]
 - !private ["CSo16UIViewController", "Item"]
 - !private ["CSo16UIViewController", "Log"]
+- ["CSo16UIViewController", "NSCalendar"]
+- ["CSo16UIViewController", "NSCalendarIdentifierGregorian"]
+- !private ["CSo16UIViewController", "NSCalendarUnit"]
 - !private ["CSo16UIViewController", "NSDate"]
-- !private ["CSo16UIViewController", "NSDateFormatter"]
+- !private ["CSo16UIViewController", "NSDateComponents"]
+- ["CSo16UIViewController", "NSDateFormatter"]
 - !private ["CSo16UIViewController", "NSEC_PER_SEC"]
 - !private ["CSo16UIViewController", "NSEntityDescription"]
 - !private ["CSo16UIViewController", "NSError"]
@@ -2476,6 +2719,7 @@ depends-member:
 - ["CSo16UIViewController", "NSFetchedResultsController"]
 - ["CSo16UIViewController", "NSIndexPath"]
 - !private ["CSo16UIViewController", "NSInteger"]
+- !private ["CSo16UIViewController", "NSLocale"]
 - !private ["CSo16UIViewController", "NSPredicate"]
 - !private ["CSo16UIViewController", "NSSortDescriptor"]
 - ["CSo16UIViewController", "NSUserDefaults"]
@@ -2483,7 +2727,7 @@ depends-member:
 - ["CSo16UIViewController", "UIApplication"]
 - ["CSo16UIViewController", "UIBarButtonItem"]
 - !private ["CSo16UIViewController", "UIFont"]
-- !private ["CSo16UIViewController", "UILabel"]
+- ["CSo16UIViewController", "UILabel"]
 - ["CSo16UIViewController", "UINavigationBar"]
 - ["CSo16UIViewController", "UITableView"]
 - !private ["CSo16UIViewController", "UITableViewAutomaticDimension"]
@@ -2493,6 +2737,7 @@ depends-member:
 - ["CSo16UIViewController", "appDelegate"]
 - !private ["CSo16UIViewController", "blueColor"]
 - ["CSo16UIViewController", "btmToolbar"]
+- ["CSo16UIViewController", "cal"]
 - ["CSo16UIViewController", "controller"]
 - ["CSo16UIViewController", "controllerDidChangeContent"]
 - ["CSo16UIViewController", "controllerWillChangeContent"]
@@ -2505,7 +2750,9 @@ depends-member:
 - !private ["CSo16UIViewController", "dispatch_time"]
 - ["CSo16UIViewController", "fetchedResultsController"]
 - ["CSo16UIViewController", "fetchedResultsController.storage"]
+- ["CSo16UIViewController", "formatter"]
 - !private ["CSo16UIViewController", "greenColor"]
+- ["CSo16UIViewController", "headDateLabel"]
 - ["CSo16UIViewController", "headerView"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo16UIViewController", "init"]
@@ -2675,10 +2922,13 @@ depends-nominal:
 - !private "Ps21MutableCollectionType"
 - !private "Ps16MutableIndexable"
 - !private "Ps16MutableSliceable"
+- "CSo10NSCalendar"
+- !private "VSC14NSCalendarUnit"
 - "PSo8NSCoding"
-- !private "PSo9NSCopying"
+- "PSo9NSCopying"
 - !private "CSo6NSDate"
-- !private "CSo15NSDateFormatter"
+- !private "CSo16NSDateComponents"
+- "CSo15NSDateFormatter"
 - !private "CSo19NSEntityDescription"
 - "PSo26NSExtensionRequestHandling"
 - !private "PSo17NSFastEnumeration"
@@ -2687,7 +2937,8 @@ depends-nominal:
 - !private "CSo26NSFetchedResultsController"
 - "PSo34NSFetchedResultsControllerDelegate"
 - !private "PSo27NSFetchedResultsSectionInfo"
-- !private "CSo11NSFormatter"
+- "CSo11NSFormatter"
+- !private "CSo8NSLocale"
 - !private "PSo9NSLocking"
 - !private "CSo15NSManagedObject"
 - !private "CSo22NSManagedObjectContext"
@@ -2696,11 +2947,12 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - !private "CSo24NSPersistentStoreRequest"
 - !private "CSo11NSPredicate"
-- !private "PSo14NSSecureCoding"
+- "PSo14NSSecureCoding"
 - !private "CSo16NSSortDescriptor"
 - !private "CSo8NSString"
 - "CSo14NSUserDefaults"
 - "Ps21NilLiteralConvertible"
+- !private "Ps13OptionSetType"
 - "Sq"
 - !private "Ps21RandomAccessIndexType"
 - !private "Vs5Range"
@@ -2708,6 +2960,7 @@ depends-nominal:
 - !private "Ps30RangeReplaceableCollectionType"
 - !private "Ps16RawRepresentable"
 - !private "Ps12SequenceType"
+- !private "Ps14SetAlgebraType"
 - !private "Ps17SignedIntegerType"
 - !private "Ps16SignedNumberType"
 - !private "Vs5Slice"
@@ -2848,4 +3101,4 @@ depends-external:
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Firebase/Analytics/Sources/Firebase.h"
-interface-hash: "e71c44198f55dbb0d3a58f8f8ae8a897"
+interface-hash: "3ef7a7babc4ed9d0204ab60f4329863e"

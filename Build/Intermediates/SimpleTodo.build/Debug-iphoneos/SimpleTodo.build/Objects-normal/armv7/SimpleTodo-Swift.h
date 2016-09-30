@@ -299,6 +299,7 @@ SWIFT_CLASS("_TtC10SimpleTodo17LogViewController")
 @property (nonatomic, weak) IBOutlet UIToolbar * _Null_unspecified btmToolbar;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified popupView;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified headerView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified headDateLabel;
 @property (nonatomic, strong) AppDelegate * _Nonnull appDelegate;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified zeroView;
 @property (nonatomic, readonly, strong) NSUserDefaults * _Nonnull userDefaults;

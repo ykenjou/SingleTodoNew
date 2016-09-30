@@ -6,82 +6,83 @@ provides-nominal:
 provides-member:
 - ["C10SimpleTodo17LogViewController", ""]
 provides-dynamic-lookup:
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
 - "popupView"
 - "userDefaults"
-- "didReceiveMemoryWarning"
-- "pushSaveButton"
+- "fetchedResultsController"
+- "navigationBar"
+- "appDelegate"
+- "showPopMessageView"
+- "controllerDidChangeContent"
 - "pushCloseButton"
 - "numberOfSectionsInTableView"
-- "viewDidLoad"
-- "navigationBar"
-- "controllerDidChangeContent"
-- "headerView"
+- "headDateLabel"
 - "zeroView"
+- "viewDidLoad"
+- "headerView"
+- "didReceiveMemoryWarning"
 - "btmToolbar"
-- "viewWillAppear"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "showPopMessageView"
-- "fetchedResultsController"
 - "setNaviToolbarColor"
-- "appDelegate"
+- "viewWillAppear"
+- "pushSaveButton"
 depends-top-level:
-- "UIViewController"
-- "UIView"
-- !private "NSSortDescriptor"
-- "NSUserDefaults"
-- "StringLiteralType"
-- !private "print"
-- !private "DISPATCH_TIME_NOW"
-- !private "..<"
-- !private "dispatch_time"
-- !private "Int64"
-- "LogViewController"
-- !private "NSError"
 - "NSIndexPath"
-- !private "ColorViewController"
-- !private "AudioServicesPlaySystemSound"
-- !private "dispatch_after"
 - "Array"
-- !private "Log"
-- !private "String"
-- !private "dispatch_get_main_queue"
-- !private ">"
-- "UIBarButtonItem"
-- !private "NSPredicate"
-- "BooleanLiteralType"
-- "UIApplication"
-- !private "NSEC_PER_SEC"
-- !private "NSDate"
-- !private "Double"
-- !private "NSEntityDescription"
-- "UIToolbar"
-- !private "*"
-- "UITableViewCell"
 - "NSFetchedResultsController"
-- "UINavigationBar"
-- !private "UIFont"
-- "Int"
-- !private "UILabel"
-- !private "NSDateFormatter"
-- "UITableViewDataSource"
-- !private "NSInteger"
-- !private "~="
-- "AppDelegate"
-- !private "=="
-- !private "!="
-- "UITableViewDelegate"
-- !private "CGFloat"
-- "NSFetchedResultsControllerDelegate"
-- !private "Item"
+- "BooleanLiteralType"
+- !private "*"
 - "Bool"
-- !private "NSFetchRequest"
+- !private "String"
+- "NSUserDefaults"
+- !private "Item"
+- !private "UIFont"
+- !private "NSError"
+- !private "CGFloat"
+- !private "Double"
+- "Int"
+- !private "NSEC_PER_SEC"
+- "UITableViewDelegate"
+- "UIView"
+- "UITableViewDataSource"
 - !private "UITableViewAutomaticDimension"
-- "UITableView"
+- !private "!="
+- "AppDelegate"
+- "StringLiteralType"
+- "NSFetchedResultsControllerDelegate"
+- !private "Log"
+- "UINavigationBar"
+- !private "NSDateFormatter"
+- !private "NSInteger"
+- !private "..<"
+- !private "print"
+- "UIToolbar"
+- "UILabel"
+- !private ">"
+- !private "NSFetchRequest"
+- !private "AudioServicesPlaySystemSound"
+- "UITableViewCell"
 - !private "+"
+- "UIViewController"
+- !private "dispatch_get_main_queue"
+- !private "NSPredicate"
+- !private "NSEntityDescription"
+- !private "dispatch_after"
+- !private "NSSortDescriptor"
+- !private "ColorViewController"
+- "UIBarButtonItem"
+- !private "Int64"
+- !private "NSDate"
+- "UIApplication"
+- "UITableView"
+- "LogViewController"
+- !private "dispatch_time"
+- !private "DISPATCH_TIME_NOW"
+- !private "=="
+- !private "~="
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Normal"]
 - !private ["Ps16AbsoluteValuable", "init"]
@@ -139,6 +140,7 @@ depends-member:
 - !private ["Ps9AnyObject", "floatForKey"]
 - !private ["Ps9AnyObject", "font"]
 - !private ["Ps9AnyObject", "greenColor"]
+- ["Ps9AnyObject", "headDateLabel"]
 - ["Ps9AnyObject", "headerView"]
 - !private ["Ps9AnyObject", "hidden"]
 - ["Ps9AnyObject", "indexPathForPreferredFocusedViewInTableView"]
@@ -302,6 +304,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "floatForKey"]
 - !private ["Ps11CVarArgType", "font"]
 - !private ["Ps11CVarArgType", "greenColor"]
+- ["Ps11CVarArgType", "headDateLabel"]
 - ["Ps11CVarArgType", "headerView"]
 - !private ["Ps11CVarArgType", "hidden"]
 - ["Ps11CVarArgType", "indexPathForPreferredFocusedViewInTableView"]
@@ -441,6 +444,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "floatForKey"]
 - !private ["Ps28CustomDebugStringConvertible", "font"]
 - !private ["Ps28CustomDebugStringConvertible", "greenColor"]
+- ["Ps28CustomDebugStringConvertible", "headDateLabel"]
 - ["Ps28CustomDebugStringConvertible", "headerView"]
 - !private ["Ps28CustomDebugStringConvertible", "hidden"]
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
@@ -563,6 +567,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "floatForKey"]
 - !private ["Ps23CustomStringConvertible", "font"]
 - !private ["Ps23CustomStringConvertible", "greenColor"]
+- ["Ps23CustomStringConvertible", "headDateLabel"]
 - ["Ps23CustomStringConvertible", "headerView"]
 - !private ["Ps23CustomStringConvertible", "hidden"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
@@ -683,6 +688,7 @@ depends-member:
 - !private ["Ps9Equatable", "floatForKey"]
 - !private ["Ps9Equatable", "font"]
 - !private ["Ps9Equatable", "greenColor"]
+- ["Ps9Equatable", "headDateLabel"]
 - ["Ps9Equatable", "headerView"]
 - !private ["Ps9Equatable", "hidden"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedViewInTableView"]
@@ -811,6 +817,7 @@ depends-member:
 - !private ["Ps8Hashable", "floatForKey"]
 - !private ["Ps8Hashable", "font"]
 - !private ["Ps8Hashable", "greenColor"]
+- ["Ps8Hashable", "headDateLabel"]
 - ["Ps8Hashable", "headerView"]
 - !private ["Ps8Hashable", "hidden"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedViewInTableView"]
@@ -929,7 +936,7 @@ depends-member:
 - ["C10SimpleTodo17LogViewController", "UIApplication"]
 - ["C10SimpleTodo17LogViewController", "UIBarButtonItem"]
 - !private ["C10SimpleTodo17LogViewController", "UIFont"]
-- !private ["C10SimpleTodo17LogViewController", "UILabel"]
+- ["C10SimpleTodo17LogViewController", "UILabel"]
 - ["C10SimpleTodo17LogViewController", "UINavigationBar"]
 - ["C10SimpleTodo17LogViewController", "UITableView"]
 - !private ["C10SimpleTodo17LogViewController", "UITableViewAutomaticDimension"]
@@ -949,6 +956,7 @@ depends-member:
 - !private ["C10SimpleTodo17LogViewController", "dispatch_time"]
 - ["C10SimpleTodo17LogViewController", "fetchedResultsController"]
 - !private ["C10SimpleTodo17LogViewController", "fetchedResultsController.storage"]
+- ["C10SimpleTodo17LogViewController", "headDateLabel"]
 - ["C10SimpleTodo17LogViewController", "headerView"]
 - ["C10SimpleTodo17LogViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["C10SimpleTodo17LogViewController", "init"]
@@ -1049,6 +1057,7 @@ depends-member:
 - ["PSo8NSCoding", "fetchedResultsController.storage"]
 - !private ["PSo8NSCoding", "font"]
 - !private ["PSo8NSCoding", "greenColor"]
+- ["PSo8NSCoding", "headDateLabel"]
 - ["PSo8NSCoding", "headerView"]
 - !private ["PSo8NSCoding", "hidden"]
 - ["PSo8NSCoding", "indexPathForPreferredFocusedViewInTableView"]
@@ -1143,6 +1152,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "fetchedResultsController"]
 - ["PSo26NSExtensionRequestHandling", "fetchedResultsController.storage"]
 - !private ["PSo26NSExtensionRequestHandling", "greenColor"]
+- ["PSo26NSExtensionRequestHandling", "headDateLabel"]
 - ["PSo26NSExtensionRequestHandling", "headerView"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo26NSExtensionRequestHandling", "init"]
@@ -1221,6 +1231,7 @@ depends-member:
 - !private ["PSo34NSFetchedResultsControllerDelegate", "dispatch_get_main_queue"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "dispatch_time"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "fetchedResultsController"]
+- !private ["PSo34NSFetchedResultsControllerDelegate", "headDateLabel"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "headerView"]
 - ["PSo34NSFetchedResultsControllerDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "navigationBar"]
@@ -1291,7 +1302,7 @@ depends-member:
 - ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIBarButtonItem"]
 - !private ["CSo8NSObject", "UIFont"]
-- !private ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "UINavigationBar"]
 - ["CSo8NSObject", "UITableView"]
 - !private ["CSo8NSObject", "UITableViewAutomaticDimension"]
@@ -1334,6 +1345,7 @@ depends-member:
 - !private ["CSo8NSObject", "floatForKey"]
 - !private ["CSo8NSObject", "font"]
 - !private ["CSo8NSObject", "greenColor"]
+- ["CSo8NSObject", "headDateLabel"]
 - ["CSo8NSObject", "headerView"]
 - !private ["CSo8NSObject", "hidden"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedViewInTableView"]
@@ -1444,6 +1456,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "floatForKey"]
 - !private ["PSo16NSObjectProtocol", "font"]
 - !private ["PSo16NSObjectProtocol", "greenColor"]
+- ["PSo16NSObjectProtocol", "headDateLabel"]
 - ["PSo16NSObjectProtocol", "headerView"]
 - !private ["PSo16NSObjectProtocol", "hidden"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInTableView"]
@@ -1635,6 +1648,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "fetchedResultsController.storage"]
 - !private ["PSo21UIAppearanceContainer", "font"]
 - !private ["PSo21UIAppearanceContainer", "greenColor"]
+- ["PSo21UIAppearanceContainer", "headDateLabel"]
 - ["PSo21UIAppearanceContainer", "headerView"]
 - !private ["PSo21UIAppearanceContainer", "hidden"]
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInTableView"]
@@ -1719,6 +1733,7 @@ depends-member:
 - ["PSo18UIContentContainer", "fetchedResultsController"]
 - ["PSo18UIContentContainer", "fetchedResultsController.storage"]
 - !private ["PSo18UIContentContainer", "greenColor"]
+- ["PSo18UIContentContainer", "headDateLabel"]
 - ["PSo18UIContentContainer", "headerView"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UIContentContainer", "init"]
@@ -1836,6 +1851,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "fetchedResultsController.storage"]
 - !private ["PSo18UIFocusEnvironment", "font"]
 - !private ["PSo18UIFocusEnvironment", "greenColor"]
+- ["PSo18UIFocusEnvironment", "headDateLabel"]
 - ["PSo18UIFocusEnvironment", "headerView"]
 - !private ["PSo18UIFocusEnvironment", "hidden"]
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInTableView"]
@@ -1930,7 +1946,7 @@ depends-member:
 - ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIBarButtonItem"]
 - !private ["CSo11UIResponder", "UIFont"]
-- !private ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "UINavigationBar"]
 - ["CSo11UIResponder", "UITableView"]
 - !private ["CSo11UIResponder", "UITableViewAutomaticDimension"]
@@ -1963,6 +1979,7 @@ depends-member:
 - ["CSo11UIResponder", "fetchedResultsController.storage"]
 - !private ["CSo11UIResponder", "font"]
 - !private ["CSo11UIResponder", "greenColor"]
+- ["CSo11UIResponder", "headDateLabel"]
 - ["CSo11UIResponder", "headerView"]
 - !private ["CSo11UIResponder", "hidden"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInTableView"]
@@ -2053,6 +2070,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "fetchedResultsController.storage"]
 - !private ["PSo30UIResponderStandardEditActions", "font"]
 - !private ["PSo30UIResponderStandardEditActions", "greenColor"]
+- ["PSo30UIResponderStandardEditActions", "headDateLabel"]
 - ["PSo30UIResponderStandardEditActions", "headerView"]
 - !private ["PSo30UIResponderStandardEditActions", "hidden"]
 - ["PSo30UIResponderStandardEditActions", "indexPathForPreferredFocusedViewInTableView"]
@@ -2135,6 +2153,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "dispatch_get_main_queue"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_time"]
 - !private ["PSo20UIScrollViewDelegate", "fetchedResultsController"]
+- !private ["PSo20UIScrollViewDelegate", "headDateLabel"]
 - !private ["PSo20UIScrollViewDelegate", "headerView"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo20UIScrollViewDelegate", "navigationBar"]
@@ -2196,6 +2215,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "fetchedResultsController"]
 - ["PSo16UIStateRestoring", "fetchedResultsController.storage"]
 - !private ["PSo16UIStateRestoring", "greenColor"]
+- ["PSo16UIStateRestoring", "headDateLabel"]
 - ["PSo16UIStateRestoring", "headerView"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo16UIStateRestoring", "init"]
@@ -2268,6 +2288,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "dispatch_get_main_queue"]
 - !private ["PSo21UITableViewDataSource", "dispatch_time"]
 - !private ["PSo21UITableViewDataSource", "fetchedResultsController"]
+- !private ["PSo21UITableViewDataSource", "headDateLabel"]
 - !private ["PSo21UITableViewDataSource", "headerView"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo21UITableViewDataSource", "navigationBar"]
@@ -2323,6 +2344,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "dispatch_get_main_queue"]
 - !private ["PSo19UITableViewDelegate", "dispatch_time"]
 - !private ["PSo19UITableViewDelegate", "fetchedResultsController"]
+- !private ["PSo19UITableViewDelegate", "headDateLabel"]
 - !private ["PSo19UITableViewDelegate", "headerView"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo19UITableViewDelegate", "navigationBar"]
@@ -2395,6 +2417,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "fetchedResultsController.storage"]
 - !private ["PSo18UITraitEnvironment", "font"]
 - !private ["PSo18UITraitEnvironment", "greenColor"]
+- ["PSo18UITraitEnvironment", "headDateLabel"]
 - ["PSo18UITraitEnvironment", "headerView"]
 - !private ["PSo18UITraitEnvironment", "hidden"]
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInTableView"]
@@ -2483,7 +2506,7 @@ depends-member:
 - ["CSo16UIViewController", "UIApplication"]
 - ["CSo16UIViewController", "UIBarButtonItem"]
 - !private ["CSo16UIViewController", "UIFont"]
-- !private ["CSo16UIViewController", "UILabel"]
+- ["CSo16UIViewController", "UILabel"]
 - ["CSo16UIViewController", "UINavigationBar"]
 - ["CSo16UIViewController", "UITableView"]
 - !private ["CSo16UIViewController", "UITableViewAutomaticDimension"]
@@ -2506,6 +2529,7 @@ depends-member:
 - ["CSo16UIViewController", "fetchedResultsController"]
 - ["CSo16UIViewController", "fetchedResultsController.storage"]
 - !private ["CSo16UIViewController", "greenColor"]
+- ["CSo16UIViewController", "headDateLabel"]
 - ["CSo16UIViewController", "headerView"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo16UIViewController", "init"]
@@ -2848,4 +2872,4 @@ depends-external:
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
 - "/Users/kenjou/Documents/SimpleToDo/SingleTodo/Pods/Firebase/Analytics/Sources/Firebase.h"
-interface-hash: "e71c44198f55dbb0d3a58f8f8ae8a897"
+interface-hash: "e0945f0f533d292cca1964f2958f110a"

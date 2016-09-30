@@ -19,10 +19,14 @@ class LogViewController: UIViewController ,UITableViewDataSource , UITableViewDe
     @IBOutlet weak var popupView: UIView!
     
     @IBOutlet weak var headerView: UIView!
+    @IBOutlet weak var headDateLabel: UILabel!
+    
+    @IBOutlet weak var zeroView: UIView!
     
     var appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-    @IBOutlet weak var zeroView: UIView!
     let userDefaults = NSUserDefaults.standardUserDefaults()
+    let cal :NSCalendar = NSCalendar(identifier: NSCalendarIdentifierGregorian)!
+    let formatter : NSDateFormatter = NSDateFormatter()
     
     lazy var fetchedResultsController: NSFetchedResultsController = {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
@@ -79,6 +83,16 @@ class LogViewController: UIViewController ,UITableViewDataSource , UITableViewDe
             }
             appDelegate.saveContext()
         }
+        
+        let now = NSDate()
+        //let cal :NSCalendar = NSCalendar(identifier: NSCalendarIdentifierGregorian)!
+        let comp :NSDateComponents = cal.components([NSCalendarUnit.Weekday], fromDate: now)
+        let weekday: Int = comp.weekday - 1
+        
+        //let formatter : NSDateFormatter = NSDateFormatter()
+        formatter.dateFormat = "M/dd"
+        formatter.locale = NSLocale.currentLocale()
+        headDateLabel?.text = formatter.stringFromDate(now) + " (" + formatter.shortWeekdaySymbols[weekday] + ")"
 
         
     }
@@ -186,14 +200,20 @@ class LogViewController: UIViewController ,UITableViewDataSource , UITableViewDe
         label?.font = UIFont.systemFontOfSize(fontSize)
         
         let subLabel : UILabel? = cell.contentView.viewWithTag(2) as? UILabel
-        let formatter : NSDateFormatter = NSDateFormatter()
+        //let formatter : NSDateFormatter = NSDateFormatter()
         //formatter.dateFormat = "yyyy/MM/dd HH:mm"
-        formatter.dateFormat = "yyyy/MM/dd"
-        subLabel?.text = formatter.stringFromDate(log.time!)
+        var comp :NSDateComponents = cal.components([NSCalendarUnit.Weekday], fromDate: log.time!)
+        var weekday: Int = comp.weekday - 1
+        
+        formatter.dateFormat = "M/dd"
+        formatter.locale = NSLocale.currentLocale()
+        subLabel?.text = formatter.stringFromDate(log.time!) + " (" + formatter.shortWeekdaySymbols[weekday] + ")"
         
         let endTimeLabel : UILabel? = cell.contentView.viewWithTag(3) as? UILabel
         if log.endtime != nil {
-            endTimeLabel?.text = formatter.stringFromDate(log.endtime!)
+            comp = cal.components([NSCalendarUnit.Weekday], fromDate: log.endtime!)
+            weekday = comp.weekday - 1
+            endTimeLabel?.text = formatter.stringFromDate(log.endtime!) + " (" + formatter.shortWeekdaySymbols[weekday] + ")"
         } else {
             endTimeLabel?.text = ""
         }

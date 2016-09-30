@@ -283,6 +283,8 @@ SWIFT_CLASS("_TtC10SimpleTodo3Log")
 @property (nonatomic, strong) NSDate * _Nullable endtime;
 @end
 
+@class NSCalendar;
+@class NSDateFormatter;
 @class NSFetchedResultsController;
 @class UITableView;
 @class NSIndexPath;
@@ -299,9 +301,12 @@ SWIFT_CLASS("_TtC10SimpleTodo17LogViewController")
 @property (nonatomic, weak) IBOutlet UIToolbar * _Null_unspecified btmToolbar;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified popupView;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified headerView;
-@property (nonatomic, strong) AppDelegate * _Nonnull appDelegate;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified headDateLabel;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified zeroView;
+@property (nonatomic, strong) AppDelegate * _Nonnull appDelegate;
 @property (nonatomic, readonly, strong) NSUserDefaults * _Nonnull userDefaults;
+@property (nonatomic, readonly, strong) NSCalendar * _Nonnull cal;
+@property (nonatomic, readonly, strong) NSDateFormatter * _Nonnull formatter;
 @property (nonatomic, strong) NSFetchedResultsController * _Nonnull fetchedResultsController;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;

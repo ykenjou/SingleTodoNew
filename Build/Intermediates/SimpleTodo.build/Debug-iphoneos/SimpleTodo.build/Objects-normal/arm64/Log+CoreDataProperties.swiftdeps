@@ -7,13 +7,13 @@ provides-member:
 - ["C10SimpleTodo3Log", "time"]
 - ["C10SimpleTodo3Log", "endtime"]
 provides-dynamic-lookup:
-- "endtime"
 - "time"
+- "endtime"
 - "text"
 depends-top-level:
-- "String"
 - "Log"
 - "NSDate"
+- "String"
 depends-member:
 - ["Ps9AnyObject", "endtime"]
 - ["Ps9AnyObject", "text"]
